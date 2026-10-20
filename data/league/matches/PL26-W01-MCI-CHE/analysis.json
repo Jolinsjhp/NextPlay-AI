@@ -15,15 +15,15 @@
   },
   "agent": {
     "name": "Touchline Match Analyst",
-    "mode": "local",
-    "model": null
+    "mode": "openai",
+    "model": "deepseek-flash"
   },
   "headline": "Manchester City 1–1 Chelsea",
-  "summary": "Manchester City and Chelsea drew 1–1. There were 27 shots across the match. Joao Pedro earns Player of the Match on the published impact scoring.",
+  "summary": "Manchester City and Chelsea drew 1–1 in a match with 27 shots. Jeremy Doku put Manchester City ahead at 10:53, Joao Pedro equalised for Chelsea at 70:11, and Marco Palestra was sent off at 81:42. Joao Pedro was the computed Player of the Match with 1 goal, 8 shots on target, 8 interceptions and 74 completed passes from 82 in 100 minutes, earning 9.74 impact points.",
   "periods": [
     {
       "title": "First half",
-      "text": "Manchester City had 9 shots and Chelsea had 7. 10:53 — Jeremy Doku opened the scoring for Manchester City (1–0). The period ended at 1–0.",
+      "text": "The first half ended 1–0 to Manchester City. Manchester City had 9 shots and Chelsea had 7; the only score change was Jeremy Doku's opener for Manchester City at 10:53. No dismissals were recorded in the first half.",
       "shots": [
         9,
         7
@@ -53,7 +53,7 @@
     },
     {
       "title": "Second half",
-      "text": "Manchester City had 4 shots and Chelsea had 7. 70:11 — Joao Pedro equalised for Chelsea (1–1). 81:42 — Chelsea lost Marco Palestra to a red card. The period ended at 1–1.",
+      "text": "The second half ended 1–1. Chelsea had 7 shots to Manchester City's 4; Joao Pedro equalised for Chelsea at 70:11, and Chelsea lost Marco Palestra to a red card at 81:42. No further score changes were recorded in the period.",
       "shots": [
         4,
         7

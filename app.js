@@ -1,9 +1,10 @@
+import { CURRENT_MATCHWEEK, HOME_CLUB_KEY, clubDashboard } from './club-home.js';
 import { formatClock, sampleFrames, samplePacked, lastAtOrBefore, releasedEvents, rosterStatus } from './core.js?v=2.2.0';
 
 const $ = selector => document.querySelector(selector);
 const icon = name => `<svg aria-hidden="true"><use href="#i-${name}"/></svg>`;
 const escape = value => String(value ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
-const state = { metadata: null, summary: null, preview: null, packed: null, events: [], snapshots: [], time: 0, playing: false, speed: 1, selected: 'H10', view: 'overview', filter: 'key', eventScope: 'replay', frame: null, league: null, fixture: null, loadToken: 0, loading: false, squads: null, squadsPromise: null, squadClub: 'ARS', squadQuery: '', report: null };
+const state = { metadata: null, summary: null, preview: null, packed: null, events: [], snapshots: [], time: 0, playing: false, speed: 1, selected: 'H10', homeClub: null, view: 'home', filter: 'key', eventScope: 'replay', frame: null, league: null, fixture: null, loadToken: 0, loading: false, squads: null, squadsPromise: null, squadClub: 'ARS', squadQuery: '', report: null };
 const canvas = $('#pitch');
 const ctx = canvas.getContext('2d');
 const LEAGUE_ROOT = './data/league/';
@@ -138,7 +139,7 @@ function updateMatchChrome(fixture, metadata) {
   $('#match-competition').textContent = metadata.competition?.name || 'Premier League (sim)';
   $('#match-week').textContent = `Matchweek ${week}`;
   $('#match-kickoff').textContent = kickoff;
-  $('#eyebrow-code').textContent = `/ W${String(week).padStart(2, '0')}`;
+  if (['overview', 'replay', 'stats', 'lineup'].includes(state.view)) $('#eyebrow-code').textContent = `/ W${String(week).padStart(2, '0')}`;
   $('#legend-home').textContent = home.short_name || home.name;
   $('#legend-away').textContent = away.short_name || away.name;
   $('#full-legend-home').textContent = home.short_name || home.name;
@@ -231,7 +232,7 @@ async function loadMatch(matchId, { updateUrl = true } = {}) {
     eventKey = '';
     statsKey = '';
     refresh(true);
-    if (updateUrl) updateUrlForMatch(fixture.match_id);
+    if (updateUrl && ['overview', 'replay', 'stats', 'lineup'].includes(state.view)) updateUrlForMatch(fixture.match_id);
     startTracking(fixture, token);
     loadReport(fixture, token);
   } catch (error) {
@@ -293,18 +294,80 @@ function renderSquads() {
   $('#squad-content').innerHTML = `<section class="card squad-card"><div class="squad-club-head"><div>${clubCrestHTML(team)}<div><h3>${escape(team.name)}</h3><p>${escape(team.stadium)} · ${team.players.length} registered players</p></div></div><span class="subtle-badge">${state.squads.season || '2026/27'}</span></div>${rows || '<div class="empty">No players match your search.</div>'}</section>`;
 }
 
+function setupHome() {
+  try { state.homeClub = localStorage.getItem(HOME_CLUB_KEY); } catch { /* Session selection still works. */ }
+  if (!state.league.teams.some(club => club.club_id === state.homeClub)) state.homeClub = null;
+  $('#home-club-select').innerHTML = '<option value="">Select a club</option>' + state.league.teams.map(club =>
+    `<option value="${escape(club.club_id)}">${escape(club.name)}</option>`).join('');
+  $('#home-club-select').value = state.homeClub || '';
+  $('#home-club-select').disabled = false;
+  $('#save-home-club').disabled = false;
+  renderHome();
+}
+
+function renderHome() {
+  if (!state.league) return;
+  const dashboard = clubDashboard(state.league, state.homeClub);
+  if (!dashboard) {
+    $('#home-content').innerHTML = `<section class="card home-empty"><span class="tiny-label">MATCHWEEK ${CURRENT_MATCHWEEK}</span><h2>A home for your club.</h2><p>Choose one of the ${state.league.teams.length} clubs above to see your season so far and your next opponent.</p><span class="subtle-badge">Before kick-off · ${escape(state.league.weeks.find(week => week.week === CURRENT_MATCHWEEK)?.date)}</span></section>`;
+    return;
+  }
+  const { club, record, history, upcoming, rank } = dashboard;
+  const next = upcoming[0];
+  const opponent = next && state.league.teams.find(team => team.club_id === (next.home_club_id === club.club_id ? next.away_club_id : next.home_club_id));
+  const form = history.map(match => `<span class="form-result result-${match.result}" title="Matchweek ${match.matchweek}: ${match.result === 'W' ? 'Win' : match.result === 'D' ? 'Draw' : 'Loss'}">${match.result}</span>`).join('');
+  $('#home-content').innerHTML = `
+    <section class="card home-hero"><div class="home-club-identity">${clubCrestHTML(club)}<div><span class="tiny-label">MY HOME CLUB</span><h2>${escape(club.name)}</h2><p>${escape(club.stadium)} · ${escape(state.league.competition.season)}</p></div></div><div class="home-form"><span class="tiny-label">RECENT FORM · OLDEST FIRST</span><div>${form || 'No results yet'}</div></div></section>
+    <div class="home-metrics">${[
+      ['League position', `#${rank}`, `Ranked through week ${CURRENT_MATCHWEEK - 1}`],
+      ['Points', record.points, `${record.played} matches played`],
+      ['Season record', `${record.won}W · ${record.drawn}D · ${record.lost}L`, `Before matchweek ${CURRENT_MATCHWEEK}`],
+      ['Goals', `${record.goalsFor} : ${record.goalsAgainst}`, 'Scored : conceded'],
+    ].map(([label, value, note]) => `<article class="card"><span class="tiny-label">${label}</span><strong>${value}</strong><small>${note}</small></article>`).join('')}</div>
+    <div class="home-columns"><section class="card home-next"><span class="tiny-label">NEXT MATCH · ${next ? `MATCHWEEK ${next.matchweek}` : 'SCHEDULE'}</span>
+      ${next ? `<div class="home-opponent">${clubCrestHTML(opponent)}<div><span>${next.home_club_id === club.club_id ? 'Home' : 'Away'} against</span><h2>${escape(opponent.name)}</h2></div></div><p>${escape(next.home_name)} <strong>vs</strong> ${escape(next.away_name)}</p><div class="home-fixture-info"><span>${icon('clock')}${escape(formatKickoff(next.kickoff_local))} · UK time</span><span>${icon('pitch')}${escape(next.venue)}</span></div><span class="subtle-badge">Upcoming · result not yet available</span>` : '<h2>You’re all caught up.</h2><p>No further fixtures in this dataset.</p>'}
+      <h3>On the horizon</h3>${upcoming.slice(1).map(match => `<div class="home-future"><span>W${match.matchweek} · ${escape(formatKickoff(match.kickoff_local))}</span><strong>${escape(match.home_name)} vs ${escape(match.away_name)}</strong><small>${escape(match.venue)}</small></div>`).join('') || '<p>No more fixtures scheduled.</p>'}
+    </section><section class="card home-results"><div class="home-results-heading"><h2>Results so far</h2><span class="subtle-badge">Weeks 1–${CURRENT_MATCHWEEK - 1}</span></div><p>Completed matches before the current week.</p>
+      ${[...history].reverse().map(match => `<button class="home-result" data-home-match="${escape(match.match_id)}"><span class="form-result result-${match.result}">${match.result}</span><span><small>W${match.matchweek} · ${escape(formatKickoff(match.kickoff_local))}</small><strong>${escape(match.home_name)} <b>${match.score[0]} – ${match.score[1]}</b> ${escape(match.away_name)}</strong><small>${match.home_club_id === club.club_id ? 'Home' : 'Away'} · View match report →</small></span></button>`).join('') || '<p class="empty">No completed matches yet.</p>'}
+    </section></div>`;
+}
+
+$('#home-club-form').onsubmit = event => {
+  event.preventDefault();
+  const selected = $('#home-club-select').value;
+  if (!state.league?.teams.some(club => club.club_id === selected)) return;
+  state.homeClub = selected;
+  state.squadClub = selected;
+  try {
+    localStorage.setItem(HOME_CLUB_KEY, selected);
+    $('#home-club-status').textContent = 'Home club saved. Your dashboard is ready.';
+  } catch { $('#home-club-status').textContent = 'Home club selected for this session. Browser storage is unavailable.'; }
+  renderHome();
+  const current = allFixtures.find(match => match.matchweek === CURRENT_MATCHWEEK && [match.home_club_id, match.away_club_id].includes(selected));
+  if (current) loadMatch(current.match_id, { updateUrl: false });
+};
+$('#home-content').onclick = async event => {
+  const button = event.target.closest('[data-home-match]');
+  if (!button) return;
+  changeView('stats');
+  await loadMatch(button.dataset.homeMatch);
+};
+
 async function init() {
   try {
     state.league = await fetchJson(`${LEAGUE_ROOT}league.json`);
     allFixtures = state.league.weeks.flatMap(week => week.matches);
     if (!allFixtures.length) throw new Error('League schedule is empty');
     buildWeekSelect();
-    $('#match-picker').hidden = false;
+    setupHome();
     $('#dataset-title').textContent = 'Premier League 2026/27';
     $('#dataset-version').textContent = 'v2.2';
     const requested = new URLSearchParams(location.search).get('match');
-    const initial = allFixtures.find(fixture => fixture.match_id === requested) || allFixtures.find(fixture => fixture.featured) || allFixtures[0];
-    await loadMatch(initial.match_id, { updateUrl: true });
+    const linked = allFixtures.find(fixture => fixture.match_id === requested);
+    const current = allFixtures.filter(fixture => fixture.matchweek === CURRENT_MATCHWEEK);
+    const initial = linked || current.find(fixture => [fixture.home_club_id, fixture.away_club_id].includes(state.homeClub)) || current.find(fixture => fixture.featured) || current[0] || allFixtures[0];
+    changeView(linked ? 'overview' : 'home');
+    await loadMatch(initial.match_id, { updateUrl: Boolean(linked) });
   } catch (error) {
     $('#load-status').textContent = 'Data not ready';
     showError(`Unable to load league: ${error.message}. Run python3 generate.py and serve the project over HTTP.`);
@@ -335,10 +398,12 @@ function changeView(view) {
   state.view = view;
   document.body.dataset.view = view;
   const titles = {
+    home: ['Home', 'Your club. The week ahead.', 'Results, form and the next challenge — all in one place.'],
     overview: ['Overview', 'Every moment, on the pitch.', 'Explore every pass, run and goal.'],
     replay: ['Replay', 'Back to the moment.', 'Scrub the timeline and explore every movement.'],
     stats: ['Analysis', 'The story behind the score.', 'Post-match analysis, Player of the Match and the full match statistics.'],
     lineup: ['Lineups', 'Every position on the pitch.', 'Starting lineups, substitutes and simulated distance.'],
+    settings: ['Settings', 'Your match summary model.', 'Configure the model service used for post-match writing.'],
     squads: ['Squads', '2026/27 Premier League squads.', 'Official squad numbers and player details from the Premier League.'],
   };
   $('#breadcrumb').textContent = titles[view][0];
@@ -349,7 +414,7 @@ function changeView(view) {
     el.classList.toggle('active', el.dataset.view === view);
     if (el.getAttribute('role') === 'tab') el.setAttribute('aria-selected', String(el.dataset.view === view));
   });
-  const matchView = view !== 'squads';
+  const matchView = !['home', 'squads', 'settings'].includes(view);
   $('#match-picker').hidden = !matchView || !state.league;
   $('#match-summary-card').hidden = !matchView;
   $('#export-summary').hidden = !matchView;
@@ -358,10 +423,20 @@ function changeView(view) {
   $('#stats-view').hidden = view !== 'stats';
   $('#lineup-view').hidden = view !== 'lineup';
   $('#squads-view').hidden = view !== 'squads';
+  $('#settings-view').hidden = view !== 'settings';
+  $('#home-view').hidden = view !== 'home';
+  $('.section-tabs').hidden = ['home', 'settings'].includes(view);
+  if (view === 'home') {
+    renderHome();
+    const url = new URL(location.href); url.searchParams.delete('match'); history.replaceState(null, '', url);
+  } else if (matchView && state.fixture) updateUrlForMatch(state.fixture.match_id);
+  if (view === 'settings') loadModelSettings();
   if (view !== 'overview' && view !== 'replay') setPlaying(false);
-  if (view === 'squads') { $('#eyebrow-code').textContent = '/ 2026/27'; loadSquads(); }
+  if (view === 'home') $('#eyebrow-code').textContent = `/ WEEK ${CURRENT_MATCHWEEK} · ${state.league?.weeks.find(week => week.week === CURRENT_MATCHWEEK)?.date || ''}`;
+  else if (view === 'settings') $('#eyebrow-code').textContent = '/ SETTINGS';
+  else if (view === 'squads') { $('#eyebrow-code').textContent = '/ 2026/27'; loadSquads(); }
   else if (state.fixture) $('#eyebrow-code').textContent = `/ W${String(state.fixture.matchweek).padStart(2, '0')}`;
-  if (state.metadata && view !== 'squads') refresh(true);
+  if (state.metadata && matchView) refresh(true);
 }
 
 function metricHTML(stats, isFinal = false) {
@@ -604,6 +679,71 @@ function tick(now) {
   requestAnimationFrame(tick);
 }
 
+async function modelRequest(path, data) {
+  const response = await fetch(path, data ? {
+    method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data),
+  } : { cache: 'no-store' });
+  let result;
+  try { result = await response.json(); }
+  catch { throw new Error('Model service is not running. Start the app with npm run dev.'); }
+  if (!response.ok) throw new Error(result.error || 'Model service request failed.');
+  return result;
+}
+
+function showModelSettings(config) {
+  $('#model-base-url').value = config.base_url;
+  $('#model-name').value = config.model;
+  $('#model-api-key').value = '';
+  $('#model-clear-key').checked = false;
+  $('#model-key-state').textContent = config.has_key
+    ? 'API key saved. Leave blank to keep it; enter a new key when changing the service URL.'
+    : 'No API key saved. Keys are stored privately on this computer.';
+}
+
+async function loadModelSettings() {
+  $('#save-model-settings').disabled = true;
+  $('#model-settings-status').textContent = 'Loading settings…';
+  try {
+    showModelSettings(await modelRequest('/api/model-settings'));
+    $('#model-settings-status').textContent = '';
+    $('#save-model-settings').disabled = false;
+  } catch (error) { $('#model-settings-status').textContent = error.message; }
+}
+
+$('#model-settings-form').onsubmit = async event => {
+  event.preventDefault();
+  $('#save-model-settings').disabled = true;
+  $('#model-settings-status').textContent = 'Saving…';
+  try {
+    showModelSettings(await modelRequest('/api/model-settings', {
+      base_url: $('#model-base-url').value, model: $('#model-name').value,
+      api_key: $('#model-api-key').value, clear_key: $('#model-clear-key').checked,
+    }));
+    $('#model-settings-status').textContent = 'Settings saved. Open Analysis to generate a match summary.';
+  } catch (error) { $('#model-settings-status').textContent = error.message; }
+  finally { $('#save-model-settings').disabled = false; }
+};
+
+$('#generate-model-summary').onclick = async () => {
+  const fixture = state.fixture, token = state.loadToken;
+  if (!fixture || state.loading || !state.events.some(event => event.type === 'match_end')) {
+    $('#model-summary-status').textContent = 'Select a completed match first.';
+    return;
+  }
+  $('#generate-model-summary').disabled = true;
+  $('#model-summary-status').textContent = 'Generating summary… This may take up to a minute.';
+  try {
+    const report = await modelRequest('/api/match-summary', { match_id: state.metadata.match_id });
+    if (token === state.loadToken) {
+      state.report = report;
+      renderReport(report, fixture);
+      refresh(true);
+      $('#model-summary-status').textContent = 'Model summary saved.';
+    } else $('#model-summary-status').textContent = 'Summary saved for the previous match. Select it again to read it.';
+  } catch (error) { $('#model-summary-status').textContent = error.message; }
+  finally { $('#generate-model-summary').disabled = false; }
+};
+
 document.querySelectorAll('[data-view]').forEach(button => button.addEventListener('click', () => changeView(button.dataset.view)));
 document.querySelectorAll('[role=tab]').forEach(tab => tab.addEventListener('keydown', e => {
   const tabs = [...document.querySelectorAll('[role=tab]')];
@@ -657,5 +797,6 @@ document.addEventListener('keydown', e => {
   if (e.code === 'ArrowRight') { e.preventDefault(); seek(state.time + 10000); }
 });
 document.addEventListener('visibilitychange', () => { if (document.hidden) setPlaying(false); });
+changeView('home');
 init();
 requestAnimationFrame(tick);

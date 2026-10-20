@@ -8,7 +8,7 @@ The Touchline dashboard reads `data/league/` directly. No build step, CDN or thi
 
 ```sh
 # From the project root (Python 3)
-python3 -m http.server 5173 --bind 127.0.0.1
+python3 server.py
 
 # Or use the npm shortcut
 npm run dev
@@ -18,6 +18,16 @@ Open <http://127.0.0.1:5173>. Serve the folder over HTTP rather than opening `in
 
 ### Views
 
+The default landing page is **Home**. Choose any of the 20 clubs and click
+**Set home club**; the browser remembers this choice. The simulation clock defaults
+to **the start of matchweek 3 (7 November 2026)**, independently of the computer's
+clock. Home shows form, results, goals, points and league position using only weeks
+1–2; week 3 is the next fixture and week 4 is on the horizon. Future scores never
+enter these homepage calculations. Click a past result to open its match report.
+The match explorer defaults to week 3 (your club's match when selected); explicit
+`?match=` links still open the requested replay. The explorer remains an archive
+of all generated matches. `CURRENT_MATCHWEEK` in `club-home.js` sets the clock.
+
 - **Select match** — filter 40 fixtures by matchweek, or use previous/next. `?match=<match_id>` deep-links a match.
 - **Overview** — score, possession, shots, passing, interceptions, pressure events, event feed and player focus.
 - **Replay** — smooth 5 Hz tracking for players and the ball, 1× / 4× / 10× speed, timeline scrubbing and ±10 second controls. Red cards remove players; substitutions switch to the incoming player's identity. Space toggles playback; arrow keys jump 10 seconds.
@@ -26,6 +36,26 @@ Open <http://127.0.0.1:5173>. Serve the folder over HTTP rather than opening `in
 - **Squads** — a new league-wide tab with all 20 clubs' 2026/27 rosters. Pick a club, search by player, position or nationality, and browse players grouped by goalkeepers, defenders, midfielders and forwards.
 
 The replay starts at the selected match's `preview-60s.json` clip. Matches marked `tracking: "full"` continue loading the complete `tracking.jsonl` in a Web Worker; all other matches remain a 60-second preview. If full tracking fails, the preview stays usable. Selecting a match reloads its `metadata`, `summary`, `events`, `states` and `preview` files.
+
+### Independent match-summary model service
+
+Run `npm run dev` (or `python3 server.py`) and open **Settings**. Enter an HTTPS
+Responses API base URL, model ID and API key, then save. The service must support
+structured JSON output. In **Analysis**, click **Generate model summary** to write
+and save a new full-match and half-by-half review for the selected completed match.
+The request sends the computed match report to your configured provider and may
+incur provider usage charges. Scores, statistics, evidence and Player of the Match
+remain computed locally. Failed requests leave the existing report intact.
+
+`model_service.py` owns model narration independently of `analysis_agent.py`.
+`server.py` provides same-origin settings and generation APIs on loopback only.
+The key is saved in `.local/model-service.json` with owner-only file permissions;
+this directory is ignored by Git and blocked from static serving. Settings responses
+only expose whether a key exists. Leave the key blank to retain it, or choose
+**Remove saved API key**. Changing the service URL requires entering a key again.
+Do not serve this directory with a generic static server after saving credentials.
+Pure static hosting can still show pre-generated reports but cannot use settings
+or generate new model summaries. This server is intended for local personal use.
 
 ### Post-match analysis agent
 

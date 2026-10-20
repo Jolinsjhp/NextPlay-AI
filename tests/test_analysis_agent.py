@@ -105,7 +105,7 @@ class AnalysisTests(unittest.TestCase):
             self.assertEqual(r['agent']['mode'], 'local')
             self.assertIn('missing', r['agent']['notice'])
             with patch.dict(os.environ, {'OPENAI_API_KEY': 'test-secret', 'OPENAI_MODEL': 'test-model'}):
-                with patch('analysis_agent.urllib.request.urlopen', side_effect=TimeoutError('test-secret')):
+                with patch('model_service.urlopen', side_effect=TimeoutError('test-secret')):
                     r = write_report(path, self.metadata, self.summary, self.events, mode='openai')
                     self.assertIn('unavailable', r['agent']['notice'])
                     self.assertNotIn('test-secret', json.dumps(r))
@@ -118,7 +118,7 @@ class AnalysisTests(unittest.TestCase):
                  'second_half': 'The visitors equalised.'}
         result = {'status': 'completed', 'output': [{'type': 'message', 'content': [
             {'type': 'output_text', 'text': json.dumps(prose)}]}]}
-        with patch('analysis_agent.urllib.request.urlopen', return_value=io.StringIO(json.dumps(result))) as call:
+        with patch('model_service.urlopen', return_value=io.StringIO(json.dumps(result))) as call:
             narrate(report, 'test-model', 'secret')
             payload = json.loads(call.call_args.args[0].data)
             self.assertFalse(payload['store'])
@@ -129,7 +129,7 @@ class AnalysisTests(unittest.TestCase):
 
     def test_incomplete_model_response_is_not_published(self):
         import io
-        with patch('analysis_agent.urllib.request.urlopen',
+        with patch('model_service.urlopen',
                    return_value=io.StringIO('{"status":"incomplete","output":[]}')):
             with self.assertRaises(ValueError):
                 narrate(self.build(), 'test-model', 'secret')
