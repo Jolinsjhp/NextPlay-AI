@@ -7,8 +7,8 @@
   <meta name="description" content="Touchline football intelligence: match replay, live statistics, events and 2026/27 Premier League squads.">
   <title>Touchline · Football Intelligence</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='11' fill='%23ed713d'/%3E%3Cpath d='M9 12h22M20 12v19' stroke='white' stroke-width='5'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css?v=2.4.0">
-  <script type="module" src="app.js?v=2.4.0"></script>
+  <link rel="stylesheet" href="styles.css?v=2.5.0">
+  <script type="module" src="app.js?v=2.5.0"></script>
 </head>
 <body>
   <svg class="svg-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
@@ -53,6 +53,13 @@
           <form id="home-club-form"><label for="home-club-select">Home club</label><div><select id="home-club-select" required disabled><option value="">Loading clubs…</option></select><button class="button" id="save-home-club" disabled>Set home club</button></div></form>
         </div>
         <p id="home-club-status" role="status" aria-live="polite"></p>
+        <section class="card home-calendar" id="home-calendar" aria-label="Schedule">
+          <div class="calendar-heading"><div><span class="tiny-label">YOUR WEEK AT A GLANCE</span><h2>This week’s schedule</h2><p id="calendar-range"></p></div>
+            <label>Show<select id="calendar-scope" aria-label="Calendar clubs"><option value="all">All clubs</option><option value="club" disabled>My club</option></select></label>
+          </div>
+          <div class="calendar-scroll"><div id="weekly-calendar" class="calendar-grid" aria-label="This week"><p>Loading schedule…</p></div></div>
+          <details class="month-calendar"><summary id="calendar-month-label">Full January calendar</summary><p>Matches on Saturday and Sunday. Other days are left open.</p><div class="calendar-scroll"><div id="monthly-calendar" class="calendar-grid" aria-label="January daily calendar"></div></div></details>
+        </section>
         <div id="home-content"><p class="empty">Loading your club dashboard…</p></div>
       </section>
       <section class="match-picker card" id="match-picker" aria-label="Select match" hidden>

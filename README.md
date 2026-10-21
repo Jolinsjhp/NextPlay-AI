@@ -227,3 +227,18 @@ python3 validate.py data/league/matches/PL26-W01-MCI-CHE
 This is a demo, not a professional football model. It does not model offsides, a complete foul/referee system, physical collisions, fatigue or full ball physics. Cards and substitutions follow a deterministic demo script; substitutes inherit the outgoing formation slot; pressure is a proximity heuristic. Match outcomes are heuristic and are not calibrated to real football distributions. Use the label **simulated match data** whenever presenting scores, distances or tactical explanations.
 
 Real 2026/27 squad data is sourced from the Premier League and is included for identification and demonstration. Match events, tracking and results are generated and are not official Premier League data.
+
+### Daily calendar
+
+The homepage includes a seven-day schedule and an expandable January calendar,
+with an All clubs / My club filter. The calendar uses January 2027 within the
+2026/27 season and the existing simulation clock (`CURRENT_MATCHWEEK = 3`), so
+“This week” is January 11–17 rather than the computer's current week. The four
+rounds occupy January 2–3, 9–10, 16–17 and 23–24, with five matches each Saturday
+and Sunday. Unscheduled dates remain empty, including the final weekend.
+
+`calendar.js` maps the source fixtures to these simulation dates at load time;
+the original generated replay files remain source data. The homepage, match
+picker and match header share the mapped dates. Only prior rounds show scores
+and report links in the calendar. Calendar coverage and score visibility are
+checked by `tests/calendar.test.js` as part of `npm test`.

@@ -1,3 +1,4 @@
+import { januarySchedule, calendarDays } from './calendar.js';
 import { CURRENT_MATCHWEEK, HOME_CLUB_KEY, clubDashboard } from './club-home.js';
 import { formatClock, sampleFrames, samplePacked, lastAtOrBefore, releasedEvents, rosterStatus } from './core.js?v=2.2.0';
 
@@ -129,7 +130,7 @@ function updateMatchChrome(fixture, metadata) {
   const home = metadata.teams.find(team => team.team_id === 'HOME');
   const away = metadata.teams.find(team => team.team_id === 'AWAY');
   const week = metadata.competition?.matchweek ?? fixture.matchweek;
-  const kickoff = formatKickoff(metadata.competition?.kickoff_local);
+  const kickoff = formatKickoff(fixture.kickoff_local);
   const tracking = fixture.tracking === 'full' ? 'Full replay' : '60s preview';
   $('#home-name').textContent = home.short_name || home.name;
   $('#away-name').textContent = away.short_name || away.name;
@@ -302,14 +303,44 @@ function setupHome() {
   $('#home-club-select').value = state.homeClub || '';
   $('#home-club-select').disabled = false;
   $('#save-home-club').disabled = false;
+  $('#calendar-scope').value = state.homeClub ? 'club' : 'all';
   renderHome();
 }
 
+function renderCalendar() {
+  const scope = $('#calendar-scope');
+  scope.options[1].disabled = !state.homeClub;
+  if (!state.homeClub) scope.value = 'all';
+  const days = calendarDays(state.league, CURRENT_MATCHWEEK, scope.value === 'club' ? state.homeClub : null);
+  const labels = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+  const dayHTML = day => `<article class="calendar-day ${day.weekday > 4 ? 'weekend' : ''} ${day.currentWeek ? 'current-week' : ''}" aria-label="${day.date}">
+    <header><span>${labels[day.weekday]}</span><time datetime="${day.date}">${Number(day.date.slice(8))}</time></header>
+    ${day.matches.map(match => `<div class="calendar-match"><time>${escape(match.kickoff_local.slice(11, 16))} · W${match.matchweek}</time><strong>${escape(match.home_name)}<span>vs</span>${escape(match.away_name)}</strong>${match.score ? `<button data-calendar-match="${escape(match.match_id)}" aria-label="View ${escape(match.home_name)} vs ${escape(match.away_name)} report">${match.score.join(' – ')} · Report →</button>` : '<small>Upcoming</small>'}</div>`).join('')}
+    </article>`;
+  $('#calendar-range').textContent = `${days.week[0].date} — ${days.week[6].date} · UK time · Simulation week ${CURRENT_MATCHWEEK}`;
+  $('#weekly-calendar').innerHTML = days.week.map(dayHTML).join('');
+  $('#calendar-month-label').textContent = `January ${state.league.calendarYear} · Full calendar`;
+  $('#monthly-calendar').innerHTML = labels.map(label => `<div class="calendar-weekday">${label}</div>`).join('') +
+    '<div class="calendar-padding" aria-hidden="true"></div>'.repeat(days.month[0].weekday) + days.month.map(dayHTML).join('');
+}
+$('#calendar-scope').onchange = () => { if (state.league) renderCalendar(); };
+$('#home-calendar').onclick = async event => {
+  const button = event.target.closest('[data-calendar-match]');
+  if (!button) return;
+  changeView('stats');
+  await loadMatch(button.dataset.calendarMatch);
+};
+
 function renderHome() {
   if (!state.league) return;
+  renderCalendar();
+  // Keep the calendar node and its controls alive while rebuilding the dashboard.
+  const calendar = $('#home-calendar');
+  calendar.remove();
   const dashboard = clubDashboard(state.league, state.homeClub);
   if (!dashboard) {
     $('#home-content').innerHTML = `<section class="card home-empty"><span class="tiny-label">MATCHWEEK ${CURRENT_MATCHWEEK}</span><h2>A home for your club.</h2><p>Choose one of the ${state.league.teams.length} clubs above to see your season so far and your next opponent.</p><span class="subtle-badge">Before kick-off · ${escape(state.league.weeks.find(week => week.week === CURRENT_MATCHWEEK)?.date)}</span></section>`;
+    $('#home-content').append(calendar);
     return;
   }
   const { club, record, history, upcoming, rank } = dashboard;
@@ -330,6 +361,7 @@ function renderHome() {
     </section><section class="card home-results"><div class="home-results-heading"><h2>Results so far</h2><span class="subtle-badge">Weeks 1–${CURRENT_MATCHWEEK - 1}</span></div><p>Completed matches before the current week.</p>
       ${[...history].reverse().map(match => `<button class="home-result" data-home-match="${escape(match.match_id)}"><span class="form-result result-${match.result}">${match.result}</span><span><small>W${match.matchweek} · ${escape(formatKickoff(match.kickoff_local))}</small><strong>${escape(match.home_name)} <b>${match.score[0]} – ${match.score[1]}</b> ${escape(match.away_name)}</strong><small>${match.home_club_id === club.club_id ? 'Home' : 'Away'} · View match report →</small></span></button>`).join('') || '<p class="empty">No completed matches yet.</p>'}
     </section></div>`;
+  $('#home-content .home-hero').after(calendar);
 }
 
 $('#home-club-form').onsubmit = event => {
@@ -337,6 +369,7 @@ $('#home-club-form').onsubmit = event => {
   const selected = $('#home-club-select').value;
   if (!state.league?.teams.some(club => club.club_id === selected)) return;
   state.homeClub = selected;
+  $('#calendar-scope').value = 'club';
   state.squadClub = selected;
   try {
     localStorage.setItem(HOME_CLUB_KEY, selected);
@@ -355,7 +388,7 @@ $('#home-content').onclick = async event => {
 
 async function init() {
   try {
-    state.league = await fetchJson(`${LEAGUE_ROOT}league.json`);
+    state.league = januarySchedule(await fetchJson(`${LEAGUE_ROOT}league.json`));
     allFixtures = state.league.weeks.flatMap(week => week.matches);
     if (!allFixtures.length) throw new Error('League schedule is empty');
     buildWeekSelect();
