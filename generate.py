@@ -800,11 +800,14 @@ def write_match(sim, out, metadata, tracking=False, preview=True):
     if not tracking and (out/'tracking.jsonl').exists():
         (out/'tracking.jsonl').unlink()
     (out/'metadata.json').write_text(json.dumps(metadata, ensure_ascii=False, indent=2)+'\n')
+    from player_heatmaps import Heatmaps
+    heatmaps = Heatmaps(metadata)
     frames = [] if preview else None
     tracking_handle = (out/'tracking.jsonl').open('w') if tracking else None
     try:
         with (out/'states.jsonl').open('w') as states:
             first = sim.tracking(0)
+            heatmaps.add(first)
             sim.position_records += len(first['players'])
             if tracking_handle:
                 tracking_handle.write(encode(first)+'\n')
@@ -814,6 +817,7 @@ def write_match(sim, out, metadata, tracking=False, preview=True):
             for frame in range(1, DURATION*HZ+1):
                 sim.step(frame)
                 data = sim.tracking(frame)
+                heatmaps.add(data)
                 sim.position_records += len(data['players'])
                 if tracking_handle:
                     tracking_handle.write(encode(data)+'\n')
@@ -827,6 +831,7 @@ def write_match(sim, out, metadata, tracking=False, preview=True):
     with (out/'events.jsonl').open('w') as stream:
         for event in sim.events:
             stream.write(encode(event)+'\n')
+    heatmaps.write(out)
     summary = build_summary(sim)
     (out/'summary.json').write_text(json.dumps(summary, ensure_ascii=False, indent=2)+'\n')
     if preview:

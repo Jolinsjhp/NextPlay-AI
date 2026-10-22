@@ -242,3 +242,24 @@ the original generated replay files remain source data. The homepage, match
 picker and match header share the mapped dates. Only prior rounds show scores
 and report links in the calendar. Calendar coverage and score visibility are
 checked by `tests/calendar.test.js` as part of `npm test`.
+
+### Player reports and running heatmaps
+
+Click a player in Analysis or Lineups to open their full-time report; after the
+replay reaches full time, pitch clicks open the same report. The report includes
+distance, attempted/completed passes, pass accuracy, shots, shots on target,
+goals, interceptions and saves. Statistics come from resolved match events and
+the existing simulated distance totals.
+
+Each match now has `heatmaps.json`: 35 × 23 occupancy bins per registered player,
+aggregated from all 5 Hz on-pitch tracking intervals. Substituted and dismissed
+players contribute only while present; unused players have empty maps. Colours
+are normalized per player. Coordinates stay fixed across both halves, so the
+map includes the half-time change of ends. These are simulated time-occupancy
+maps, not estimates from event locations or the 60-second preview.
+
+`generate.py` writes heatmaps during match generation, even when full tracking
+is not saved. `python3 player_heatmaps.py` backfills existing league matches:
+reads full tracking where available, otherwise reproduces the seeded simulation
+and verifies preview frames, final score, distance, event count and team stats
+before writing the compact artifact. No source replay or result files are changed.

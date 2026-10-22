@@ -1,3 +1,4 @@
+import { playerStats, heatmapSVG } from './player-analysis.js';
 import { januarySchedule, calendarDays } from './calendar.js';
 import { CURRENT_MATCHWEEK, HOME_CLUB_KEY, clubDashboard } from './club-home.js';
 import { formatClock, sampleFrames, samplePacked, lastAtOrBefore, releasedEvents, rosterStatus } from './core.js?v=2.2.0';
@@ -201,6 +202,9 @@ async function loadMatch(matchId, { updateUrl = true } = {}) {
   if (worker) { worker.terminate(); worker = null; }
   state.packed = null;
   state.report = null;
+  state.heatmaps = null;
+  state.heatmapStatus = 'loading';
+  $('#player-dialog').close();
   $('#post-match-banner').hidden = true;
   $('#match-report').innerHTML = '<p class="empty" role="status">Loading post-match analysis…</p>';
   state.playing = false;
@@ -236,6 +240,7 @@ async function loadMatch(matchId, { updateUrl = true } = {}) {
     if (updateUrl && ['overview', 'replay', 'stats', 'lineup'].includes(state.view)) updateUrlForMatch(fixture.match_id);
     startTracking(fixture, token);
     loadReport(fixture, token);
+    loadHeatmaps(fixture, token);
   } catch (error) {
     if (token !== state.loadToken) return;
     $('#load-status').textContent = 'Data not ready';
@@ -540,6 +545,11 @@ function updateEvents() {
 }
 
 function updatePlayer(frame) {
+  if (state.time >= state.metadata.duration_ms) {
+    const player = state.metadata.players.find(p => p.player_id === state.selected);
+    $('#player-detail').innerHTML = `<div class="player-identity"><strong>${escape(player.name)}</strong></div>${playerStatsHTML(player.player_id)}<button class="button" data-player-report="${escape(player.player_id)}">View running heatmap →</button>`;
+    return;
+  }
   const player = state.metadata.players.find(p => p.player_id === state.selected);
   const p = frame.players.find(p => p[0] === state.selected);
   if (!p) {
@@ -586,7 +596,61 @@ function refresh(force = false) {
   if (force) drawPitch(frame);
 }
 
+async function loadHeatmaps(fixture, token) {
+  try {
+    const maps = await fetchJson(`${LEAGUE_ROOT}${fixture.paths.match}heatmaps.json`);
+    if (token !== state.loadToken) return;
+    if (maps.match_id !== fixture.match_id) throw new Error('Heatmap match mismatch');
+    state.heatmaps = maps;
+    state.heatmapStatus = 'ready';
+  } catch {
+    if (token !== state.loadToken) return;
+    state.heatmapStatus = 'unavailable';
+  }
+  if ($('#player-dialog').open) renderPlayerReport();
+}
+
+function playerStatsHTML(id) {
+  const stats = playerStats(id, state.events, state.summary);
+  return `<div class="player-summary-stats">${[
+    ['Distance / km', stats.distance == null ? '—' : (stats.distance / 1000).toFixed(2)],
+    ['Passes', stats.passes], ['Completed passes', stats.completed],
+    ['Pass accuracy', stats.passes ? `${Math.round(stats.completed / stats.passes * 100)}%` : '—'],
+    ['Shots', stats.shots], ['Shots on target', stats.onTarget], ['Goals', stats.goals],
+    ['Interceptions', stats.interceptions], ['Saves', stats.saves],
+  ].map(([label, value]) => `<div><span>${label}</span><strong>${value}</strong></div>`).join('')}</div>`;
+}
+
+function renderPlayerReport() {
+  const player = state.metadata.players.find(p => p.player_id === state.selected);
+  $('#player-report-title').textContent = `${player.name} · #${player.jersey_number}`;
+  $('#player-report-context').textContent = `${teamName(player.team_id)} · ${player.position} · ${rosterStatus(player, state.events, state.metadata.duration_ms).status} · Full time`;
+  $('#report-player-select').innerHTML = state.metadata.teams.map(team => `<optgroup label="${escape(team.name)}">${state.metadata.players.filter(p => p.team_id === team.team_id).map(p => `<option value="${escape(p.player_id)}">${p.jersey_number} · ${escape(p.name)}</option>`).join('')}</optgroup>`).join('');
+  $('#report-player-select').value = player.player_id;
+  $('#player-report-stats').innerHTML = playerStatsHTML(player.player_id);
+  const svg = state.heatmaps && heatmapSVG(state.heatmaps, player.player_id, state.metadata.pitch);
+  $('#player-heatmap').innerHTML = svg || `<p class="empty" role="status">${state.heatmapStatus === 'loading' ? 'Loading full-match heatmap…' : state.heatmapStatus === 'unavailable' ? 'Full-match heatmap unavailable for this match.' : 'No on-pitch tracking recorded for this player.'}</p>`;
+  $('#heatmap-legend').hidden = !svg;
+}
+
+function openPlayerReport(id) {
+  if (state.loading || !state.events.some(event => event.type === 'match_end')) return;
+  if (!state.metadata.players.some(player => player.player_id === id)) return;
+  setPlaying(false);
+  state.selected = id;
+  $('#player-select').value = id;
+  renderPlayerReport();
+  if (!$('#player-dialog').open) $('#player-dialog').showModal();
+}
+$('#close-player-report').onclick = () => $('#player-dialog').close();
+$('#report-player-select').onchange = event => openPlayerReport(event.target.value);
+document.addEventListener('click', event => {
+  const button = event.target.closest('[data-player-report]');
+  if (button) openPlayerReport(button.dataset.playerReport);
+});
+
 function buildAnalysis() {
+  $('#analysis-players').innerHTML = state.events.some(event => event.type === 'match_end') ? state.metadata.teams.map(team => `<div><h3>${escape(team.name)}</h3><div class="analysis-player-buttons">${state.metadata.players.filter(p => p.team_id === team.team_id).map(p => `<button class="button" data-player-report="${escape(p.player_id)}">${p.jersey_number} · ${escape(p.name)}</button>`).join('')}</div></div>`).join('') : '<p>Player reports are available after full time.</p>';
   $('#full-metrics').innerHTML = metricHTML(state.summary.final_stats, true);
   $('#full-stats').innerHTML = statRows(state.summary.final_stats, true);
   $('#all-goals').innerHTML = state.events.filter(e => (e.type === 'shot' && e.outcome === 'goal') || ['yellow_card','red_card','substitution'].includes(e.type)).map(eventHTML).join('') || '<div class="empty">No key events in this match.</div>';
@@ -814,13 +878,14 @@ document.addEventListener('click', e => {
     $('.pitch-card').scrollIntoView({ behavior: 'smooth', block: 'center' });
   }
   const playerButton = e.target.closest('[data-player]');
-  if (playerButton) { state.selected = playerButton.dataset.player; $('#player-select').value = state.selected; changeView('overview'); $('.pitch-card').scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+  if (playerButton) openPlayerReport(playerButton.dataset.player);
 });
 canvas.onclick = e => {
   if (!state.frame) return;
   const box = canvas.getBoundingClientRect(), { x, y, scale } = pitchLayout();
   const px = (e.clientX - box.left - x) / scale, py = (e.clientY - box.top - y) / scale;
   const nearest = state.frame.players.map(p => ({ id: p[0], distance: Math.hypot(p[1] - px, p[2] - py) })).sort((a, b) => a.distance - b.distance)[0];
+  if (nearest.distance * scale < 20 && state.time >= state.metadata.duration_ms) { openPlayerReport(nearest.id); return; }
   if (nearest.distance * scale < 20) { state.selected = nearest.id; $('#player-select').value = nearest.id; refresh(true); }
 };
 document.addEventListener('keydown', e => {
