@@ -1,5 +1,25 @@
 # Touchline — Premier League 2026/27 replay and squad explorer
 
+## 分享与快速体验（2026-10-23 升级）
+
+在线交互演示：https://nextplay-replay-coach.kclxzl2022.chatgpt.site
+
+浏览器演示包含 40 场合成比赛的 360 个精选动作。无需账户或 API 密钥，
+可比较传球、带球、射门和等待，查看实际执行结果，并播放合法传球的假设推演。
+评分在浏览器本地计算；浏览器版本与 Python 版本有数值一致性检查。
+它不包含收费 LLM Agent 调用，不将敏感性范围当置信区间。
+
+本地快速运行：
+
+```sh
+python3 server.py
+# 打开 http://127.0.0.1:5173/public-demo/index.html
+```
+
+完整 40 场的新轨迹和逐条决策缓存不放入 Git；它们可用下文命令重新生成。
+训练后的聚合模型、源码、测试、验证摘要及精简演示数据都包含在本仓库。
+StatsBomb 原始缓存及本地 API 密钥不上传。
+
 A dependency-free football data demo for match replay, event consumption, live statistics and squad browsing. Club names, 2026/27 squad numbers and player details are real; every match result, event and tracking frame is procedurally generated.
 
 ## Frontend
@@ -263,3 +283,75 @@ is not saved. `python3 player_heatmaps.py` backfills existing league matches:
 reads full tracking where available, otherwise reproduces the seeded simulation
 and verifies preview frames, final score, distance, event count and team stats
 before writing the compact artifact. No source replay or result files are changed.
+
+## Decision Coach prototype
+
+Open `/coach.html` using `python3 server.py` to compare candidate ground passes and play four short hypothetical defensive responses. The numerical analysis is an uncalibrated deterministic baseline, not a trained probability model. An optional four-agent Responses-compatible tool workflow is available after configuring a model in Settings; no live model execution is claimed when configuration is missing. See [decision/README.md](decision/README.md) for assumptions, endpoints, research references and remaining work.
+
+## Real-event-calibrated generator v2.2
+
+The generator now filters offside pass candidates, uses distance/pressure completion
+priors fitted on StatsBomb footed ground passes, and scores selection using pass
+geometry, lane risk, shot angle/distance and current pressure. Team ratings no
+longer determine these outcome probabilities. New passes use ground trajectories only, matching the calibration population.
+Shot goal frequencies are fitted by distance; other motion and ball-outcome behavior remains heuristic.
+
+Open `/coach.html?realism=1` for the newly generated sample and
+`/realism-validation.html` for before/after measurements, regressions and sources.
+The existing league archive is retained; it predates this generator change.
+Every newly written match also gets `decisions.jsonl`: pre-decision snapshot,
+candidates, selection weights and selected action linked to the next action ID.
+These are simulator records, **not expert optimal-action training labels**.
+
+```sh
+# Reproduce from cached source data (no network)
+python3 -m realism.calibrate
+python3 -m realism.benchmark
+python3 -m realism.render_validation
+# Fetch sources if needed; source revision and SHA256 saved in provenance
+python3 -m realism.calibrate --download
+# Write a fresh full sample without replacing the league archive
+python3 generate.py --mode single --output data/realism-sample
+python3 validate.py data/realism-sample
+```
+
+Source: [StatsBomb Open Data](https://github.com/statsbomb/open-data), 2022 World Cup.
+32 matches: 16 fitting, 8 development, 8 final held out. Footed ground passes and
+footed shots in Regular Play, periods 1–2; source 120×80 rescaled to 105×68.
+Raw source data stays in ignored `.local/statsbomb`; derived profile/provenance is
+in `realism/profile.json`. Follow source attribution/logo terms when publishing.
+This is not Premier League calibration, tracking validation or counterfactual ground
+truth. Overall backward-pass share remains too high; see the diagnostics page.
+The coach's existing feasibility/utility scores remain separate uncalibrated models.
+
+### Full new-data system audit
+
+The separate `data/league-validated/` dataset contains a newly generated 40-match
+league. Open `/coach.html?dataset=validated` to analyze those matches. It does not
+replace the older archive or change the meaning of its results.
+
+```sh
+python3 generate.py --weeks 4 --tracking featured --output data/league-validated
+python3 validate_league.py data/league-validated
+python3 -m realism.evaluate_system
+python3 -m realism.render_validation
+```
+
+The system audit runs deterministic coach analysis at every recorded decision,
+checks decision/event linkage, and runs two recommended-pass rollouts per match
+(four scenarios per rollout). It checks all generated post-match reports and
+measures aggregate/zone-level distance, completion and backward-pass statistics.
+`artifacts/realism/system-validation.json` includes source checksum verification,
+real held-out Brier scores, match-level bootstrap intervals, errors and individual
+match results. `system-analysis.jsonl` stores compact per-decision audit results.
+LLM agents are not invoked during the batch. Previously viewed test matches are
+reused for a reproducibility audit; this is not a fresh blind evaluation.
+
+### Outcome-oriented action comparison
+
+Open `/action-review.html` for the new decision / execution / alternatives view.
+Run `python3 -m decision.train_value` to reproduce real-event outcome training.
+See `decision/README.md` for which components are learned and which are assumptions.
+The original pass-only coach and generator are retained. Restart the local server
+after Python API edits. `TOUCHLINE_PORT=5174 python3 server.py` runs a separate
+upgrade preview when the original 5173 server is already running.

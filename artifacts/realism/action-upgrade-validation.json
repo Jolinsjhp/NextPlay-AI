@@ -1,0 +1,866 @@
+{
+  "scope": "Three systematic examples per match across all 40 synthetic replays; not all snapshots and not counterfactual accuracy.",
+  "checks": {
+    "execution_gates_checked": 120,
+    "snapshots_checked": 120,
+    "pass_examples": 40,
+    "carry_examples": 40,
+    "shot_examples": 40
+  },
+  "samples": [
+    {
+      "match_id": "PL26-W01-BHA-MUN",
+      "decision_id": "d000001",
+      "actual_kind": "pass",
+      "highest_model_action_id": "pass:H09",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W01-BHA-MUN",
+      "decision_id": "d000003",
+      "actual_kind": "carry",
+      "highest_model_action_id": "carry:left",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W01-BHA-MUN",
+      "decision_id": "d000029",
+      "actual_kind": "shot",
+      "highest_model_action_id": "shot:goal",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W01-BOU-NFO",
+      "decision_id": "d000003",
+      "actual_kind": "pass",
+      "highest_model_action_id": "carry:forward",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W01-BOU-NFO",
+      "decision_id": "d000001",
+      "actual_kind": "carry",
+      "highest_model_action_id": "pass:H09",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W01-BOU-NFO",
+      "decision_id": "d000032",
+      "actual_kind": "shot",
+      "highest_model_action_id": "shot:goal",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W01-COV-LIV",
+      "decision_id": "d000002",
+      "actual_kind": "pass",
+      "highest_model_action_id": "shot:goal",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W01-COV-LIV",
+      "decision_id": "d000001",
+      "actual_kind": "carry",
+      "highest_model_action_id": "carry:forward",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W01-COV-LIV",
+      "decision_id": "d000043",
+      "actual_kind": "shot",
+      "highest_model_action_id": "shot:goal",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W01-EVE-IPS",
+      "decision_id": "d000001",
+      "actual_kind": "pass",
+      "highest_model_action_id": "pass:H09",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W01-EVE-IPS",
+      "decision_id": "d000002",
+      "actual_kind": "carry",
+      "highest_model_action_id": "shot:goal",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W01-EVE-IPS",
+      "decision_id": "d000055",
+      "actual_kind": "shot",
+      "highest_model_action_id": "shot:goal",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W01-HUL-FUL",
+      "decision_id": "d000002",
+      "actual_kind": "pass",
+      "highest_model_action_id": "carry:forward",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W01-HUL-FUL",
+      "decision_id": "d000001",
+      "actual_kind": "carry",
+      "highest_model_action_id": "carry:forward",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W01-HUL-FUL",
+      "decision_id": "d000008",
+      "actual_kind": "shot",
+      "highest_model_action_id": "carry:right",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W01-LEE-CRY",
+      "decision_id": "d000001",
+      "actual_kind": "pass",
+      "highest_model_action_id": "carry:forward",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W01-LEE-CRY",
+      "decision_id": "d000003",
+      "actual_kind": "carry",
+      "highest_model_action_id": "carry:left",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W01-LEE-CRY",
+      "decision_id": "d000015",
+      "actual_kind": "shot",
+      "highest_model_action_id": "shot:goal",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W01-MCI-CHE",
+      "decision_id": "d000002",
+      "actual_kind": "pass",
+      "highest_model_action_id": "carry:forward",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W01-MCI-CHE",
+      "decision_id": "d000001",
+      "actual_kind": "carry",
+      "highest_model_action_id": "carry:right",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W01-MCI-CHE",
+      "decision_id": "d000009",
+      "actual_kind": "shot",
+      "highest_model_action_id": "shot:goal",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W01-NEW-BRE",
+      "decision_id": "d000001",
+      "actual_kind": "pass",
+      "highest_model_action_id": "pass:H09",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W01-NEW-BRE",
+      "decision_id": "d000003",
+      "actual_kind": "carry",
+      "highest_model_action_id": "shot:goal",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W01-NEW-BRE",
+      "decision_id": "d000004",
+      "actual_kind": "shot",
+      "highest_model_action_id": "shot:goal",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W01-SUN-AVL",
+      "decision_id": "d000001",
+      "actual_kind": "pass",
+      "highest_model_action_id": "carry:left",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W01-SUN-AVL",
+      "decision_id": "d000003",
+      "actual_kind": "carry",
+      "highest_model_action_id": "pass:H10",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W01-SUN-AVL",
+      "decision_id": "d000040",
+      "actual_kind": "shot",
+      "highest_model_action_id": "shot:goal",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W01-TOT-ARS",
+      "decision_id": "d000002",
+      "actual_kind": "pass",
+      "highest_model_action_id": "carry:right",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W01-TOT-ARS",
+      "decision_id": "d000001",
+      "actual_kind": "carry",
+      "highest_model_action_id": "carry:left",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W01-TOT-ARS",
+      "decision_id": "d000037",
+      "actual_kind": "shot",
+      "highest_model_action_id": "shot:goal",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W02-ARS-SUN",
+      "decision_id": "d000001",
+      "actual_kind": "pass",
+      "highest_model_action_id": "carry:forward",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W02-ARS-SUN",
+      "decision_id": "d000002",
+      "actual_kind": "carry",
+      "highest_model_action_id": "carry:forward",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W02-ARS-SUN",
+      "decision_id": "d000033",
+      "actual_kind": "shot",
+      "highest_model_action_id": "shot:goal",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W02-AVL-NEW",
+      "decision_id": "d000002",
+      "actual_kind": "pass",
+      "highest_model_action_id": "carry:forward",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W02-AVL-NEW",
+      "decision_id": "d000001",
+      "actual_kind": "carry",
+      "highest_model_action_id": "carry:forward",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W02-AVL-NEW",
+      "decision_id": "d000065",
+      "actual_kind": "shot",
+      "highest_model_action_id": "carry:right",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W02-BRE-MCI",
+      "decision_id": "d000001",
+      "actual_kind": "pass",
+      "highest_model_action_id": "carry:forward",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W02-BRE-MCI",
+      "decision_id": "d000002",
+      "actual_kind": "carry",
+      "highest_model_action_id": "pass:H10",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W02-BRE-MCI",
+      "decision_id": "d000018",
+      "actual_kind": "shot",
+      "highest_model_action_id": "shot:goal",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W02-CHE-LEE",
+      "decision_id": "d000004",
+      "actual_kind": "pass",
+      "highest_model_action_id": "shot:goal",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W02-CHE-LEE",
+      "decision_id": "d000001",
+      "actual_kind": "carry",
+      "highest_model_action_id": "pass:H09",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W02-CHE-LEE",
+      "decision_id": "d000014",
+      "actual_kind": "shot",
+      "highest_model_action_id": "shot:goal",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W02-CRY-HUL",
+      "decision_id": "d000002",
+      "actual_kind": "pass",
+      "highest_model_action_id": "carry:forward",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W02-CRY-HUL",
+      "decision_id": "d000001",
+      "actual_kind": "carry",
+      "highest_model_action_id": "pass:H09",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W02-CRY-HUL",
+      "decision_id": "d000035",
+      "actual_kind": "shot",
+      "highest_model_action_id": "carry:left",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W02-FUL-EVE",
+      "decision_id": "d000003",
+      "actual_kind": "pass",
+      "highest_model_action_id": "shot:goal",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W02-FUL-EVE",
+      "decision_id": "d000001",
+      "actual_kind": "carry",
+      "highest_model_action_id": "pass:H09",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W02-FUL-EVE",
+      "decision_id": "d000093",
+      "actual_kind": "shot",
+      "highest_model_action_id": "shot:goal",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W02-IPS-COV",
+      "decision_id": "d000001",
+      "actual_kind": "pass",
+      "highest_model_action_id": "carry:forward",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W02-IPS-COV",
+      "decision_id": "d000003",
+      "actual_kind": "carry",
+      "highest_model_action_id": "pass:H09",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W02-IPS-COV",
+      "decision_id": "d000024",
+      "actual_kind": "shot",
+      "highest_model_action_id": "carry:forward",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W02-LIV-BHA",
+      "decision_id": "d000001",
+      "actual_kind": "pass",
+      "highest_model_action_id": "pass:H09",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W02-LIV-BHA",
+      "decision_id": "d000002",
+      "actual_kind": "carry",
+      "highest_model_action_id": "pass:H10",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W02-LIV-BHA",
+      "decision_id": "d000025",
+      "actual_kind": "shot",
+      "highest_model_action_id": "shot:goal",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W02-MUN-BOU",
+      "decision_id": "d000001",
+      "actual_kind": "pass",
+      "highest_model_action_id": "pass:H09",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W02-MUN-BOU",
+      "decision_id": "d000004",
+      "actual_kind": "carry",
+      "highest_model_action_id": "shot:goal",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W02-MUN-BOU",
+      "decision_id": "d000046",
+      "actual_kind": "shot",
+      "highest_model_action_id": "shot:goal",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W02-NFO-TOT",
+      "decision_id": "d000003",
+      "actual_kind": "pass",
+      "highest_model_action_id": "shot:goal",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W02-NFO-TOT",
+      "decision_id": "d000001",
+      "actual_kind": "carry",
+      "highest_model_action_id": "pass:H09",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W02-NFO-TOT",
+      "decision_id": "d000018",
+      "actual_kind": "shot",
+      "highest_model_action_id": "hold:1s",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W03-BHA-IPS",
+      "decision_id": "d000005",
+      "actual_kind": "pass",
+      "highest_model_action_id": "carry:left",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W03-BHA-IPS",
+      "decision_id": "d000001",
+      "actual_kind": "carry",
+      "highest_model_action_id": "pass:H09",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W03-BHA-IPS",
+      "decision_id": "d000032",
+      "actual_kind": "shot",
+      "highest_model_action_id": "shot:goal",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W03-BOU-LIV",
+      "decision_id": "d000001",
+      "actual_kind": "pass",
+      "highest_model_action_id": "carry:left",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W03-BOU-LIV",
+      "decision_id": "d000002",
+      "actual_kind": "carry",
+      "highest_model_action_id": "pass:H10",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W03-BOU-LIV",
+      "decision_id": "d000013",
+      "actual_kind": "shot",
+      "highest_model_action_id": "shot:goal",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W03-COV-FUL",
+      "decision_id": "d000002",
+      "actual_kind": "pass",
+      "highest_model_action_id": "carry:forward",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W03-COV-FUL",
+      "decision_id": "d000001",
+      "actual_kind": "carry",
+      "highest_model_action_id": "carry:right",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W03-COV-FUL",
+      "decision_id": "d000034",
+      "actual_kind": "shot",
+      "highest_model_action_id": "shot:goal",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W03-EVE-CRY",
+      "decision_id": "d000002",
+      "actual_kind": "pass",
+      "highest_model_action_id": "carry:forward",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W03-EVE-CRY",
+      "decision_id": "d000001",
+      "actual_kind": "carry",
+      "highest_model_action_id": "carry:forward",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W03-EVE-CRY",
+      "decision_id": "d000026",
+      "actual_kind": "shot",
+      "highest_model_action_id": "shot:goal",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W03-HUL-CHE",
+      "decision_id": "d000002",
+      "actual_kind": "pass",
+      "highest_model_action_id": "carry:forward",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W03-HUL-CHE",
+      "decision_id": "d000001",
+      "actual_kind": "carry",
+      "highest_model_action_id": "carry:left",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W03-HUL-CHE",
+      "decision_id": "d000020",
+      "actual_kind": "shot",
+      "highest_model_action_id": "shot:goal",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W03-LEE-BRE",
+      "decision_id": "d000002",
+      "actual_kind": "pass",
+      "highest_model_action_id": "carry:forward",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W03-LEE-BRE",
+      "decision_id": "d000001",
+      "actual_kind": "carry",
+      "highest_model_action_id": "carry:forward",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W03-LEE-BRE",
+      "decision_id": "d000037",
+      "actual_kind": "shot",
+      "highest_model_action_id": "carry:left",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W03-MCI-AVL",
+      "decision_id": "d000001",
+      "actual_kind": "pass",
+      "highest_model_action_id": "carry:forward",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W03-MCI-AVL",
+      "decision_id": "d000002",
+      "actual_kind": "carry",
+      "highest_model_action_id": "shot:goal",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W03-MCI-AVL",
+      "decision_id": "d000008",
+      "actual_kind": "shot",
+      "highest_model_action_id": "shot:goal",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W03-NEW-SUN",
+      "decision_id": "d000001",
+      "actual_kind": "pass",
+      "highest_model_action_id": "pass:H09",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W03-NEW-SUN",
+      "decision_id": "d000002",
+      "actual_kind": "carry",
+      "highest_model_action_id": "carry:left",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W03-NEW-SUN",
+      "decision_id": "d000021",
+      "actual_kind": "shot",
+      "highest_model_action_id": "shot:goal",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W03-NFO-ARS",
+      "decision_id": "d000002",
+      "actual_kind": "pass",
+      "highest_model_action_id": "carry:forward",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W03-NFO-ARS",
+      "decision_id": "d000001",
+      "actual_kind": "carry",
+      "highest_model_action_id": "carry:forward",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W03-NFO-ARS",
+      "decision_id": "d000041",
+      "actual_kind": "shot",
+      "highest_model_action_id": "shot:goal",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W03-TOT-MUN",
+      "decision_id": "d000001",
+      "actual_kind": "pass",
+      "highest_model_action_id": "carry:forward",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W03-TOT-MUN",
+      "decision_id": "d000002",
+      "actual_kind": "carry",
+      "highest_model_action_id": "carry:forward",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W03-TOT-MUN",
+      "decision_id": "d000006",
+      "actual_kind": "shot",
+      "highest_model_action_id": "shot:goal",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W04-ARS-NEW",
+      "decision_id": "d000001",
+      "actual_kind": "pass",
+      "highest_model_action_id": "pass:H09",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W04-ARS-NEW",
+      "decision_id": "d000002",
+      "actual_kind": "carry",
+      "highest_model_action_id": "hold:1s",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W04-ARS-NEW",
+      "decision_id": "d000076",
+      "actual_kind": "shot",
+      "highest_model_action_id": "carry:forward",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W04-AVL-LEE",
+      "decision_id": "d000001",
+      "actual_kind": "pass",
+      "highest_model_action_id": "pass:H09",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W04-AVL-LEE",
+      "decision_id": "d000003",
+      "actual_kind": "carry",
+      "highest_model_action_id": "carry:forward",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W04-AVL-LEE",
+      "decision_id": "d000023",
+      "actual_kind": "shot",
+      "highest_model_action_id": "shot:goal",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W04-BRE-HUL",
+      "decision_id": "d000001",
+      "actual_kind": "pass",
+      "highest_model_action_id": "carry:forward",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W04-BRE-HUL",
+      "decision_id": "d000004",
+      "actual_kind": "carry",
+      "highest_model_action_id": "pass:H09",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W04-BRE-HUL",
+      "decision_id": "d000056",
+      "actual_kind": "shot",
+      "highest_model_action_id": "shot:goal",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W04-CHE-EVE",
+      "decision_id": "d000002",
+      "actual_kind": "pass",
+      "highest_model_action_id": "carry:forward",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W04-CHE-EVE",
+      "decision_id": "d000001",
+      "actual_kind": "carry",
+      "highest_model_action_id": "hold:1s",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W04-CHE-EVE",
+      "decision_id": "d000006",
+      "actual_kind": "shot",
+      "highest_model_action_id": "carry:forward",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W04-CRY-COV",
+      "decision_id": "d000001",
+      "actual_kind": "pass",
+      "highest_model_action_id": "carry:right",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W04-CRY-COV",
+      "decision_id": "d000002",
+      "actual_kind": "carry",
+      "highest_model_action_id": "carry:left",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W04-CRY-COV",
+      "decision_id": "d000009",
+      "actual_kind": "shot",
+      "highest_model_action_id": "carry:forward",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W04-FUL-BHA",
+      "decision_id": "d000001",
+      "actual_kind": "pass",
+      "highest_model_action_id": "carry:forward",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W04-FUL-BHA",
+      "decision_id": "d000003",
+      "actual_kind": "carry",
+      "highest_model_action_id": "carry:forward",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W04-FUL-BHA",
+      "decision_id": "d000018",
+      "actual_kind": "shot",
+      "highest_model_action_id": "shot:goal",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W04-IPS-BOU",
+      "decision_id": "d000001",
+      "actual_kind": "pass",
+      "highest_model_action_id": "pass:H09",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W04-IPS-BOU",
+      "decision_id": "d000003",
+      "actual_kind": "carry",
+      "highest_model_action_id": "carry:left",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W04-IPS-BOU",
+      "decision_id": "d000018",
+      "actual_kind": "shot",
+      "highest_model_action_id": "shot:goal",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W04-LIV-TOT",
+      "decision_id": "d000001",
+      "actual_kind": "pass",
+      "highest_model_action_id": "pass:H11",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W04-LIV-TOT",
+      "decision_id": "d000002",
+      "actual_kind": "carry",
+      "highest_model_action_id": "shot:goal",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W04-LIV-TOT",
+      "decision_id": "d000005",
+      "actual_kind": "shot",
+      "highest_model_action_id": "carry:right",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W04-MUN-NFO",
+      "decision_id": "d000001",
+      "actual_kind": "pass",
+      "highest_model_action_id": "carry:forward",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W04-MUN-NFO",
+      "decision_id": "d000006",
+      "actual_kind": "carry",
+      "highest_model_action_id": "pass:A10",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W04-MUN-NFO",
+      "decision_id": "d000016",
+      "actual_kind": "shot",
+      "highest_model_action_id": "carry:left",
+      "candidate_count": 15
+    },
+    {
+      "match_id": "PL26-W04-SUN-MCI",
+      "decision_id": "d000002",
+      "actual_kind": "pass",
+      "highest_model_action_id": "carry:forward",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W04-SUN-MCI",
+      "decision_id": "d000001",
+      "actual_kind": "carry",
+      "highest_model_action_id": "pass:H09",
+      "candidate_count": 14
+    },
+    {
+      "match_id": "PL26-W04-SUN-MCI",
+      "decision_id": "d000033",
+      "actual_kind": "shot",
+      "highest_model_action_id": "hold:1s",
+      "candidate_count": 15
+    }
+  ],
+  "value_model_validation": {
+    "test_actions": 5035,
+    "positive_goal_windows": 29,
+    "observed_rate": 0.005759682224428997,
+    "mean_prediction": 0.006467651043623015,
+    "brier": 0.005493047690973452,
+    "constant_train_baseline_brier": 0.005727228960081457,
+    "warning": "Existing held-out matches have been inspected before; reproducibility audit, not a new blind test. Sparse goal labels; not validation of counterfactual actions."
+  },
+  "model_sha256": "bef38b24fb5fbcf9164c69b1603e8d8885284d55741c63c45bbe2ae2a25757ba",
+  "regression": {
+    "python_tests_passed": 53,
+    "javascript_tests_passed": 21
+  }
+}

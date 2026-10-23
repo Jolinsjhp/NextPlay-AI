@@ -33,7 +33,7 @@ HZ = 5
 DURATION = 6000
 HALF = 3000
 DEFAULT_MATCH = 'SYN-20261019-001'
-VERSION = '2.1.0'
+VERSION = '2.2.0'
 ROOT = Path(__file__).resolve().parent
 BASE = [(6, 34), (24, 9), (27, 25), (27, 43), (24, 59),
         (43, 18), (40, 34), (43, 50), (62, 10), (65, 34), (62, 58)]
@@ -291,6 +291,7 @@ class Match:
                        'shots_on_target': 0, 'interceptions': 0,
                        'pressure_events': 0, 'possession_seconds': 0.} for _ in range(2)]
         self.events = []
+        self.decisions = []
         self.event_seq = 0
         self.action_seq = 0
         self.pressure_last = {}
@@ -459,36 +460,30 @@ class Match:
                                 clamp(p['y']+self.rng.uniform(-7, 7), 3, 65)])
 
     def choose_action(self):
+        from realism.policy import candidates, MODEL
+        options = candidates(self)
+        chosen = self.rng.choices(options, [o['weight'] for o in options])[0]
         p = self.players[self.owner]
         team = p['team']
-        progress = self.progress(p['x'], team)
-        shot_chance = .06
-        if self.ratings:
-            shot_chance = clamp(.06*self.rating(team, 'attack') /
-                                self.rating(1-team, 'defense'), .02, .14)
-        if p['number'] != 1 and progress > 78 and abs(p['y']-34) < 24 and self.rng.random() < shot_chance:
+        self.decisions.append({'decision_id': f'd{len(self.decisions)+1:06}',
+                              'match_id': self.match_id, 't_ms': round(self.t*1000),
+                              'player_id': p['id'], 'period': self.period,
+                              'calibration_revision': MODEL.profile.get('provenance', {}).get('commit'),
+                              'score': self.score[:], 'snapshot': self.tracking(round(self.t*HZ)),
+                              'candidates': [{**o, 'recipient_id': self.players[o['recipient']]['id']}
+                                             if 'recipient' in o else o.copy() for o in options],
+                              'selected': chosen.copy(), 'action_id': f'a{self.action_seq+1:06}',
+                              'score_kind': 'empirical outcome rates plus heuristic selection weights; not optimal-action labels'})
+        if chosen['kind'] == 'shot':
             self.start_shot()
             return
-        if p['number'] != 1 and self.rng.random() < .36:
+        if chosen['kind'] == 'carry':
             self.start_carry()
             return
-        candidates = [i for i in range(team*11+1, team*11+11) if i != self.owner and self.players[i]['active']]
-        weights = []
-        for i in candidates:
-            q = self.players[i]
-            distance = norm(q['x']-p['x'], q['y']-p['y'])
-            advance = self.progress(q['x'], team)-progress
-            weights.append(math.exp(-abs(distance-17)/18+clamp(advance/23, -1, 1.3)))
-        intended = self.rng.choices(candidates, weights)[0]
+        intended = chosen['recipient']
         q = self.players[intended]
-        defender = min((i for i in range((1-team)*11+1, (1-team)*11+11) if self.players[i]['active']),
-                       key=lambda i: norm(self.players[i]['x']-q['x'], self.players[i]['y']-q['y']))
-        near = norm(self.players[defender]['x']-q['x'], self.players[defender]['y']-q['y'])
-        pressure_threshold = .32
-        if self.ratings:
-            pressure_threshold = clamp(.32*self.rating(1-team, 'pressing') /
-                                       self.rating(team, 'passing'), .16, .50)
-        success = not (near < 8 and self.rng.random() < pressure_threshold)
+        defender = chosen['defender']
+        success = self.rng.random() < chosen['success']
         receiver = intended if success else defender
         r = self.players[receiver]
         target = [clamp(r['x']+r['vx']*.25, 1, 104), clamp(r['y']+r['vy']*.25, 1, 67)]
@@ -499,19 +494,18 @@ class Match:
         self.new_action('pass', duration, actor=self.owner, team=team,
                         intended=intended, receiver=receiver, target=target,
                         success=success, under_pressure=under_pressure,
-                        height=1.8 if distance > 25 and self.rng.random() < .3 else 0.)
+                        height=0.)  # This calibrated policy supports ground passes only.
         self.owner = None
 
     def start_shot(self):
         p = self.players[self.owner]
         team = p['team']
         goal_x = 105. if self.direction(team) == 1 else 0.
-        if self.ratings:
-            goal_p = clamp(.12*self.rating(team, 'attack') /
-                           self.rating(1-team, 'defense'), .05, .22)
-            probabilities = [goal_p, .43, 1-goal_p-.43]
-        else:
-            probabilities = [.12, .43, .45]
+        from realism.policy import MODEL
+        goal_p = MODEL.shot_goal(self.progress(p['x'], team), p['y'])
+        # Calibrated foot-shot frequency by distance; no individual skill claim.
+        goal_p = clamp(goal_p, .005, .65)
+        probabilities = [goal_p, (1-goal_p)*.38, (1-goal_p)*.62]
         outcome = self.rng.choices(['goal', 'saved', 'off_target'], probabilities)[0]
         y = 34+self.rng.uniform(-2.8, 2.8) if outcome != 'off_target' else 34+self.rng.choice([-1, 1])*self.rng.uniform(4.2, 8)
         # Saved shots terminate at the keeper's current location (in front of goal).
@@ -831,6 +825,9 @@ def write_match(sim, out, metadata, tracking=False, preview=True):
     with (out/'events.jsonl').open('w') as stream:
         for event in sim.events:
             stream.write(encode(event)+'\n')
+    with (out/'decisions.jsonl').open('w') as stream:
+        for decision in sim.decisions:
+            stream.write(encode(decision)+'\n')
     heatmaps.write(out)
     summary = build_summary(sim)
     (out/'summary.json').write_text(json.dumps(summary, ensure_ascii=False, indent=2)+'\n')

@@ -222,3 +222,8 @@ __marimo__/
 .DS_Store
 # Private model service credentials
 .local/
+
+# Reproducible local simulation artifacts (compact public-demo is tracked)
+data/league-validated/
+data/realism-sample/
+artifacts/realism/system-analysis.jsonl
