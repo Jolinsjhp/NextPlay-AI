@@ -90,9 +90,9 @@
       "period_ms": 310600,
       "team_id": "AWAY",
       "club_id": "CRY",
-      "club_name": "Crystal Palace",
+      "club_name": "Highridge FC",
       "player_id": "A09",
-      "player_name": "Dwight McNeil",
+      "player_name": "Highridge Player 24",
       "shirt_number": 11,
       "score": [
         0,
@@ -105,9 +105,9 @@
       "period_ms": 1394200,
       "team_id": "AWAY",
       "club_id": "CRY",
-      "club_name": "Crystal Palace",
+      "club_name": "Highridge FC",
       "player_id": "A10",
-      "player_name": "Eddie Nketiah",
+      "player_name": "Highridge Player 23",
       "shirt_number": 9,
       "score": [
         0,
@@ -120,9 +120,9 @@
       "period_ms": 2375000,
       "team_id": "HOME",
       "club_id": "EVE",
-      "club_name": "Everton",
+      "club_name": "Ivory FC",
       "player_id": "H09",
-      "player_name": "Tyrique George",
+      "player_name": "Ivory Player 20",
       "shirt_number": 19,
       "score": [
         1,
@@ -132,19 +132,19 @@
   ],
   "competition": {
     "id": "PL-SYN-2026",
-    "name": "Premier League (synthetic)",
+    "name": "NextPlay League (synthetic)",
     "season": "2026/27",
     "synthetic": true,
     "matchweek": 3,
     "kickoff_local": "2026-11-08T19:00:00",
     "time_zone": "Europe/London",
-    "venue": "Hill Dickinson Stadium"
+    "venue": "Ivory Park"
   },
   "home_club": {
     "club_id": "EVE",
-    "name": "Everton",
-    "short_name": "Everton",
-    "stadium": "Hill Dickinson Stadium",
+    "name": "Ivory FC",
+    "short_name": "Ivory FC",
+    "stadium": "Ivory Park",
     "colors": {
       "primary": "#003399",
       "secondary": "#FFFFFF"
@@ -153,9 +153,9 @@
   },
   "away_club": {
     "club_id": "CRY",
-    "name": "Crystal Palace",
-    "short_name": "Crystal Palace",
-    "stadium": "Selhurst Park",
+    "name": "Highridge FC",
+    "short_name": "Highridge FC",
+    "stadium": "Highridge Park",
     "colors": {
       "primary": "#1B458F",
       "secondary": "#C4122E"

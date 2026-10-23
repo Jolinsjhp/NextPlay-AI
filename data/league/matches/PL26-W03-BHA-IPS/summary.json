@@ -90,9 +90,9 @@
       "period_ms": 2994400,
       "team_id": "HOME",
       "club_id": "BHA",
-      "club_name": "Brighton & Hove Albion",
+      "club_name": "Ember FC",
       "player_id": "H10",
-      "player_name": "Kaoru Mitoma",
+      "player_name": "Ember Player 23",
       "shirt_number": 7,
       "score": [
         1,
@@ -105,9 +105,9 @@
       "period_ms": 224800,
       "team_id": "AWAY",
       "club_id": "IPS",
-      "club_name": "Ipswich Town",
+      "club_name": "Larkspur FC",
       "player_id": "A10",
-      "player_name": "Zian Flemming",
+      "player_name": "Larkspur Player 22",
       "shirt_number": 9,
       "score": [
         1,
@@ -120,9 +120,9 @@
       "period_ms": 485400,
       "team_id": "HOME",
       "club_id": "BHA",
-      "club_name": "Brighton & Hove Albion",
+      "club_name": "Ember FC",
       "player_id": "H09",
-      "player_name": "Yankuba Minteh",
+      "player_name": "Ember Player 26",
       "shirt_number": 11,
       "score": [
         2,
@@ -135,9 +135,9 @@
       "period_ms": 2135000,
       "team_id": "HOME",
       "club_id": "BHA",
-      "club_name": "Brighton & Hove Albion",
+      "club_name": "Ember FC",
       "player_id": "H11",
-      "player_name": "Zadok Yohanna",
+      "player_name": "Ember Player 31",
       "shirt_number": 36,
       "score": [
         3,
@@ -150,9 +150,9 @@
       "period_ms": 2749600,
       "team_id": "AWAY",
       "club_id": "IPS",
-      "club_name": "Ipswich Town",
+      "club_name": "Larkspur FC",
       "player_id": "A13",
-      "player_name": "Sindre Egeli",
+      "player_name": "Larkspur Player 21",
       "shirt_number": 8,
       "score": [
         3,
@@ -162,19 +162,19 @@
   ],
   "competition": {
     "id": "PL-SYN-2026",
-    "name": "Premier League (synthetic)",
+    "name": "NextPlay League (synthetic)",
     "season": "2026/27",
     "synthetic": true,
     "matchweek": 3,
     "kickoff_local": "2026-11-08T14:00:00",
     "time_zone": "Europe/London",
-    "venue": "Amex Stadium"
+    "venue": "Ember Park"
   },
   "home_club": {
     "club_id": "BHA",
-    "name": "Brighton & Hove Albion",
-    "short_name": "Brighton",
-    "stadium": "Amex Stadium",
+    "name": "Ember FC",
+    "short_name": "Ember",
+    "stadium": "Ember Park",
     "colors": {
       "primary": "#0057B8",
       "secondary": "#FFFFFF"
@@ -183,9 +183,9 @@
   },
   "away_club": {
     "club_id": "IPS",
-    "name": "Ipswich Town",
-    "short_name": "Ipswich Town",
-    "stadium": "Portman Road",
+    "name": "Larkspur FC",
+    "short_name": "Larkspur FC",
+    "stadium": "Larkspur Park",
     "colors": {
       "primary": "#0044A9",
       "secondary": "#FFFFFF"

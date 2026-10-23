@@ -4,7 +4,7 @@
   "status": "complete",
   "language": "en",
   "source": {
-    "fingerprint": "99e78f172ff649b1fadfa17abb61b924a2b21076d0f6e09048069a5ceeb9d840",
+    "fingerprint": "9a025e27bef0e508542e632c183cf54d09194e13197baa9be213dc4ee0bd6a9d",
     "event_count": 3625,
     "match_end_event_id": "e003625",
     "completed_at_ms": 6000000,
@@ -18,12 +18,12 @@
     "mode": "local",
     "model": null
   },
-  "headline": "Sunderland 1–2 Aston Villa",
-  "summary": "Aston Villa won 2–1. There were 28 shots across the match. Nicolas Jackson earns Player of the Match on the published impact scoring.",
+  "headline": "Silverbrook FC 1–2 Beacon FC",
+  "summary": "Beacon FC won 2–1. There were 28 shots across the match. Beacon Player 24 earns Player of the Match on the published impact scoring.",
   "periods": [
     {
       "title": "First half",
-      "text": "Sunderland had 4 shots and Aston Villa had 11. 16:44 — Romaine Mundle opened the scoring for Sunderland (1–0). 23:43 — Alysson equalised for Aston Villa (1–1). The period ended at 1–1.",
+      "text": "Silverbrook FC had 4 shots and Beacon FC had 11. 16:44 — Silverbrook Player 23 opened the scoring for Silverbrook FC (1–0). 23:43 — Beacon Player 29 equalised for Beacon FC (1–1). The period ended at 1–1.",
       "shots": [
         4,
         11
@@ -52,7 +52,7 @@
     },
     {
       "title": "Second half",
-      "text": "Sunderland had 6 shots and Aston Villa had 7. 76:58 — Nicolas Jackson took the lead for Aston Villa (1–2). 80:54 — Aston Villa lost Matty Cash to a red card. The period ended at 1–2.",
+      "text": "Silverbrook FC had 6 shots and Beacon FC had 7. 76:58 — Beacon Player 24 took the lead for Beacon FC (1–2). 80:54 — Beacon FC lost Beacon Player 04 to a red card. The period ended at 1–2.",
       "shots": [
         6,
         7
@@ -80,8 +80,8 @@
     }
   ],
   "insights": [
-    "Sunderland: 10 shots, 3 on target, 358 of 409 passes completed, 52.0% possession.",
-    "Aston Villa: 18 shots, 12 on target, 325 of 368 passes completed, 48.0% possession."
+    "Silverbrook FC: 10 shots, 3 on target, 358 of 409 passes completed, 52.0% possession.",
+    "Beacon FC: 18 shots, 12 on target, 325 of 368 passes completed, 48.0% possession."
   ],
   "key_moments": [
     {
@@ -89,63 +89,63 @@
       "period": 1,
       "time": "16:44",
       "type": "shot",
-      "text": "Romaine Mundle opened the scoring for Sunderland (1–0)."
+      "text": "Silverbrook Player 23 opened the scoring for Silverbrook FC (1–0)."
     },
     {
       "event_id": "e000854",
       "period": 1,
       "time": "23:43",
       "type": "shot",
-      "text": "Alysson equalised for Aston Villa (1–1)."
+      "text": "Beacon Player 29 equalised for Beacon FC (1–1)."
     },
     {
       "event_id": "e002244",
       "period": 2,
       "time": "57:19",
       "type": "substitution",
-      "text": "Luke O'Nien replaced Alan Browne for Sunderland."
+      "text": "Silverbrook Player 14 replaced Silverbrook Player 12 for Silverbrook FC."
     },
     {
       "event_id": "e002352",
       "period": 2,
       "time": "60:12",
       "type": "substitution",
-      "text": "Alejandro Garnacho replaced Alysson for Aston Villa."
+      "text": "Beacon Player 25 replaced Beacon Player 29 for Beacon FC."
     },
     {
       "event_id": "e002673",
       "period": 2,
       "time": "68:56",
       "type": "substitution",
-      "text": "Omar Alderete replaced Dayann Methalie for Sunderland."
+      "text": "Silverbrook Player 08 replaced Silverbrook Player 06 for Silverbrook FC."
     },
     {
       "event_id": "e002895",
       "period": 2,
       "time": "74:44",
       "type": "substitution",
-      "text": "Emiliano Buendia replaced Ross Barkley for Aston Villa."
+      "text": "Beacon Player 17 replaced Beacon Player 14 for Beacon FC."
     },
     {
       "event_id": "e002971",
       "period": 2,
       "time": "76:58",
       "type": "shot",
-      "text": "Nicolas Jackson took the lead for Aston Villa (1–2)."
+      "text": "Beacon Player 24 took the lead for Beacon FC (1–2)."
     },
     {
       "event_id": "e003105",
       "period": 2,
       "time": "80:54",
       "type": "red_card",
-      "text": "Aston Villa lost Matty Cash to a red card."
+      "text": "Beacon FC lost Beacon Player 04 to a red card."
     }
   ],
   "player_of_the_match": {
     "player_id": "A10",
     "team_id": "AWAY",
     "jersey_number": 11,
-    "name": "Nicolas Jackson",
+    "name": "Beacon Player 24",
     "position": "ST",
     "position_detail": "Striker",
     "nationality": "Senegal",
@@ -268,7 +268,7 @@
     ],
     "impact_points": 8.77,
     "reasons": [
-      "Nicolas Jackson recorded 1 goal, 5 shots on target, 0 saves and 14 interceptions.",
+      "Beacon Player 24 recorded 1 goal, 5 shots on target, 0 saves and 14 interceptions.",
       "Completed 77 of 81 passes in 100 minutes; received 0 yellow cards and 0 red cards.",
       "Top impact score: 8.77 points."
     ]
@@ -278,7 +278,7 @@
       "player_id": "A10",
       "team_id": "AWAY",
       "jersey_number": 11,
-      "name": "Nicolas Jackson",
+      "name": "Beacon Player 24",
       "position": "ST",
       "position_detail": "Striker",
       "nationality": "Senegal",
@@ -405,7 +405,7 @@
       "player_id": "H01",
       "team_id": "HOME",
       "jersey_number": 21,
-      "name": "Simon Moore",
+      "name": "Silverbrook Player 01",
       "position": "GK",
       "position_detail": "Goalkeeper",
       "nationality": "England",
@@ -454,7 +454,7 @@
       "player_id": "A11",
       "team_id": "AWAY",
       "jersey_number": 47,
-      "name": "Alysson",
+      "name": "Beacon Player 29",
       "position": "RW",
       "position_detail": "Right Winger",
       "nationality": "Brazil",
@@ -525,7 +525,7 @@
       "player_id": "H11",
       "team_id": "HOME",
       "jersey_number": 14,
-      "name": "Romaine Mundle",
+      "name": "Silverbrook Player 23",
       "position": "RW",
       "position_detail": "Left/Right Winger",
       "nationality": "England",
@@ -608,7 +608,7 @@
       "player_id": "A07",
       "team_id": "AWAY",
       "jersey_number": 8,
-      "name": "Boubacar Kamara",
+      "name": "Beacon Player 16",
       "position": "DM",
       "position_detail": "Centre Defensive Midfielder",
       "nationality": "France",
@@ -710,7 +710,7 @@
       "player_id": "H10",
       "team_id": "HOME",
       "jersey_number": 9,
-      "name": "Brian Brobbey",
+      "name": "Silverbrook Player 21",
       "position": "ST",
       "position_detail": "Striker",
       "nationality": "Netherlands",
@@ -836,7 +836,7 @@
       "player_id": "H07",
       "team_id": "HOME",
       "jersey_number": 29,
-      "name": "Jules Ahoka",
+      "name": "Silverbrook Player 18",
       "position": "DM",
       "position_detail": "Centre Defensive Midfielder",
       "nationality": "DR Congo",
@@ -941,7 +941,7 @@
       "player_id": "A09",
       "team_id": "AWAY",
       "jersey_number": 19,
-      "name": "Ibrahim Mbaye",
+      "name": "Beacon Player 27",
       "position": "LW",
       "position_detail": "Left/Right Winger",
       "nationality": "Senegal",
@@ -1023,7 +1023,7 @@
       "player_id": "A01",
       "team_id": "AWAY",
       "jersey_number": 1,
-      "name": "Zion Suzuki",
+      "name": "Beacon Player 01",
       "position": "GK",
       "position_detail": "Goalkeeper",
       "nationality": "Japan",
@@ -1057,7 +1057,7 @@
       "player_id": "A08",
       "team_id": "AWAY",
       "jersey_number": 7,
-      "name": "John McGinn",
+      "name": "Beacon Player 15",
       "position": "RCM",
       "position_detail": "Centre Central Midfielder",
       "nationality": "Scotland",
@@ -1110,7 +1110,7 @@
       "player_id": "A06",
       "team_id": "AWAY",
       "jersey_number": 6,
-      "name": "Ross Barkley",
+      "name": "Beacon Player 14",
       "position": "LCM",
       "position_detail": "Centre Central Midfielder",
       "nationality": "England",
@@ -1156,7 +1156,7 @@
       "player_id": "H09",
       "team_id": "HOME",
       "jersey_number": 7,
-      "name": "Chemsdine Talbi",
+      "name": "Silverbrook Player 20",
       "position": "LW",
       "position_detail": "Left/Right Winger",
       "nationality": "Morocco",
@@ -1248,7 +1248,7 @@
       "player_id": "H08",
       "team_id": "HOME",
       "jersey_number": 11,
-      "name": "Chris Rigg",
+      "name": "Silverbrook Player 13",
       "position": "RCM",
       "position_detail": "Centre Attacking Midfielder",
       "nationality": "England",
@@ -1304,7 +1304,7 @@
       "player_id": "A12",
       "team_id": "AWAY",
       "jersey_number": 10,
-      "name": "Emiliano Buendia",
+      "name": "Beacon Player 17",
       "position": "LCM",
       "position_detail": "Attacking Midfielder",
       "nationality": "Argentina",
@@ -1341,7 +1341,7 @@
       "player_id": "A13",
       "team_id": "AWAY",
       "jersey_number": 17,
-      "name": "Alejandro Garnacho",
+      "name": "Beacon Player 25",
       "position": "RW",
       "position_detail": "Winger",
       "nationality": "Argentina",
@@ -1384,7 +1384,7 @@
       "player_id": "H03",
       "team_id": "HOME",
       "jersey_number": 4,
-      "name": "Kevin Danso",
+      "name": "Silverbrook Player 04",
       "position": "LCB",
       "position_detail": "Centre Central Defender",
       "nationality": "Austria",
@@ -1430,7 +1430,7 @@
       "player_id": "H05",
       "team_id": "HOME",
       "jersey_number": 12,
-      "name": "Thomas Meunier",
+      "name": "Silverbrook Player 07",
       "position": "RB",
       "position_detail": "Right Full Back",
       "nationality": "Belgium",
@@ -1466,7 +1466,7 @@
       "player_id": "H06",
       "team_id": "HOME",
       "jersey_number": 8,
-      "name": "Alan Browne",
+      "name": "Silverbrook Player 12",
       "position": "LCM",
       "position_detail": "Midfielder",
       "nationality": "Ireland",
@@ -1513,7 +1513,7 @@
       "player_id": "A04",
       "team_id": "AWAY",
       "jersey_number": 4,
-      "name": "Taylor Harwood-Bellis",
+      "name": "Beacon Player 06",
       "position": "RCB",
       "position_detail": "Centre Central Defender",
       "nationality": "England",
@@ -1550,7 +1550,7 @@
       "player_id": "A03",
       "team_id": "AWAY",
       "jersey_number": 3,
-      "name": "Victor Lindelof",
+      "name": "Beacon Player 05",
       "position": "LCB",
       "position_detail": "Centre Central Defender",
       "nationality": "Sweden",
@@ -1589,7 +1589,7 @@
       "player_id": "A02",
       "team_id": "AWAY",
       "jersey_number": 13,
-      "name": "Matteo Ruggeri",
+      "name": "Beacon Player 08",
       "position": "LB",
       "position_detail": "Left Full Back",
       "nationality": "Italy",
@@ -1624,7 +1624,7 @@
       "player_id": "H12",
       "team_id": "HOME",
       "jersey_number": 13,
-      "name": "Luke O'Nien",
+      "name": "Silverbrook Player 14",
       "position": "LCM",
       "position_detail": "Centre Central Midfielder",
       "nationality": "England",
@@ -1656,7 +1656,7 @@
       "player_id": "H02",
       "team_id": "HOME",
       "jersey_number": 6,
-      "name": "Dayann Methalie",
+      "name": "Silverbrook Player 06",
       "position": "LB",
       "position_detail": "Left Full Back",
       "nationality": "France",
@@ -1686,7 +1686,7 @@
       "player_id": "H14",
       "team_id": "HOME",
       "jersey_number": 15,
-      "name": "Omar Alderete",
+      "name": "Silverbrook Player 08",
       "position": "LB",
       "position_detail": "Central Defender",
       "nationality": "Paraguay",
@@ -1714,7 +1714,7 @@
       "player_id": "H04",
       "team_id": "HOME",
       "jersey_number": 5,
-      "name": "Dan Ballard",
+      "name": "Silverbrook Player 05",
       "position": "RCB",
       "position_detail": "Centre Central Defender",
       "nationality": "Northern Ireland",
@@ -1756,7 +1756,7 @@
       "player_id": "A05",
       "team_id": "AWAY",
       "jersey_number": 2,
-      "name": "Matty Cash",
+      "name": "Beacon Player 04",
       "position": "RB",
       "position_detail": "Right Full Back",
       "nationality": "Poland",

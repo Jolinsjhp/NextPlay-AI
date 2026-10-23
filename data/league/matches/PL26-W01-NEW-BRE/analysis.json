@@ -4,7 +4,7 @@
   "status": "complete",
   "language": "en",
   "source": {
-    "fingerprint": "edd0a3eb68c495c01a4aa618d6f086933732f5bd1d78d5e9b48c03f983f94f6b",
+    "fingerprint": "33190759d28f1f7bd37d392faab5172f57ba799f5345794bb1e9cef786d2cacd",
     "event_count": 3632,
     "match_end_event_id": "e003632",
     "completed_at_ms": 6000000,
@@ -18,12 +18,12 @@
     "mode": "local",
     "model": null
   },
-  "headline": "Newcastle United 2–1 Brentford",
-  "summary": "Newcastle United won 2–1. There were 24 shots across the match. Yoane Wissa earns Player of the Match on the published impact scoring.",
+  "headline": "Quartz FC 2–1 Driftwood FC",
+  "summary": "Quartz FC won 2–1. There were 24 shots across the match. Quartz Player 22 earns Player of the Match on the published impact scoring.",
   "periods": [
     {
       "title": "First half",
-      "text": "Newcastle United had 5 shots and Brentford had 6. Neither side scored and there were no red cards. The period ended at 0–0.",
+      "text": "Quartz FC had 5 shots and Driftwood FC had 6. Neither side scored and there were no red cards. The period ended at 0–0.",
       "shots": [
         5,
         6
@@ -48,7 +48,7 @@
     },
     {
       "title": "Second half",
-      "text": "Newcastle United had 9 shots and Brentford had 4. 57:55 — Jacob Murphy opened the scoring for Newcastle United (1–0). 76:00 — Yoane Wissa extended the lead for Newcastle United (2–0). 80:08 — Brentford lost Michael Kayode to a red card. 88:09 — Jaidon Anthony reduced the deficit for Brentford (2–1). The period ended at 2–1.",
+      "text": "Quartz FC had 9 shots and Driftwood FC had 4. 57:55 — Quartz Player 27 opened the scoring for Quartz FC (1–0). 76:00 — Quartz Player 22 extended the lead for Quartz FC (2–0). 80:08 — Driftwood FC lost Driftwood Player 10 to a red card. 88:09 — Driftwood Player 27 reduced the deficit for Driftwood FC (2–1). The period ended at 2–1.",
       "shots": [
         9,
         4
@@ -76,8 +76,8 @@
     }
   ],
   "insights": [
-    "Newcastle United: 14 shots, 9 on target, 287 of 336 passes completed, 43.2% possession.",
-    "Brentford: 10 shots, 7 on target, 392 of 446 passes completed, 56.8% possession."
+    "Quartz FC: 14 shots, 9 on target, 287 of 336 passes completed, 43.2% possession.",
+    "Driftwood FC: 10 shots, 7 on target, 392 of 446 passes completed, 56.8% possession."
   ],
   "key_moments": [
     {
@@ -85,63 +85,63 @@
       "period": 2,
       "time": "56:56",
       "type": "substitution",
-      "text": "Harvey Barnes replaced Nico Gonzalez for Newcastle United."
+      "text": "Quartz Player 17 replaced Quartz Player 14 for Quartz FC."
     },
     {
       "event_id": "e002295",
       "period": 2,
       "time": "57:55",
       "type": "shot",
-      "text": "Jacob Murphy opened the scoring for Newcastle United (1–0)."
+      "text": "Quartz Player 27 opened the scoring for Quartz FC (1–0)."
     },
     {
       "event_id": "e002431",
       "period": 2,
       "time": "61:47",
       "type": "substitution",
-      "text": "Jaidon Anthony replaced Igor Thiago for Brentford."
+      "text": "Driftwood Player 27 replaced Driftwood Player 24 for Driftwood FC."
     },
     {
       "event_id": "e002686",
       "period": 2,
       "time": "68:56",
       "type": "substitution",
-      "text": "Malick Thiaw replaced Lewis Hall for Newcastle United."
+      "text": "Quartz Player 10 replaced Quartz Player 07 for Quartz FC."
     },
     {
       "event_id": "e002918",
       "period": 2,
       "time": "75:23",
       "type": "substitution",
-      "text": "Mathias Jensen replaced Yehor Yarmoliuk for Brentford."
+      "text": "Driftwood Player 17 replaced Driftwood Player 15 for Driftwood FC."
     },
     {
       "event_id": "e002939",
       "period": 2,
       "time": "76:00",
       "type": "shot",
-      "text": "Yoane Wissa extended the lead for Newcastle United (2–0)."
+      "text": "Quartz Player 22 extended the lead for Quartz FC (2–0)."
     },
     {
       "event_id": "e003083",
       "period": 2,
       "time": "80:08",
       "type": "red_card",
-      "text": "Brentford lost Michael Kayode to a red card."
+      "text": "Driftwood FC lost Driftwood Player 10 to a red card."
     },
     {
       "event_id": "e003383",
       "period": 2,
       "time": "88:09",
       "type": "shot",
-      "text": "Jaidon Anthony reduced the deficit for Brentford (2–1)."
+      "text": "Driftwood Player 27 reduced the deficit for Driftwood FC (2–1)."
     }
   ],
   "player_of_the_match": {
     "player_id": "H10",
     "team_id": "HOME",
     "jersey_number": 9,
-    "name": "Yoane Wissa",
+    "name": "Quartz Player 22",
     "position": "ST",
     "position_detail": "Centre Striker",
     "nationality": "DR Congo",
@@ -240,7 +240,7 @@
     ],
     "impact_points": 8.98,
     "reasons": [
-      "Yoane Wissa recorded 1 goal, 7 shots on target, 0 saves and 8 interceptions.",
+      "Quartz Player 22 recorded 1 goal, 7 shots on target, 0 saves and 8 interceptions.",
       "Completed 54 of 60 passes in 100 minutes; received 0 yellow cards and 0 red cards.",
       "Top impact score: 8.98 points."
     ]
@@ -250,7 +250,7 @@
       "player_id": "H10",
       "team_id": "HOME",
       "jersey_number": 9,
-      "name": "Yoane Wissa",
+      "name": "Quartz Player 22",
       "position": "ST",
       "position_detail": "Centre Striker",
       "nationality": "DR Congo",
@@ -353,7 +353,7 @@
       "player_id": "H11",
       "team_id": "HOME",
       "jersey_number": 23,
-      "name": "Jacob Murphy",
+      "name": "Quartz Player 27",
       "position": "RW",
       "position_detail": "Right Winger",
       "nationality": null,
@@ -434,7 +434,7 @@
       "player_id": "A10",
       "team_id": "AWAY",
       "jersey_number": 13,
-      "name": "Callum Wilson",
+      "name": "Driftwood Player 26",
       "position": "ST",
       "position_detail": "Centre Striker",
       "nationality": "England",
@@ -579,7 +579,7 @@
       "player_id": "A01",
       "team_id": "AWAY",
       "jersey_number": 1,
-      "name": "Caoimhin Kelleher",
+      "name": "Driftwood Player 01",
       "position": "GK",
       "position_detail": "Goalkeeper",
       "nationality": "Ireland",
@@ -621,7 +621,7 @@
       "player_id": "A13",
       "team_id": "AWAY",
       "jersey_number": 19,
-      "name": "Jaidon Anthony",
+      "name": "Driftwood Player 27",
       "position": "RW",
       "position_detail": "Left Winger",
       "nationality": "England",
@@ -672,7 +672,7 @@
       "player_id": "H01",
       "team_id": "HOME",
       "jersey_number": 1,
-      "name": "Nick Pope",
+      "name": "Quartz Player 01",
       "position": "GK",
       "position_detail": "Goalkeeper",
       "nationality": "England",
@@ -710,7 +710,7 @@
       "player_id": "A07",
       "team_id": "AWAY",
       "jersey_number": 27,
-      "name": "Vitaly Janelt",
+      "name": "Driftwood Player 23",
       "position": "DM",
       "position_detail": "Centre Defensive Midfielder",
       "nationality": "Germany",
@@ -806,7 +806,7 @@
       "player_id": "H07",
       "team_id": "HOME",
       "jersey_number": 8,
-      "name": "Aladji Bamba",
+      "name": "Quartz Player 16",
       "position": "DM",
       "position_detail": "Centre Defensive Midfielder",
       "nationality": "France",
@@ -922,7 +922,7 @@
       "player_id": "A11",
       "team_id": "AWAY",
       "jersey_number": 9,
-      "name": "Igor Thiago",
+      "name": "Driftwood Player 24",
       "position": "RW",
       "position_detail": "Striker",
       "nationality": "Brazil",
@@ -997,7 +997,7 @@
       "player_id": "H08",
       "team_id": "HOME",
       "jersey_number": 7,
-      "name": "Joelinton",
+      "name": "Quartz Player 15",
       "position": "RCM",
       "position_detail": "Left Central Midfielder",
       "nationality": "Brazil",
@@ -1064,7 +1064,7 @@
       "player_id": "A08",
       "team_id": "AWAY",
       "jersey_number": 7,
-      "name": "Kevin Schade",
+      "name": "Driftwood Player 16",
       "position": "RCM",
       "position_detail": "Left/Right Winger",
       "nationality": "Germany",
@@ -1128,7 +1128,7 @@
       "player_id": "A06",
       "team_id": "AWAY",
       "jersey_number": 6,
-      "name": "Yehor Yarmoliuk",
+      "name": "Driftwood Player 15",
       "position": "LCM",
       "position_detail": "Centre Attacking Midfielder",
       "nationality": "Ukraine",
@@ -1184,7 +1184,7 @@
       "player_id": "A09",
       "team_id": "AWAY",
       "jersey_number": 11,
-      "name": "Dango Ouattara",
+      "name": "Driftwood Player 25",
       "position": "LW",
       "position_detail": "Left/Right Winger",
       "nationality": "Burkina Faso",
@@ -1278,7 +1278,7 @@
       "player_id": "H06",
       "team_id": "HOME",
       "jersey_number": 6,
-      "name": "Nico Gonzalez",
+      "name": "Quartz Player 14",
       "position": "LCM",
       "position_detail": "Central Midfielder",
       "nationality": "Spain",
@@ -1322,7 +1322,7 @@
       "player_id": "H09",
       "team_id": "HOME",
       "jersey_number": 17,
-      "name": "Bazoumana Toure",
+      "name": "Quartz Player 24",
       "position": "LW",
       "position_detail": "Left Winger",
       "nationality": "Cote D’Ivoire",
@@ -1376,7 +1376,7 @@
       "player_id": "A04",
       "team_id": "AWAY",
       "jersey_number": 4,
-      "name": "Sepp van den Berg",
+      "name": "Driftwood Player 06",
       "position": "RCB",
       "position_detail": "Centre Central Defender",
       "nationality": "Netherlands",
@@ -1421,7 +1421,7 @@
       "player_id": "A03",
       "team_id": "AWAY",
       "jersey_number": 3,
-      "name": "Rico Henry",
+      "name": "Driftwood Player 05",
       "position": "LCB",
       "position_detail": "Left Full Back",
       "nationality": "Jamaica",
@@ -1463,7 +1463,7 @@
       "player_id": "A02",
       "team_id": "AWAY",
       "jersey_number": 2,
-      "name": "Aaron Hickey",
+      "name": "Driftwood Player 04",
       "position": "LB",
       "position_detail": "Left Full Back",
       "nationality": "Scotland",
@@ -1501,7 +1501,7 @@
       "player_id": "H05",
       "team_id": "HOME",
       "jersey_number": 2,
-      "name": "Tino Livramento",
+      "name": "Quartz Player 06",
       "position": "RB",
       "position_detail": "Right Full Back",
       "nationality": "England",
@@ -1540,7 +1540,7 @@
       "player_id": "H02",
       "team_id": "HOME",
       "jersey_number": 3,
-      "name": "Lewis Hall",
+      "name": "Quartz Player 07",
       "position": "LB",
       "position_detail": "Left Full Back",
       "nationality": "England",
@@ -1572,7 +1572,7 @@
       "player_id": "A12",
       "team_id": "AWAY",
       "jersey_number": 8,
-      "name": "Mathias Jensen",
+      "name": "Driftwood Player 17",
       "position": "LCM",
       "position_detail": "Centre Central Midfielder",
       "nationality": "Denmark",
@@ -1601,7 +1601,7 @@
       "player_id": "H12",
       "team_id": "HOME",
       "jersey_number": 11,
-      "name": "Harvey Barnes",
+      "name": "Quartz Player 17",
       "position": "LCM",
       "position_detail": "Left/Right Winger",
       "nationality": "England",
@@ -1634,7 +1634,7 @@
       "player_id": "H14",
       "team_id": "HOME",
       "jersey_number": 12,
-      "name": "Malick Thiaw",
+      "name": "Quartz Player 10",
       "position": "LB",
       "position_detail": "Centre Central Defender",
       "nationality": "Germany",
@@ -1661,7 +1661,7 @@
       "player_id": "H03",
       "team_id": "HOME",
       "jersey_number": 4,
-      "name": "Sven Botman",
+      "name": "Quartz Player 08",
       "position": "LCB",
       "position_detail": "Central Defender",
       "nationality": "Netherlands",
@@ -1701,7 +1701,7 @@
       "player_id": "H04",
       "team_id": "HOME",
       "jersey_number": 5,
-      "name": "Fabian Schar",
+      "name": "Quartz Player 09",
       "position": "RCB",
       "position_detail": "Defender",
       "nationality": "Switzerland",
@@ -1737,7 +1737,7 @@
       "player_id": "A05",
       "team_id": "AWAY",
       "jersey_number": 33,
-      "name": "Michael Kayode",
+      "name": "Driftwood Player 10",
       "position": "RB",
       "position_detail": "Right Full Back",
       "nationality": "Italy",

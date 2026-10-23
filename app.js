@@ -138,7 +138,7 @@ function updateMatchChrome(fixture, metadata) {
   $('#home-en').textContent = home.name.toUpperCase();
   $('#away-en').textContent = away.name.toUpperCase();
   $('#match-id').textContent = metadata.match_id;
-  $('#match-competition').textContent = metadata.competition?.name || 'Premier League (sim)';
+  $('#match-competition').textContent = metadata.competition?.name || 'NextPlay League (sim)';
   $('#match-week').textContent = `Matchweek ${week}`;
   $('#match-kickoff').textContent = kickoff;
   if (['overview', 'replay', 'stats', 'lineup'].includes(state.view)) $('#eyebrow-code').textContent = `/ W${String(week).padStart(2, '0')}`;
@@ -266,7 +266,6 @@ async function loadSquads() {
       buildSquadClubSelect();
       renderSquads();
       $('#squad-season').textContent = data.season || '2026/27';
-      if (data.source?.squad_lists) $('#squad-source').href = data.source.squad_lists;
       return data;
     }).catch(error => {
       $('#squad-content').innerHTML = `<div class="empty">Unable to load squads: ${escape(error.message)}</div>`;
@@ -398,7 +397,7 @@ async function init() {
     if (!allFixtures.length) throw new Error('League schedule is empty');
     buildWeekSelect();
     setupHome();
-    $('#dataset-title').textContent = 'Premier League 2026/27';
+    $('#dataset-title').textContent = 'NextPlay League 2026/27';
     $('#dataset-version').textContent = 'v2.2';
     const requested = new URLSearchParams(location.search).get('match');
     const linked = allFixtures.find(fixture => fixture.match_id === requested);
@@ -442,7 +441,7 @@ function changeView(view) {
     stats: ['Analysis', 'The story behind the score.', 'Post-match analysis, Player of the Match and the full match statistics.'],
     lineup: ['Lineups', 'Every position on the pitch.', 'Starting lineups, substitutes and simulated distance.'],
     settings: ['Settings', 'Your match summary model.', 'Configure the model service used for post-match writing.'],
-    squads: ['Squads', '2026/27 Premier League squads.', 'Official squad numbers and player details from the Premier League.'],
+    squads: ['Squads', '2026/27 fictional club squads.', 'Fictional club and player names; original roster attributes preserved.'],
   };
   $('#breadcrumb').textContent = titles[view][0];
   $('#page-title').textContent = titles[view][1];

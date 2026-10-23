@@ -90,9 +90,9 @@
       "period_ms": 868400,
       "team_id": "AWAY",
       "club_id": "LEE",
-      "club_name": "Leeds United",
+      "club_name": "Meadow FC",
       "player_id": "A10",
-      "player_name": "Lukas Nmecha",
+      "player_name": "Meadow Player 25",
       "shirt_number": 14,
       "score": [
         0,
@@ -105,9 +105,9 @@
       "period_ms": 1435600,
       "team_id": "HOME",
       "club_id": "AVL",
-      "club_name": "Aston Villa",
+      "club_name": "Beacon FC",
       "player_id": "H10",
-      "player_name": "Nicolas Jackson",
+      "player_name": "Beacon Player 24",
       "shirt_number": 11,
       "score": [
         1,
@@ -120,9 +120,9 @@
       "period_ms": 2239200,
       "team_id": "HOME",
       "club_id": "AVL",
-      "club_name": "Aston Villa",
+      "club_name": "Beacon FC",
       "player_id": "H10",
-      "player_name": "Nicolas Jackson",
+      "player_name": "Beacon Player 24",
       "shirt_number": 11,
       "score": [
         2,
@@ -135,9 +135,9 @@
       "period_ms": 164000,
       "team_id": "AWAY",
       "club_id": "LEE",
-      "club_name": "Leeds United",
+      "club_name": "Meadow FC",
       "player_id": "A09",
-      "player_name": "Daniel James",
+      "player_name": "Meadow Player 23",
       "shirt_number": 7,
       "score": [
         2,
@@ -150,9 +150,9 @@
       "period_ms": 2225000,
       "team_id": "HOME",
       "club_id": "AVL",
-      "club_name": "Aston Villa",
+      "club_name": "Beacon FC",
       "player_id": "H10",
-      "player_name": "Nicolas Jackson",
+      "player_name": "Beacon Player 24",
       "shirt_number": 11,
       "score": [
         3,
@@ -162,19 +162,19 @@
   ],
   "competition": {
     "id": "PL-SYN-2026",
-    "name": "Premier League (synthetic)",
+    "name": "NextPlay League (synthetic)",
     "season": "2026/27",
     "synthetic": true,
     "matchweek": 4,
     "kickoff_local": "2026-11-14T20:00:00",
     "time_zone": "Europe/London",
-    "venue": "Villa Park"
+    "venue": "Beacon Park"
   },
   "home_club": {
     "club_id": "AVL",
-    "name": "Aston Villa",
-    "short_name": "Aston Villa",
-    "stadium": "Villa Park",
+    "name": "Beacon FC",
+    "short_name": "Beacon FC",
+    "stadium": "Beacon Park",
     "colors": {
       "primary": "#670E36",
       "secondary": "#95BFE5"
@@ -183,9 +183,9 @@
   },
   "away_club": {
     "club_id": "LEE",
-    "name": "Leeds United",
-    "short_name": "Leeds",
-    "stadium": "Elland Road",
+    "name": "Meadow FC",
+    "short_name": "Meadow",
+    "stadium": "Meadow Park",
     "colors": {
       "primary": "#FFFFFF",
       "secondary": "#1D428A"

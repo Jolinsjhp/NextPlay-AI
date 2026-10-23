@@ -4,7 +4,7 @@
   "status": "complete",
   "language": "en",
   "source": {
-    "fingerprint": "a8ed61352c40ddb49dc8638db46ff5043f272d6180326cf3fb40362b70134b95",
+    "fingerprint": "90587d9d08a3968f87f599f77d348ae1dff5270e0c9928d6ef8d471ccb5f7836",
     "event_count": 3596,
     "match_end_event_id": "e003596",
     "completed_at_ms": 6000000,
@@ -18,12 +18,12 @@
     "mode": "openai",
     "model": "deepseek-flash"
   },
-  "headline": "Manchester City 1–1 Chelsea",
-  "summary": "Manchester City and Chelsea drew 1–1 in a match with 27 shots. Jeremy Doku put Manchester City ahead at 10:53, Joao Pedro equalised for Chelsea at 70:11, and Marco Palestra was sent off at 81:42. Joao Pedro was the computed Player of the Match with 1 goal, 8 shots on target, 8 interceptions and 74 completed passes from 82 in 100 minutes, earning 9.74 impact points.",
+  "headline": "Oakmere FC 1–1 Fairhaven FC",
+  "summary": "Oakmere FC and Fairhaven FC drew 1–1 in a match with 27 shots. Oakmere Player 24 put Oakmere FC ahead at 10:53, Fairhaven Player 25 equalised for Fairhaven FC at 70:11, and Fairhaven Player 05 was sent off at 81:42. Fairhaven Player 25 was the computed Player of the Match with 1 goal, 8 shots on target, 8 interceptions and 74 completed passes from 82 in 100 minutes, earning 9.74 impact points.",
   "periods": [
     {
       "title": "First half",
-      "text": "The first half ended 1–0 to Manchester City. Manchester City had 9 shots and Chelsea had 7; the only score change was Jeremy Doku's opener for Manchester City at 10:53. No dismissals were recorded in the first half.",
+      "text": "The first half ended 1–0 to Oakmere FC. Oakmere FC had 9 shots and Fairhaven FC had 7; the only score change was Oakmere Player 24's opener for Oakmere FC at 10:53. No dismissals were recorded in the first half.",
       "shots": [
         9,
         7
@@ -53,7 +53,7 @@
     },
     {
       "title": "Second half",
-      "text": "The second half ended 1–1. Chelsea had 7 shots to Manchester City's 4; Joao Pedro equalised for Chelsea at 70:11, and Chelsea lost Marco Palestra to a red card at 81:42. No further score changes were recorded in the period.",
+      "text": "The second half ended 1–1. Fairhaven FC had 7 shots to Oakmere FC's 4; Fairhaven Player 25 equalised for Fairhaven FC at 70:11, and Fairhaven FC lost Fairhaven Player 05 to a red card at 81:42. No further score changes were recorded in the period.",
       "shots": [
         4,
         7
@@ -79,8 +79,8 @@
     }
   ],
   "insights": [
-    "Manchester City: 13 shots, 8 on target, 339 of 386 passes completed, 49.6% possession.",
-    "Chelsea: 14 shots, 10 on target, 347 of 394 passes completed, 50.4% possession."
+    "Oakmere FC: 13 shots, 8 on target, 339 of 386 passes completed, 49.6% possession.",
+    "Fairhaven FC: 14 shots, 10 on target, 347 of 394 passes completed, 50.4% possession."
   ],
   "key_moments": [
     {
@@ -88,56 +88,56 @@
       "period": 1,
       "time": "10:53",
       "type": "shot",
-      "text": "Jeremy Doku opened the scoring for Manchester City (1–0)."
+      "text": "Oakmere Player 24 opened the scoring for Oakmere FC (1–0)."
     },
     {
       "event_id": "e002313",
       "period": 2,
       "time": "59:25",
       "type": "substitution",
-      "text": "Rayan Cherki replaced Elliot Anderson for Manchester City."
+      "text": "Oakmere Player 14 replaced Oakmere Player 12 for Oakmere FC."
     },
     {
       "event_id": "e002373",
       "period": 2,
       "time": "61:09",
       "type": "substitution",
-      "text": "Jamie Gittens replaced Estevao for Chelsea."
+      "text": "Fairhaven Player 26 replaced Fairhaven Player 29 for Fairhaven FC."
     },
     {
       "event_id": "e002656",
       "period": 2,
       "time": "68:38",
       "type": "substitution",
-      "text": "Vitor Reis replaced Rayan Ait-Nouri for Manchester City."
+      "text": "Oakmere Player 07 replaced Oakmere Player 06 for Oakmere FC."
     },
     {
       "event_id": "e002704",
       "period": 2,
       "time": "70:11",
       "type": "shot",
-      "text": "Joao Pedro equalised for Chelsea (1–1)."
+      "text": "Fairhaven Player 25 equalised for Fairhaven FC (1–1)."
     },
     {
       "event_id": "e002899",
       "period": 2,
       "time": "75:52",
       "type": "substitution",
-      "text": "Jordan Henderson replaced Valentin Barco for Chelsea."
+      "text": "Fairhaven Player 18 replaced Fairhaven Player 16 for Fairhaven FC."
     },
     {
       "event_id": "e003109",
       "period": 2,
       "time": "81:42",
       "type": "red_card",
-      "text": "Chelsea lost Marco Palestra to a red card."
+      "text": "Fairhaven FC lost Fairhaven Player 05 to a red card."
     }
   ],
   "player_of_the_match": {
     "player_id": "A10",
     "team_id": "AWAY",
     "jersey_number": 9,
-    "name": "Joao Pedro",
+    "name": "Fairhaven Player 25",
     "position": "ST",
     "position_detail": "Centre Striker",
     "nationality": "Brazil",
@@ -258,7 +258,7 @@
     ],
     "impact_points": 9.74,
     "reasons": [
-      "Joao Pedro recorded 1 goal, 8 shots on target, 0 saves and 8 interceptions.",
+      "Fairhaven Player 25 recorded 1 goal, 8 shots on target, 0 saves and 8 interceptions.",
       "Completed 74 of 82 passes in 100 minutes; received 0 yellow cards and 0 red cards.",
       "Top impact score: 9.74 points."
     ]
@@ -268,7 +268,7 @@
       "player_id": "A10",
       "team_id": "AWAY",
       "jersey_number": 9,
-      "name": "Joao Pedro",
+      "name": "Fairhaven Player 25",
       "position": "ST",
       "position_detail": "Centre Striker",
       "nationality": "Brazil",
@@ -393,7 +393,7 @@
       "player_id": "H01",
       "team_id": "HOME",
       "jersey_number": 1,
-      "name": "Gianluigi Donnarumma",
+      "name": "Oakmere Player 01",
       "position": "GK",
       "position_detail": "Goalkeeper",
       "nationality": "Italy",
@@ -437,7 +437,7 @@
       "player_id": "H11",
       "team_id": "HOME",
       "jersey_number": 11,
-      "name": "Jeremy Doku",
+      "name": "Oakmere Player 24",
       "position": "RW",
       "position_detail": "Left/Right Winger",
       "nationality": "Belgium",
@@ -532,7 +532,7 @@
       "player_id": "A01",
       "team_id": "AWAY",
       "jersey_number": 1,
-      "name": "Emiliano Martinez",
+      "name": "Fairhaven Player 01",
       "position": "GK",
       "position_detail": "Goalkeeper",
       "nationality": "Argentina",
@@ -574,7 +574,7 @@
       "player_id": "H10",
       "team_id": "HOME",
       "jersey_number": 9,
-      "name": "Erling Haaland",
+      "name": "Oakmere Player 23",
       "position": "ST",
       "position_detail": "Centre Striker",
       "nationality": "Norway",
@@ -689,7 +689,7 @@
       "player_id": "H07",
       "team_id": "HOME",
       "jersey_number": 37,
-      "name": "Allan",
+      "name": "Oakmere Player 20",
       "position": "DM",
       "position_detail": "Defensive Midfielder",
       "nationality": null,
@@ -784,7 +784,7 @@
       "player_id": "A07",
       "team_id": "AWAY",
       "jersey_number": 25,
-      "name": "Moises Caicedo",
+      "name": "Fairhaven Player 21",
       "position": "DM",
       "position_detail": "Centre Defensive Midfielder",
       "nationality": "Ecuador",
@@ -881,7 +881,7 @@
       "player_id": "H09",
       "team_id": "HOME",
       "jersey_number": 7,
-      "name": "Iliman Ndiaye",
+      "name": "Oakmere Player 22",
       "position": "LW",
       "position_detail": "Left/Right Winger",
       "nationality": "Senegal",
@@ -969,7 +969,7 @@
       "player_id": "A09",
       "team_id": "AWAY",
       "jersey_number": 7,
-      "name": "Pedro Neto",
+      "name": "Fairhaven Player 24",
       "position": "LW",
       "position_detail": "Left/Right Winger",
       "nationality": "Portugal",
@@ -1062,7 +1062,7 @@
       "player_id": "A11",
       "team_id": "AWAY",
       "jersey_number": 41,
-      "name": "Estevao",
+      "name": "Fairhaven Player 29",
       "position": "RW",
       "position_detail": "Right Winger",
       "nationality": "Brazil",
@@ -1123,7 +1123,7 @@
       "player_id": "A08",
       "team_id": "AWAY",
       "jersey_number": 10,
-      "name": "Cole Palmer",
+      "name": "Fairhaven Player 17",
       "position": "RCM",
       "position_detail": "Attacking Midfielder",
       "nationality": "England",
@@ -1193,7 +1193,7 @@
       "player_id": "H08",
       "team_id": "HOME",
       "jersey_number": 8,
-      "name": "Mateo Kovacic",
+      "name": "Oakmere Player 13",
       "position": "RCM",
       "position_detail": "Centre Central Midfielder",
       "nationality": "Croatia",
@@ -1256,7 +1256,7 @@
       "player_id": "H06",
       "team_id": "HOME",
       "jersey_number": 5,
-      "name": "Elliot Anderson",
+      "name": "Oakmere Player 12",
       "position": "LCM",
       "position_detail": "Central Midfielder",
       "nationality": "England",
@@ -1303,7 +1303,7 @@
       "player_id": "A06",
       "team_id": "AWAY",
       "jersey_number": 4,
-      "name": "Valentin Barco",
+      "name": "Fairhaven Player 16",
       "position": "LCM",
       "position_detail": "Left/Centre Central Midfielder",
       "nationality": "Argentina",
@@ -1356,7 +1356,7 @@
       "player_id": "H12",
       "team_id": "HOME",
       "jersey_number": 10,
-      "name": "Rayan Cherki",
+      "name": "Oakmere Player 14",
       "position": "LCM",
       "position_detail": "Attacking Midfielder",
       "nationality": "France",
@@ -1394,7 +1394,7 @@
       "player_id": "A12",
       "team_id": "AWAY",
       "jersey_number": 14,
-      "name": "Jordan Henderson",
+      "name": "Fairhaven Player 18",
       "position": "LCM",
       "position_detail": "Centre Central Midfielder",
       "nationality": "England",
@@ -1426,7 +1426,7 @@
       "player_id": "A13",
       "team_id": "AWAY",
       "jersey_number": 11,
-      "name": "Jamie Gittens",
+      "name": "Fairhaven Player 26",
       "position": "RW",
       "position_detail": "Left Winger",
       "nationality": "England",
@@ -1470,7 +1470,7 @@
       "player_id": "H05",
       "team_id": "HOME",
       "jersey_number": 82,
-      "name": "Rico Lewis",
+      "name": "Oakmere Player 11",
       "position": "RB",
       "position_detail": "Right Full Back",
       "nationality": "England",
@@ -1511,7 +1511,7 @@
       "player_id": "A04",
       "team_id": "AWAY",
       "jersey_number": 5,
-      "name": "Maxence Lacroix",
+      "name": "Fairhaven Player 07",
       "position": "RCB",
       "position_detail": "Central Defender",
       "nationality": "France",
@@ -1550,7 +1550,7 @@
       "player_id": "H03",
       "team_id": "HOME",
       "jersey_number": 3,
-      "name": "Ruben Dias",
+      "name": "Oakmere Player 04",
       "position": "LCB",
       "position_detail": "Centre Central Defender",
       "nationality": "Portugal",
@@ -1586,7 +1586,7 @@
       "player_id": "A03",
       "team_id": "AWAY",
       "jersey_number": 3,
-      "name": "Wesley Fofana",
+      "name": "Fairhaven Player 06",
       "position": "LCB",
       "position_detail": "Centre Central Defender",
       "nationality": "France",
@@ -1626,7 +1626,7 @@
       "player_id": "A02",
       "team_id": "AWAY",
       "jersey_number": 21,
-      "name": "Jorrel Hato",
+      "name": "Fairhaven Player 09",
       "position": "LB",
       "position_detail": "Left Full Back",
       "nationality": "Netherlands",
@@ -1658,7 +1658,7 @@
       "player_id": "H14",
       "team_id": "HOME",
       "jersey_number": 22,
-      "name": "Vitor Reis",
+      "name": "Oakmere Player 07",
       "position": "LB",
       "position_detail": "Central Defender",
       "nationality": "Brazil",
@@ -1684,7 +1684,7 @@
       "player_id": "H02",
       "team_id": "HOME",
       "jersey_number": 21,
-      "name": "Rayan Ait-Nouri",
+      "name": "Oakmere Player 06",
       "position": "LB",
       "position_detail": "Left Full Back",
       "nationality": "Algeria",
@@ -1712,7 +1712,7 @@
       "player_id": "H04",
       "team_id": "HOME",
       "jersey_number": 6,
-      "name": "Marc Guehi",
+      "name": "Oakmere Player 05",
       "position": "RCB",
       "position_detail": "Centre Central Defender",
       "nationality": "England",
@@ -1751,7 +1751,7 @@
       "player_id": "A05",
       "team_id": "AWAY",
       "jersey_number": 2,
-      "name": "Marco Palestra",
+      "name": "Fairhaven Player 05",
       "position": "RB",
       "position_detail": "Right Full Back",
       "nationality": "Italy",

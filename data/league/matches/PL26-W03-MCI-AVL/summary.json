@@ -90,9 +90,9 @@
       "period_ms": 244000,
       "team_id": "HOME",
       "club_id": "MCI",
-      "club_name": "Manchester City",
+      "club_name": "Oakmere FC",
       "player_id": "H09",
-      "player_name": "Iliman Ndiaye",
+      "player_name": "Oakmere Player 22",
       "shirt_number": 7,
       "score": [
         1,
@@ -102,19 +102,19 @@
   ],
   "competition": {
     "id": "PL-SYN-2026",
-    "name": "Premier League (synthetic)",
+    "name": "NextPlay League (synthetic)",
     "season": "2026/27",
     "synthetic": true,
     "matchweek": 3,
     "kickoff_local": "2026-11-07T17:30:00",
     "time_zone": "Europe/London",
-    "venue": "Etihad Stadium"
+    "venue": "Oakmere Park"
   },
   "home_club": {
     "club_id": "MCI",
-    "name": "Manchester City",
-    "short_name": "Man City",
-    "stadium": "Etihad Stadium",
+    "name": "Oakmere FC",
+    "short_name": "Oakmere",
+    "stadium": "Oakmere Park",
     "colors": {
       "primary": "#6CABDD",
       "secondary": "#1C2C5B"
@@ -123,9 +123,9 @@
   },
   "away_club": {
     "club_id": "AVL",
-    "name": "Aston Villa",
-    "short_name": "Aston Villa",
-    "stadium": "Villa Park",
+    "name": "Beacon FC",
+    "short_name": "Beacon FC",
+    "stadium": "Beacon Park",
     "colors": {
       "primary": "#670E36",
       "secondary": "#95BFE5"

@@ -90,9 +90,9 @@
       "period_ms": 447800,
       "team_id": "HOME",
       "club_id": "FUL",
-      "club_name": "Fulham",
+      "club_name": "Juniper FC",
       "player_id": "H10",
-      "player_name": "Gonzalo Garcia",
+      "player_name": "Juniper Player 24",
       "shirt_number": 7,
       "score": [
         1,
@@ -105,9 +105,9 @@
       "period_ms": 1734200,
       "team_id": "AWAY",
       "club_id": "BHA",
-      "club_name": "Brighton & Hove Albion",
+      "club_name": "Ember FC",
       "player_id": "A09",
-      "player_name": "Yankuba Minteh",
+      "player_name": "Ember Player 26",
       "shirt_number": 11,
       "score": [
         1,
@@ -117,19 +117,19 @@
   ],
   "competition": {
     "id": "PL-SYN-2026",
-    "name": "Premier League (synthetic)",
+    "name": "NextPlay League (synthetic)",
     "season": "2026/27",
     "synthetic": true,
     "matchweek": 4,
     "kickoff_local": "2026-11-15T16:30:00",
     "time_zone": "Europe/London",
-    "venue": "Craven Cottage"
+    "venue": "Juniper Park"
   },
   "home_club": {
     "club_id": "FUL",
-    "name": "Fulham",
-    "short_name": "Fulham",
-    "stadium": "Craven Cottage",
+    "name": "Juniper FC",
+    "short_name": "Juniper FC",
+    "stadium": "Juniper Park",
     "colors": {
       "primary": "#FFFFFF",
       "secondary": "#000000"
@@ -138,9 +138,9 @@
   },
   "away_club": {
     "club_id": "BHA",
-    "name": "Brighton & Hove Albion",
-    "short_name": "Brighton",
-    "stadium": "Amex Stadium",
+    "name": "Ember FC",
+    "short_name": "Ember",
+    "stadium": "Ember Park",
     "colors": {
       "primary": "#0057B8",
       "secondary": "#FFFFFF"

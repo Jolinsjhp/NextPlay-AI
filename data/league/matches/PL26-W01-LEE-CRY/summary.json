@@ -90,9 +90,9 @@
       "period_ms": 2659800,
       "team_id": "HOME",
       "club_id": "LEE",
-      "club_name": "Leeds United",
+      "club_name": "Meadow FC",
       "player_id": "H11",
-      "player_name": "Dominic Calvert-Lewin",
+      "player_name": "Meadow Player 24",
       "shirt_number": 9,
       "score": [
         1,
@@ -105,9 +105,9 @@
       "period_ms": 644000,
       "team_id": "AWAY",
       "club_id": "CRY",
-      "club_name": "Crystal Palace",
+      "club_name": "Highridge FC",
       "player_id": "A10",
-      "player_name": "Eddie Nketiah",
+      "player_name": "Highridge Player 23",
       "shirt_number": 9,
       "score": [
         1,
@@ -120,9 +120,9 @@
       "period_ms": 1304200,
       "team_id": "HOME",
       "club_id": "LEE",
-      "club_name": "Leeds United",
+      "club_name": "Meadow FC",
       "player_id": "H10",
-      "player_name": "Lukas Nmecha",
+      "player_name": "Meadow Player 25",
       "shirt_number": 14,
       "score": [
         2,
@@ -135,9 +135,9 @@
       "period_ms": 2878200,
       "team_id": "AWAY",
       "club_id": "CRY",
-      "club_name": "Crystal Palace",
+      "club_name": "Highridge FC",
       "player_id": "A10",
-      "player_name": "Eddie Nketiah",
+      "player_name": "Highridge Player 23",
       "shirt_number": 9,
       "score": [
         2,
@@ -147,19 +147,19 @@
   ],
   "competition": {
     "id": "PL-SYN-2026",
-    "name": "Premier League (synthetic)",
+    "name": "NextPlay League (synthetic)",
     "season": "2026/27",
     "synthetic": true,
     "matchweek": 1,
     "kickoff_local": "2026-10-25T16:30:00",
     "time_zone": "Europe/London",
-    "venue": "Elland Road"
+    "venue": "Meadow Park"
   },
   "home_club": {
     "club_id": "LEE",
-    "name": "Leeds United",
-    "short_name": "Leeds",
-    "stadium": "Elland Road",
+    "name": "Meadow FC",
+    "short_name": "Meadow",
+    "stadium": "Meadow Park",
     "colors": {
       "primary": "#FFFFFF",
       "secondary": "#1D428A"
@@ -168,9 +168,9 @@
   },
   "away_club": {
     "club_id": "CRY",
-    "name": "Crystal Palace",
-    "short_name": "Crystal Palace",
-    "stadium": "Selhurst Park",
+    "name": "Highridge FC",
+    "short_name": "Highridge FC",
+    "stadium": "Highridge Park",
     "colors": {
       "primary": "#1B458F",
       "secondary": "#C4122E"

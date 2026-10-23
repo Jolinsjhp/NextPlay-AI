@@ -90,9 +90,9 @@
       "period_ms": 1803400,
       "team_id": "AWAY",
       "club_id": "FUL",
-      "club_name": "Fulham",
+      "club_name": "Juniper FC",
       "player_id": "A10",
-      "player_name": "Gonzalo Garcia",
+      "player_name": "Juniper Player 24",
       "shirt_number": 7,
       "score": [
         0,
@@ -102,19 +102,19 @@
   ],
   "competition": {
     "id": "PL-SYN-2026",
-    "name": "Premier League (synthetic)",
+    "name": "NextPlay League (synthetic)",
     "season": "2026/27",
     "synthetic": true,
     "matchweek": 3,
     "kickoff_local": "2026-11-08T16:30:00",
     "time_zone": "Europe/London",
-    "venue": "CBS Arena"
+    "venue": "Glenvale Park"
   },
   "home_club": {
     "club_id": "COV",
-    "name": "Coventry City",
-    "short_name": "Coventry",
-    "stadium": "CBS Arena",
+    "name": "Glenvale FC",
+    "short_name": "Glenvale",
+    "stadium": "Glenvale Park",
     "colors": {
       "primary": "#6CB4E4",
       "secondary": "#FFFFFF"
@@ -123,9 +123,9 @@
   },
   "away_club": {
     "club_id": "FUL",
-    "name": "Fulham",
-    "short_name": "Fulham",
-    "stadium": "Craven Cottage",
+    "name": "Juniper FC",
+    "short_name": "Juniper FC",
+    "stadium": "Juniper Park",
     "colors": {
       "primary": "#FFFFFF",
       "secondary": "#000000"

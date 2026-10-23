@@ -3,13 +3,13 @@
   "files": [
     {
       "path": "data/metadata.json",
-      "bytes": 7015,
-      "sha256": "0c0d1e8ade3cbdb80782100149dbc41cd0ba14c4009ef271b9ee2c7196965697"
+      "bytes": 7027,
+      "sha256": "0d63f50ee3d5a14556c3b80010730d8587fac3e064bf7f391229637b677fd226"
     },
     {
       "path": "data/preview-60s.json",
-      "bytes": 315004,
-      "sha256": "7dd45bd1d41d73e4cc670036bef16dec235e00b89b00209f44341b1f6082ee81"
+      "bytes": 315016,
+      "sha256": "492bcbb1f489e0fdd59202c2ce3e3962d9a0b1ad391e840c87b463c690f9914a"
     },
     {
       "path": "data/summary.json",
@@ -38,13 +38,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 8006,
-      "sha256": "2ab50637be6896e3b6a586fd0f35453271c7bc08b3c3dfa3a78fdf4038c957e1"
+      "bytes": 21003,
+      "sha256": "6710ff9f5db2abe920e77821804f15af68a82b104f22aec8b8ff0668697f3c3d"
     },
     {
       "path": "generate.py",
-      "bytes": 58928,
-      "sha256": "be62ffbe68a84e4cc46338e31a48f20d38e7e76550ee52448587a634f5e4fbaa"
+      "bytes": 59203,
+      "sha256": "caaff2bb5dc1393ee6cdfd803809f948ef7b567187843cd4b95c9a4ec54a89f1"
     },
     {
       "path": "validate.py",
@@ -53,13 +53,13 @@
     },
     {
       "path": "validate_league.py",
-      "bytes": 12429,
-      "sha256": "88d4c3fa9118937c99e91b9a8858bdd4d7f81a5d0b5e197ebb894ad8e81f8e3f"
+      "bytes": 12434,
+      "sha256": "f7c99fea9e8f08352a952ad463c26b0ad7ecd8f743896383fc6aed838ca29c8f"
     },
     {
       "path": "package.py",
-      "bytes": 2146,
-      "sha256": "9f99a7930e88fd930bc66aa42a28401f41d5ae33ebc88be845da8234722ea128"
+      "bytes": 2221,
+      "sha256": "27edc0076d1dcfae0bff98a3f74d9392f40933e276f8e56b8381d7c21c37c8d6"
     },
     {
       "path": "schema.json",
@@ -67,5 +67,5 @@
       "sha256": "7f4dda8ccec516466b41629d3e779ec4a7692f43f4bc7da14daf5efc9e22309e"
     }
   ],
-  "total_bytes_excluding_manifest": 34386048
+  "total_bytes_excluding_manifest": 34399424
 }

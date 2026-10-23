@@ -4,7 +4,7 @@
   "status": "complete",
   "language": "en",
   "source": {
-    "fingerprint": "236c9096c26503d7d8aef19132175cc50d4364a3e942577ed09fda223d79c196",
+    "fingerprint": "16708da6b5abbc55d14b7aec5d89741c7f50ee12a9b53d001cfaac9a16992c2f",
     "event_count": 3604,
     "match_end_event_id": "e003604",
     "completed_at_ms": 6000000,
@@ -18,12 +18,12 @@
     "mode": "local",
     "model": null
   },
-  "headline": "Liverpool 1–0 Brighton & Hove Albion",
-  "summary": "Liverpool won 1–0. There were 23 shots across the match. Alexander Isak earns Player of the Match on the published impact scoring.",
+  "headline": "Northstar FC 1–0 Ember FC",
+  "summary": "Northstar FC won 1–0. There were 23 shots across the match. Northstar Player 25 earns Player of the Match on the published impact scoring.",
   "periods": [
     {
       "title": "First half",
-      "text": "Liverpool had 6 shots and Brighton & Hove Albion had 5. 05:21 — Alexander Isak opened the scoring for Liverpool (1–0). The period ended at 1–0.",
+      "text": "Northstar FC had 6 shots and Ember FC had 5. 05:21 — Northstar Player 25 opened the scoring for Northstar FC (1–0). The period ended at 1–0.",
       "shots": [
         6,
         5
@@ -48,7 +48,7 @@
     },
     {
       "title": "Second half",
-      "text": "Liverpool had 9 shots and Brighton & Hove Albion had 3. 81:40 — Brighton & Hove Albion lost Costinha to a red card. The period ended at 1–0.",
+      "text": "Northstar FC had 9 shots and Ember FC had 3. 81:40 — Ember FC lost Ember Player 07 to a red card. The period ended at 1–0.",
       "shots": [
         9,
         3
@@ -75,8 +75,8 @@
     }
   ],
   "insights": [
-    "Liverpool: 15 shots, 7 on target, 330 of 377 passes completed, 48.6% possession.",
-    "Brighton & Hove Albion: 8 shots, 1 on target, 350 of 405 passes completed, 51.4% possession."
+    "Northstar FC: 15 shots, 7 on target, 330 of 377 passes completed, 48.6% possession.",
+    "Ember FC: 8 shots, 1 on target, 350 of 405 passes completed, 51.4% possession."
   ],
   "key_moments": [
     {
@@ -84,49 +84,49 @@
       "period": 1,
       "time": "05:21",
       "type": "shot",
-      "text": "Alexander Isak opened the scoring for Liverpool (1–0)."
+      "text": "Northstar Player 25 opened the scoring for Northstar FC (1–0)."
     },
     {
       "event_id": "e002296",
       "period": 2,
       "time": "58:53",
       "type": "substitution",
-      "text": "Alexis Mac Allister replaced Florian Wirtz for Liverpool."
+      "text": "Northstar Player 20 replaced Northstar Player 18 for Northstar FC."
     },
     {
       "event_id": "e002406",
       "period": 2,
       "time": "62:02",
       "type": "substitution",
-      "text": "Stefanos Tzimas replaced Zadok Yohanna for Brighton & Hove Albion."
+      "text": "Ember Player 24 replaced Ember Player 31 for Ember FC."
     },
     {
       "event_id": "e002721",
       "period": 2,
       "time": "70:41",
       "type": "substitution",
-      "text": "Jeremy Jacquet replaced Milos Kerkez for Liverpool."
+      "text": "Northstar Player 08 replaced Northstar Player 09 for Northstar FC."
     },
     {
       "event_id": "e002830",
       "period": 2,
       "time": "73:32",
       "type": "substitution",
-      "text": "Amario Cozier-Duberry replaced Pascal Gross for Brighton & Hove Albion."
+      "text": "Ember Player 16 replaced Ember Player 14 for Ember FC."
     },
     {
       "event_id": "e003125",
       "period": 2,
       "time": "81:40",
       "type": "red_card",
-      "text": "Brighton & Hove Albion lost Costinha to a red card."
+      "text": "Ember FC lost Ember Player 07 to a red card."
     }
   ],
   "player_of_the_match": {
     "player_id": "H10",
     "team_id": "HOME",
     "jersey_number": 9,
-    "name": "Alexander Isak",
+    "name": "Northstar Player 25",
     "position": "ST",
     "position_detail": "Centre Striker",
     "nationality": "Sweden",
@@ -238,7 +238,7 @@
     ],
     "impact_points": 6.13,
     "reasons": [
-      "Alexander Isak recorded 1 goal, 2 shots on target, 0 saves and 9 interceptions.",
+      "Northstar Player 25 recorded 1 goal, 2 shots on target, 0 saves and 9 interceptions.",
       "Completed 67 of 78 passes in 100 minutes; received 0 yellow cards and 0 red cards.",
       "Top impact score: 6.13 points."
     ]
@@ -248,7 +248,7 @@
       "player_id": "H10",
       "team_id": "HOME",
       "jersey_number": 9,
-      "name": "Alexander Isak",
+      "name": "Northstar Player 25",
       "position": "ST",
       "position_detail": "Centre Striker",
       "nationality": "Sweden",
@@ -364,7 +364,7 @@
       "player_id": "A01",
       "team_id": "AWAY",
       "jersey_number": 1,
-      "name": "Bart Verbruggen",
+      "name": "Ember Player 01",
       "position": "GK",
       "position_detail": "Goalkeeper",
       "nationality": "Netherlands",
@@ -407,7 +407,7 @@
       "player_id": "H11",
       "team_id": "HOME",
       "jersey_number": 29,
-      "name": "Bradley Barcola",
+      "name": "Northstar Player 29",
       "position": "RW",
       "position_detail": "Left/Right Winger",
       "nationality": "France",
@@ -481,7 +481,7 @@
       "player_id": "H07",
       "team_id": "HOME",
       "jersey_number": 3,
-      "name": "Wataru Endo",
+      "name": "Northstar Player 17",
       "position": "DM",
       "position_detail": "Centre Defensive Midfielder",
       "nationality": "Japan",
@@ -574,7 +574,7 @@
       "player_id": "A07",
       "team_id": "AWAY",
       "jersey_number": 8,
-      "name": "Jack Hinshelwood",
+      "name": "Ember Player 13",
       "position": "DM",
       "position_detail": "Centre Defensive Midfielder",
       "nationality": "England",
@@ -662,7 +662,7 @@
       "player_id": "A10",
       "team_id": "AWAY",
       "jersey_number": 7,
-      "name": "Kaoru Mitoma",
+      "name": "Ember Player 23",
       "position": "ST",
       "position_detail": "Forward",
       "nationality": "Japan",
@@ -790,7 +790,7 @@
       "player_id": "H08",
       "team_id": "HOME",
       "jersey_number": 8,
-      "name": "Dominik Szoboszlai",
+      "name": "Northstar Player 19",
       "position": "RCM",
       "position_detail": "Left/Centre/Right Attacking Midfielder",
       "nationality": "Hungary",
@@ -860,7 +860,7 @@
       "player_id": "A09",
       "team_id": "AWAY",
       "jersey_number": 11,
-      "name": "Yankuba Minteh",
+      "name": "Ember Player 26",
       "position": "LW",
       "position_detail": "Left/Centre/Right Winger",
       "nationality": "Gambia",
@@ -953,7 +953,7 @@
       "player_id": "H09",
       "team_id": "HOME",
       "jersey_number": 14,
-      "name": "Federico Chiesa",
+      "name": "Northstar Player 26",
       "position": "LW",
       "position_detail": "Left/Centre/Right Winger",
       "nationality": "Italy",
@@ -1041,7 +1041,7 @@
       "player_id": "H06",
       "team_id": "HOME",
       "jersey_number": 7,
-      "name": "Florian Wirtz",
+      "name": "Northstar Player 18",
       "position": "LCM",
       "position_detail": "Left/Centre/Right Attacking Midfielder",
       "nationality": "Germany",
@@ -1101,7 +1101,7 @@
       "player_id": "H01",
       "team_id": "HOME",
       "jersey_number": 1,
-      "name": "Alisson Becker",
+      "name": "Northstar Player 01",
       "position": "GK",
       "position_detail": "Goalkeeper",
       "nationality": "Brazil",
@@ -1133,7 +1133,7 @@
       "player_id": "A08",
       "team_id": "AWAY",
       "jersey_number": 14,
-      "name": "Chema Andres",
+      "name": "Ember Player 15",
       "position": "RCM",
       "position_detail": "Centre Central Midfielder",
       "nationality": "Spain",
@@ -1201,7 +1201,7 @@
       "player_id": "A06",
       "team_id": "AWAY",
       "jersey_number": 13,
-      "name": "Pascal Gross",
+      "name": "Ember Player 14",
       "position": "LCM",
       "position_detail": "Centre Central Midfielder",
       "nationality": "Germany",
@@ -1258,7 +1258,7 @@
       "player_id": "A11",
       "team_id": "AWAY",
       "jersey_number": 36,
-      "name": "Zadok Yohanna",
+      "name": "Ember Player 31",
       "position": "RW",
       "position_detail": "Right Winger",
       "nationality": "Nigeria",
@@ -1324,7 +1324,7 @@
       "player_id": "H12",
       "team_id": "HOME",
       "jersey_number": 10,
-      "name": "Alexis Mac Allister",
+      "name": "Northstar Player 20",
       "position": "LCM",
       "position_detail": "Left/Centre/Right Attacking Midfielder",
       "nationality": "Argentina",
@@ -1359,7 +1359,7 @@
       "player_id": "A13",
       "team_id": "AWAY",
       "jersey_number": 9,
-      "name": "Stefanos Tzimas",
+      "name": "Ember Player 24",
       "position": "RW",
       "position_detail": "Forward",
       "nationality": "Greece",
@@ -1400,7 +1400,7 @@
       "player_id": "A12",
       "team_id": "AWAY",
       "jersey_number": 22,
-      "name": "Amario Cozier-Duberry",
+      "name": "Ember Player 16",
       "position": "LCM",
       "position_detail": "Right Winger",
       "nationality": "England",
@@ -1435,7 +1435,7 @@
       "player_id": "A04",
       "team_id": "AWAY",
       "jersey_number": 5,
-      "name": "Lewis Dunk",
+      "name": "Ember Player 06",
       "position": "RCB",
       "position_detail": "Defender",
       "nationality": "England",
@@ -1471,7 +1471,7 @@
       "player_id": "H03",
       "team_id": "HOME",
       "jersey_number": 2,
-      "name": "Joe Gomez",
+      "name": "Northstar Player 06",
       "position": "LCB",
       "position_detail": "Centre-Back",
       "nationality": null,
@@ -1515,7 +1515,7 @@
       "player_id": "H02",
       "team_id": "HOME",
       "jersey_number": 6,
-      "name": "Milos Kerkez",
+      "name": "Northstar Player 09",
       "position": "LB",
       "position_detail": "Left Full Back",
       "nationality": "Hungary",
@@ -1547,7 +1547,7 @@
       "player_id": "A02",
       "team_id": "AWAY",
       "jersey_number": 3,
-      "name": "Jaouen Hadjam",
+      "name": "Ember Player 04",
       "position": "LB",
       "position_detail": "Left Full Back",
       "nationality": "Algeria",
@@ -1583,7 +1583,7 @@
       "player_id": "A03",
       "team_id": "AWAY",
       "jersey_number": 4,
-      "name": "Pascal Struijk",
+      "name": "Ember Player 05",
       "position": "LCB",
       "position_detail": "Central Defender",
       "nationality": "Netherlands",
@@ -1620,7 +1620,7 @@
       "player_id": "H14",
       "team_id": "HOME",
       "jersey_number": 5,
-      "name": "Jeremy Jacquet",
+      "name": "Northstar Player 08",
       "position": "LB",
       "position_detail": "Centre Central Defender",
       "nationality": "France",
@@ -1647,7 +1647,7 @@
       "player_id": "H05",
       "team_id": "HOME",
       "jersey_number": 12,
-      "name": "Conor Bradley",
+      "name": "Northstar Player 10",
       "position": "RB",
       "position_detail": "Right Full Back",
       "nationality": "Northern Ireland",
@@ -1682,7 +1682,7 @@
       "player_id": "H04",
       "team_id": "HOME",
       "jersey_number": 4,
-      "name": "Virgil van Dijk",
+      "name": "Northstar Player 07",
       "position": "RCB",
       "position_detail": "Centre Central Defender",
       "nationality": "Netherlands",
@@ -1724,7 +1724,7 @@
       "player_id": "A05",
       "team_id": "AWAY",
       "jersey_number": 20,
-      "name": "Costinha",
+      "name": "Ember Player 07",
       "position": "RB",
       "position_detail": "Right Full Back",
       "nationality": "Portugal",

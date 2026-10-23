@@ -90,9 +90,9 @@
       "period_ms": 517600,
       "team_id": "AWAY",
       "club_id": "ARS",
-      "club_name": "Arsenal",
+      "club_name": "Aster FC",
       "player_id": "A11",
-      "player_name": "Noni Madueke",
+      "player_name": "Aster Player 23",
       "shirt_number": 20,
       "score": [
         0,
@@ -105,9 +105,9 @@
       "period_ms": 2270400,
       "team_id": "AWAY",
       "club_id": "ARS",
-      "club_name": "Arsenal",
+      "club_name": "Aster FC",
       "player_id": "A11",
-      "player_name": "Noni Madueke",
+      "player_name": "Aster Player 23",
       "shirt_number": 20,
       "score": [
         0,
@@ -120,9 +120,9 @@
       "period_ms": 2389400,
       "team_id": "AWAY",
       "club_id": "ARS",
-      "club_name": "Arsenal",
+      "club_name": "Aster FC",
       "player_id": "A13",
-      "player_name": "Christos Tzolis",
+      "player_name": "Aster Player 22",
       "shirt_number": 17,
       "score": [
         0,
@@ -135,9 +135,9 @@
       "period_ms": 2429600,
       "team_id": "HOME",
       "club_id": "TOT",
-      "club_name": "Tottenham Hotspur",
+      "club_name": "Thornvale FC",
       "player_id": "H10",
-      "player_name": "Dominic Solanke",
+      "player_name": "Thornvale Player 27",
       "shirt_number": 19,
       "score": [
         1,
@@ -147,19 +147,19 @@
   ],
   "competition": {
     "id": "PL-SYN-2026",
-    "name": "Premier League (synthetic)",
+    "name": "NextPlay League (synthetic)",
     "season": "2026/27",
     "synthetic": true,
     "matchweek": 1,
     "kickoff_local": "2026-10-24T12:30:00",
     "time_zone": "Europe/London",
-    "venue": "Tottenham Hotspur Stadium"
+    "venue": "Thornvale Park"
   },
   "home_club": {
     "club_id": "TOT",
-    "name": "Tottenham Hotspur",
-    "short_name": "Tottenham",
-    "stadium": "Tottenham Hotspur Stadium",
+    "name": "Thornvale FC",
+    "short_name": "Thornvale",
+    "stadium": "Thornvale Park",
     "colors": {
       "primary": "#FFFFFF",
       "secondary": "#132257"
@@ -168,9 +168,9 @@
   },
   "away_club": {
     "club_id": "ARS",
-    "name": "Arsenal",
-    "short_name": "Arsenal",
-    "stadium": "Emirates Stadium",
+    "name": "Aster FC",
+    "short_name": "Aster FC",
+    "stadium": "Aster Park",
     "colors": {
       "primary": "#EF0107",
       "secondary": "#FFFFFF"

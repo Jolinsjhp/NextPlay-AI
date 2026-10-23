@@ -4,7 +4,7 @@
   "status": "complete",
   "language": "en",
   "source": {
-    "fingerprint": "d7fcf4193d80c4cc3d1dd6709c91faa57b6c5f5a2b923e991303d764e0ff26b7",
+    "fingerprint": "fe98d1ac8e25b0233f8f4d364c2b1857b59e414a574262581b695110dfc6e2f4",
     "event_count": 3605,
     "match_end_event_id": "e003605",
     "completed_at_ms": 6000000,
@@ -18,12 +18,12 @@
     "mode": "local",
     "model": null
   },
-  "headline": "AFC Bournemouth 0–1 Liverpool",
-  "summary": "Liverpool won 1–0. There were 22 shots across the match. Alisson Becker earns Player of the Match on the published impact scoring.",
+  "headline": "Cedar FC 0–1 Northstar FC",
+  "summary": "Northstar FC won 1–0. There were 22 shots across the match. Northstar Player 01 earns Player of the Match on the published impact scoring.",
   "periods": [
     {
       "title": "First half",
-      "text": "AFC Bournemouth had 5 shots and Liverpool had 3. 10:58 — Dominik Szoboszlai opened the scoring for Liverpool (0–1). The period ended at 0–1.",
+      "text": "Cedar FC had 5 shots and Northstar FC had 3. 10:58 — Northstar Player 19 opened the scoring for Northstar FC (0–1). The period ended at 0–1.",
       "shots": [
         5,
         3
@@ -45,7 +45,7 @@
     },
     {
       "title": "Second half",
-      "text": "AFC Bournemouth had 5 shots and Liverpool had 9. 80:50 — Liverpool lost Conor Bradley to a red card. The period ended at 0–1.",
+      "text": "Cedar FC had 5 shots and Northstar FC had 9. 80:50 — Northstar FC lost Northstar Player 10 to a red card. The period ended at 0–1.",
       "shots": [
         5,
         9
@@ -74,8 +74,8 @@
     }
   ],
   "insights": [
-    "AFC Bournemouth: 10 shots, 7 on target, 328 of 377 passes completed, 48.6% possession.",
-    "Liverpool: 12 shots, 7 on target, 369 of 414 passes completed, 51.4% possession."
+    "Cedar FC: 10 shots, 7 on target, 328 of 377 passes completed, 48.6% possession.",
+    "Northstar FC: 12 shots, 7 on target, 369 of 414 passes completed, 51.4% possession."
   ],
   "key_moments": [
     {
@@ -83,49 +83,49 @@
       "period": 1,
       "time": "10:58",
       "type": "shot",
-      "text": "Dominik Szoboszlai opened the scoring for Liverpool (0–1)."
+      "text": "Northstar Player 19 opened the scoring for Northstar FC (0–1)."
     },
     {
       "event_id": "e002229",
       "period": 2,
       "time": "56:53",
       "type": "substitution",
-      "text": "Alex Scott replaced Lewis Cook for AFC Bournemouth."
+      "text": "Cedar Player 15 replaced Cedar Player 13 for Cedar FC."
     },
     {
       "event_id": "e002451",
       "period": 2,
       "time": "62:38",
       "type": "substitution",
-      "text": "Cody Gakpo replaced Bradley Barcola for Liverpool."
+      "text": "Northstar Player 27 replaced Northstar Player 29 for Northstar FC."
     },
     {
       "event_id": "e002755",
       "period": 2,
       "time": "70:49",
       "type": "substitution",
-      "text": "Antonio Silva replaced Adrien Truffert for AFC Bournemouth."
+      "text": "Cedar Player 08 replaced Cedar Player 05 for Cedar FC."
     },
     {
       "event_id": "e002860",
       "period": 2,
       "time": "73:40",
       "type": "substitution",
-      "text": "Alexis Mac Allister replaced Florian Wirtz for Liverpool."
+      "text": "Northstar Player 20 replaced Northstar Player 18 for Northstar FC."
     },
     {
       "event_id": "e003113",
       "period": 2,
       "time": "80:50",
       "type": "red_card",
-      "text": "Liverpool lost Conor Bradley to a red card."
+      "text": "Northstar FC lost Northstar Player 10 to a red card."
     }
   ],
   "player_of_the_match": {
     "player_id": "A01",
     "team_id": "AWAY",
     "jersey_number": 1,
-    "name": "Alisson Becker",
+    "name": "Northstar Player 01",
     "position": "GK",
     "position_detail": "Goalkeeper",
     "nationality": "Brazil",
@@ -161,7 +161,7 @@
     ],
     "impact_points": 5.0,
     "reasons": [
-      "Alisson Becker recorded 0 goals, 0 shots on target, 7 saves and 0 interceptions.",
+      "Northstar Player 01 recorded 0 goals, 0 shots on target, 7 saves and 0 interceptions.",
       "Completed 10 of 10 passes in 100 minutes; received 0 yellow cards and 0 red cards.",
       "Top impact score: 5.00 points."
     ]
@@ -171,7 +171,7 @@
       "player_id": "A01",
       "team_id": "AWAY",
       "jersey_number": 1,
-      "name": "Alisson Becker",
+      "name": "Northstar Player 01",
       "position": "GK",
       "position_detail": "Goalkeeper",
       "nationality": "Brazil",
@@ -211,7 +211,7 @@
       "player_id": "A10",
       "team_id": "AWAY",
       "jersey_number": 9,
-      "name": "Alexander Isak",
+      "name": "Northstar Player 25",
       "position": "ST",
       "position_detail": "Centre Striker",
       "nationality": "Sweden",
@@ -350,7 +350,7 @@
       "player_id": "A08",
       "team_id": "AWAY",
       "jersey_number": 8,
-      "name": "Dominik Szoboszlai",
+      "name": "Northstar Player 19",
       "position": "RCM",
       "position_detail": "Left/Centre/Right Attacking Midfielder",
       "nationality": "Hungary",
@@ -412,7 +412,7 @@
       "player_id": "H01",
       "team_id": "HOME",
       "jersey_number": 1,
-      "name": "Djordje Petrovic",
+      "name": "Cedar Player 01",
       "position": "GK",
       "position_detail": "Goalkeeper",
       "nationality": "Serbia",
@@ -452,7 +452,7 @@
       "player_id": "H10",
       "team_id": "HOME",
       "jersey_number": 9,
-      "name": "Evanilson",
+      "name": "Cedar Player 22",
       "position": "ST",
       "position_detail": "Centre Striker",
       "nationality": "Brazil",
@@ -562,7 +562,7 @@
       "player_id": "A07",
       "team_id": "AWAY",
       "jersey_number": 3,
-      "name": "Wataru Endo",
+      "name": "Northstar Player 17",
       "position": "DM",
       "position_detail": "Centre Defensive Midfielder",
       "nationality": "Japan",
@@ -658,7 +658,7 @@
       "player_id": "H07",
       "team_id": "HOME",
       "jersey_number": 12,
-      "name": "Tyler Adams",
+      "name": "Cedar Player 17",
       "position": "DM",
       "position_detail": "Defensive Midfielder",
       "nationality": "United States",
@@ -751,7 +751,7 @@
       "player_id": "H11",
       "team_id": "HOME",
       "jersey_number": 19,
-      "name": "Justin Kluivert",
+      "name": "Cedar Player 24",
       "position": "RW",
       "position_detail": "Left/Right Winger",
       "nationality": "Netherlands",
@@ -832,7 +832,7 @@
       "player_id": "H06",
       "team_id": "HOME",
       "jersey_number": 4,
-      "name": "Lewis Cook",
+      "name": "Cedar Player 13",
       "position": "LCM",
       "position_detail": "Centre Central Midfielder",
       "nationality": "England",
@@ -877,7 +877,7 @@
       "player_id": "A09",
       "team_id": "AWAY",
       "jersey_number": 14,
-      "name": "Federico Chiesa",
+      "name": "Northstar Player 26",
       "position": "LW",
       "position_detail": "Left/Centre/Right Winger",
       "nationality": "Italy",
@@ -962,7 +962,7 @@
       "player_id": "A11",
       "team_id": "AWAY",
       "jersey_number": 29,
-      "name": "Bradley Barcola",
+      "name": "Northstar Player 29",
       "position": "RW",
       "position_detail": "Left/Right Winger",
       "nationality": "France",
@@ -1022,7 +1022,7 @@
       "player_id": "A06",
       "team_id": "AWAY",
       "jersey_number": 7,
-      "name": "Florian Wirtz",
+      "name": "Northstar Player 18",
       "position": "LCM",
       "position_detail": "Left/Centre/Right Attacking Midfielder",
       "nationality": "Germany",
@@ -1085,7 +1085,7 @@
       "player_id": "H08",
       "team_id": "HOME",
       "jersey_number": 7,
-      "name": "David Brooks",
+      "name": "Cedar Player 14",
       "position": "RCM",
       "position_detail": "Left/Centre/Right Attacking Midfielder",
       "nationality": "Wales",
@@ -1151,7 +1151,7 @@
       "player_id": "A13",
       "team_id": "AWAY",
       "jersey_number": 18,
-      "name": "Cody Gakpo",
+      "name": "Northstar Player 27",
       "position": "RW",
       "position_detail": "Centre Striker",
       "nationality": "Netherlands",
@@ -1197,7 +1197,7 @@
       "player_id": "H09",
       "team_id": "HOME",
       "jersey_number": 11,
-      "name": "Ben Gannon-Doak",
+      "name": "Cedar Player 23",
       "position": "LW",
       "position_detail": "Left/Right Winger",
       "nationality": "Scotland",
@@ -1282,7 +1282,7 @@
       "player_id": "H12",
       "team_id": "HOME",
       "jersey_number": 8,
-      "name": "Alex Scott",
+      "name": "Cedar Player 15",
       "position": "LCM",
       "position_detail": "Central Midfielder",
       "nationality": "England",
@@ -1320,7 +1320,7 @@
       "player_id": "A04",
       "team_id": "AWAY",
       "jersey_number": 4,
-      "name": "Virgil van Dijk",
+      "name": "Northstar Player 07",
       "position": "RCB",
       "position_detail": "Centre Central Defender",
       "nationality": "Netherlands",
@@ -1368,7 +1368,7 @@
       "player_id": "H03",
       "team_id": "HOME",
       "jersey_number": 5,
-      "name": "James Hill",
+      "name": "Cedar Player 06",
       "position": "LCB",
       "position_detail": "Centre Central Defender",
       "nationality": "England",
@@ -1411,7 +1411,7 @@
       "player_id": "A02",
       "team_id": "AWAY",
       "jersey_number": 6,
-      "name": "Milos Kerkez",
+      "name": "Northstar Player 09",
       "position": "LB",
       "position_detail": "Left Full Back",
       "nationality": "Hungary",
@@ -1447,7 +1447,7 @@
       "player_id": "H02",
       "team_id": "HOME",
       "jersey_number": 3,
-      "name": "Adrien Truffert",
+      "name": "Cedar Player 05",
       "position": "LB",
       "position_detail": "Left Full Back",
       "nationality": "France",
@@ -1484,7 +1484,7 @@
       "player_id": "A12",
       "team_id": "AWAY",
       "jersey_number": 10,
-      "name": "Alexis Mac Allister",
+      "name": "Northstar Player 20",
       "position": "LCM",
       "position_detail": "Left/Centre/Right Attacking Midfielder",
       "nationality": "Argentina",
@@ -1516,7 +1516,7 @@
       "player_id": "A03",
       "team_id": "AWAY",
       "jersey_number": 2,
-      "name": "Joe Gomez",
+      "name": "Northstar Player 06",
       "position": "LCB",
       "position_detail": "Centre-Back",
       "nationality": null,
@@ -1556,7 +1556,7 @@
       "player_id": "H14",
       "team_id": "HOME",
       "jersey_number": 14,
-      "name": "Antonio Silva",
+      "name": "Cedar Player 08",
       "position": "LB",
       "position_detail": "Centre Central Defender",
       "nationality": "Portugal",
@@ -1582,7 +1582,7 @@
       "player_id": "H05",
       "team_id": "HOME",
       "jersey_number": 2,
-      "name": "Julian Araujo",
+      "name": "Cedar Player 04",
       "position": "RB",
       "position_detail": "Right Full Back",
       "nationality": "Mexico",
@@ -1617,7 +1617,7 @@
       "player_id": "H04",
       "team_id": "HOME",
       "jersey_number": 6,
-      "name": "Julio Soler",
+      "name": "Cedar Player 07",
       "position": "RCB",
       "position_detail": "Left Full Back",
       "nationality": "Argentina",
@@ -1656,7 +1656,7 @@
       "player_id": "A05",
       "team_id": "AWAY",
       "jersey_number": 12,
-      "name": "Conor Bradley",
+      "name": "Northstar Player 10",
       "position": "RB",
       "position_detail": "Right Full Back",
       "nationality": "Northern Ireland",

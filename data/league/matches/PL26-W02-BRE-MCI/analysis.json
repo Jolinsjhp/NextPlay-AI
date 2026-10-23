@@ -4,7 +4,7 @@
   "status": "complete",
   "language": "en",
   "source": {
-    "fingerprint": "947e51683527821725265b76c02a4b83348de3e2184e8654b8c3de7d4629cccd",
+    "fingerprint": "cffc8d4cb7fed46db8325d218faf905af73b8235be29fba9192f571a12c7dd98",
     "event_count": 3609,
     "match_end_event_id": "e003609",
     "completed_at_ms": 6000000,
@@ -18,12 +18,12 @@
     "mode": "local",
     "model": null
   },
-  "headline": "Brentford 1–1 Manchester City",
-  "summary": "Brentford and Manchester City drew 1–1. There were 21 shots across the match. Erling Haaland earns Player of the Match on the published impact scoring.",
+  "headline": "Driftwood FC 1–1 Oakmere FC",
+  "summary": "Driftwood FC and Oakmere FC drew 1–1. There were 21 shots across the match. Oakmere Player 23 earns Player of the Match on the published impact scoring.",
   "periods": [
     {
       "title": "First half",
-      "text": "Brentford had 4 shots and Manchester City had 5. 20:01 — Erling Haaland opened the scoring for Manchester City (0–1). The period ended at 0–1.",
+      "text": "Driftwood FC had 4 shots and Oakmere FC had 5. 20:01 — Oakmere Player 23 opened the scoring for Oakmere FC (0–1). The period ended at 0–1.",
       "shots": [
         4,
         5
@@ -46,7 +46,7 @@
     },
     {
       "title": "Second half",
-      "text": "Brentford had 5 shots and Manchester City had 7. 47:35 — Igor Thiago equalised for Brentford (1–1). 82:33 — Manchester City lost Rico Lewis to a red card. The period ended at 1–1.",
+      "text": "Driftwood FC had 5 shots and Oakmere FC had 7. 47:35 — Driftwood Player 24 equalised for Driftwood FC (1–1). 82:33 — Oakmere FC lost Oakmere Player 11 to a red card. The period ended at 1–1.",
       "shots": [
         5,
         7
@@ -73,8 +73,8 @@
     }
   ],
   "insights": [
-    "Brentford: 9 shots, 4 on target, 269 of 329 passes completed, 40.8% possession.",
-    "Manchester City: 12 shots, 8 on target, 402 of 458 passes completed, 59.2% possession."
+    "Driftwood FC: 9 shots, 4 on target, 269 of 329 passes completed, 40.8% possession.",
+    "Oakmere FC: 12 shots, 8 on target, 402 of 458 passes completed, 59.2% possession."
   ],
   "key_moments": [
     {
@@ -82,56 +82,56 @@
       "period": 1,
       "time": "20:01",
       "type": "shot",
-      "text": "Erling Haaland opened the scoring for Manchester City (0–1)."
+      "text": "Oakmere Player 23 opened the scoring for Oakmere FC (0–1)."
     },
     {
       "event_id": "e001908",
       "period": 2,
       "time": "47:35",
       "type": "shot",
-      "text": "Igor Thiago equalised for Brentford (1–1)."
+      "text": "Driftwood Player 24 equalised for Driftwood FC (1–1)."
     },
     {
       "event_id": "e002248",
       "period": 2,
       "time": "57:12",
       "type": "substitution",
-      "text": "Mathias Jensen replaced Yehor Yarmoliuk for Brentford."
+      "text": "Driftwood Player 17 replaced Driftwood Player 15 for Driftwood FC."
     },
     {
       "event_id": "e002467",
       "period": 2,
       "time": "62:58",
       "type": "substitution",
-      "text": "Antoine Semenyo replaced Jeremy Doku for Manchester City."
+      "text": "Oakmere Player 25 replaced Oakmere Player 24 for Oakmere FC."
     },
     {
       "event_id": "e002727",
       "period": 2,
       "time": "70:06",
       "type": "substitution",
-      "text": "Kristoffer Ajer replaced Aaron Hickey for Brentford."
+      "text": "Driftwood Player 07 replaced Driftwood Player 04 for Driftwood FC."
     },
     {
       "event_id": "e002858",
       "period": 2,
       "time": "73:42",
       "type": "substitution",
-      "text": "Rayan Cherki replaced Elliot Anderson for Manchester City."
+      "text": "Oakmere Player 14 replaced Oakmere Player 12 for Oakmere FC."
     },
     {
       "event_id": "e003167",
       "period": 2,
       "time": "82:33",
       "type": "red_card",
-      "text": "Manchester City lost Rico Lewis to a red card."
+      "text": "Oakmere FC lost Oakmere Player 11 to a red card."
     }
   ],
   "player_of_the_match": {
     "player_id": "A10",
     "team_id": "AWAY",
     "jersey_number": 9,
-    "name": "Erling Haaland",
+    "name": "Oakmere Player 23",
     "position": "ST",
     "position_detail": "Centre Striker",
     "nationality": "Norway",
@@ -256,7 +256,7 @@
     ],
     "impact_points": 7.3,
     "reasons": [
-      "Erling Haaland recorded 1 goal, 4 shots on target, 0 saves and 8 interceptions.",
+      "Oakmere Player 23 recorded 1 goal, 4 shots on target, 0 saves and 8 interceptions.",
       "Completed 78 of 90 passes in 100 minutes; received 0 yellow cards and 0 red cards.",
       "Top impact score: 7.30 points."
     ]
@@ -266,7 +266,7 @@
       "player_id": "A10",
       "team_id": "AWAY",
       "jersey_number": 9,
-      "name": "Erling Haaland",
+      "name": "Oakmere Player 23",
       "position": "ST",
       "position_detail": "Centre Striker",
       "nationality": "Norway",
@@ -395,7 +395,7 @@
       "player_id": "H11",
       "team_id": "HOME",
       "jersey_number": 9,
-      "name": "Igor Thiago",
+      "name": "Driftwood Player 24",
       "position": "RW",
       "position_detail": "Striker",
       "nationality": "Brazil",
@@ -479,7 +479,7 @@
       "player_id": "H01",
       "team_id": "HOME",
       "jersey_number": 1,
-      "name": "Caoimhin Kelleher",
+      "name": "Driftwood Player 01",
       "position": "GK",
       "position_detail": "Goalkeeper",
       "nationality": "Ireland",
@@ -519,7 +519,7 @@
       "player_id": "A07",
       "team_id": "AWAY",
       "jersey_number": 37,
-      "name": "Allan",
+      "name": "Oakmere Player 20",
       "position": "DM",
       "position_detail": "Defensive Midfielder",
       "nationality": null,
@@ -649,7 +649,7 @@
       "player_id": "H10",
       "team_id": "HOME",
       "jersey_number": 13,
-      "name": "Callum Wilson",
+      "name": "Driftwood Player 26",
       "position": "ST",
       "position_detail": "Centre Striker",
       "nationality": "England",
@@ -747,7 +747,7 @@
       "player_id": "H07",
       "team_id": "HOME",
       "jersey_number": 27,
-      "name": "Vitaly Janelt",
+      "name": "Driftwood Player 23",
       "position": "DM",
       "position_detail": "Centre Defensive Midfielder",
       "nationality": "Germany",
@@ -845,7 +845,7 @@
       "player_id": "A01",
       "team_id": "AWAY",
       "jersey_number": 1,
-      "name": "Gianluigi Donnarumma",
+      "name": "Oakmere Player 01",
       "position": "GK",
       "position_detail": "Goalkeeper",
       "nationality": "Italy",
@@ -878,7 +878,7 @@
       "player_id": "A09",
       "team_id": "AWAY",
       "jersey_number": 7,
-      "name": "Iliman Ndiaye",
+      "name": "Oakmere Player 22",
       "position": "LW",
       "position_detail": "Left/Right Winger",
       "nationality": "Senegal",
@@ -968,7 +968,7 @@
       "player_id": "A08",
       "team_id": "AWAY",
       "jersey_number": 8,
-      "name": "Mateo Kovacic",
+      "name": "Oakmere Player 13",
       "position": "RCM",
       "position_detail": "Centre Central Midfielder",
       "nationality": "Croatia",
@@ -1032,7 +1032,7 @@
       "player_id": "H09",
       "team_id": "HOME",
       "jersey_number": 11,
-      "name": "Dango Ouattara",
+      "name": "Driftwood Player 25",
       "position": "LW",
       "position_detail": "Left/Right Winger",
       "nationality": "Burkina Faso",
@@ -1107,7 +1107,7 @@
       "player_id": "A13",
       "team_id": "AWAY",
       "jersey_number": 42,
-      "name": "Antoine Semenyo",
+      "name": "Oakmere Player 25",
       "position": "RW",
       "position_detail": "Left/Right Winger",
       "nationality": "Ghana",
@@ -1150,7 +1150,7 @@
       "player_id": "H08",
       "team_id": "HOME",
       "jersey_number": 7,
-      "name": "Kevin Schade",
+      "name": "Driftwood Player 16",
       "position": "RCM",
       "position_detail": "Left/Right Winger",
       "nationality": "Germany",
@@ -1211,7 +1211,7 @@
       "player_id": "A06",
       "team_id": "AWAY",
       "jersey_number": 5,
-      "name": "Elliot Anderson",
+      "name": "Oakmere Player 12",
       "position": "LCM",
       "position_detail": "Central Midfielder",
       "nationality": "England",
@@ -1272,7 +1272,7 @@
       "player_id": "A11",
       "team_id": "AWAY",
       "jersey_number": 11,
-      "name": "Jeremy Doku",
+      "name": "Oakmere Player 24",
       "position": "RW",
       "position_detail": "Left/Right Winger",
       "nationality": "Belgium",
@@ -1344,7 +1344,7 @@
       "player_id": "H12",
       "team_id": "HOME",
       "jersey_number": 8,
-      "name": "Mathias Jensen",
+      "name": "Driftwood Player 17",
       "position": "LCM",
       "position_detail": "Centre Central Midfielder",
       "nationality": "Denmark",
@@ -1380,7 +1380,7 @@
       "player_id": "A03",
       "team_id": "AWAY",
       "jersey_number": 3,
-      "name": "Ruben Dias",
+      "name": "Oakmere Player 04",
       "position": "LCB",
       "position_detail": "Centre Central Defender",
       "nationality": "Portugal",
@@ -1431,7 +1431,7 @@
       "player_id": "A12",
       "team_id": "AWAY",
       "jersey_number": 10,
-      "name": "Rayan Cherki",
+      "name": "Oakmere Player 14",
       "position": "LCM",
       "position_detail": "Attacking Midfielder",
       "nationality": "France",
@@ -1467,7 +1467,7 @@
       "player_id": "A02",
       "team_id": "AWAY",
       "jersey_number": 21,
-      "name": "Rayan Ait-Nouri",
+      "name": "Oakmere Player 06",
       "position": "LB",
       "position_detail": "Left Full Back",
       "nationality": "Algeria",
@@ -1508,7 +1508,7 @@
       "player_id": "H05",
       "team_id": "HOME",
       "jersey_number": 33,
-      "name": "Michael Kayode",
+      "name": "Driftwood Player 10",
       "position": "RB",
       "position_detail": "Right Full Back",
       "nationality": "Italy",
@@ -1545,7 +1545,7 @@
       "player_id": "H03",
       "team_id": "HOME",
       "jersey_number": 3,
-      "name": "Rico Henry",
+      "name": "Driftwood Player 05",
       "position": "LCB",
       "position_detail": "Left Full Back",
       "nationality": "Jamaica",
@@ -1587,7 +1587,7 @@
       "player_id": "A04",
       "team_id": "AWAY",
       "jersey_number": 6,
-      "name": "Marc Guehi",
+      "name": "Oakmere Player 05",
       "position": "RCB",
       "position_detail": "Centre Central Defender",
       "nationality": "England",
@@ -1631,7 +1631,7 @@
       "player_id": "H06",
       "team_id": "HOME",
       "jersey_number": 6,
-      "name": "Yehor Yarmoliuk",
+      "name": "Driftwood Player 15",
       "position": "LCM",
       "position_detail": "Centre Attacking Midfielder",
       "nationality": "Ukraine",
@@ -1666,7 +1666,7 @@
       "player_id": "H02",
       "team_id": "HOME",
       "jersey_number": 2,
-      "name": "Aaron Hickey",
+      "name": "Driftwood Player 04",
       "position": "LB",
       "position_detail": "Left Full Back",
       "nationality": "Scotland",
@@ -1697,7 +1697,7 @@
       "player_id": "H14",
       "team_id": "HOME",
       "jersey_number": 20,
-      "name": "Kristoffer Ajer",
+      "name": "Driftwood Player 07",
       "position": "LB",
       "position_detail": "Centre Central Defender",
       "nationality": "Norway",
@@ -1723,7 +1723,7 @@
       "player_id": "H04",
       "team_id": "HOME",
       "jersey_number": 4,
-      "name": "Sepp van den Berg",
+      "name": "Driftwood Player 06",
       "position": "RCB",
       "position_detail": "Centre Central Defender",
       "nationality": "Netherlands",
@@ -1761,7 +1761,7 @@
       "player_id": "A05",
       "team_id": "AWAY",
       "jersey_number": 82,
-      "name": "Rico Lewis",
+      "name": "Oakmere Player 11",
       "position": "RB",
       "position_detail": "Right Full Back",
       "nationality": "England",

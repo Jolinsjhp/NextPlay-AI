@@ -90,9 +90,9 @@
       "period_ms": 2507800,
       "team_id": "HOME",
       "club_id": "MUN",
-      "club_name": "Manchester United",
+      "club_name": "Pinecrest FC",
       "player_id": "H10",
-      "player_name": "Matheus Cunha",
+      "player_name": "Pinecrest Player 25",
       "shirt_number": 10,
       "score": [
         1,
@@ -102,19 +102,19 @@
   ],
   "competition": {
     "id": "PL-SYN-2026",
-    "name": "Premier League (synthetic)",
+    "name": "NextPlay League (synthetic)",
     "season": "2026/27",
     "synthetic": true,
     "matchweek": 4,
     "kickoff_local": "2026-11-14T15:00:00",
     "time_zone": "Europe/London",
-    "venue": "Old Trafford"
+    "venue": "Pinecrest Park"
   },
   "home_club": {
     "club_id": "MUN",
-    "name": "Manchester United",
-    "short_name": "Man United",
-    "stadium": "Old Trafford",
+    "name": "Pinecrest FC",
+    "short_name": "Pinecrest",
+    "stadium": "Pinecrest Park",
     "colors": {
       "primary": "#DA291C",
       "secondary": "#FBE122"
@@ -123,9 +123,9 @@
   },
   "away_club": {
     "club_id": "NFO",
-    "name": "Nottingham Forest",
-    "short_name": "Forest",
-    "stadium": "City Ground",
+    "name": "Rivermist FC",
+    "short_name": "Rivermist",
+    "stadium": "Rivermist Park",
     "colors": {
       "primary": "#DD0000",
       "secondary": "#FFFFFF"

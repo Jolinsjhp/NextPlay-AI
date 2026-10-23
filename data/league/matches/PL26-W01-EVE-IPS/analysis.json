@@ -4,7 +4,7 @@
   "status": "complete",
   "language": "en",
   "source": {
-    "fingerprint": "fb696b4c9a56f89a58dc764ef5899f2ca57ca99860c4fc6ab81e435baacda6c5",
+    "fingerprint": "988368e5fb53d5cb07e86e35efff27d61674789dc740ba78d85a9f7863731642",
     "event_count": 3600,
     "match_end_event_id": "e003600",
     "completed_at_ms": 6000000,
@@ -18,12 +18,12 @@
     "mode": "local",
     "model": null
   },
-  "headline": "Everton 2–0 Ipswich Town",
-  "summary": "Everton won 2–0. There were 27 shots across the match. Thierno Barry earns Player of the Match on the published impact scoring.",
+  "headline": "Ivory FC 2–0 Larkspur FC",
+  "summary": "Ivory FC won 2–0. There were 27 shots across the match. Ivory Player 19 earns Player of the Match on the published impact scoring.",
   "periods": [
     {
       "title": "First half",
-      "text": "Everton had 6 shots and Ipswich Town had 7. 00:58 — Thierno Barry opened the scoring for Everton (1–0). 28:49 — Thierno Barry extended the lead for Everton (2–0). The period ended at 2–0.",
+      "text": "Ivory FC had 6 shots and Larkspur FC had 7. 00:58 — Ivory Player 19 opened the scoring for Ivory FC (1–0). 28:49 — Ivory Player 19 extended the lead for Ivory FC (2–0). The period ended at 2–0.",
       "shots": [
         6,
         7
@@ -50,7 +50,7 @@
     },
     {
       "title": "Second half",
-      "text": "Everton had 7 shots and Ipswich Town had 7. 82:39 — Ipswich Town lost Darnell Furlong to a red card. The period ended at 2–0.",
+      "text": "Ivory FC had 7 shots and Larkspur FC had 7. 82:39 — Larkspur FC lost Larkspur Player 05 to a red card. The period ended at 2–0.",
       "shots": [
         7,
         7
@@ -79,8 +79,8 @@
     }
   ],
   "insights": [
-    "Everton: 13 shots, 6 on target, 323 of 379 passes completed, 50.1% possession.",
-    "Ipswich Town: 14 shots, 9 on target, 334 of 388 passes completed, 49.9% possession."
+    "Ivory FC: 13 shots, 6 on target, 323 of 379 passes completed, 50.1% possession.",
+    "Larkspur FC: 14 shots, 9 on target, 334 of 388 passes completed, 49.9% possession."
   ],
   "key_moments": [
     {
@@ -88,56 +88,56 @@
       "period": 1,
       "time": "00:58",
       "type": "shot",
-      "text": "Thierno Barry opened the scoring for Everton (1–0)."
+      "text": "Ivory Player 19 opened the scoring for Ivory FC (1–0)."
     },
     {
       "event_id": "e001030",
       "period": 1,
       "time": "28:49",
       "type": "shot",
-      "text": "Thierno Barry extended the lead for Everton (2–0)."
+      "text": "Ivory Player 19 extended the lead for Ivory FC (2–0)."
     },
     {
       "event_id": "e002305",
       "period": 2,
       "time": "59:19",
       "type": "substitution",
-      "text": "Jack Grealish replaced Ainsley Maitland-Niles for Everton."
+      "text": "Ivory Player 12 replaced Ivory Player 10 for Ivory FC."
     },
     {
       "event_id": "e002410",
       "period": 2,
       "time": "62:12",
       "type": "substitution",
-      "text": "Sindre Egeli replaced Abdul Fatawu for Ipswich Town."
+      "text": "Larkspur Player 21 replaced Larkspur Player 20 for Larkspur FC."
     },
     {
       "event_id": "e002699",
       "period": 2,
       "time": "70:18",
       "type": "substitution",
-      "text": "Jake O'Brien replaced Vitalii Mykolenko for Everton."
+      "text": "Ivory Player 08 replaced Ivory Player 09 for Ivory FC."
     },
     {
       "event_id": "e002888",
       "period": 2,
       "time": "75:19",
       "type": "substitution",
-      "text": "Jack Taylor replaced Julio Enciso for Ipswich Town."
+      "text": "Larkspur Player 14 replaced Larkspur Player 12 for Larkspur FC."
     },
     {
       "event_id": "e003149",
       "period": 2,
       "time": "82:39",
       "type": "red_card",
-      "text": "Ipswich Town lost Darnell Furlong to a red card."
+      "text": "Larkspur FC lost Larkspur Player 05 to a red card."
     }
   ],
   "player_of_the_match": {
     "player_id": "H10",
     "team_id": "HOME",
     "jersey_number": 11,
-    "name": "Thierno Barry",
+    "name": "Ivory Player 19",
     "position": "ST",
     "position_detail": "Centre Striker",
     "nationality": "France",
@@ -242,7 +242,7 @@
     ],
     "impact_points": 11.89,
     "reasons": [
-      "Thierno Barry recorded 2 goals, 6 shots on target, 0 saves and 9 interceptions.",
+      "Ivory Player 19 recorded 2 goals, 6 shots on target, 0 saves and 9 interceptions.",
       "Completed 59 of 68 passes in 100 minutes; received 0 yellow cards and 0 red cards.",
       "Top impact score: 11.89 points."
     ]
@@ -252,7 +252,7 @@
       "player_id": "H10",
       "team_id": "HOME",
       "jersey_number": 11,
-      "name": "Thierno Barry",
+      "name": "Ivory Player 19",
       "position": "ST",
       "position_detail": "Centre Striker",
       "nationality": "France",
@@ -361,7 +361,7 @@
       "player_id": "H01",
       "team_id": "HOME",
       "jersey_number": 1,
-      "name": "Jordan Pickford",
+      "name": "Ivory Player 01",
       "position": "GK",
       "position_detail": "Goalkeeper",
       "nationality": "England",
@@ -407,7 +407,7 @@
       "player_id": "A10",
       "team_id": "AWAY",
       "jersey_number": 9,
-      "name": "Zian Flemming",
+      "name": "Larkspur Player 22",
       "position": "ST",
       "position_detail": "Centre Striker",
       "nationality": "Netherlands",
@@ -510,7 +510,7 @@
       "player_id": "A01",
       "team_id": "AWAY",
       "jersey_number": 1,
-      "name": "Alex Palmer",
+      "name": "Larkspur Player 01",
       "position": "GK",
       "position_detail": "Goalkeeper",
       "nationality": null,
@@ -548,7 +548,7 @@
       "player_id": "A09",
       "team_id": "AWAY",
       "jersey_number": 11,
-      "name": "Jaden Philogene",
+      "name": "Larkspur Player 23",
       "position": "LW",
       "position_detail": "Left Winger",
       "nationality": "England",
@@ -631,7 +631,7 @@
       "player_id": "H07",
       "team_id": "HOME",
       "jersey_number": 23,
-      "name": "Christian Norgaard",
+      "name": "Ivory Player 13",
       "position": "DM",
       "position_detail": "Defensive Midfielder",
       "nationality": "Denmark",
@@ -742,7 +742,7 @@
       "player_id": "A07",
       "team_id": "AWAY",
       "jersey_number": 5,
-      "name": "Azor Matusiwa",
+      "name": "Larkspur Player 11",
       "position": "DM",
       "position_detail": "Centre Defensive Midfielder",
       "nationality": "Netherlands",
@@ -846,7 +846,7 @@
       "player_id": "A06",
       "team_id": "AWAY",
       "jersey_number": 10,
-      "name": "Julio Enciso",
+      "name": "Larkspur Player 12",
       "position": "LCM",
       "position_detail": "Centre Attacking Midfielder",
       "nationality": "Paraguay",
@@ -902,7 +902,7 @@
       "player_id": "A11",
       "team_id": "AWAY",
       "jersey_number": 7,
-      "name": "Abdul Fatawu",
+      "name": "Larkspur Player 20",
       "position": "RW",
       "position_detail": "Right Winger",
       "nationality": "Ghana",
@@ -969,7 +969,7 @@
       "player_id": "A08",
       "team_id": "AWAY",
       "jersey_number": 12,
-      "name": "Florentino",
+      "name": "Larkspur Player 13",
       "position": "RCM",
       "position_detail": "Centre Defensive Midfielder",
       "nationality": "Portugal",
@@ -1031,7 +1031,7 @@
       "player_id": "H08",
       "team_id": "HOME",
       "jersey_number": 8,
-      "name": "Kiernan Dewsbury-Hall",
+      "name": "Ivory Player 11",
       "position": "RCM",
       "position_detail": "Central Midfielder",
       "nationality": "England",
@@ -1095,7 +1095,7 @@
       "player_id": "H11",
       "team_id": "HOME",
       "jersey_number": 20,
-      "name": "Tyler Dibling",
+      "name": "Ivory Player 21",
       "position": "RW",
       "position_detail": "Right Winger",
       "nationality": "England",
@@ -1176,7 +1176,7 @@
       "player_id": "H06",
       "team_id": "HOME",
       "jersey_number": 2,
-      "name": "Ainsley Maitland-Niles",
+      "name": "Ivory Player 10",
       "position": "LCM",
       "position_detail": "Centre/Right Wing Back",
       "nationality": "England",
@@ -1229,7 +1229,7 @@
       "player_id": "A13",
       "team_id": "AWAY",
       "jersey_number": 8,
-      "name": "Sindre Egeli",
+      "name": "Larkspur Player 21",
       "position": "RW",
       "position_detail": "Right Winger",
       "nationality": "Norway",
@@ -1280,7 +1280,7 @@
       "player_id": "H09",
       "team_id": "HOME",
       "jersey_number": 19,
-      "name": "Tyrique George",
+      "name": "Ivory Player 20",
       "position": "LW",
       "position_detail": "Left Winger",
       "nationality": "England",
@@ -1364,7 +1364,7 @@
       "player_id": "A02",
       "team_id": "AWAY",
       "jersey_number": 3,
-      "name": "Leif Davis",
+      "name": "Larkspur Player 06",
       "position": "LB",
       "position_detail": "Left Full Back",
       "nationality": "England",
@@ -1403,7 +1403,7 @@
       "player_id": "A12",
       "team_id": "AWAY",
       "jersey_number": 14,
-      "name": "Jack Taylor",
+      "name": "Larkspur Player 14",
       "position": "LCM",
       "position_detail": "Centre Central Midfielder",
       "nationality": "Ireland",
@@ -1432,7 +1432,7 @@
       "player_id": "A04",
       "team_id": "AWAY",
       "jersey_number": 6,
-      "name": "Issa Diop",
+      "name": "Larkspur Player 08",
       "position": "RCB",
       "position_detail": "Centre Central Defender",
       "nationality": "Morocco",
@@ -1478,7 +1478,7 @@
       "player_id": "A03",
       "team_id": "AWAY",
       "jersey_number": 4,
-      "name": "Cedric Kipre",
+      "name": "Larkspur Player 07",
       "position": "LCB",
       "position_detail": "Central Defender",
       "nationality": "Cote D’Ivoire",
@@ -1527,7 +1527,7 @@
       "player_id": "H03",
       "team_id": "HOME",
       "jersey_number": 5,
-      "name": "Michael Keane",
+      "name": "Ivory Player 06",
       "position": "LCB",
       "position_detail": "Centre Central Defender",
       "nationality": "England",
@@ -1568,7 +1568,7 @@
       "player_id": "H05",
       "team_id": "HOME",
       "jersey_number": 4,
-      "name": "Jarrad Branthwaite",
+      "name": "Ivory Player 05",
       "position": "RB",
       "position_detail": "Defender",
       "nationality": "England",
@@ -1602,7 +1602,7 @@
       "player_id": "H02",
       "team_id": "HOME",
       "jersey_number": 16,
-      "name": "Vitalii Mykolenko",
+      "name": "Ivory Player 09",
       "position": "LB",
       "position_detail": "Left Full Back",
       "nationality": "Ukraine",
@@ -1635,7 +1635,7 @@
       "player_id": "H14",
       "team_id": "HOME",
       "jersey_number": 15,
-      "name": "Jake O'Brien",
+      "name": "Ivory Player 08",
       "position": "LB",
       "position_detail": "Centre Central Defender",
       "nationality": "Ireland",
@@ -1659,7 +1659,7 @@
       "player_id": "H12",
       "team_id": "HOME",
       "jersey_number": 10,
-      "name": "Jack Grealish",
+      "name": "Ivory Player 12",
       "position": "LCM",
       "position_detail": "Left/Centre/Right Attacking Midfielder",
       "nationality": "England",
@@ -1692,7 +1692,7 @@
       "player_id": "H04",
       "team_id": "HOME",
       "jersey_number": 6,
-      "name": "James Tarkowski",
+      "name": "Ivory Player 07",
       "position": "RCB",
       "position_detail": "Centre Central Defender",
       "nationality": "England",
@@ -1734,7 +1734,7 @@
       "player_id": "A05",
       "team_id": "AWAY",
       "jersey_number": 2,
-      "name": "Darnell Furlong",
+      "name": "Larkspur Player 05",
       "position": "RB",
       "position_detail": "Right-Back",
       "nationality": null,

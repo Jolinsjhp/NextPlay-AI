@@ -90,9 +90,9 @@
       "period_ms": 729400,
       "team_id": "AWAY",
       "club_id": "LIV",
-      "club_name": "Liverpool",
+      "club_name": "Northstar FC",
       "player_id": "A10",
-      "player_name": "Alexander Isak",
+      "player_name": "Northstar Player 25",
       "shirt_number": 9,
       "score": [
         0,
@@ -105,9 +105,9 @@
       "period_ms": 2333800,
       "team_id": "AWAY",
       "club_id": "LIV",
-      "club_name": "Liverpool",
+      "club_name": "Northstar FC",
       "player_id": "A11",
-      "player_name": "Bradley Barcola",
+      "player_name": "Northstar Player 29",
       "shirt_number": 29,
       "score": [
         0,
@@ -120,9 +120,9 @@
       "period_ms": 2370000,
       "team_id": "HOME",
       "club_id": "COV",
-      "club_name": "Coventry City",
+      "club_name": "Glenvale FC",
       "player_id": "H10",
-      "player_name": "Ellis Simms",
+      "player_name": "Glenvale Player 22",
       "shirt_number": 9,
       "score": [
         1,
@@ -132,19 +132,19 @@
   ],
   "competition": {
     "id": "PL-SYN-2026",
-    "name": "Premier League (synthetic)",
+    "name": "NextPlay League (synthetic)",
     "season": "2026/27",
     "synthetic": true,
     "matchweek": 1,
     "kickoff_local": "2026-10-25T14:00:00",
     "time_zone": "Europe/London",
-    "venue": "CBS Arena"
+    "venue": "Glenvale Park"
   },
   "home_club": {
     "club_id": "COV",
-    "name": "Coventry City",
-    "short_name": "Coventry",
-    "stadium": "CBS Arena",
+    "name": "Glenvale FC",
+    "short_name": "Glenvale",
+    "stadium": "Glenvale Park",
     "colors": {
       "primary": "#6CB4E4",
       "secondary": "#FFFFFF"
@@ -153,9 +153,9 @@
   },
   "away_club": {
     "club_id": "LIV",
-    "name": "Liverpool",
-    "short_name": "Liverpool",
-    "stadium": "Anfield",
+    "name": "Northstar FC",
+    "short_name": "Northstar FC",
+    "stadium": "Northstar Park",
     "colors": {
       "primary": "#C8102E",
       "secondary": "#FFFFFF"

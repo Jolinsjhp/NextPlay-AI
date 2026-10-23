@@ -4,7 +4,7 @@
   "status": "complete",
   "language": "en",
   "source": {
-    "fingerprint": "6a4579ac4c98b0624f06d31e2b41d83c10fd9ea63882b7751d5d921be04f8061",
+    "fingerprint": "6e693258526d38b64010b861b02513d380eb1dfbf1fcba8dfddaf58a7db200c2",
     "event_count": 3584,
     "match_end_event_id": "e003584",
     "completed_at_ms": 6000000,
@@ -18,12 +18,12 @@
     "mode": "local",
     "model": null
   },
-  "headline": "Coventry City 1–2 Liverpool",
-  "summary": "Liverpool won 2–1. There were 19 shots across the match. Alexander Isak earns Player of the Match on the published impact scoring.",
+  "headline": "Glenvale FC 1–2 Northstar FC",
+  "summary": "Northstar FC won 2–1. There were 19 shots across the match. Northstar Player 25 earns Player of the Match on the published impact scoring.",
   "periods": [
     {
       "title": "First half",
-      "text": "Coventry City had 4 shots and Liverpool had 4. 12:09 — Alexander Isak opened the scoring for Liverpool (0–1). 38:53 — Bradley Barcola extended the lead for Liverpool (0–2). The period ended at 0–2.",
+      "text": "Glenvale FC had 4 shots and Northstar FC had 4. 12:09 — Northstar Player 25 opened the scoring for Northstar FC (0–1). 38:53 — Northstar Player 29 extended the lead for Northstar FC (0–2). The period ended at 0–2.",
       "shots": [
         4,
         4
@@ -45,7 +45,7 @@
     },
     {
       "title": "Second half",
-      "text": "Coventry City had 4 shots and Liverpool had 7. 81:41 — Liverpool lost Conor Bradley to a red card. 84:30 — Ellis Simms reduced the deficit for Coventry City (1–2). The period ended at 1–2.",
+      "text": "Glenvale FC had 4 shots and Northstar FC had 7. 81:41 — Northstar FC lost Northstar Player 10 to a red card. 84:30 — Glenvale Player 22 reduced the deficit for Glenvale FC (1–2). The period ended at 1–2.",
       "shots": [
         4,
         7
@@ -71,8 +71,8 @@
     }
   ],
   "insights": [
-    "Coventry City: 8 shots, 4 on target, 335 of 380 passes completed, 47.9% possession.",
-    "Liverpool: 11 shots, 8 on target, 387 of 429 passes completed, 52.1% possession."
+    "Glenvale FC: 8 shots, 4 on target, 335 of 380 passes completed, 47.9% possession.",
+    "Northstar FC: 11 shots, 8 on target, 387 of 429 passes completed, 52.1% possession."
   ],
   "key_moments": [
     {
@@ -80,63 +80,63 @@
       "period": 1,
       "time": "12:09",
       "type": "shot",
-      "text": "Alexander Isak opened the scoring for Liverpool (0–1)."
+      "text": "Northstar Player 25 opened the scoring for Northstar FC (0–1)."
     },
     {
       "event_id": "e001394",
       "period": 1,
       "time": "38:53",
       "type": "shot",
-      "text": "Bradley Barcola extended the lead for Liverpool (0–2)."
+      "text": "Northstar Player 29 extended the lead for Northstar FC (0–2)."
     },
     {
       "event_id": "e002303",
       "period": 2,
       "time": "58:57",
       "type": "substitution",
-      "text": "Tatsuhiro Sakamoto replaced Jay Dasilva for Coventry City."
+      "text": "Glenvale Player 16 replaced Glenvale Player 13 for Glenvale FC."
     },
     {
       "event_id": "e002446",
       "period": 2,
       "time": "62:49",
       "type": "substitution",
-      "text": "Cody Gakpo replaced Bradley Barcola for Liverpool."
+      "text": "Northstar Player 27 replaced Northstar Player 29 for Northstar FC."
     },
     {
       "event_id": "e002693",
       "period": 2,
       "time": "69:51",
       "type": "substitution",
-      "text": "Stephen Mfuni replaced Jake Bidwell for Coventry City."
+      "text": "Glenvale Player 06 replaced Glenvale Player 08 for Glenvale FC."
     },
     {
       "event_id": "e002881",
       "period": 2,
       "time": "75:24",
       "type": "substitution",
-      "text": "Alexis Mac Allister replaced Florian Wirtz for Liverpool."
+      "text": "Northstar Player 20 replaced Northstar Player 18 for Northstar FC."
     },
     {
       "event_id": "e003099",
       "period": 2,
       "time": "81:41",
       "type": "red_card",
-      "text": "Liverpool lost Conor Bradley to a red card."
+      "text": "Northstar FC lost Northstar Player 10 to a red card."
     },
     {
       "event_id": "e003207",
       "period": 2,
       "time": "84:30",
       "type": "shot",
-      "text": "Ellis Simms reduced the deficit for Coventry City (1–2)."
+      "text": "Glenvale Player 22 reduced the deficit for Glenvale FC (1–2)."
     }
   ],
   "player_of_the_match": {
     "player_id": "A10",
     "team_id": "AWAY",
     "jersey_number": 9,
-    "name": "Alexander Isak",
+    "name": "Northstar Player 25",
     "position": "ST",
     "position_detail": "Centre Striker",
     "nationality": "Sweden",
@@ -250,7 +250,7 @@
     ],
     "impact_points": 6.58,
     "reasons": [
-      "Alexander Isak recorded 1 goal, 3 shots on target, 0 saves and 6 interceptions.",
+      "Northstar Player 25 recorded 1 goal, 3 shots on target, 0 saves and 6 interceptions.",
       "Completed 78 of 84 passes in 100 minutes; received 0 yellow cards and 0 red cards.",
       "Top impact score: 6.58 points."
     ]
@@ -260,7 +260,7 @@
       "player_id": "A10",
       "team_id": "AWAY",
       "jersey_number": 9,
-      "name": "Alexander Isak",
+      "name": "Northstar Player 25",
       "position": "ST",
       "position_detail": "Centre Striker",
       "nationality": "Sweden",
@@ -378,7 +378,7 @@
       "player_id": "H10",
       "team_id": "HOME",
       "jersey_number": 9,
-      "name": "Ellis Simms",
+      "name": "Glenvale Player 22",
       "position": "ST",
       "position_detail": "Centre Striker",
       "nationality": "England",
@@ -486,7 +486,7 @@
       "player_id": "A11",
       "team_id": "AWAY",
       "jersey_number": 29,
-      "name": "Bradley Barcola",
+      "name": "Northstar Player 29",
       "position": "RW",
       "position_detail": "Left/Right Winger",
       "nationality": "France",
@@ -560,7 +560,7 @@
       "player_id": "H01",
       "team_id": "HOME",
       "jersey_number": 13,
-      "name": "Ben Wilson",
+      "name": "Glenvale Player 01",
       "position": "GK",
       "position_detail": "Goalkeeper",
       "nationality": null,
@@ -598,7 +598,7 @@
       "player_id": "A07",
       "team_id": "AWAY",
       "jersey_number": 3,
-      "name": "Wataru Endo",
+      "name": "Northstar Player 17",
       "position": "DM",
       "position_detail": "Centre Defensive Midfielder",
       "nationality": "Japan",
@@ -709,7 +709,7 @@
       "player_id": "A09",
       "team_id": "AWAY",
       "jersey_number": 14,
-      "name": "Federico Chiesa",
+      "name": "Northstar Player 26",
       "position": "LW",
       "position_detail": "Left/Centre/Right Winger",
       "nationality": "Italy",
@@ -806,7 +806,7 @@
       "player_id": "H07",
       "team_id": "HOME",
       "jersey_number": 6,
-      "name": "Matt Grimes",
+      "name": "Glenvale Player 15",
       "position": "DM",
       "position_detail": "Defensive Midfielder",
       "nationality": "England",
@@ -897,7 +897,7 @@
       "player_id": "A01",
       "team_id": "AWAY",
       "jersey_number": 1,
-      "name": "Alisson Becker",
+      "name": "Northstar Player 01",
       "position": "GK",
       "position_detail": "Goalkeeper",
       "nationality": "Brazil",
@@ -930,7 +930,7 @@
       "player_id": "H09",
       "team_id": "HOME",
       "jersey_number": 10,
-      "name": "Ephron Mason-Clark",
+      "name": "Glenvale Player 23",
       "position": "LW",
       "position_detail": "Left/Centre/Right Striker",
       "nationality": "Jamaica",
@@ -1012,7 +1012,7 @@
       "player_id": "H11",
       "team_id": "HOME",
       "jersey_number": 18,
-      "name": "Loum Tchaouna",
+      "name": "Glenvale Player 26",
       "position": "RW",
       "position_detail": "Right Winger",
       "nationality": "France",
@@ -1107,7 +1107,7 @@
       "player_id": "H06",
       "team_id": "HOME",
       "jersey_number": 3,
-      "name": "Jay Dasilva",
+      "name": "Glenvale Player 13",
       "position": "LCM",
       "position_detail": "Centre Central Midfielder",
       "nationality": "England",
@@ -1157,7 +1157,7 @@
       "player_id": "A13",
       "team_id": "AWAY",
       "jersey_number": 18,
-      "name": "Cody Gakpo",
+      "name": "Northstar Player 27",
       "position": "RW",
       "position_detail": "Centre Striker",
       "nationality": "Netherlands",
@@ -1197,7 +1197,7 @@
       "player_id": "A06",
       "team_id": "AWAY",
       "jersey_number": 7,
-      "name": "Florian Wirtz",
+      "name": "Northstar Player 18",
       "position": "LCM",
       "position_detail": "Left/Centre/Right Attacking Midfielder",
       "nationality": "Germany",
@@ -1256,7 +1256,7 @@
       "player_id": "A08",
       "team_id": "AWAY",
       "jersey_number": 8,
-      "name": "Dominik Szoboszlai",
+      "name": "Northstar Player 19",
       "position": "RCM",
       "position_detail": "Left/Centre/Right Attacking Midfielder",
       "nationality": "Hungary",
@@ -1325,7 +1325,7 @@
       "player_id": "H08",
       "team_id": "HOME",
       "jersey_number": 5,
-      "name": "Jack Rudoni",
+      "name": "Glenvale Player 14",
       "position": "RCM",
       "position_detail": "Centre Central Midfielder",
       "nationality": "England",
@@ -1375,7 +1375,7 @@
       "player_id": "H03",
       "team_id": "HOME",
       "jersey_number": 2,
-      "name": "Ethan Pinnock",
+      "name": "Glenvale Player 04",
       "position": "LCB",
       "position_detail": "Centre Central Defender",
       "nationality": "Jamaica",
@@ -1423,7 +1423,7 @@
       "player_id": "H12",
       "team_id": "HOME",
       "jersey_number": 7,
-      "name": "Tatsuhiro Sakamoto",
+      "name": "Glenvale Player 16",
       "position": "LCM",
       "position_detail": "Left/Centre/Right Attacking Midfielder",
       "nationality": "Japan",
@@ -1466,7 +1466,7 @@
       "player_id": "A04",
       "team_id": "AWAY",
       "jersey_number": 4,
-      "name": "Virgil van Dijk",
+      "name": "Northstar Player 07",
       "position": "RCB",
       "position_detail": "Centre Central Defender",
       "nationality": "Netherlands",
@@ -1509,7 +1509,7 @@
       "player_id": "A03",
       "team_id": "AWAY",
       "jersey_number": 2,
-      "name": "Joe Gomez",
+      "name": "Northstar Player 06",
       "position": "LCB",
       "position_detail": "Centre-Back",
       "nationality": null,
@@ -1551,7 +1551,7 @@
       "player_id": "A02",
       "team_id": "AWAY",
       "jersey_number": 6,
-      "name": "Milos Kerkez",
+      "name": "Northstar Player 09",
       "position": "LB",
       "position_detail": "Left Full Back",
       "nationality": "Hungary",
@@ -1586,7 +1586,7 @@
       "player_id": "H05",
       "team_id": "HOME",
       "jersey_number": 20,
-      "name": "Kaine Kesler-Hayden",
+      "name": "Glenvale Player 07",
       "position": "RB",
       "position_detail": "Right Full Back",
       "nationality": "England",
@@ -1620,7 +1620,7 @@
       "player_id": "H02",
       "team_id": "HOME",
       "jersey_number": 21,
-      "name": "Jake Bidwell",
+      "name": "Glenvale Player 08",
       "position": "LB",
       "position_detail": "Left Full Back",
       "nationality": "England",
@@ -1649,7 +1649,7 @@
       "player_id": "A12",
       "team_id": "AWAY",
       "jersey_number": 10,
-      "name": "Alexis Mac Allister",
+      "name": "Northstar Player 20",
       "position": "LCM",
       "position_detail": "Left/Centre/Right Attacking Midfielder",
       "nationality": "Argentina",
@@ -1678,7 +1678,7 @@
       "player_id": "H14",
       "team_id": "HOME",
       "jersey_number": 12,
-      "name": "Stephen Mfuni",
+      "name": "Glenvale Player 06",
       "position": "LB",
       "position_detail": "Central Defender",
       "nationality": "England",
@@ -1704,7 +1704,7 @@
       "player_id": "H04",
       "team_id": "HOME",
       "jersey_number": 4,
-      "name": "Bobby Thomas",
+      "name": "Glenvale Player 05",
       "position": "RCB",
       "position_detail": "Centre Central Defender",
       "nationality": "England",
@@ -1746,7 +1746,7 @@
       "player_id": "A05",
       "team_id": "AWAY",
       "jersey_number": 12,
-      "name": "Conor Bradley",
+      "name": "Northstar Player 10",
       "position": "RB",
       "position_detail": "Right Full Back",
       "nationality": "Northern Ireland",

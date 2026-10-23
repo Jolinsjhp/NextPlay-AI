@@ -4,7 +4,7 @@
   "status": "complete",
   "language": "en",
   "source": {
-    "fingerprint": "36c36400cc568fdeeadc55e023097099ed7e09db8165f6b4113d34df91f8e5c6",
+    "fingerprint": "a49e6e62390c93a3b4716ce764c6f7488277c191ad141e318aa8eb16464300e2",
     "event_count": 3564,
     "match_end_event_id": "e003564",
     "completed_at_ms": 6000000,
@@ -18,12 +18,12 @@
     "mode": "local",
     "model": null
   },
-  "headline": "Chelsea 1–1 Everton",
-  "summary": "Chelsea and Everton drew 1–1. There were 28 shots across the match. Joao Pedro earns Player of the Match on the published impact scoring.",
+  "headline": "Fairhaven FC 1–1 Ivory FC",
+  "summary": "Fairhaven FC and Ivory FC drew 1–1. There were 28 shots across the match. Fairhaven Player 25 earns Player of the Match on the published impact scoring.",
   "periods": [
     {
       "title": "First half",
-      "text": "Chelsea had 5 shots and Everton had 6. Neither side scored and there were no red cards. The period ended at 0–0.",
+      "text": "Fairhaven FC had 5 shots and Ivory FC had 6. Neither side scored and there were no red cards. The period ended at 0–0.",
       "shots": [
         5,
         6
@@ -48,7 +48,7 @@
     },
     {
       "title": "Second half",
-      "text": "Chelsea had 13 shots and Everton had 4. 56:32 — Thierno Barry opened the scoring for Everton (0–1). 81:27 — Everton lost Jarrad Branthwaite to a red card. 84:29 — Joao Pedro equalised for Chelsea (1–1). The period ended at 1–1.",
+      "text": "Fairhaven FC had 13 shots and Ivory FC had 4. 56:32 — Ivory Player 19 opened the scoring for Ivory FC (0–1). 81:27 — Ivory FC lost Ivory Player 05 to a red card. 84:29 — Fairhaven Player 25 equalised for Fairhaven FC (1–1). The period ended at 1–1.",
       "shots": [
         13,
         4
@@ -80,8 +80,8 @@
     }
   ],
   "insights": [
-    "Chelsea: 18 shots, 11 on target, 355 of 390 passes completed, 49.0% possession.",
-    "Everton: 10 shots, 2 on target, 363 of 407 passes completed, 51.0% possession."
+    "Fairhaven FC: 18 shots, 11 on target, 355 of 390 passes completed, 49.0% possession.",
+    "Ivory FC: 10 shots, 2 on target, 363 of 407 passes completed, 51.0% possession."
   ],
   "key_moments": [
     {
@@ -89,56 +89,56 @@
       "period": 2,
       "time": "56:32",
       "type": "shot",
-      "text": "Thierno Barry opened the scoring for Everton (0–1)."
+      "text": "Ivory Player 19 opened the scoring for Ivory FC (0–1)."
     },
     {
       "event_id": "e002310",
       "period": 2,
       "time": "59:30",
       "type": "substitution",
-      "text": "Jordan Henderson replaced Valentin Barco for Chelsea."
+      "text": "Fairhaven Player 18 replaced Fairhaven Player 16 for Fairhaven FC."
     },
     {
       "event_id": "e002325",
       "period": 2,
       "time": "60:01",
       "type": "substitution",
-      "text": "Brennan Johnson replaced Tyler Dibling for Everton."
+      "text": "Ivory Player 22 replaced Ivory Player 21 for Ivory FC."
     },
     {
       "event_id": "e002658",
       "period": 2,
       "time": "69:29",
       "type": "substitution",
-      "text": "Levi Colwill replaced Jorrel Hato for Chelsea."
+      "text": "Fairhaven Player 08 replaced Fairhaven Player 09 for Fairhaven FC."
     },
     {
       "event_id": "e002856",
       "period": 2,
       "time": "74:59",
       "type": "substitution",
-      "text": "Jack Grealish replaced Ainsley Maitland-Niles for Everton."
+      "text": "Ivory Player 12 replaced Ivory Player 10 for Ivory FC."
     },
     {
       "event_id": "e003085",
       "period": 2,
       "time": "81:27",
       "type": "red_card",
-      "text": "Everton lost Jarrad Branthwaite to a red card."
+      "text": "Ivory FC lost Ivory Player 05 to a red card."
     },
     {
       "event_id": "e003196",
       "period": 2,
       "time": "84:29",
       "type": "shot",
-      "text": "Joao Pedro equalised for Chelsea (1–1)."
+      "text": "Fairhaven Player 25 equalised for Fairhaven FC (1–1)."
     }
   ],
   "player_of_the_match": {
     "player_id": "H10",
     "team_id": "HOME",
     "jersey_number": 9,
-    "name": "Joao Pedro",
+    "name": "Fairhaven Player 25",
     "position": "ST",
     "position_detail": "Centre Striker",
     "nationality": "Brazil",
@@ -272,7 +272,7 @@
     ],
     "impact_points": 10.3,
     "reasons": [
-      "Joao Pedro recorded 1 goal, 8 shots on target, 0 saves and 10 interceptions.",
+      "Fairhaven Player 25 recorded 1 goal, 8 shots on target, 0 saves and 10 interceptions.",
       "Completed 92 of 93 passes in 100 minutes; received 0 yellow cards and 0 red cards.",
       "Top impact score: 10.30 points."
     ]
@@ -282,7 +282,7 @@
       "player_id": "H10",
       "team_id": "HOME",
       "jersey_number": 9,
-      "name": "Joao Pedro",
+      "name": "Fairhaven Player 25",
       "position": "ST",
       "position_detail": "Centre Striker",
       "nationality": "Brazil",
@@ -420,7 +420,7 @@
       "player_id": "A01",
       "team_id": "AWAY",
       "jersey_number": 1,
-      "name": "Jordan Pickford",
+      "name": "Ivory Player 01",
       "position": "GK",
       "position_detail": "Goalkeeper",
       "nationality": "England",
@@ -470,7 +470,7 @@
       "player_id": "A10",
       "team_id": "AWAY",
       "jersey_number": 11,
-      "name": "Thierno Barry",
+      "name": "Ivory Player 19",
       "position": "ST",
       "position_detail": "Centre Striker",
       "nationality": "France",
@@ -582,7 +582,7 @@
       "player_id": "H07",
       "team_id": "HOME",
       "jersey_number": 25,
-      "name": "Moises Caicedo",
+      "name": "Fairhaven Player 21",
       "position": "DM",
       "position_detail": "Centre Defensive Midfielder",
       "nationality": "Ecuador",
@@ -687,7 +687,7 @@
       "player_id": "A07",
       "team_id": "AWAY",
       "jersey_number": 23,
-      "name": "Christian Norgaard",
+      "name": "Ivory Player 13",
       "position": "DM",
       "position_detail": "Defensive Midfielder",
       "nationality": "Denmark",
@@ -767,7 +767,7 @@
       "player_id": "A08",
       "team_id": "AWAY",
       "jersey_number": 8,
-      "name": "Kiernan Dewsbury-Hall",
+      "name": "Ivory Player 11",
       "position": "RCM",
       "position_detail": "Central Midfielder",
       "nationality": "England",
@@ -844,7 +844,7 @@
       "player_id": "H09",
       "team_id": "HOME",
       "jersey_number": 7,
-      "name": "Pedro Neto",
+      "name": "Fairhaven Player 24",
       "position": "LW",
       "position_detail": "Left/Right Winger",
       "nationality": "Portugal",
@@ -919,7 +919,7 @@
       "player_id": "H11",
       "team_id": "HOME",
       "jersey_number": 41,
-      "name": "Estevao",
+      "name": "Fairhaven Player 29",
       "position": "RW",
       "position_detail": "Right Winger",
       "nationality": "Brazil",
@@ -998,7 +998,7 @@
       "player_id": "H01",
       "team_id": "HOME",
       "jersey_number": 1,
-      "name": "Emiliano Martinez",
+      "name": "Fairhaven Player 01",
       "position": "GK",
       "position_detail": "Goalkeeper",
       "nationality": "Argentina",
@@ -1030,7 +1030,7 @@
       "player_id": "H08",
       "team_id": "HOME",
       "jersey_number": 10,
-      "name": "Cole Palmer",
+      "name": "Fairhaven Player 17",
       "position": "RCM",
       "position_detail": "Attacking Midfielder",
       "nationality": "England",
@@ -1097,7 +1097,7 @@
       "player_id": "A09",
       "team_id": "AWAY",
       "jersey_number": 19,
-      "name": "Tyrique George",
+      "name": "Ivory Player 20",
       "position": "LW",
       "position_detail": "Left Winger",
       "nationality": "England",
@@ -1186,7 +1186,7 @@
       "player_id": "H06",
       "team_id": "HOME",
       "jersey_number": 4,
-      "name": "Valentin Barco",
+      "name": "Fairhaven Player 16",
       "position": "LCM",
       "position_detail": "Left/Centre Central Midfielder",
       "nationality": "Argentina",
@@ -1227,7 +1227,7 @@
       "player_id": "A11",
       "team_id": "AWAY",
       "jersey_number": 20,
-      "name": "Tyler Dibling",
+      "name": "Ivory Player 21",
       "position": "RW",
       "position_detail": "Right Winger",
       "nationality": "England",
@@ -1290,7 +1290,7 @@
       "player_id": "A06",
       "team_id": "AWAY",
       "jersey_number": 2,
-      "name": "Ainsley Maitland-Niles",
+      "name": "Ivory Player 10",
       "position": "LCM",
       "position_detail": "Centre/Right Wing Back",
       "nationality": "England",
@@ -1341,7 +1341,7 @@
       "player_id": "H12",
       "team_id": "HOME",
       "jersey_number": 14,
-      "name": "Jordan Henderson",
+      "name": "Fairhaven Player 18",
       "position": "LCM",
       "position_detail": "Centre Central Midfielder",
       "nationality": "England",
@@ -1377,7 +1377,7 @@
       "player_id": "A03",
       "team_id": "AWAY",
       "jersey_number": 5,
-      "name": "Michael Keane",
+      "name": "Ivory Player 06",
       "position": "LCB",
       "position_detail": "Centre Central Defender",
       "nationality": "England",
@@ -1421,7 +1421,7 @@
       "player_id": "A02",
       "team_id": "AWAY",
       "jersey_number": 16,
-      "name": "Vitalii Mykolenko",
+      "name": "Ivory Player 09",
       "position": "LB",
       "position_detail": "Left Full Back",
       "nationality": "Ukraine",
@@ -1462,7 +1462,7 @@
       "player_id": "A04",
       "team_id": "AWAY",
       "jersey_number": 6,
-      "name": "James Tarkowski",
+      "name": "Ivory Player 07",
       "position": "RCB",
       "position_detail": "Centre Central Defender",
       "nationality": "England",
@@ -1512,7 +1512,7 @@
       "player_id": "H02",
       "team_id": "HOME",
       "jersey_number": 21,
-      "name": "Jorrel Hato",
+      "name": "Fairhaven Player 09",
       "position": "LB",
       "position_detail": "Left Full Back",
       "nationality": "Netherlands",
@@ -1547,7 +1547,7 @@
       "player_id": "A13",
       "team_id": "AWAY",
       "jersey_number": 22,
-      "name": "Brennan Johnson",
+      "name": "Ivory Player 22",
       "position": "RW",
       "position_detail": "Right Winger",
       "nationality": "Wales",
@@ -1587,7 +1587,7 @@
       "player_id": "H03",
       "team_id": "HOME",
       "jersey_number": 3,
-      "name": "Wesley Fofana",
+      "name": "Fairhaven Player 06",
       "position": "LCB",
       "position_detail": "Centre Central Defender",
       "nationality": "France",
@@ -1629,7 +1629,7 @@
       "player_id": "A12",
       "team_id": "AWAY",
       "jersey_number": 10,
-      "name": "Jack Grealish",
+      "name": "Ivory Player 12",
       "position": "LCM",
       "position_detail": "Left/Centre/Right Attacking Midfielder",
       "nationality": "England",
@@ -1662,7 +1662,7 @@
       "player_id": "H05",
       "team_id": "HOME",
       "jersey_number": 2,
-      "name": "Marco Palestra",
+      "name": "Fairhaven Player 05",
       "position": "RB",
       "position_detail": "Right Full Back",
       "nationality": "Italy",
@@ -1699,7 +1699,7 @@
       "player_id": "H14",
       "team_id": "HOME",
       "jersey_number": 6,
-      "name": "Levi Colwill",
+      "name": "Fairhaven Player 08",
       "position": "LB",
       "position_detail": "Centre Central Defender",
       "nationality": "England",
@@ -1723,7 +1723,7 @@
       "player_id": "H04",
       "team_id": "HOME",
       "jersey_number": 5,
-      "name": "Maxence Lacroix",
+      "name": "Fairhaven Player 07",
       "position": "RCB",
       "position_detail": "Central Defender",
       "nationality": "France",
@@ -1765,7 +1765,7 @@
       "player_id": "A05",
       "team_id": "AWAY",
       "jersey_number": 4,
-      "name": "Jarrad Branthwaite",
+      "name": "Ivory Player 05",
       "position": "RB",
       "position_detail": "Defender",
       "nationality": "England",

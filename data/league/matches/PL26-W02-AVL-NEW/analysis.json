@@ -4,7 +4,7 @@
   "status": "complete",
   "language": "en",
   "source": {
-    "fingerprint": "0147c6a976ab27c5d67c1354af69808542665199767fbdeacbae25b4856b3df7",
+    "fingerprint": "50cd6f30ca4813212dd4946411512c52fd48820fc541f9839010904b827ad9b5",
     "event_count": 3578,
     "match_end_event_id": "e003578",
     "completed_at_ms": 6000000,
@@ -18,12 +18,12 @@
     "mode": "local",
     "model": null
   },
-  "headline": "Aston Villa 4–2 Newcastle United",
-  "summary": "Aston Villa won 4–2. There were 24 shots across the match. Nicolas Jackson earns Player of the Match on the published impact scoring.",
+  "headline": "Beacon FC 4–2 Quartz FC",
+  "summary": "Beacon FC won 4–2. There were 24 shots across the match. Beacon Player 24 earns Player of the Match on the published impact scoring.",
   "periods": [
     {
       "title": "First half",
-      "text": "Aston Villa had 8 shots and Newcastle United had 4. 02:46 — Nicolas Jackson opened the scoring for Aston Villa (1–0). 11:18 — Nicolas Jackson extended the lead for Aston Villa (2–0). 14:37 — Aladji Bamba reduced the deficit for Newcastle United (2–1). The period ended at 2–1.",
+      "text": "Beacon FC had 8 shots and Quartz FC had 4. 02:46 — Beacon Player 24 opened the scoring for Beacon FC (1–0). 11:18 — Beacon Player 24 extended the lead for Beacon FC (2–0). 14:37 — Quartz Player 16 reduced the deficit for Quartz FC (2–1). The period ended at 2–1.",
       "shots": [
         8,
         4
@@ -49,7 +49,7 @@
     },
     {
       "title": "Second half",
-      "text": "Aston Villa had 6 shots and Newcastle United had 6. 52:46 — Yoane Wissa equalised for Newcastle United (2–2). 80:35 — Newcastle United lost Tino Livramento to a red card. 80:47 — Nicolas Jackson took the lead for Aston Villa (3–2). 88:26 — Alysson extended the lead for Aston Villa (4–2). The period ended at 4–2.",
+      "text": "Beacon FC had 6 shots and Quartz FC had 6. 52:46 — Quartz Player 22 equalised for Quartz FC (2–2). 80:35 — Quartz FC lost Quartz Player 06 to a red card. 80:47 — Beacon Player 24 took the lead for Beacon FC (3–2). 88:26 — Beacon Player 29 extended the lead for Beacon FC (4–2). The period ended at 4–2.",
       "shots": [
         6,
         6
@@ -76,8 +76,8 @@
     }
   ],
   "insights": [
-    "Aston Villa: 14 shots, 8 on target, 346 of 389 passes completed, 52.6% possession.",
-    "Newcastle United: 10 shots, 5 on target, 341 of 388 passes completed, 47.4% possession."
+    "Beacon FC: 14 shots, 8 on target, 346 of 389 passes completed, 52.6% possession.",
+    "Quartz FC: 10 shots, 5 on target, 341 of 388 passes completed, 47.4% possession."
   ],
   "key_moments": [
     {
@@ -85,84 +85,84 @@
       "period": 1,
       "time": "02:46",
       "type": "shot",
-      "text": "Nicolas Jackson opened the scoring for Aston Villa (1–0)."
+      "text": "Beacon Player 24 opened the scoring for Beacon FC (1–0)."
     },
     {
       "event_id": "e000389",
       "period": 1,
       "time": "11:18",
       "type": "shot",
-      "text": "Nicolas Jackson extended the lead for Aston Villa (2–0)."
+      "text": "Beacon Player 24 extended the lead for Beacon FC (2–0)."
     },
     {
       "event_id": "e000504",
       "period": 1,
       "time": "14:37",
       "type": "shot",
-      "text": "Aladji Bamba reduced the deficit for Newcastle United (2–1)."
+      "text": "Quartz Player 16 reduced the deficit for Quartz FC (2–1)."
     },
     {
       "event_id": "e002100",
       "period": 2,
       "time": "52:46",
       "type": "shot",
-      "text": "Yoane Wissa equalised for Newcastle United (2–2)."
+      "text": "Quartz Player 22 equalised for Quartz FC (2–2)."
     },
     {
       "event_id": "e002272",
       "period": 2,
       "time": "57:38",
       "type": "substitution",
-      "text": "Emiliano Buendia replaced Ross Barkley for Aston Villa."
+      "text": "Beacon Player 17 replaced Beacon Player 14 for Beacon FC."
     },
     {
       "event_id": "e002373",
       "period": 2,
       "time": "60:17",
       "type": "substitution",
-      "text": "William Osula replaced Jacob Murphy for Newcastle United."
+      "text": "Quartz Player 23 replaced Quartz Player 27 for Quartz FC."
     },
     {
       "event_id": "e002725",
       "period": 2,
       "time": "70:10",
       "type": "substitution",
-      "text": "Tyrone Mings replaced Matteo Ruggeri for Aston Villa."
+      "text": "Beacon Player 07 replaced Beacon Player 08 for Beacon FC."
     },
     {
       "event_id": "e002920",
       "period": 2,
       "time": "75:32",
       "type": "substitution",
-      "text": "Harvey Barnes replaced Nico Gonzalez for Newcastle United."
+      "text": "Quartz Player 17 replaced Quartz Player 14 for Quartz FC."
     },
     {
       "event_id": "e003093",
       "period": 2,
       "time": "80:35",
       "type": "red_card",
-      "text": "Newcastle United lost Tino Livramento to a red card."
+      "text": "Quartz FC lost Quartz Player 06 to a red card."
     },
     {
       "event_id": "e003098",
       "period": 2,
       "time": "80:47",
       "type": "shot",
-      "text": "Nicolas Jackson took the lead for Aston Villa (3–2)."
+      "text": "Beacon Player 24 took the lead for Beacon FC (3–2)."
     },
     {
       "event_id": "e003361",
       "period": 2,
       "time": "88:26",
       "type": "shot",
-      "text": "Alysson extended the lead for Aston Villa (4–2)."
+      "text": "Beacon Player 29 extended the lead for Beacon FC (4–2)."
     }
   ],
   "player_of_the_match": {
     "player_id": "H10",
     "team_id": "HOME",
     "jersey_number": 11,
-    "name": "Nicolas Jackson",
+    "name": "Beacon Player 24",
     "position": "ST",
     "position_detail": "Striker",
     "nationality": "Senegal",
@@ -265,7 +265,7 @@
     ],
     "impact_points": 14.53,
     "reasons": [
-      "Nicolas Jackson recorded 3 goals, 5 shots on target, 0 saves and 6 interceptions.",
+      "Beacon Player 24 recorded 3 goals, 5 shots on target, 0 saves and 6 interceptions.",
       "Completed 67 of 70 passes in 100 minutes; received 0 yellow cards and 0 red cards.",
       "Top impact score: 14.53 points."
     ]
@@ -275,7 +275,7 @@
       "player_id": "H10",
       "team_id": "HOME",
       "jersey_number": 11,
-      "name": "Nicolas Jackson",
+      "name": "Beacon Player 24",
       "position": "ST",
       "position_detail": "Striker",
       "nationality": "Senegal",
@@ -382,7 +382,7 @@
       "player_id": "A10",
       "team_id": "AWAY",
       "jersey_number": 9,
-      "name": "Yoane Wissa",
+      "name": "Quartz Player 22",
       "position": "ST",
       "position_detail": "Centre Striker",
       "nationality": "DR Congo",
@@ -502,7 +502,7 @@
       "player_id": "A07",
       "team_id": "AWAY",
       "jersey_number": 8,
-      "name": "Aladji Bamba",
+      "name": "Quartz Player 16",
       "position": "DM",
       "position_detail": "Centre Defensive Midfielder",
       "nationality": "France",
@@ -603,7 +603,7 @@
       "player_id": "H11",
       "team_id": "HOME",
       "jersey_number": 47,
-      "name": "Alysson",
+      "name": "Beacon Player 29",
       "position": "RW",
       "position_detail": "Right Winger",
       "nationality": "Brazil",
@@ -690,7 +690,7 @@
       "player_id": "A01",
       "team_id": "AWAY",
       "jersey_number": 1,
-      "name": "Nick Pope",
+      "name": "Quartz Player 01",
       "position": "GK",
       "position_detail": "Goalkeeper",
       "nationality": "England",
@@ -727,7 +727,7 @@
       "player_id": "H07",
       "team_id": "HOME",
       "jersey_number": 8,
-      "name": "Boubacar Kamara",
+      "name": "Beacon Player 16",
       "position": "DM",
       "position_detail": "Centre Defensive Midfielder",
       "nationality": "France",
@@ -831,7 +831,7 @@
       "player_id": "H01",
       "team_id": "HOME",
       "jersey_number": 1,
-      "name": "Zion Suzuki",
+      "name": "Beacon Player 01",
       "position": "GK",
       "position_detail": "Goalkeeper",
       "nationality": "Japan",
@@ -865,7 +865,7 @@
       "player_id": "H09",
       "team_id": "HOME",
       "jersey_number": 19,
-      "name": "Ibrahim Mbaye",
+      "name": "Beacon Player 27",
       "position": "LW",
       "position_detail": "Left/Right Winger",
       "nationality": "Senegal",
@@ -953,7 +953,7 @@
       "player_id": "H08",
       "team_id": "HOME",
       "jersey_number": 7,
-      "name": "John McGinn",
+      "name": "Beacon Player 15",
       "position": "RCM",
       "position_detail": "Centre Central Midfielder",
       "nationality": "Scotland",
@@ -1019,7 +1019,7 @@
       "player_id": "A09",
       "team_id": "AWAY",
       "jersey_number": 17,
-      "name": "Bazoumana Toure",
+      "name": "Quartz Player 24",
       "position": "LW",
       "position_detail": "Left Winger",
       "nationality": "Cote D’Ivoire",
@@ -1097,7 +1097,7 @@
       "player_id": "A08",
       "team_id": "AWAY",
       "jersey_number": 7,
-      "name": "Joelinton",
+      "name": "Quartz Player 15",
       "position": "RCM",
       "position_detail": "Left Central Midfielder",
       "nationality": "Brazil",
@@ -1170,7 +1170,7 @@
       "player_id": "A06",
       "team_id": "AWAY",
       "jersey_number": 6,
-      "name": "Nico Gonzalez",
+      "name": "Quartz Player 14",
       "position": "LCM",
       "position_detail": "Central Midfielder",
       "nationality": "Spain",
@@ -1230,7 +1230,7 @@
       "player_id": "A11",
       "team_id": "AWAY",
       "jersey_number": 23,
-      "name": "Jacob Murphy",
+      "name": "Quartz Player 27",
       "position": "RW",
       "position_detail": "Right Winger",
       "nationality": null,
@@ -1301,7 +1301,7 @@
       "player_id": "H03",
       "team_id": "HOME",
       "jersey_number": 3,
-      "name": "Victor Lindelof",
+      "name": "Beacon Player 05",
       "position": "LCB",
       "position_detail": "Centre Central Defender",
       "nationality": "Sweden",
@@ -1345,7 +1345,7 @@
       "player_id": "A12",
       "team_id": "AWAY",
       "jersey_number": 11,
-      "name": "Harvey Barnes",
+      "name": "Quartz Player 17",
       "position": "LCM",
       "position_detail": "Left/Right Winger",
       "nationality": "England",
@@ -1373,7 +1373,7 @@
       "player_id": "H06",
       "team_id": "HOME",
       "jersey_number": 6,
-      "name": "Ross Barkley",
+      "name": "Beacon Player 14",
       "position": "LCM",
       "position_detail": "Centre Central Midfielder",
       "nationality": "England",
@@ -1420,7 +1420,7 @@
       "player_id": "A13",
       "team_id": "AWAY",
       "jersey_number": 10,
-      "name": "William Osula",
+      "name": "Quartz Player 23",
       "position": "RW",
       "position_detail": "Centre Striker",
       "nationality": "Denmark",
@@ -1462,7 +1462,7 @@
       "player_id": "A04",
       "team_id": "AWAY",
       "jersey_number": 5,
-      "name": "Fabian Schar",
+      "name": "Quartz Player 09",
       "position": "RCB",
       "position_detail": "Defender",
       "nationality": "Switzerland",
@@ -1501,7 +1501,7 @@
       "player_id": "A03",
       "team_id": "AWAY",
       "jersey_number": 4,
-      "name": "Sven Botman",
+      "name": "Quartz Player 08",
       "position": "LCB",
       "position_detail": "Central Defender",
       "nationality": "Netherlands",
@@ -1537,7 +1537,7 @@
       "player_id": "H02",
       "team_id": "HOME",
       "jersey_number": 13,
-      "name": "Matteo Ruggeri",
+      "name": "Beacon Player 08",
       "position": "LB",
       "position_detail": "Left Full Back",
       "nationality": "Italy",
@@ -1569,7 +1569,7 @@
       "player_id": "A02",
       "team_id": "AWAY",
       "jersey_number": 3,
-      "name": "Lewis Hall",
+      "name": "Quartz Player 07",
       "position": "LB",
       "position_detail": "Left Full Back",
       "nationality": "England",
@@ -1599,7 +1599,7 @@
       "player_id": "H05",
       "team_id": "HOME",
       "jersey_number": 2,
-      "name": "Matty Cash",
+      "name": "Beacon Player 04",
       "position": "RB",
       "position_detail": "Right Full Back",
       "nationality": "Poland",
@@ -1632,7 +1632,7 @@
       "player_id": "H14",
       "team_id": "HOME",
       "jersey_number": 5,
-      "name": "Tyrone Mings",
+      "name": "Beacon Player 07",
       "position": "LB",
       "position_detail": "Centre Central Defender",
       "nationality": "England",
@@ -1658,7 +1658,7 @@
       "player_id": "H12",
       "team_id": "HOME",
       "jersey_number": 10,
-      "name": "Emiliano Buendia",
+      "name": "Beacon Player 17",
       "position": "LCM",
       "position_detail": "Attacking Midfielder",
       "nationality": "Argentina",
@@ -1696,7 +1696,7 @@
       "player_id": "H04",
       "team_id": "HOME",
       "jersey_number": 4,
-      "name": "Taylor Harwood-Bellis",
+      "name": "Beacon Player 06",
       "position": "RCB",
       "position_detail": "Centre Central Defender",
       "nationality": "England",
@@ -1743,7 +1743,7 @@
       "player_id": "A05",
       "team_id": "AWAY",
       "jersey_number": 2,
-      "name": "Tino Livramento",
+      "name": "Quartz Player 06",
       "position": "RB",
       "position_detail": "Right Full Back",
       "nationality": "England",

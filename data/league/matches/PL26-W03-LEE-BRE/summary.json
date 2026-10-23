@@ -90,9 +90,9 @@
       "period_ms": 1952600,
       "team_id": "AWAY",
       "club_id": "BRE",
-      "club_name": "Brentford",
+      "club_name": "Driftwood FC",
       "player_id": "A10",
-      "player_name": "Callum Wilson",
+      "player_name": "Driftwood Player 26",
       "shirt_number": 13,
       "score": [
         0,
@@ -102,19 +102,19 @@
   ],
   "competition": {
     "id": "PL-SYN-2026",
-    "name": "Premier League (synthetic)",
+    "name": "NextPlay League (synthetic)",
     "season": "2026/27",
     "synthetic": true,
     "matchweek": 3,
     "kickoff_local": "2026-11-08T14:00:00",
     "time_zone": "Europe/London",
-    "venue": "Elland Road"
+    "venue": "Meadow Park"
   },
   "home_club": {
     "club_id": "LEE",
-    "name": "Leeds United",
-    "short_name": "Leeds",
-    "stadium": "Elland Road",
+    "name": "Meadow FC",
+    "short_name": "Meadow",
+    "stadium": "Meadow Park",
     "colors": {
       "primary": "#FFFFFF",
       "secondary": "#1D428A"
@@ -123,9 +123,9 @@
   },
   "away_club": {
     "club_id": "BRE",
-    "name": "Brentford",
-    "short_name": "Brentford",
-    "stadium": "Gtech Community Stadium",
+    "name": "Driftwood FC",
+    "short_name": "Driftwood FC",
+    "stadium": "Driftwood Park",
     "colors": {
       "primary": "#E30613",
       "secondary": "#FFFFFF"

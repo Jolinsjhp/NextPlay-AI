@@ -4,7 +4,7 @@
   "status": "complete",
   "language": "en",
   "source": {
-    "fingerprint": "560f3dfe7980d39aadce2cf0760d67fea6405c3339c21b2cabf6a30047fdbd99",
+    "fingerprint": "a9ed4ea8a3d7574ceda4a150d45672fba3d4e81ae8cb603cf2fd802bc300c170",
     "event_count": 3638,
     "match_end_event_id": "e003638",
     "completed_at_ms": 6000000,
@@ -18,12 +18,12 @@
     "mode": "local",
     "model": null
   },
-  "headline": "Arsenal 5–1 Sunderland",
-  "summary": "Arsenal won 5–1. There were 31 shots across the match. Noni Madueke earns Player of the Match on the published impact scoring.",
+  "headline": "Aster FC 5–1 Silverbrook FC",
+  "summary": "Aster FC won 5–1. There were 31 shots across the match. Aster Player 23 earns Player of the Match on the published impact scoring.",
   "periods": [
     {
       "title": "First half",
-      "text": "Arsenal had 11 shots and Sunderland had 5. 20:33 — Bukayo Saka opened the scoring for Arsenal (1–0). 24:39 — Noni Madueke extended the lead for Arsenal (2–0). 26:15 — Brian Brobbey reduced the deficit for Sunderland (2–1). 33:25 — Viktor Gyokeres extended the lead for Arsenal (3–1). The period ended at 3–1.",
+      "text": "Aster FC had 11 shots and Silverbrook FC had 5. 20:33 — Aster Player 20 opened the scoring for Aster FC (1–0). 24:39 — Aster Player 23 extended the lead for Aster FC (2–0). 26:15 — Silverbrook Player 21 reduced the deficit for Silverbrook FC (2–1). 33:25 — Aster Player 21 extended the lead for Aster FC (3–1). The period ended at 3–1.",
       "shots": [
         11,
         5
@@ -53,7 +53,7 @@
     },
     {
       "title": "Second half",
-      "text": "Arsenal had 11 shots and Sunderland had 4. 55:45 — Noni Madueke extended the lead for Arsenal (4–1). 76:05 — Noni Madueke extended the lead for Arsenal (5–1). 82:58 — Sunderland lost Thomas Meunier to a red card. The period ended at 5–1.",
+      "text": "Aster FC had 11 shots and Silverbrook FC had 4. 55:45 — Aster Player 23 extended the lead for Aster FC (4–1). 76:05 — Aster Player 23 extended the lead for Aster FC (5–1). 82:58 — Silverbrook FC lost Silverbrook Player 07 to a red card. The period ended at 5–1.",
       "shots": [
         11,
         4
@@ -83,8 +83,8 @@
     }
   ],
   "insights": [
-    "Arsenal: 22 shots, 16 on target, 321 of 367 passes completed, 48.3% possession.",
-    "Sunderland: 9 shots, 5 on target, 349 of 408 passes completed, 51.7% possession."
+    "Aster FC: 22 shots, 16 on target, 321 of 367 passes completed, 48.3% possession.",
+    "Silverbrook FC: 9 shots, 5 on target, 349 of 408 passes completed, 51.7% possession."
   ],
   "key_moments": [
     {
@@ -92,84 +92,84 @@
       "period": 1,
       "time": "20:33",
       "type": "shot",
-      "text": "Bukayo Saka opened the scoring for Arsenal (1–0)."
+      "text": "Aster Player 20 opened the scoring for Aster FC (1–0)."
     },
     {
       "event_id": "e000907",
       "period": 1,
       "time": "24:39",
       "type": "shot",
-      "text": "Noni Madueke extended the lead for Arsenal (2–0)."
+      "text": "Aster Player 23 extended the lead for Aster FC (2–0)."
     },
     {
       "event_id": "e000951",
       "period": 1,
       "time": "26:15",
       "type": "shot",
-      "text": "Brian Brobbey reduced the deficit for Sunderland (2–1)."
+      "text": "Silverbrook Player 21 reduced the deficit for Silverbrook FC (2–1)."
     },
     {
       "event_id": "e001208",
       "period": 1,
       "time": "33:25",
       "type": "shot",
-      "text": "Viktor Gyokeres extended the lead for Arsenal (3–1)."
+      "text": "Aster Player 21 extended the lead for Aster FC (3–1)."
     },
     {
       "event_id": "e002228",
       "period": 2,
       "time": "55:45",
       "type": "shot",
-      "text": "Noni Madueke extended the lead for Arsenal (4–1)."
+      "text": "Aster Player 23 extended the lead for Aster FC (4–1)."
     },
     {
       "event_id": "e002288",
       "period": 2,
       "time": "57:41",
       "type": "substitution",
-      "text": "Ethan Nwaneri replaced Martin Odegaard for Arsenal."
+      "text": "Aster Player 14 replaced Aster Player 12 for Aster FC."
     },
     {
       "event_id": "e002466",
       "period": 2,
       "time": "62:24",
       "type": "substitution",
-      "text": "Nilson Angulo replaced Romaine Mundle for Sunderland."
+      "text": "Silverbrook Player 22 replaced Silverbrook Player 23 for Silverbrook FC."
     },
     {
       "event_id": "e002720",
       "period": 2,
       "time": "69:46",
       "type": "substitution",
-      "text": "Piero Hincapie replaced Riccardo Calafiori for Arsenal."
+      "text": "Aster Player 07 replaced Aster Player 11 for Aster FC."
     },
     {
       "event_id": "e002904",
       "period": 2,
       "time": "74:37",
       "type": "substitution",
-      "text": "Luke O'Nien replaced Alan Browne for Sunderland."
+      "text": "Silverbrook Player 14 replaced Silverbrook Player 12 for Silverbrook FC."
     },
     {
       "event_id": "e002956",
       "period": 2,
       "time": "76:05",
       "type": "shot",
-      "text": "Noni Madueke extended the lead for Arsenal (5–1)."
+      "text": "Aster Player 23 extended the lead for Aster FC (5–1)."
     },
     {
       "event_id": "e003190",
       "period": 2,
       "time": "82:58",
       "type": "red_card",
-      "text": "Sunderland lost Thomas Meunier to a red card."
+      "text": "Silverbrook FC lost Silverbrook Player 07 to a red card."
     }
   ],
   "player_of_the_match": {
     "player_id": "H11",
     "team_id": "HOME",
     "jersey_number": 20,
-    "name": "Noni Madueke",
+    "name": "Aster Player 23",
     "position": "RW",
     "position_detail": "Right Winger",
     "nationality": "England",
@@ -255,7 +255,7 @@
     ],
     "impact_points": 14.23,
     "reasons": [
-      "Noni Madueke recorded 3 goals, 5 shots on target, 0 saves and 6 interceptions.",
+      "Aster Player 23 recorded 3 goals, 5 shots on target, 0 saves and 6 interceptions.",
       "Completed 47 of 55 passes in 100 minutes; received 0 yellow cards and 0 red cards.",
       "Top impact score: 14.23 points."
     ]
@@ -265,7 +265,7 @@
       "player_id": "H11",
       "team_id": "HOME",
       "jersey_number": 20,
-      "name": "Noni Madueke",
+      "name": "Aster Player 23",
       "position": "RW",
       "position_detail": "Right Winger",
       "nationality": "England",
@@ -355,7 +355,7 @@
       "player_id": "H10",
       "team_id": "HOME",
       "jersey_number": 14,
-      "name": "Viktor Gyokeres",
+      "name": "Aster Player 21",
       "position": "ST",
       "position_detail": "Striker",
       "nationality": "Sweden",
@@ -476,7 +476,7 @@
       "player_id": "A01",
       "team_id": "AWAY",
       "jersey_number": 21,
-      "name": "Simon Moore",
+      "name": "Silverbrook Player 01",
       "position": "GK",
       "position_detail": "Goalkeeper",
       "nationality": "England",
@@ -526,7 +526,7 @@
       "player_id": "A10",
       "team_id": "AWAY",
       "jersey_number": 9,
-      "name": "Brian Brobbey",
+      "name": "Silverbrook Player 21",
       "position": "ST",
       "position_detail": "Striker",
       "nationality": "Netherlands",
@@ -651,7 +651,7 @@
       "player_id": "H09",
       "team_id": "HOME",
       "jersey_number": 7,
-      "name": "Bukayo Saka",
+      "name": "Aster Player 20",
       "position": "LW",
       "position_detail": "Left Winger",
       "nationality": "England",
@@ -735,7 +735,7 @@
       "player_id": "H01",
       "team_id": "HOME",
       "jersey_number": 1,
-      "name": "David Raya",
+      "name": "Aster Player 01",
       "position": "GK",
       "position_detail": "Goalkeeper",
       "nationality": "Spain",
@@ -770,7 +770,7 @@
       "player_id": "A07",
       "team_id": "AWAY",
       "jersey_number": 29,
-      "name": "Jules Ahoka",
+      "name": "Silverbrook Player 18",
       "position": "DM",
       "position_detail": "Centre Defensive Midfielder",
       "nationality": "DR Congo",
@@ -879,7 +879,7 @@
       "player_id": "H07",
       "team_id": "HOME",
       "jersey_number": 36,
-      "name": "Martin Zubimendi",
+      "name": "Aster Player 16",
       "position": "DM",
       "position_detail": "Defensive Midfielder",
       "nationality": "Spain",
@@ -976,7 +976,7 @@
       "player_id": "H08",
       "team_id": "HOME",
       "jersey_number": 10,
-      "name": "Eberechi Eze",
+      "name": "Aster Player 13",
       "position": "RCM",
       "position_detail": "Centre Attacking Midfielder",
       "nationality": "England",
@@ -1041,7 +1041,7 @@
       "player_id": "A13",
       "team_id": "AWAY",
       "jersey_number": 10,
-      "name": "Nilson Angulo",
+      "name": "Silverbrook Player 22",
       "position": "RW",
       "position_detail": "Left Winger",
       "nationality": "Ecuador",
@@ -1079,7 +1079,7 @@
       "player_id": "A09",
       "team_id": "AWAY",
       "jersey_number": 7,
-      "name": "Chemsdine Talbi",
+      "name": "Silverbrook Player 20",
       "position": "LW",
       "position_detail": "Left/Right Winger",
       "nationality": "Morocco",
@@ -1165,7 +1165,7 @@
       "player_id": "A08",
       "team_id": "AWAY",
       "jersey_number": 11,
-      "name": "Chris Rigg",
+      "name": "Silverbrook Player 13",
       "position": "RCM",
       "position_detail": "Centre Attacking Midfielder",
       "nationality": "England",
@@ -1232,7 +1232,7 @@
       "player_id": "A11",
       "team_id": "AWAY",
       "jersey_number": 14,
-      "name": "Romaine Mundle",
+      "name": "Silverbrook Player 23",
       "position": "RW",
       "position_detail": "Left/Right Winger",
       "nationality": "England",
@@ -1296,7 +1296,7 @@
       "player_id": "H12",
       "team_id": "HOME",
       "jersey_number": 22,
-      "name": "Ethan Nwaneri",
+      "name": "Aster Player 14",
       "position": "LCM",
       "position_detail": "Left/Centre Attacking Midfielder",
       "nationality": "England",
@@ -1334,7 +1334,7 @@
       "player_id": "H06",
       "team_id": "HOME",
       "jersey_number": 8,
-      "name": "Martin Odegaard",
+      "name": "Aster Player 12",
       "position": "LCM",
       "position_detail": "Left/Centre/Right Attacking Midfielder",
       "nationality": "Norway",
@@ -1379,7 +1379,7 @@
       "player_id": "A12",
       "team_id": "AWAY",
       "jersey_number": 13,
-      "name": "Luke O'Nien",
+      "name": "Silverbrook Player 14",
       "position": "LCM",
       "position_detail": "Centre Central Midfielder",
       "nationality": "England",
@@ -1414,7 +1414,7 @@
       "player_id": "A04",
       "team_id": "AWAY",
       "jersey_number": 5,
-      "name": "Dan Ballard",
+      "name": "Silverbrook Player 05",
       "position": "RCB",
       "position_detail": "Centre Central Defender",
       "nationality": "Northern Ireland",
@@ -1455,7 +1455,7 @@
       "player_id": "H03",
       "team_id": "HOME",
       "jersey_number": 2,
-      "name": "William Saliba",
+      "name": "Aster Player 04",
       "position": "LCB",
       "position_detail": "Central Defender",
       "nationality": "France",
@@ -1496,7 +1496,7 @@
       "player_id": "A03",
       "team_id": "AWAY",
       "jersey_number": 4,
-      "name": "Kevin Danso",
+      "name": "Silverbrook Player 04",
       "position": "LCB",
       "position_detail": "Centre Central Defender",
       "nationality": "Austria",
@@ -1539,7 +1539,7 @@
       "player_id": "A02",
       "team_id": "AWAY",
       "jersey_number": 6,
-      "name": "Dayann Methalie",
+      "name": "Silverbrook Player 06",
       "position": "LB",
       "position_detail": "Left Full Back",
       "nationality": "France",
@@ -1572,7 +1572,7 @@
       "player_id": "H02",
       "team_id": "HOME",
       "jersey_number": 33,
-      "name": "Riccardo Calafiori",
+      "name": "Aster Player 11",
       "position": "LB",
       "position_detail": "Left Full Back",
       "nationality": "Italy",
@@ -1607,7 +1607,7 @@
       "player_id": "A06",
       "team_id": "AWAY",
       "jersey_number": 8,
-      "name": "Alan Browne",
+      "name": "Silverbrook Player 12",
       "position": "LCM",
       "position_detail": "Midfielder",
       "nationality": "Ireland",
@@ -1653,7 +1653,7 @@
       "player_id": "H05",
       "team_id": "HOME",
       "jersey_number": 4,
-      "name": "Ben White",
+      "name": "Aster Player 06",
       "position": "RB",
       "position_detail": "Centre/Right Central Defender",
       "nationality": "England",
@@ -1685,7 +1685,7 @@
       "player_id": "H14",
       "team_id": "HOME",
       "jersey_number": 5,
-      "name": "Piero Hincapie",
+      "name": "Aster Player 07",
       "position": "LB",
       "position_detail": "Centre Central Defender",
       "nationality": "Ecuador",
@@ -1714,7 +1714,7 @@
       "player_id": "H04",
       "team_id": "HOME",
       "jersey_number": 3,
-      "name": "Cristhian Mosquera",
+      "name": "Aster Player 05",
       "position": "RCB",
       "position_detail": "Central Defender",
       "nationality": "Spain",
@@ -1754,7 +1754,7 @@
       "player_id": "A05",
       "team_id": "AWAY",
       "jersey_number": 12,
-      "name": "Thomas Meunier",
+      "name": "Silverbrook Player 07",
       "position": "RB",
       "position_detail": "Right Full Back",
       "nationality": "Belgium",

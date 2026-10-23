@@ -3,8 +3,8 @@
 
 Two modes are available:
 
-* ``league`` (default): simulate a mini Premier League season.  Twenty current
-  Premier League clubs play four matchweeks; every matchweek pairs all twenty
+* ``league`` (default): simulate a fictional league season.  Twenty fictional
+  clubs play four matchweeks; every matchweek pairs all twenty
   clubs into ten matches, so every club plays exactly once per week (40 matches
   in total).  Each match is a complete 100-minute 5 Hz replay.
 * ``single``: regenerate the original two-team ``HOME / AWAY`` match used by the
@@ -33,56 +33,56 @@ HZ = 5
 DURATION = 6000
 HALF = 3000
 DEFAULT_MATCH = 'SYN-20261019-001'
-VERSION = '2.1.0'
+VERSION = '2.2.0'
 ROOT = Path(__file__).resolve().parent
 BASE = [(6, 34), (24, 9), (27, 25), (27, 43), (24, 59),
         (43, 18), (40, 34), (43, 50), (62, 10), (65, 34), (62, 58)]
 POSITIONS = ['GK', 'LB', 'LCB', 'RCB', 'RB', 'LCM', 'DM', 'RCM', 'LW', 'ST', 'RW']
 NEUTRAL = {'attack': 1.0, 'defense': 1.0, 'passing': 1.0, 'pressing': 1.0}
 
-# The twenty clubs of the 2026/27 Premier League.  Club identity and squad
-# numbers are real; match events and tracking remain synthetic.
+# Twenty fictional clubs. Stable technical IDs, roster attributes and colours
+# are retained for compatibility; names and venues are fictional aliases.
 CLUBS = [
-    {'club_id': 'ARS', 'name': 'Arsenal', 'short_name': 'Arsenal',
-     'stadium': 'Emirates Stadium', 'colors': {'primary': '#EF0107', 'secondary': '#FFFFFF'}, 'formation': '4-3-3'},
-    {'club_id': 'AVL', 'name': 'Aston Villa', 'short_name': 'Aston Villa',
-     'stadium': 'Villa Park', 'colors': {'primary': '#670E36', 'secondary': '#95BFE5'}, 'formation': '4-3-3'},
-    {'club_id': 'BOU', 'name': 'AFC Bournemouth', 'short_name': 'Bournemouth',
-     'stadium': 'Vitality Stadium', 'colors': {'primary': '#DA291C', 'secondary': '#000000'}, 'formation': '4-3-3'},
-    {'club_id': 'BRE', 'name': 'Brentford', 'short_name': 'Brentford',
-     'stadium': 'Gtech Community Stadium', 'colors': {'primary': '#E30613', 'secondary': '#FFFFFF'}, 'formation': '4-3-3'},
-    {'club_id': 'BHA', 'name': 'Brighton & Hove Albion', 'short_name': 'Brighton',
-     'stadium': 'Amex Stadium', 'colors': {'primary': '#0057B8', 'secondary': '#FFFFFF'}, 'formation': '4-3-3'},
-    {'club_id': 'CHE', 'name': 'Chelsea', 'short_name': 'Chelsea',
-     'stadium': 'Stamford Bridge', 'colors': {'primary': '#034694', 'secondary': '#FFFFFF'}, 'formation': '4-3-3'},
-    {'club_id': 'COV', 'name': 'Coventry City', 'short_name': 'Coventry',
-     'stadium': 'CBS Arena', 'colors': {'primary': '#6CB4E4', 'secondary': '#FFFFFF'}, 'formation': '4-3-3'},
-    {'club_id': 'CRY', 'name': 'Crystal Palace', 'short_name': 'Crystal Palace',
-     'stadium': 'Selhurst Park', 'colors': {'primary': '#1B458F', 'secondary': '#C4122E'}, 'formation': '4-3-3'},
-    {'club_id': 'EVE', 'name': 'Everton', 'short_name': 'Everton',
-     'stadium': 'Hill Dickinson Stadium', 'colors': {'primary': '#003399', 'secondary': '#FFFFFF'}, 'formation': '4-3-3'},
-    {'club_id': 'FUL', 'name': 'Fulham', 'short_name': 'Fulham',
-     'stadium': 'Craven Cottage', 'colors': {'primary': '#FFFFFF', 'secondary': '#000000'}, 'formation': '4-3-3'},
-    {'club_id': 'HUL', 'name': 'Hull City', 'short_name': 'Hull City',
-     'stadium': 'MKM Stadium', 'colors': {'primary': '#F5A12D', 'secondary': '#000000'}, 'formation': '4-3-3'},
-    {'club_id': 'IPS', 'name': 'Ipswich Town', 'short_name': 'Ipswich Town',
-     'stadium': 'Portman Road', 'colors': {'primary': '#0044A9', 'secondary': '#FFFFFF'}, 'formation': '4-3-3'},
-    {'club_id': 'LEE', 'name': 'Leeds United', 'short_name': 'Leeds',
-     'stadium': 'Elland Road', 'colors': {'primary': '#FFFFFF', 'secondary': '#1D428A'}, 'formation': '4-3-3'},
-    {'club_id': 'LIV', 'name': 'Liverpool', 'short_name': 'Liverpool',
-     'stadium': 'Anfield', 'colors': {'primary': '#C8102E', 'secondary': '#FFFFFF'}, 'formation': '4-3-3'},
-    {'club_id': 'MCI', 'name': 'Manchester City', 'short_name': 'Man City',
-     'stadium': 'Etihad Stadium', 'colors': {'primary': '#6CABDD', 'secondary': '#1C2C5B'}, 'formation': '4-3-3'},
-    {'club_id': 'MUN', 'name': 'Manchester United', 'short_name': 'Man United',
-     'stadium': 'Old Trafford', 'colors': {'primary': '#DA291C', 'secondary': '#FBE122'}, 'formation': '4-3-3'},
-    {'club_id': 'NEW', 'name': 'Newcastle United', 'short_name': 'Newcastle',
-     'stadium': "St James' Park", 'colors': {'primary': '#241F20', 'secondary': '#FFFFFF'}, 'formation': '4-3-3'},
-    {'club_id': 'NFO', 'name': 'Nottingham Forest', 'short_name': 'Forest',
-     'stadium': 'City Ground', 'colors': {'primary': '#DD0000', 'secondary': '#FFFFFF'}, 'formation': '4-3-3'},
-    {'club_id': 'SUN', 'name': 'Sunderland', 'short_name': 'Sunderland',
-     'stadium': 'Stadium of Light', 'colors': {'primary': '#EB172B', 'secondary': '#FFFFFF'}, 'formation': '4-3-3'},
-    {'club_id': 'TOT', 'name': 'Tottenham Hotspur', 'short_name': 'Tottenham',
-     'stadium': 'Tottenham Hotspur Stadium', 'colors': {'primary': '#FFFFFF', 'secondary': '#132257'}, 'formation': '4-3-3'},
+    {'club_id': 'ARS', 'name': 'Aster FC', 'short_name': 'Aster FC',
+     'stadium': 'Aster Park', 'colors': {'primary': '#EF0107', 'secondary': '#FFFFFF'}, 'formation': '4-3-3'},
+    {'club_id': 'AVL', 'name': 'Beacon FC', 'short_name': 'Beacon FC',
+     'stadium': 'Beacon Park', 'colors': {'primary': '#670E36', 'secondary': '#95BFE5'}, 'formation': '4-3-3'},
+    {'club_id': 'BOU', 'name': 'Cedar FC', 'short_name': 'Cedar',
+     'stadium': 'Cedar Park', 'colors': {'primary': '#DA291C', 'secondary': '#000000'}, 'formation': '4-3-3'},
+    {'club_id': 'BRE', 'name': 'Driftwood FC', 'short_name': 'Driftwood FC',
+     'stadium': 'Driftwood Park', 'colors': {'primary': '#E30613', 'secondary': '#FFFFFF'}, 'formation': '4-3-3'},
+    {'club_id': 'BHA', 'name': 'Ember FC', 'short_name': 'Ember',
+     'stadium': 'Ember Park', 'colors': {'primary': '#0057B8', 'secondary': '#FFFFFF'}, 'formation': '4-3-3'},
+    {'club_id': 'CHE', 'name': 'Fairhaven FC', 'short_name': 'Fairhaven FC',
+     'stadium': 'Fairhaven Park', 'colors': {'primary': '#034694', 'secondary': '#FFFFFF'}, 'formation': '4-3-3'},
+    {'club_id': 'COV', 'name': 'Glenvale FC', 'short_name': 'Glenvale',
+     'stadium': 'Glenvale Park', 'colors': {'primary': '#6CB4E4', 'secondary': '#FFFFFF'}, 'formation': '4-3-3'},
+    {'club_id': 'CRY', 'name': 'Highridge FC', 'short_name': 'Highridge FC',
+     'stadium': 'Highridge Park', 'colors': {'primary': '#1B458F', 'secondary': '#C4122E'}, 'formation': '4-3-3'},
+    {'club_id': 'EVE', 'name': 'Ivory FC', 'short_name': 'Ivory FC',
+     'stadium': 'Ivory Park', 'colors': {'primary': '#003399', 'secondary': '#FFFFFF'}, 'formation': '4-3-3'},
+    {'club_id': 'FUL', 'name': 'Juniper FC', 'short_name': 'Juniper FC',
+     'stadium': 'Juniper Park', 'colors': {'primary': '#FFFFFF', 'secondary': '#000000'}, 'formation': '4-3-3'},
+    {'club_id': 'HUL', 'name': 'Kingswell FC', 'short_name': 'Kingswell FC',
+     'stadium': 'Kingswell Park', 'colors': {'primary': '#F5A12D', 'secondary': '#000000'}, 'formation': '4-3-3'},
+    {'club_id': 'IPS', 'name': 'Larkspur FC', 'short_name': 'Larkspur FC',
+     'stadium': 'Larkspur Park', 'colors': {'primary': '#0044A9', 'secondary': '#FFFFFF'}, 'formation': '4-3-3'},
+    {'club_id': 'LEE', 'name': 'Meadow FC', 'short_name': 'Meadow',
+     'stadium': 'Meadow Park', 'colors': {'primary': '#FFFFFF', 'secondary': '#1D428A'}, 'formation': '4-3-3'},
+    {'club_id': 'LIV', 'name': 'Northstar FC', 'short_name': 'Northstar FC',
+     'stadium': 'Northstar Park', 'colors': {'primary': '#C8102E', 'secondary': '#FFFFFF'}, 'formation': '4-3-3'},
+    {'club_id': 'MCI', 'name': 'Oakmere FC', 'short_name': 'Oakmere',
+     'stadium': 'Oakmere Park', 'colors': {'primary': '#6CABDD', 'secondary': '#1C2C5B'}, 'formation': '4-3-3'},
+    {'club_id': 'MUN', 'name': 'Pinecrest FC', 'short_name': 'Pinecrest',
+     'stadium': 'Pinecrest Park', 'colors': {'primary': '#DA291C', 'secondary': '#FBE122'}, 'formation': '4-3-3'},
+    {'club_id': 'NEW', 'name': 'Quartz FC', 'short_name': 'Quartz',
+     'stadium': "Quartz Park", 'colors': {'primary': '#241F20', 'secondary': '#FFFFFF'}, 'formation': '4-3-3'},
+    {'club_id': 'NFO', 'name': 'Rivermist FC', 'short_name': 'Rivermist',
+     'stadium': 'Rivermist Park', 'colors': {'primary': '#DD0000', 'secondary': '#FFFFFF'}, 'formation': '4-3-3'},
+    {'club_id': 'SUN', 'name': 'Silverbrook FC', 'short_name': 'Silverbrook FC',
+     'stadium': 'Silverbrook Park', 'colors': {'primary': '#EB172B', 'secondary': '#FFFFFF'}, 'formation': '4-3-3'},
+    {'club_id': 'TOT', 'name': 'Thornvale FC', 'short_name': 'Thornvale',
+     'stadium': 'Thornvale Park', 'colors': {'primary': '#FFFFFF', 'secondary': '#132257'}, 'formation': '4-3-3'},
 ]
 CLUB_BY_ID = {club['club_id']: club for club in CLUBS}
 
@@ -112,7 +112,7 @@ RATINGS = {
 }
 COMPETITION = {
     'id': 'PL-SYN-2026',
-    'name': 'Premier League (synthetic)',
+    'name': 'NextPlay League (synthetic)',
     'season': '2026/27',
     'synthetic': True,
 }
@@ -157,7 +157,7 @@ def load_squads(path=None):
 
 
 def select_lineup(club_id, squads):
-    """Pick 11 starters and three substitutes from a club's real squad.
+    """Pick 11 starters and three substitutes from a club's fictional squad.
 
     The simulation uses a 4-3-3 shape. Players are assigned to the closest
     available slot by position, then any gaps are filled from the remaining
@@ -291,6 +291,7 @@ class Match:
                        'shots_on_target': 0, 'interceptions': 0,
                        'pressure_events': 0, 'possession_seconds': 0.} for _ in range(2)]
         self.events = []
+        self.decisions = []
         self.event_seq = 0
         self.action_seq = 0
         self.pressure_last = {}
@@ -459,36 +460,30 @@ class Match:
                                 clamp(p['y']+self.rng.uniform(-7, 7), 3, 65)])
 
     def choose_action(self):
+        from realism.policy import candidates, MODEL
+        options = candidates(self)
+        chosen = self.rng.choices(options, [o['weight'] for o in options])[0]
         p = self.players[self.owner]
         team = p['team']
-        progress = self.progress(p['x'], team)
-        shot_chance = .06
-        if self.ratings:
-            shot_chance = clamp(.06*self.rating(team, 'attack') /
-                                self.rating(1-team, 'defense'), .02, .14)
-        if p['number'] != 1 and progress > 78 and abs(p['y']-34) < 24 and self.rng.random() < shot_chance:
+        self.decisions.append({'decision_id': f'd{len(self.decisions)+1:06}',
+                              'match_id': self.match_id, 't_ms': round(self.t*1000),
+                              'player_id': p['id'], 'period': self.period,
+                              'calibration_revision': MODEL.profile.get('provenance', {}).get('commit'),
+                              'score': self.score[:], 'snapshot': self.tracking(round(self.t*HZ)),
+                              'candidates': [{**o, 'recipient_id': self.players[o['recipient']]['id']}
+                                             if 'recipient' in o else o.copy() for o in options],
+                              'selected': chosen.copy(), 'action_id': f'a{self.action_seq+1:06}',
+                              'score_kind': 'empirical outcome rates plus heuristic selection weights; not optimal-action labels'})
+        if chosen['kind'] == 'shot':
             self.start_shot()
             return
-        if p['number'] != 1 and self.rng.random() < .36:
+        if chosen['kind'] == 'carry':
             self.start_carry()
             return
-        candidates = [i for i in range(team*11+1, team*11+11) if i != self.owner and self.players[i]['active']]
-        weights = []
-        for i in candidates:
-            q = self.players[i]
-            distance = norm(q['x']-p['x'], q['y']-p['y'])
-            advance = self.progress(q['x'], team)-progress
-            weights.append(math.exp(-abs(distance-17)/18+clamp(advance/23, -1, 1.3)))
-        intended = self.rng.choices(candidates, weights)[0]
+        intended = chosen['recipient']
         q = self.players[intended]
-        defender = min((i for i in range((1-team)*11+1, (1-team)*11+11) if self.players[i]['active']),
-                       key=lambda i: norm(self.players[i]['x']-q['x'], self.players[i]['y']-q['y']))
-        near = norm(self.players[defender]['x']-q['x'], self.players[defender]['y']-q['y'])
-        pressure_threshold = .32
-        if self.ratings:
-            pressure_threshold = clamp(.32*self.rating(1-team, 'pressing') /
-                                       self.rating(team, 'passing'), .16, .50)
-        success = not (near < 8 and self.rng.random() < pressure_threshold)
+        defender = chosen['defender']
+        success = self.rng.random() < chosen['success']
         receiver = intended if success else defender
         r = self.players[receiver]
         target = [clamp(r['x']+r['vx']*.25, 1, 104), clamp(r['y']+r['vy']*.25, 1, 67)]
@@ -499,19 +494,18 @@ class Match:
         self.new_action('pass', duration, actor=self.owner, team=team,
                         intended=intended, receiver=receiver, target=target,
                         success=success, under_pressure=under_pressure,
-                        height=1.8 if distance > 25 and self.rng.random() < .3 else 0.)
+                        height=0.)  # This calibrated policy supports ground passes only.
         self.owner = None
 
     def start_shot(self):
         p = self.players[self.owner]
         team = p['team']
         goal_x = 105. if self.direction(team) == 1 else 0.
-        if self.ratings:
-            goal_p = clamp(.12*self.rating(team, 'attack') /
-                           self.rating(1-team, 'defense'), .05, .22)
-            probabilities = [goal_p, .43, 1-goal_p-.43]
-        else:
-            probabilities = [.12, .43, .45]
+        from realism.policy import MODEL
+        goal_p = MODEL.shot_goal(self.progress(p['x'], team), p['y'])
+        # Calibrated foot-shot frequency by distance; no individual skill claim.
+        goal_p = clamp(goal_p, .005, .65)
+        probabilities = [goal_p, (1-goal_p)*.38, (1-goal_p)*.62]
         outcome = self.rng.choices(['goal', 'saved', 'off_target'], probabilities)[0]
         y = 34+self.rng.uniform(-2.8, 2.8) if outcome != 'off_target' else 34+self.rng.choice([-1, 1])*self.rng.uniform(4.2, 8)
         # Saved shots terminate at the keeper's current location (in front of goal).
@@ -731,7 +725,7 @@ def build_metadata(sim):
         'columns': {'tracking.players': ['player_id', 'x_m', 'y_m', 'vx_mps', 'vy_mps'],
                     'tracking.ball': ['x_m', 'y_m', 'z_m', 'vx_mps', 'vy_mps', 'vz_mps']},
         'limitations': ['Simplified procedural motion, not a professional football or physics simulator.',
-                        'Club names, squad numbers and player names follow the public 2026/27 Premier League squad lists; match events and tracking are synthetic.',
+                        'Club, player and venue names are fictional aliases; roster attributes are preserved from the source dataset. Match events and tracking are synthetic.',
                         'No offsides, physical collisions or realistic fatigue. Cards and tactical substitutions follow a synthetic schedule.',
                         'Incoming substitutes inherit the outgoing formation slot and position; no touchline entrance animation is modeled.',
                         'Pressure is a proximity heuristic; ball transport during restart_setup is non-playing animation.',
@@ -831,6 +825,9 @@ def write_match(sim, out, metadata, tracking=False, preview=True):
     with (out/'events.jsonl').open('w') as stream:
         for event in sim.events:
             stream.write(encode(event)+'\n')
+    with (out/'decisions.jsonl').open('w') as stream:
+        for decision in sim.decisions:
+            stream.write(encode(decision)+'\n')
     heatmaps.write(out)
     summary = build_summary(sim)
     (out/'summary.json').write_text(json.dumps(summary, ensure_ascii=False, indent=2)+'\n')

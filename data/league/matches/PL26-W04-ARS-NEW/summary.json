@@ -86,19 +86,19 @@
   "goals": [],
   "competition": {
     "id": "PL-SYN-2026",
-    "name": "Premier League (synthetic)",
+    "name": "NextPlay League (synthetic)",
     "season": "2026/27",
     "synthetic": true,
     "matchweek": 4,
     "kickoff_local": "2026-11-14T12:30:00",
     "time_zone": "Europe/London",
-    "venue": "Emirates Stadium"
+    "venue": "Aster Park"
   },
   "home_club": {
     "club_id": "ARS",
-    "name": "Arsenal",
-    "short_name": "Arsenal",
-    "stadium": "Emirates Stadium",
+    "name": "Aster FC",
+    "short_name": "Aster FC",
+    "stadium": "Aster Park",
     "colors": {
       "primary": "#EF0107",
       "secondary": "#FFFFFF"
@@ -107,9 +107,9 @@
   },
   "away_club": {
     "club_id": "NEW",
-    "name": "Newcastle United",
-    "short_name": "Newcastle",
-    "stadium": "St James' Park",
+    "name": "Quartz FC",
+    "short_name": "Quartz",
+    "stadium": "Quartz Park",
     "colors": {
       "primary": "#241F20",
       "secondary": "#FFFFFF"

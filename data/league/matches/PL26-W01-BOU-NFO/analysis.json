@@ -4,7 +4,7 @@
   "status": "complete",
   "language": "en",
   "source": {
-    "fingerprint": "0798818405d8d43003fbcc18e313dc65698081cbe4faa9f138485d9592087a4d",
+    "fingerprint": "dba6bef61ee4d1492d7cb6674539eede09194a3b43e8e1ac3686dc8472b25617",
     "event_count": 3626,
     "match_end_event_id": "e003626",
     "completed_at_ms": 6000000,
@@ -18,12 +18,12 @@
     "mode": "local",
     "model": null
   },
-  "headline": "AFC Bournemouth 1–0 Nottingham Forest",
-  "summary": "AFC Bournemouth won 1–0. There were 19 shots across the match. Evanilson earns Player of the Match on the published impact scoring.",
+  "headline": "Cedar FC 1–0 Rivermist FC",
+  "summary": "Cedar FC won 1–0. There were 19 shots across the match. Cedar Player 22 earns Player of the Match on the published impact scoring.",
   "periods": [
     {
       "title": "First half",
-      "text": "AFC Bournemouth had 6 shots and Nottingham Forest had 4. Neither side scored and there were no red cards. The period ended at 0–0.",
+      "text": "Cedar FC had 6 shots and Rivermist FC had 4. Neither side scored and there were no red cards. The period ended at 0–0.",
       "shots": [
         6,
         4
@@ -47,7 +47,7 @@
     },
     {
       "title": "Second half",
-      "text": "AFC Bournemouth had 6 shots and Nottingham Forest had 3. 81:27 — Nottingham Forest lost Daniel Munoz to a red card. 85:48 — Evanilson opened the scoring for AFC Bournemouth (1–0). The period ended at 1–0.",
+      "text": "Cedar FC had 6 shots and Rivermist FC had 3. 81:27 — Rivermist FC lost Rivermist Player 11 to a red card. 85:48 — Cedar Player 22 opened the scoring for Cedar FC (1–0). The period ended at 1–0.",
       "shots": [
         6,
         3
@@ -71,8 +71,8 @@
     }
   ],
   "insights": [
-    "AFC Bournemouth: 12 shots, 6 on target, 326 of 376 passes completed, 50.4% possession.",
-    "Nottingham Forest: 7 shots, 2 on target, 340 of 396 passes completed, 49.6% possession."
+    "Cedar FC: 12 shots, 6 on target, 326 of 376 passes completed, 50.4% possession.",
+    "Rivermist FC: 7 shots, 2 on target, 340 of 396 passes completed, 49.6% possession."
   ],
   "key_moments": [
     {
@@ -80,49 +80,49 @@
       "period": 2,
       "time": "58:07",
       "type": "substitution",
-      "text": "Alex Scott replaced Lewis Cook for AFC Bournemouth."
+      "text": "Cedar Player 15 replaced Cedar Player 13 for Cedar FC."
     },
     {
       "event_id": "e002370",
       "period": 2,
       "time": "60:45",
       "type": "substitution",
-      "text": "Igor Jesus replaced Dan Ndoye for Nottingham Forest."
+      "text": "Rivermist Player 24 replaced Rivermist Player 25 for Rivermist FC."
     },
     {
       "event_id": "e002670",
       "period": 2,
       "time": "68:49",
       "type": "substitution",
-      "text": "Antonio Silva replaced Adrien Truffert for AFC Bournemouth."
+      "text": "Cedar Player 08 replaced Cedar Player 05 for Cedar FC."
     },
     {
       "event_id": "e002885",
       "period": 2,
       "time": "74:53",
       "type": "substitution",
-      "text": "Xaver Schlager replaced Nicolas Dominguez for Nottingham Forest."
+      "text": "Rivermist Player 19 replaced Rivermist Player 17 for Rivermist FC."
     },
     {
       "event_id": "e003141",
       "period": 2,
       "time": "81:27",
       "type": "red_card",
-      "text": "Nottingham Forest lost Daniel Munoz to a red card."
+      "text": "Rivermist FC lost Rivermist Player 11 to a red card."
     },
     {
       "event_id": "e003299",
       "period": 2,
       "time": "85:48",
       "type": "shot",
-      "text": "Evanilson opened the scoring for AFC Bournemouth (1–0)."
+      "text": "Cedar Player 22 opened the scoring for Cedar FC (1–0)."
     }
   ],
   "player_of_the_match": {
     "player_id": "H10",
     "team_id": "HOME",
     "jersey_number": 9,
-    "name": "Evanilson",
+    "name": "Cedar Player 22",
     "position": "ST",
     "position_detail": "Centre Striker",
     "nationality": "Brazil",
@@ -219,7 +219,7 @@
     ],
     "impact_points": 7.78,
     "reasons": [
-      "Evanilson recorded 1 goal, 5 shots on target, 0 saves and 7 interceptions.",
+      "Cedar Player 22 recorded 1 goal, 5 shots on target, 0 saves and 7 interceptions.",
       "Completed 60 of 63 passes in 100 minutes; received 0 yellow cards and 0 red cards.",
       "Top impact score: 7.78 points."
     ]
@@ -229,7 +229,7 @@
       "player_id": "H10",
       "team_id": "HOME",
       "jersey_number": 9,
-      "name": "Evanilson",
+      "name": "Cedar Player 22",
       "position": "ST",
       "position_detail": "Centre Striker",
       "nationality": "Brazil",
@@ -330,7 +330,7 @@
       "player_id": "A01",
       "team_id": "AWAY",
       "jersey_number": 12,
-      "name": "John Victor",
+      "name": "Rivermist Player 01",
       "position": "GK",
       "position_detail": "Goalkeeper",
       "nationality": "Brazil",
@@ -369,7 +369,7 @@
       "player_id": "A07",
       "team_id": "AWAY",
       "jersey_number": 6,
-      "name": "Ibrahim Sangare",
+      "name": "Rivermist Player 16",
       "position": "DM",
       "position_detail": "Defensive Midfielder",
       "nationality": null,
@@ -472,7 +472,7 @@
       "player_id": "A10",
       "team_id": "AWAY",
       "jersey_number": 9,
-      "name": "Chris Wood",
+      "name": "Rivermist Player 23",
       "position": "ST",
       "position_detail": "Forward",
       "nationality": "New Zealand",
@@ -595,7 +595,7 @@
       "player_id": "H07",
       "team_id": "HOME",
       "jersey_number": 12,
-      "name": "Tyler Adams",
+      "name": "Cedar Player 17",
       "position": "DM",
       "position_detail": "Defensive Midfielder",
       "nationality": "United States",
@@ -704,7 +704,7 @@
       "player_id": "H11",
       "team_id": "HOME",
       "jersey_number": 19,
-      "name": "Justin Kluivert",
+      "name": "Cedar Player 24",
       "position": "RW",
       "position_detail": "Left/Right Winger",
       "nationality": "Netherlands",
@@ -788,7 +788,7 @@
       "player_id": "H01",
       "team_id": "HOME",
       "jersey_number": 1,
-      "name": "Djordje Petrovic",
+      "name": "Cedar Player 01",
       "position": "GK",
       "position_detail": "Goalkeeper",
       "nationality": "Serbia",
@@ -820,7 +820,7 @@
       "player_id": "A09",
       "team_id": "AWAY",
       "jersey_number": 7,
-      "name": "Callum Hudson-Odoi",
+      "name": "Rivermist Player 22",
       "position": "LW",
       "position_detail": "Left Winger",
       "nationality": "England",
@@ -901,7 +901,7 @@
       "player_id": "A11",
       "team_id": "AWAY",
       "jersey_number": 14,
-      "name": "Dan Ndoye",
+      "name": "Rivermist Player 25",
       "position": "RW",
       "position_detail": "Left/Right Winger",
       "nationality": "Switzerland",
@@ -969,7 +969,7 @@
       "player_id": "H09",
       "team_id": "HOME",
       "jersey_number": 11,
-      "name": "Ben Gannon-Doak",
+      "name": "Cedar Player 23",
       "position": "LW",
       "position_detail": "Left/Right Winger",
       "nationality": "Scotland",
@@ -1053,7 +1053,7 @@
       "player_id": "A08",
       "team_id": "AWAY",
       "jersey_number": 10,
-      "name": "Morgan Gibbs-White",
+      "name": "Rivermist Player 18",
       "position": "RCM",
       "position_detail": "Centre Central Midfielder",
       "nationality": "England",
@@ -1120,7 +1120,7 @@
       "player_id": "H08",
       "team_id": "HOME",
       "jersey_number": 7,
-      "name": "David Brooks",
+      "name": "Cedar Player 14",
       "position": "RCM",
       "position_detail": "Left/Centre/Right Attacking Midfielder",
       "nationality": "Wales",
@@ -1189,7 +1189,7 @@
       "player_id": "A06",
       "team_id": "AWAY",
       "jersey_number": 8,
-      "name": "Nicolas Dominguez",
+      "name": "Rivermist Player 17",
       "position": "LCM",
       "position_detail": "Centre Central Midfielder",
       "nationality": "Argentina",
@@ -1240,7 +1240,7 @@
       "player_id": "A13",
       "team_id": "AWAY",
       "jersey_number": 11,
-      "name": "Igor Jesus",
+      "name": "Rivermist Player 24",
       "position": "RW",
       "position_detail": "Striker",
       "nationality": "Brazil",
@@ -1285,7 +1285,7 @@
       "player_id": "H06",
       "team_id": "HOME",
       "jersey_number": 4,
-      "name": "Lewis Cook",
+      "name": "Cedar Player 13",
       "position": "LCM",
       "position_detail": "Centre Central Midfielder",
       "nationality": "England",
@@ -1334,7 +1334,7 @@
       "player_id": "H03",
       "team_id": "HOME",
       "jersey_number": 5,
-      "name": "James Hill",
+      "name": "Cedar Player 06",
       "position": "LCB",
       "position_detail": "Centre Central Defender",
       "nationality": "England",
@@ -1374,7 +1374,7 @@
       "player_id": "A02",
       "team_id": "AWAY",
       "jersey_number": 3,
-      "name": "Neco Williams",
+      "name": "Rivermist Player 06",
       "position": "LB",
       "position_detail": "Left-Back",
       "nationality": null,
@@ -1412,7 +1412,7 @@
       "player_id": "H02",
       "team_id": "HOME",
       "jersey_number": 3,
-      "name": "Adrien Truffert",
+      "name": "Cedar Player 05",
       "position": "LB",
       "position_detail": "Left Full Back",
       "nationality": "France",
@@ -1449,7 +1449,7 @@
       "player_id": "A04",
       "team_id": "AWAY",
       "jersey_number": 4,
-      "name": "Morato",
+      "name": "Rivermist Player 07",
       "position": "RCB",
       "position_detail": "Central Defender",
       "nationality": "Brazil",
@@ -1491,7 +1491,7 @@
       "player_id": "A03",
       "team_id": "AWAY",
       "jersey_number": 2,
-      "name": "Ousmane Diomande",
+      "name": "Rivermist Player 05",
       "position": "LCB",
       "position_detail": "Centre Central Defender",
       "nationality": "Cote D’Ivoire",
@@ -1526,7 +1526,7 @@
       "player_id": "H05",
       "team_id": "HOME",
       "jersey_number": 2,
-      "name": "Julian Araujo",
+      "name": "Cedar Player 04",
       "position": "RB",
       "position_detail": "Right Full Back",
       "nationality": "Mexico",
@@ -1561,7 +1561,7 @@
       "player_id": "H12",
       "team_id": "HOME",
       "jersey_number": 8,
-      "name": "Alex Scott",
+      "name": "Cedar Player 15",
       "position": "LCM",
       "position_detail": "Central Midfielder",
       "nationality": "England",
@@ -1596,7 +1596,7 @@
       "player_id": "H14",
       "team_id": "HOME",
       "jersey_number": 14,
-      "name": "Antonio Silva",
+      "name": "Cedar Player 08",
       "position": "LB",
       "position_detail": "Centre Central Defender",
       "nationality": "Portugal",
@@ -1623,7 +1623,7 @@
       "player_id": "A12",
       "team_id": "AWAY",
       "jersey_number": 21,
-      "name": "Xaver Schlager",
+      "name": "Rivermist Player 19",
       "position": "LCM",
       "position_detail": "Central Midfielder",
       "nationality": "Austria",
@@ -1655,7 +1655,7 @@
       "player_id": "H04",
       "team_id": "HOME",
       "jersey_number": 6,
-      "name": "Julio Soler",
+      "name": "Cedar Player 07",
       "position": "RCB",
       "position_detail": "Left Full Back",
       "nationality": "Argentina",
@@ -1699,7 +1699,7 @@
       "player_id": "A05",
       "team_id": "AWAY",
       "jersey_number": 27,
-      "name": "Daniel Munoz",
+      "name": "Rivermist Player 11",
       "position": "RB",
       "position_detail": "Right Full Back",
       "nationality": "Colombia",

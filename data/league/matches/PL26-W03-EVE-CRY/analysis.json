@@ -4,7 +4,7 @@
   "status": "complete",
   "language": "en",
   "source": {
-    "fingerprint": "147b323359bcc40276a53ecee8fc83ebcbeb28d4970a9ab8faf3456978a700df",
+    "fingerprint": "a4c5c2a4c0bba5e0efd81bcee4af337d3d39d4d0712b8dce998e2b34a590ceda",
     "event_count": 3597,
     "match_end_event_id": "e003597",
     "completed_at_ms": 6000000,
@@ -18,12 +18,12 @@
     "mode": "local",
     "model": null
   },
-  "headline": "Everton 1–2 Crystal Palace",
-  "summary": "Crystal Palace won 2–1. There were 24 shots across the match. Eddie Nketiah earns Player of the Match on the published impact scoring.",
+  "headline": "Ivory FC 1–2 Highridge FC",
+  "summary": "Highridge FC won 2–1. There were 24 shots across the match. Highridge Player 23 earns Player of the Match on the published impact scoring.",
   "periods": [
     {
       "title": "First half",
-      "text": "Everton had 8 shots and Crystal Palace had 7. 05:10 — Dwight McNeil opened the scoring for Crystal Palace (0–1). 23:14 — Eddie Nketiah extended the lead for Crystal Palace (0–2). 39:35 — Tyrique George reduced the deficit for Everton (1–2). The period ended at 1–2.",
+      "text": "Ivory FC had 8 shots and Highridge FC had 7. 05:10 — Highridge Player 24 opened the scoring for Highridge FC (0–1). 23:14 — Highridge Player 23 extended the lead for Highridge FC (0–2). 39:35 — Ivory Player 20 reduced the deficit for Ivory FC (1–2). The period ended at 1–2.",
       "shots": [
         8,
         7
@@ -52,7 +52,7 @@
     },
     {
       "title": "Second half",
-      "text": "Everton had 4 shots and Crystal Palace had 5. 82:56 — Crystal Palace lost Anan Khalaili to a red card. The period ended at 1–2.",
+      "text": "Ivory FC had 4 shots and Highridge FC had 5. 82:56 — Highridge FC lost Highridge Player 10 to a red card. The period ended at 1–2.",
       "shots": [
         4,
         5
@@ -76,8 +76,8 @@
     }
   ],
   "insights": [
-    "Everton: 12 shots, 5 on target, 301 of 350 passes completed, 45.7% possession.",
-    "Crystal Palace: 12 shots, 7 on target, 388 of 435 passes completed, 54.3% possession."
+    "Ivory FC: 12 shots, 5 on target, 301 of 350 passes completed, 45.7% possession.",
+    "Highridge FC: 12 shots, 7 on target, 388 of 435 passes completed, 54.3% possession."
   ],
   "key_moments": [
     {
@@ -85,63 +85,63 @@
       "period": 1,
       "time": "05:10",
       "type": "shot",
-      "text": "Dwight McNeil opened the scoring for Crystal Palace (0–1)."
+      "text": "Highridge Player 24 opened the scoring for Highridge FC (0–1)."
     },
     {
       "event_id": "e000814",
       "period": 1,
       "time": "23:14",
       "type": "shot",
-      "text": "Eddie Nketiah extended the lead for Crystal Palace (0–2)."
+      "text": "Highridge Player 23 extended the lead for Highridge FC (0–2)."
     },
     {
       "event_id": "e001395",
       "period": 1,
       "time": "39:35",
       "type": "shot",
-      "text": "Tyrique George reduced the deficit for Everton (1–2)."
+      "text": "Ivory Player 20 reduced the deficit for Ivory FC (1–2)."
     },
     {
       "event_id": "e002240",
       "period": 2,
       "time": "57:53",
       "type": "substitution",
-      "text": "Jack Grealish replaced Ainsley Maitland-Niles for Everton."
+      "text": "Ivory Player 12 replaced Ivory Player 10 for Ivory FC."
     },
     {
       "event_id": "e002414",
       "period": 2,
       "time": "62:44",
       "type": "substitution",
-      "text": "Zavier Gozo replaced Ismaila Sarr for Crystal Palace."
+      "text": "Highridge Player 25 replaced Highridge Player 22 for Highridge FC."
     },
     {
       "event_id": "e002722",
       "period": 2,
       "time": "71:03",
       "type": "substitution",
-      "text": "Jake O'Brien replaced Vitalii Mykolenko for Everton."
+      "text": "Ivory Player 08 replaced Ivory Player 09 for Ivory FC."
     },
     {
       "event_id": "e002867",
       "period": 2,
       "time": "75:09",
       "type": "substitution",
-      "text": "Daichi Kamada replaced Jefferson Lerma for Crystal Palace."
+      "text": "Highridge Player 16 replaced Highridge Player 14 for Highridge FC."
     },
     {
       "event_id": "e003145",
       "period": 2,
       "time": "82:56",
       "type": "red_card",
-      "text": "Crystal Palace lost Anan Khalaili to a red card."
+      "text": "Highridge FC lost Highridge Player 10 to a red card."
     }
   ],
   "player_of_the_match": {
     "player_id": "A10",
     "team_id": "AWAY",
     "jersey_number": 9,
-    "name": "Eddie Nketiah",
+    "name": "Highridge Player 23",
     "position": "ST",
     "position_detail": "Centre Striker",
     "nationality": "England",
@@ -273,7 +273,7 @@
     ],
     "impact_points": 6.77,
     "reasons": [
-      "Eddie Nketiah recorded 1 goal, 2 shots on target, 0 saves and 12 interceptions.",
+      "Highridge Player 23 recorded 1 goal, 2 shots on target, 0 saves and 12 interceptions.",
       "Completed 89 of 97 passes in 100 minutes; received 0 yellow cards and 0 red cards.",
       "Top impact score: 6.77 points."
     ]
@@ -283,7 +283,7 @@
       "player_id": "A10",
       "team_id": "AWAY",
       "jersey_number": 9,
-      "name": "Eddie Nketiah",
+      "name": "Highridge Player 23",
       "position": "ST",
       "position_detail": "Centre Striker",
       "nationality": "England",
@@ -419,7 +419,7 @@
       "player_id": "A09",
       "team_id": "AWAY",
       "jersey_number": 11,
-      "name": "Dwight McNeil",
+      "name": "Highridge Player 24",
       "position": "LW",
       "position_detail": "Left Winger",
       "nationality": "England",
@@ -528,7 +528,7 @@
       "player_id": "H09",
       "team_id": "HOME",
       "jersey_number": 19,
-      "name": "Tyrique George",
+      "name": "Ivory Player 20",
       "position": "LW",
       "position_detail": "Left Winger",
       "nationality": "England",
@@ -614,7 +614,7 @@
       "player_id": "H01",
       "team_id": "HOME",
       "jersey_number": 1,
-      "name": "Jordan Pickford",
+      "name": "Ivory Player 01",
       "position": "GK",
       "position_detail": "Goalkeeper",
       "nationality": "England",
@@ -652,7 +652,7 @@
       "player_id": "A01",
       "team_id": "AWAY",
       "jersey_number": 1,
-      "name": "Dean Henderson",
+      "name": "Highridge Player 01",
       "position": "GK",
       "position_detail": "Goalkeeper",
       "nationality": null,
@@ -689,7 +689,7 @@
       "player_id": "A07",
       "team_id": "AWAY",
       "jersey_number": 28,
-      "name": "Cheick Doucoure",
+      "name": "Highridge Player 21",
       "position": "DM",
       "position_detail": "Centre Defensive Midfielder",
       "nationality": "Mali",
@@ -776,7 +776,7 @@
       "player_id": "H11",
       "team_id": "HOME",
       "jersey_number": 20,
-      "name": "Tyler Dibling",
+      "name": "Ivory Player 21",
       "position": "RW",
       "position_detail": "Right Winger",
       "nationality": "England",
@@ -852,7 +852,7 @@
       "player_id": "H07",
       "team_id": "HOME",
       "jersey_number": 23,
-      "name": "Christian Norgaard",
+      "name": "Ivory Player 13",
       "position": "DM",
       "position_detail": "Defensive Midfielder",
       "nationality": "Denmark",
@@ -958,7 +958,7 @@
       "player_id": "H10",
       "team_id": "HOME",
       "jersey_number": 11,
-      "name": "Thierno Barry",
+      "name": "Ivory Player 19",
       "position": "ST",
       "position_detail": "Centre Striker",
       "nationality": "France",
@@ -1059,7 +1059,7 @@
       "player_id": "A08",
       "team_id": "AWAY",
       "jersey_number": 10,
-      "name": "Yeremy Pino",
+      "name": "Highridge Player 15",
       "position": "RCM",
       "position_detail": "Right Winger",
       "nationality": "Spain",
@@ -1122,7 +1122,7 @@
       "player_id": "H08",
       "team_id": "HOME",
       "jersey_number": 8,
-      "name": "Kiernan Dewsbury-Hall",
+      "name": "Ivory Player 11",
       "position": "RCM",
       "position_detail": "Central Midfielder",
       "nationality": "England",
@@ -1188,7 +1188,7 @@
       "player_id": "A13",
       "team_id": "AWAY",
       "jersey_number": 12,
-      "name": "Zavier Gozo",
+      "name": "Highridge Player 25",
       "position": "RW",
       "position_detail": "Right Winger",
       "nationality": "United States",
@@ -1229,7 +1229,7 @@
       "player_id": "A06",
       "team_id": "AWAY",
       "jersey_number": 8,
-      "name": "Jefferson Lerma",
+      "name": "Highridge Player 14",
       "position": "LCM",
       "position_detail": "Centre Central Midfielder",
       "nationality": "Colombia",
@@ -1280,7 +1280,7 @@
       "player_id": "A11",
       "team_id": "AWAY",
       "jersey_number": 7,
-      "name": "Ismaila Sarr",
+      "name": "Highridge Player 22",
       "position": "RW",
       "position_detail": "Right Winger",
       "nationality": null,
@@ -1350,7 +1350,7 @@
       "player_id": "H05",
       "team_id": "HOME",
       "jersey_number": 4,
-      "name": "Jarrad Branthwaite",
+      "name": "Ivory Player 05",
       "position": "RB",
       "position_detail": "Defender",
       "nationality": "England",
@@ -1381,7 +1381,7 @@
       "player_id": "A03",
       "team_id": "AWAY",
       "jersey_number": 4,
-      "name": "Chadi Riad",
+      "name": "Highridge Player 05",
       "position": "LCB",
       "position_detail": "Centre Central Defender",
       "nationality": "Morocco",
@@ -1431,7 +1431,7 @@
       "player_id": "A02",
       "team_id": "AWAY",
       "jersey_number": 3,
-      "name": "Tyrick Mitchell",
+      "name": "Highridge Player 04",
       "position": "LB",
       "position_detail": "Left Full Back",
       "nationality": "England",
@@ -1469,7 +1469,7 @@
       "player_id": "A12",
       "team_id": "AWAY",
       "jersey_number": 18,
-      "name": "Daichi Kamada",
+      "name": "Highridge Player 16",
       "position": "LCM",
       "position_detail": "Centre Attacking Midfielder",
       "nationality": "Japan",
@@ -1502,7 +1502,7 @@
       "player_id": "H06",
       "team_id": "HOME",
       "jersey_number": 2,
-      "name": "Ainsley Maitland-Niles",
+      "name": "Ivory Player 10",
       "position": "LCM",
       "position_detail": "Centre/Right Wing Back",
       "nationality": "England",
@@ -1543,7 +1543,7 @@
       "player_id": "H12",
       "team_id": "HOME",
       "jersey_number": 10,
-      "name": "Jack Grealish",
+      "name": "Ivory Player 12",
       "position": "LCM",
       "position_detail": "Left/Centre/Right Attacking Midfielder",
       "nationality": "England",
@@ -1576,7 +1576,7 @@
       "player_id": "A04",
       "team_id": "AWAY",
       "jersey_number": 5,
-      "name": "Axel Disasi",
+      "name": "Highridge Player 06",
       "position": "RCB",
       "position_detail": "Centre Central Defender",
       "nationality": "France",
@@ -1621,7 +1621,7 @@
       "player_id": "H03",
       "team_id": "HOME",
       "jersey_number": 5,
-      "name": "Michael Keane",
+      "name": "Ivory Player 06",
       "position": "LCB",
       "position_detail": "Centre Central Defender",
       "nationality": "England",
@@ -1662,7 +1662,7 @@
       "player_id": "H14",
       "team_id": "HOME",
       "jersey_number": 15,
-      "name": "Jake O'Brien",
+      "name": "Ivory Player 08",
       "position": "LB",
       "position_detail": "Centre Central Defender",
       "nationality": "Ireland",
@@ -1690,7 +1690,7 @@
       "player_id": "H02",
       "team_id": "HOME",
       "jersey_number": 16,
-      "name": "Vitalii Mykolenko",
+      "name": "Ivory Player 09",
       "position": "LB",
       "position_detail": "Left Full Back",
       "nationality": "Ukraine",
@@ -1717,7 +1717,7 @@
       "player_id": "H04",
       "team_id": "HOME",
       "jersey_number": 6,
-      "name": "James Tarkowski",
+      "name": "Ivory Player 07",
       "position": "RCB",
       "position_detail": "Centre Central Defender",
       "nationality": "England",
@@ -1757,7 +1757,7 @@
       "player_id": "A05",
       "team_id": "AWAY",
       "jersey_number": 25,
-      "name": "Anan Khalaili",
+      "name": "Highridge Player 10",
       "position": "RB",
       "position_detail": "Right Full Back",
       "nationality": "Israel",

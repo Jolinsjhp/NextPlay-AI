@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "competition": "Premier League (synthetic)",
+  "competition": "NextPlay League (synthetic)",
   "teams": 20,
   "matchweeks": 4,
   "matches": 40,
@@ -11,7 +11,7 @@
     "every club plays exactly once per matchweek",
     "no repeated pairing in the selected rounds",
     "per-match metadata, summary, events, states and preview exist",
-    "all 20 clubs have a real 2026/27 squad and match lineups use squad players",
+    "all 20 clubs have a fictional 2026/27 squad and match lineups use squad players",
     "event order, match_end and event/score consistency",
     "substitute identity, team membership and no events from departed players",
     "state snapshots and final statistics consistency",

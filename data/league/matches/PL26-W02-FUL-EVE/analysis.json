@@ -4,7 +4,7 @@
   "status": "complete",
   "language": "en",
   "source": {
-    "fingerprint": "08f4a5ac2db2fb2487e757db381821955cd5b56fa049e9bf84d03ea56672eedf",
+    "fingerprint": "f5e1096c9fa122e3f344706e5b4e19c4366b32803598e7b3e4aaf98e949c927d",
     "event_count": 3611,
     "match_end_event_id": "e003611",
     "completed_at_ms": 6000000,
@@ -18,12 +18,12 @@
     "mode": "local",
     "model": null
   },
-  "headline": "Fulham 1–1 Everton",
-  "summary": "Fulham and Everton drew 1–1. There were 16 shots across the match. Thierno Barry earns Player of the Match on the published impact scoring.",
+  "headline": "Juniper FC 1–1 Ivory FC",
+  "summary": "Juniper FC and Ivory FC drew 1–1. There were 16 shots across the match. Ivory Player 19 earns Player of the Match on the published impact scoring.",
   "periods": [
     {
       "title": "First half",
-      "text": "Fulham had 5 shots and Everton had 5. 18:40 — Thierno Barry opened the scoring for Everton (0–1). 25:47 — Harrison Reed equalised for Fulham (1–1). The period ended at 1–1.",
+      "text": "Juniper FC had 5 shots and Ivory FC had 5. 18:40 — Ivory Player 19 opened the scoring for Ivory FC (0–1). 25:47 — Juniper Player 13 equalised for Juniper FC (1–1). The period ended at 1–1.",
       "shots": [
         5,
         5
@@ -47,7 +47,7 @@
     },
     {
       "title": "Second half",
-      "text": "Fulham had 2 shots and Everton had 4. 80:11 — Everton lost Jarrad Branthwaite to a red card. The period ended at 1–1.",
+      "text": "Juniper FC had 2 shots and Ivory FC had 4. 80:11 — Ivory FC lost Ivory Player 05 to a red card. The period ended at 1–1.",
       "shots": [
         2,
         4
@@ -68,8 +68,8 @@
     }
   ],
   "insights": [
-    "Fulham: 7 shots, 4 on target, 407 of 460 passes completed, 56.0% possession.",
-    "Everton: 9 shots, 5 on target, 299 of 350 passes completed, 44.0% possession."
+    "Juniper FC: 7 shots, 4 on target, 407 of 460 passes completed, 56.0% possession.",
+    "Ivory FC: 9 shots, 5 on target, 299 of 350 passes completed, 44.0% possession."
   ],
   "key_moments": [
     {
@@ -77,56 +77,56 @@
       "period": 1,
       "time": "18:40",
       "type": "shot",
-      "text": "Thierno Barry opened the scoring for Everton (0–1)."
+      "text": "Ivory Player 19 opened the scoring for Ivory FC (0–1)."
     },
     {
       "event_id": "e000938",
       "period": 1,
       "time": "25:47",
       "type": "shot",
-      "text": "Harrison Reed equalised for Fulham (1–1)."
+      "text": "Juniper Player 13 equalised for Juniper FC (1–1)."
     },
     {
       "event_id": "e002340",
       "period": 2,
       "time": "59:29",
       "type": "substitution",
-      "text": "Tom Cairney replaced Harrison Reed for Fulham."
+      "text": "Juniper Player 15 replaced Juniper Player 13 for Juniper FC."
     },
     {
       "event_id": "e002404",
       "period": 2,
       "time": "61:13",
       "type": "substitution",
-      "text": "Brennan Johnson replaced Tyler Dibling for Everton."
+      "text": "Ivory Player 22 replaced Ivory Player 21 for Ivory FC."
     },
     {
       "event_id": "e002735",
       "period": 2,
       "time": "70:11",
       "type": "substitution",
-      "text": "Timothy Castagne replaced Calvin Bassey for Fulham."
+      "text": "Juniper Player 08 replaced Juniper Player 05 for Juniper FC."
     },
     {
       "event_id": "e002870",
       "period": 2,
       "time": "74:04",
       "type": "substitution",
-      "text": "Jack Grealish replaced Ainsley Maitland-Niles for Everton."
+      "text": "Ivory Player 12 replaced Ivory Player 10 for Ivory FC."
     },
     {
       "event_id": "e003094",
       "period": 2,
       "time": "80:11",
       "type": "red_card",
-      "text": "Everton lost Jarrad Branthwaite to a red card."
+      "text": "Ivory FC lost Ivory Player 05 to a red card."
     }
   ],
   "player_of_the_match": {
     "player_id": "A10",
     "team_id": "AWAY",
     "jersey_number": 11,
-    "name": "Thierno Barry",
+    "name": "Ivory Player 19",
     "position": "ST",
     "position_detail": "Centre Striker",
     "nationality": "France",
@@ -248,7 +248,7 @@
     ],
     "impact_points": 7.67,
     "reasons": [
-      "Thierno Barry recorded 1 goal, 3 shots on target, 0 saves and 16 interceptions.",
+      "Ivory Player 19 recorded 1 goal, 3 shots on target, 0 saves and 16 interceptions.",
       "Completed 73 of 82 passes in 100 minutes; received 0 yellow cards and 0 red cards.",
       "Top impact score: 7.67 points."
     ]
@@ -258,7 +258,7 @@
       "player_id": "A10",
       "team_id": "AWAY",
       "jersey_number": 11,
-      "name": "Thierno Barry",
+      "name": "Ivory Player 19",
       "position": "ST",
       "position_detail": "Centre Striker",
       "nationality": "France",
@@ -384,7 +384,7 @@
       "player_id": "H06",
       "team_id": "HOME",
       "jersey_number": 6,
-      "name": "Harrison Reed",
+      "name": "Juniper Player 13",
       "position": "LCM",
       "position_detail": "Centre Central Midfielder",
       "nationality": "England",
@@ -437,7 +437,7 @@
       "player_id": "H01",
       "team_id": "HOME",
       "jersey_number": 1,
-      "name": "Bernd Leno",
+      "name": "Juniper Player 01",
       "position": "GK",
       "position_detail": "Goalkeeper",
       "nationality": "Germany",
@@ -472,7 +472,7 @@
       "player_id": "H10",
       "team_id": "HOME",
       "jersey_number": 7,
-      "name": "Gonzalo Garcia",
+      "name": "Juniper Player 24",
       "position": "ST",
       "position_detail": "Centre Forward",
       "nationality": null,
@@ -602,7 +602,7 @@
       "player_id": "H07",
       "team_id": "HOME",
       "jersey_number": 19,
-      "name": "Shea Charles",
+      "name": "Juniper Player 19",
       "position": "DM",
       "position_detail": "Centre Defensive Midfielder",
       "nationality": "Northern Ireland",
@@ -708,7 +708,7 @@
       "player_id": "A07",
       "team_id": "AWAY",
       "jersey_number": 23,
-      "name": "Christian Norgaard",
+      "name": "Ivory Player 13",
       "position": "DM",
       "position_detail": "Defensive Midfielder",
       "nationality": "Denmark",
@@ -807,7 +807,7 @@
       "player_id": "A01",
       "team_id": "AWAY",
       "jersey_number": 1,
-      "name": "Jordan Pickford",
+      "name": "Ivory Player 01",
       "position": "GK",
       "position_detail": "Goalkeeper",
       "nationality": "England",
@@ -839,7 +839,7 @@
       "player_id": "H09",
       "team_id": "HOME",
       "jersey_number": 11,
-      "name": "Kevin",
+      "name": "Juniper Player 26",
       "position": "LW",
       "position_detail": "Left/Right Winger",
       "nationality": "Brazil",
@@ -923,7 +923,7 @@
       "player_id": "A09",
       "team_id": "AWAY",
       "jersey_number": 19,
-      "name": "Tyrique George",
+      "name": "Ivory Player 20",
       "position": "LW",
       "position_detail": "Left Winger",
       "nationality": "England",
@@ -996,7 +996,7 @@
       "player_id": "H08",
       "team_id": "HOME",
       "jersey_number": 8,
-      "name": "Cesar Palacios",
+      "name": "Juniper Player 14",
       "position": "RCM",
       "position_detail": "Centre Attacking Midfielder",
       "nationality": "Spain",
@@ -1075,7 +1075,7 @@
       "player_id": "H11",
       "team_id": "HOME",
       "jersey_number": 17,
-      "name": "Alex Iwobi",
+      "name": "Juniper Player 27",
       "position": "RW",
       "position_detail": "Left/Centre/Right Second Striker",
       "nationality": "Nigeria",
@@ -1180,7 +1180,7 @@
       "player_id": "A11",
       "team_id": "AWAY",
       "jersey_number": 20,
-      "name": "Tyler Dibling",
+      "name": "Ivory Player 21",
       "position": "RW",
       "position_detail": "Right Winger",
       "nationality": "England",
@@ -1242,7 +1242,7 @@
       "player_id": "A06",
       "team_id": "AWAY",
       "jersey_number": 2,
-      "name": "Ainsley Maitland-Niles",
+      "name": "Ivory Player 10",
       "position": "LCM",
       "position_detail": "Centre/Right Wing Back",
       "nationality": "England",
@@ -1295,7 +1295,7 @@
       "player_id": "A13",
       "team_id": "AWAY",
       "jersey_number": 22,
-      "name": "Brennan Johnson",
+      "name": "Ivory Player 22",
       "position": "RW",
       "position_detail": "Right Winger",
       "nationality": "Wales",
@@ -1348,7 +1348,7 @@
       "player_id": "A08",
       "team_id": "AWAY",
       "jersey_number": 8,
-      "name": "Kiernan Dewsbury-Hall",
+      "name": "Ivory Player 11",
       "position": "RCM",
       "position_detail": "Central Midfielder",
       "nationality": "England",
@@ -1399,7 +1399,7 @@
       "player_id": "H12",
       "team_id": "HOME",
       "jersey_number": 10,
-      "name": "Tom Cairney",
+      "name": "Juniper Player 15",
       "position": "LCM",
       "position_detail": "Left/Centre/Right Attacking Midfielder",
       "nationality": "Scotland",
@@ -1438,7 +1438,7 @@
       "player_id": "H03",
       "team_id": "HOME",
       "jersey_number": 4,
-      "name": "Jorge Cuenca",
+      "name": "Juniper Player 06",
       "position": "LCB",
       "position_detail": "Centre Central Defender",
       "nationality": "Spain",
@@ -1480,7 +1480,7 @@
       "player_id": "H02",
       "team_id": "HOME",
       "jersey_number": 3,
-      "name": "Calvin Bassey",
+      "name": "Juniper Player 05",
       "position": "LB",
       "position_detail": "Left Full Back",
       "nationality": "Nigeria",
@@ -1515,7 +1515,7 @@
       "player_id": "A03",
       "team_id": "AWAY",
       "jersey_number": 5,
-      "name": "Michael Keane",
+      "name": "Ivory Player 06",
       "position": "LCB",
       "position_detail": "Centre Central Defender",
       "nationality": "England",
@@ -1553,7 +1553,7 @@
       "player_id": "A02",
       "team_id": "AWAY",
       "jersey_number": 16,
-      "name": "Vitalii Mykolenko",
+      "name": "Ivory Player 09",
       "position": "LB",
       "position_detail": "Left Full Back",
       "nationality": "Ukraine",
@@ -1585,7 +1585,7 @@
       "player_id": "H14",
       "team_id": "HOME",
       "jersey_number": 21,
-      "name": "Timothy Castagne",
+      "name": "Juniper Player 08",
       "position": "LB",
       "position_detail": "Right Full Back",
       "nationality": "Belgium",
@@ -1615,7 +1615,7 @@
       "player_id": "A04",
       "team_id": "AWAY",
       "jersey_number": 6,
-      "name": "James Tarkowski",
+      "name": "Ivory Player 07",
       "position": "RCB",
       "position_detail": "Centre Central Defender",
       "nationality": "England",
@@ -1653,7 +1653,7 @@
       "player_id": "H05",
       "team_id": "HOME",
       "jersey_number": 2,
-      "name": "Kenny Tete",
+      "name": "Juniper Player 04",
       "position": "RB",
       "position_detail": "Right Full Back",
       "nationality": "Netherlands",
@@ -1691,7 +1691,7 @@
       "player_id": "A12",
       "team_id": "AWAY",
       "jersey_number": 10,
-      "name": "Jack Grealish",
+      "name": "Ivory Player 12",
       "position": "LCM",
       "position_detail": "Left/Centre/Right Attacking Midfielder",
       "nationality": "England",
@@ -1718,7 +1718,7 @@
       "player_id": "H04",
       "team_id": "HOME",
       "jersey_number": 5,
-      "name": "Joachim Andersen",
+      "name": "Juniper Player 07",
       "position": "RCB",
       "position_detail": "Centre Central Defender",
       "nationality": "Denmark",
@@ -1764,7 +1764,7 @@
       "player_id": "A05",
       "team_id": "AWAY",
       "jersey_number": 4,
-      "name": "Jarrad Branthwaite",
+      "name": "Ivory Player 05",
       "position": "RB",
       "position_detail": "Defender",
       "nationality": "England",

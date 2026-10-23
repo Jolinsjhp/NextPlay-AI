@@ -90,9 +90,9 @@
       "period_ms": 40800,
       "team_id": "HOME",
       "club_id": "CHE",
-      "club_name": "Chelsea",
+      "club_name": "Fairhaven FC",
       "player_id": "H10",
-      "player_name": "Joao Pedro",
+      "player_name": "Fairhaven Player 25",
       "shirt_number": 9,
       "score": [
         1,
@@ -105,9 +105,9 @@
       "period_ms": 1461000,
       "team_id": "HOME",
       "club_id": "CHE",
-      "club_name": "Chelsea",
+      "club_name": "Fairhaven FC",
       "player_id": "H11",
-      "player_name": "Estevao",
+      "player_name": "Fairhaven Player 29",
       "shirt_number": 41,
       "score": [
         2,
@@ -117,19 +117,19 @@
   ],
   "competition": {
     "id": "PL-SYN-2026",
-    "name": "Premier League (synthetic)",
+    "name": "NextPlay League (synthetic)",
     "season": "2026/27",
     "synthetic": true,
     "matchweek": 2,
     "kickoff_local": "2026-11-01T14:00:00",
     "time_zone": "Europe/London",
-    "venue": "Stamford Bridge"
+    "venue": "Fairhaven Park"
   },
   "home_club": {
     "club_id": "CHE",
-    "name": "Chelsea",
-    "short_name": "Chelsea",
-    "stadium": "Stamford Bridge",
+    "name": "Fairhaven FC",
+    "short_name": "Fairhaven FC",
+    "stadium": "Fairhaven Park",
     "colors": {
       "primary": "#034694",
       "secondary": "#FFFFFF"
@@ -138,9 +138,9 @@
   },
   "away_club": {
     "club_id": "LEE",
-    "name": "Leeds United",
-    "short_name": "Leeds",
-    "stadium": "Elland Road",
+    "name": "Meadow FC",
+    "short_name": "Meadow",
+    "stadium": "Meadow Park",
     "colors": {
       "primary": "#FFFFFF",
       "secondary": "#1D428A"

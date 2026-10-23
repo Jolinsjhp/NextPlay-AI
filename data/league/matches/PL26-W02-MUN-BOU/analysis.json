@@ -4,7 +4,7 @@
   "status": "complete",
   "language": "en",
   "source": {
-    "fingerprint": "0d1b36f4ba68c721e54e5a20f9a6ce3b1d591d086871773038c61206e8f6e5df",
+    "fingerprint": "cd37278ce160d4801d60c3b512ccb43fda454782e73208ffe8bdc82f18bfbe6b",
     "event_count": 3664,
     "match_end_event_id": "e003664",
     "completed_at_ms": 6000000,
@@ -18,12 +18,12 @@
     "mode": "local",
     "model": null
   },
-  "headline": "Manchester United 0–1 AFC Bournemouth",
-  "summary": "AFC Bournemouth won 1–0. There were 21 shots across the match. Evanilson earns Player of the Match on the published impact scoring.",
+  "headline": "Pinecrest FC 0–1 Cedar FC",
+  "summary": "Cedar FC won 1–0. There were 21 shots across the match. Cedar Player 22 earns Player of the Match on the published impact scoring.",
   "periods": [
     {
       "title": "First half",
-      "text": "Manchester United had 8 shots and AFC Bournemouth had 3. Neither side scored and there were no red cards. The period ended at 0–0.",
+      "text": "Pinecrest FC had 8 shots and Cedar FC had 3. Neither side scored and there were no red cards. The period ended at 0–0.",
       "shots": [
         8,
         3
@@ -48,7 +48,7 @@
     },
     {
       "title": "Second half",
-      "text": "Manchester United had 6 shots and AFC Bournemouth had 4. 50:33 — Evanilson opened the scoring for AFC Bournemouth (0–1). 81:57 — AFC Bournemouth lost Julian Araujo to a red card. The period ended at 0–1.",
+      "text": "Pinecrest FC had 6 shots and Cedar FC had 4. 50:33 — Cedar Player 22 opened the scoring for Cedar FC (0–1). 81:57 — Cedar FC lost Cedar Player 04 to a red card. The period ended at 0–1.",
       "shots": [
         6,
         4
@@ -73,8 +73,8 @@
     }
   ],
   "insights": [
-    "Manchester United: 14 shots, 4 on target, 342 of 395 passes completed, 49.6% possession.",
-    "AFC Bournemouth: 7 shots, 3 on target, 361 of 419 passes completed, 50.4% possession."
+    "Pinecrest FC: 14 shots, 4 on target, 342 of 395 passes completed, 49.6% possession.",
+    "Cedar FC: 7 shots, 3 on target, 361 of 419 passes completed, 50.4% possession."
   ],
   "key_moments": [
     {
@@ -82,49 +82,49 @@
       "period": 2,
       "time": "50:33",
       "type": "shot",
-      "text": "Evanilson opened the scoring for AFC Bournemouth (0–1)."
+      "text": "Cedar Player 22 opened the scoring for Cedar FC (0–1)."
     },
     {
       "event_id": "e002329",
       "period": 2,
       "time": "59:22",
       "type": "substitution",
-      "text": "Youri Tielemans replaced Mason Mount for Manchester United."
+      "text": "Pinecrest Player 18 replaced Pinecrest Player 15 for Pinecrest FC."
     },
     {
       "event_id": "e002462",
       "period": 2,
       "time": "62:52",
       "type": "substitution",
-      "text": "Amine Adli replaced Justin Kluivert for AFC Bournemouth."
+      "text": "Cedar Player 25 replaced Cedar Player 24 for Cedar FC."
     },
     {
       "event_id": "e002695",
       "period": 2,
       "time": "69:23",
       "type": "substitution",
-      "text": "Harry Maguire replaced Patrick Dorgu for Manchester United."
+      "text": "Pinecrest Player 08 replaced Pinecrest Player 10 for Pinecrest FC."
     },
     {
       "event_id": "e002915",
       "period": 2,
       "time": "74:55",
       "type": "substitution",
-      "text": "Alex Scott replaced Lewis Cook for AFC Bournemouth."
+      "text": "Cedar Player 15 replaced Cedar Player 13 for Cedar FC."
     },
     {
       "event_id": "e003178",
       "period": 2,
       "time": "81:57",
       "type": "red_card",
-      "text": "AFC Bournemouth lost Julian Araujo to a red card."
+      "text": "Cedar FC lost Cedar Player 04 to a red card."
     }
   ],
   "player_of_the_match": {
     "player_id": "A10",
     "team_id": "AWAY",
     "jersey_number": 9,
-    "name": "Evanilson",
+    "name": "Cedar Player 22",
     "position": "ST",
     "position_detail": "Centre Striker",
     "nationality": "Brazil",
@@ -222,7 +222,7 @@
     ],
     "impact_points": 5.13,
     "reasons": [
-      "Evanilson recorded 1 goal, 1 shot on target, 0 saves and 4 interceptions.",
+      "Cedar Player 22 recorded 1 goal, 1 shot on target, 0 saves and 4 interceptions.",
       "Completed 69 of 71 passes in 100 minutes; received 0 yellow cards and 0 red cards.",
       "Top impact score: 5.13 points."
     ]
@@ -232,7 +232,7 @@
       "player_id": "A10",
       "team_id": "AWAY",
       "jersey_number": 9,
-      "name": "Evanilson",
+      "name": "Cedar Player 22",
       "position": "ST",
       "position_detail": "Centre Striker",
       "nationality": "Brazil",
@@ -334,7 +334,7 @@
       "player_id": "H10",
       "team_id": "HOME",
       "jersey_number": 10,
-      "name": "Matheus Cunha",
+      "name": "Pinecrest Player 25",
       "position": "ST",
       "position_detail": "Left/Centre Second Striker",
       "nationality": "Brazil",
@@ -457,7 +457,7 @@
       "player_id": "A01",
       "team_id": "AWAY",
       "jersey_number": 1,
-      "name": "Djordje Petrovic",
+      "name": "Cedar Player 01",
       "position": "GK",
       "position_detail": "Goalkeeper",
       "nationality": "Serbia",
@@ -498,7 +498,7 @@
       "player_id": "A07",
       "team_id": "AWAY",
       "jersey_number": 12,
-      "name": "Tyler Adams",
+      "name": "Cedar Player 17",
       "position": "DM",
       "position_detail": "Defensive Midfielder",
       "nationality": "United States",
@@ -602,7 +602,7 @@
       "player_id": "H07",
       "team_id": "HOME",
       "jersey_number": 17,
-      "name": "Andrey Santos",
+      "name": "Pinecrest Player 17",
       "position": "DM",
       "position_detail": "Defensive Midfielder",
       "nationality": "Brazil",
@@ -714,7 +714,7 @@
       "player_id": "A09",
       "team_id": "AWAY",
       "jersey_number": 11,
-      "name": "Ben Gannon-Doak",
+      "name": "Cedar Player 23",
       "position": "LW",
       "position_detail": "Left/Right Winger",
       "nationality": "Scotland",
@@ -812,7 +812,7 @@
       "player_id": "H01",
       "team_id": "HOME",
       "jersey_number": 1,
-      "name": "Senne Lammens",
+      "name": "Pinecrest Player 01",
       "position": "GK",
       "position_detail": "Goalkeeper",
       "nationality": "Belgium",
@@ -842,7 +842,7 @@
       "player_id": "H08",
       "team_id": "HOME",
       "jersey_number": 8,
-      "name": "Bruno Fernandes",
+      "name": "Pinecrest Player 16",
       "position": "RCM",
       "position_detail": "Left/Centre/Right Attacking Midfielder",
       "nationality": "Portugal",
@@ -907,7 +907,7 @@
       "player_id": "A11",
       "team_id": "AWAY",
       "jersey_number": 19,
-      "name": "Justin Kluivert",
+      "name": "Cedar Player 24",
       "position": "RW",
       "position_detail": "Left/Right Winger",
       "nationality": "Netherlands",
@@ -978,7 +978,7 @@
       "player_id": "A08",
       "team_id": "AWAY",
       "jersey_number": 7,
-      "name": "David Brooks",
+      "name": "Cedar Player 14",
       "position": "RCM",
       "position_detail": "Left/Centre/Right Attacking Midfielder",
       "nationality": "Wales",
@@ -1045,7 +1045,7 @@
       "player_id": "H09",
       "team_id": "HOME",
       "jersey_number": 9,
-      "name": "Marcus Rashford",
+      "name": "Pinecrest Player 24",
       "position": "LW",
       "position_detail": "Left Winger",
       "nationality": "England",
@@ -1144,7 +1144,7 @@
       "player_id": "H11",
       "team_id": "HOME",
       "jersey_number": 19,
-      "name": "Bryan Mbeumo",
+      "name": "Pinecrest Player 28",
       "position": "RW",
       "position_detail": "Right Winger",
       "nationality": "Cameroon",
@@ -1231,7 +1231,7 @@
       "player_id": "A06",
       "team_id": "AWAY",
       "jersey_number": 4,
-      "name": "Lewis Cook",
+      "name": "Cedar Player 13",
       "position": "LCM",
       "position_detail": "Centre Central Midfielder",
       "nationality": "England",
@@ -1294,7 +1294,7 @@
       "player_id": "A03",
       "team_id": "AWAY",
       "jersey_number": 5,
-      "name": "James Hill",
+      "name": "Cedar Player 06",
       "position": "LCB",
       "position_detail": "Centre Central Defender",
       "nationality": "England",
@@ -1341,7 +1341,7 @@
       "player_id": "H03",
       "team_id": "HOME",
       "jersey_number": 3,
-      "name": "Noussair Mazraoui",
+      "name": "Pinecrest Player 06",
       "position": "LCB",
       "position_detail": "Right Full Back",
       "nationality": "Morocco",
@@ -1388,7 +1388,7 @@
       "player_id": "H06",
       "team_id": "HOME",
       "jersey_number": 7,
-      "name": "Mason Mount",
+      "name": "Pinecrest Player 15",
       "position": "LCM",
       "position_detail": "Centre Attacking Midfielder",
       "nationality": "England",
@@ -1428,7 +1428,7 @@
       "player_id": "A13",
       "team_id": "AWAY",
       "jersey_number": 21,
-      "name": "Amine Adli",
+      "name": "Cedar Player 25",
       "position": "RW",
       "position_detail": "Left Winger",
       "nationality": "Morocco",
@@ -1469,7 +1469,7 @@
       "player_id": "A04",
       "team_id": "AWAY",
       "jersey_number": 6,
-      "name": "Julio Soler",
+      "name": "Cedar Player 07",
       "position": "RCB",
       "position_detail": "Left Full Back",
       "nationality": "Argentina",
@@ -1512,7 +1512,7 @@
       "player_id": "A02",
       "team_id": "AWAY",
       "jersey_number": 3,
-      "name": "Adrien Truffert",
+      "name": "Cedar Player 05",
       "position": "LB",
       "position_detail": "Left Full Back",
       "nationality": "France",
@@ -1544,7 +1544,7 @@
       "player_id": "A12",
       "team_id": "AWAY",
       "jersey_number": 8,
-      "name": "Alex Scott",
+      "name": "Cedar Player 15",
       "position": "LCM",
       "position_detail": "Central Midfielder",
       "nationality": "England",
@@ -1578,7 +1578,7 @@
       "player_id": "H02",
       "team_id": "HOME",
       "jersey_number": 13,
-      "name": "Patrick Dorgu",
+      "name": "Pinecrest Player 10",
       "position": "LB",
       "position_detail": "Left Full Back",
       "nationality": "Denmark",
@@ -1614,7 +1614,7 @@
       "player_id": "H12",
       "team_id": "HOME",
       "jersey_number": 18,
-      "name": "Youri Tielemans",
+      "name": "Pinecrest Player 18",
       "position": "LCM",
       "position_detail": "Central Midfielder",
       "nationality": "Belgium",
@@ -1645,7 +1645,7 @@
       "player_id": "H05",
       "team_id": "HOME",
       "jersey_number": 2,
-      "name": "Diogo Dalot",
+      "name": "Pinecrest Player 05",
       "position": "RB",
       "position_detail": "Right Full Back",
       "nationality": "Portugal",
@@ -1675,7 +1675,7 @@
       "player_id": "H14",
       "team_id": "HOME",
       "jersey_number": 5,
-      "name": "Harry Maguire",
+      "name": "Pinecrest Player 08",
       "position": "LB",
       "position_detail": "Centre Central Defender",
       "nationality": "England",
@@ -1702,7 +1702,7 @@
       "player_id": "H04",
       "team_id": "HOME",
       "jersey_number": 4,
-      "name": "Matthijs de Ligt",
+      "name": "Pinecrest Player 07",
       "position": "RCB",
       "position_detail": "Centre Central Defender",
       "nationality": "Netherlands",
@@ -1744,7 +1744,7 @@
       "player_id": "A05",
       "team_id": "AWAY",
       "jersey_number": 2,
-      "name": "Julian Araujo",
+      "name": "Cedar Player 04",
       "position": "RB",
       "position_detail": "Right Full Back",
       "nationality": "Mexico",

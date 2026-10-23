@@ -90,9 +90,9 @@
       "period_ms": 310600,
       "team_id": "HOME",
       "club_id": "NFO",
-      "club_name": "Nottingham Forest",
+      "club_name": "Rivermist FC",
       "player_id": "H10",
-      "player_name": "Chris Wood",
+      "player_name": "Rivermist Player 23",
       "shirt_number": 9,
       "score": [
         1,
@@ -105,9 +105,9 @@
       "period_ms": 1839800,
       "team_id": "HOME",
       "club_id": "NFO",
-      "club_name": "Nottingham Forest",
+      "club_name": "Rivermist FC",
       "player_id": "H10",
-      "player_name": "Chris Wood",
+      "player_name": "Rivermist Player 23",
       "shirt_number": 9,
       "score": [
         2,
@@ -120,9 +120,9 @@
       "period_ms": 59600,
       "team_id": "AWAY",
       "club_id": "ARS",
-      "club_name": "Arsenal",
+      "club_name": "Aster FC",
       "player_id": "A10",
-      "player_name": "Viktor Gyokeres",
+      "player_name": "Aster Player 21",
       "shirt_number": 14,
       "score": [
         2,
@@ -135,9 +135,9 @@
       "period_ms": 2692000,
       "team_id": "AWAY",
       "club_id": "ARS",
-      "club_name": "Arsenal",
+      "club_name": "Aster FC",
       "player_id": "A10",
-      "player_name": "Viktor Gyokeres",
+      "player_name": "Aster Player 21",
       "shirt_number": 14,
       "score": [
         2,
@@ -150,9 +150,9 @@
       "period_ms": 2789200,
       "team_id": "AWAY",
       "club_id": "ARS",
-      "club_name": "Arsenal",
+      "club_name": "Aster FC",
       "player_id": "A08",
-      "player_name": "Eberechi Eze",
+      "player_name": "Aster Player 13",
       "shirt_number": 10,
       "score": [
         2,
@@ -162,19 +162,19 @@
   ],
   "competition": {
     "id": "PL-SYN-2026",
-    "name": "Premier League (synthetic)",
+    "name": "NextPlay League (synthetic)",
     "season": "2026/27",
     "synthetic": true,
     "matchweek": 3,
     "kickoff_local": "2026-11-07T12:30:00",
     "time_zone": "Europe/London",
-    "venue": "City Ground"
+    "venue": "Rivermist Park"
   },
   "home_club": {
     "club_id": "NFO",
-    "name": "Nottingham Forest",
-    "short_name": "Forest",
-    "stadium": "City Ground",
+    "name": "Rivermist FC",
+    "short_name": "Rivermist",
+    "stadium": "Rivermist Park",
     "colors": {
       "primary": "#DD0000",
       "secondary": "#FFFFFF"
@@ -183,9 +183,9 @@
   },
   "away_club": {
     "club_id": "ARS",
-    "name": "Arsenal",
-    "short_name": "Arsenal",
-    "stadium": "Emirates Stadium",
+    "name": "Aster FC",
+    "short_name": "Aster FC",
+    "stadium": "Aster Park",
     "colors": {
       "primary": "#EF0107",
       "secondary": "#FFFFFF"

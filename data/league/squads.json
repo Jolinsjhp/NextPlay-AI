@@ -1,20 +1,20 @@
 {
   "schema_version": "1.0.0",
   "season": "2026/27",
-  "competition": "Premier League",
+  "competition": "NextPlay League",
   "synthetic_matches": true,
   "source": {
     "squad_lists": "https://www.premierleague.com/en/news/4706139/see-all-the-202627-premier-league-squad-lists",
     "squad_numbers": "https://www.premierleague.com/en/news/4725682/all-20-premier-league-clubs-squad-numbers-for-202627-season",
     "retrieved": "2026-10-19",
-    "note": "Club affiliation and shirt numbers follow the Premier League 2026/27 squad lists. Positions, nationalities and dates of birth are from the Premier League player directory."
+    "note": "Club, player and venue names are fictional aliases; roster attributes are preserved from the source dataset. Match events and tracking are synthetic. Original attribute sources are retained below for provenance; these aliases are not official player identities."
   },
   "teams": [
     {
       "club_id": "ARS",
-      "name": "Arsenal",
-      "short_name": "Arsenal",
-      "stadium": "Emirates Stadium",
+      "name": "Aster FC",
+      "short_name": "Aster FC",
+      "stadium": "Aster Park",
       "colors": {
         "primary": "#EF0107",
         "secondary": "#FFFFFF"
@@ -28,7 +28,7 @@
       "players": [
         {
           "player_id": "ARS-01",
-          "name": "David Raya",
+          "name": "Aster Player 01",
           "shirt_number": 1,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -39,7 +39,7 @@
         },
         {
           "player_id": "ARS-13",
-          "name": "Kepa Arrizabalaga",
+          "name": "Aster Player 02",
           "shirt_number": 13,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -50,7 +50,7 @@
         },
         {
           "player_id": "ARS-30",
-          "name": "Illan Meslier",
+          "name": "Aster Player 03",
           "shirt_number": 30,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -61,7 +61,7 @@
         },
         {
           "player_id": "ARS-02",
-          "name": "William Saliba",
+          "name": "Aster Player 04",
           "shirt_number": 2,
           "position": "DEF",
           "position_detail": "Central Defender",
@@ -72,7 +72,7 @@
         },
         {
           "player_id": "ARS-03",
-          "name": "Cristhian Mosquera",
+          "name": "Aster Player 05",
           "shirt_number": 3,
           "position": "DEF",
           "position_detail": "Central Defender",
@@ -83,7 +83,7 @@
         },
         {
           "player_id": "ARS-04",
-          "name": "Ben White",
+          "name": "Aster Player 06",
           "shirt_number": 4,
           "position": "DEF",
           "position_detail": "Centre/Right Central Defender",
@@ -94,7 +94,7 @@
         },
         {
           "player_id": "ARS-05",
-          "name": "Piero Hincapie",
+          "name": "Aster Player 07",
           "shirt_number": 5,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -105,7 +105,7 @@
         },
         {
           "player_id": "ARS-06",
-          "name": "Gabriel Magalhaes",
+          "name": "Aster Player 08",
           "shirt_number": 6,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -116,7 +116,7 @@
         },
         {
           "player_id": "ARS-12",
-          "name": "Jurrien Timber",
+          "name": "Aster Player 09",
           "shirt_number": 12,
           "position": "DEF",
           "position_detail": "Central Defender",
@@ -127,7 +127,7 @@
         },
         {
           "player_id": "ARS-15",
-          "name": "Ezri Konsa",
+          "name": "Aster Player 10",
           "shirt_number": 15,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -138,7 +138,7 @@
         },
         {
           "player_id": "ARS-33",
-          "name": "Riccardo Calafiori",
+          "name": "Aster Player 11",
           "shirt_number": 33,
           "position": "DEF",
           "position_detail": "Left Full Back",
@@ -149,7 +149,7 @@
         },
         {
           "player_id": "ARS-08",
-          "name": "Martin Odegaard",
+          "name": "Aster Player 12",
           "shirt_number": 8,
           "position": "MID",
           "position_detail": "Left/Centre/Right Attacking Midfielder",
@@ -160,7 +160,7 @@
         },
         {
           "player_id": "ARS-10",
-          "name": "Eberechi Eze",
+          "name": "Aster Player 13",
           "shirt_number": 10,
           "position": "MID",
           "position_detail": "Centre Attacking Midfielder",
@@ -171,7 +171,7 @@
         },
         {
           "player_id": "ARS-22",
-          "name": "Ethan Nwaneri",
+          "name": "Aster Player 14",
           "shirt_number": 22,
           "position": "MID",
           "position_detail": "Left/Centre Attacking Midfielder",
@@ -182,7 +182,7 @@
         },
         {
           "player_id": "ARS-23",
-          "name": "Mikel Merino",
+          "name": "Aster Player 15",
           "shirt_number": 23,
           "position": "MID",
           "position_detail": "Centre Central Midfielder",
@@ -193,7 +193,7 @@
         },
         {
           "player_id": "ARS-36",
-          "name": "Martin Zubimendi",
+          "name": "Aster Player 16",
           "shirt_number": 36,
           "position": "MID",
           "position_detail": "Defensive Midfielder",
@@ -204,7 +204,7 @@
         },
         {
           "player_id": "ARS-39",
-          "name": "Bruno Guimaraes",
+          "name": "Aster Player 17",
           "shirt_number": 39,
           "position": "MID",
           "position_detail": "Defensive Midfielder",
@@ -215,7 +215,7 @@
         },
         {
           "player_id": "ARS-41",
-          "name": "Declan Rice",
+          "name": "Aster Player 18",
           "shirt_number": 41,
           "position": "MID",
           "position_detail": "Centre Central Midfielder",
@@ -226,7 +226,7 @@
         },
         {
           "player_id": "ARS-49",
-          "name": "Myles Lewis-Skelly",
+          "name": "Aster Player 19",
           "shirt_number": 49,
           "position": "MID",
           "position_detail": "Midfielder",
@@ -237,7 +237,7 @@
         },
         {
           "player_id": "ARS-07",
-          "name": "Bukayo Saka",
+          "name": "Aster Player 20",
           "shirt_number": 7,
           "position": "FWD",
           "position_detail": "Left Winger",
@@ -248,7 +248,7 @@
         },
         {
           "player_id": "ARS-14",
-          "name": "Viktor Gyokeres",
+          "name": "Aster Player 21",
           "shirt_number": 14,
           "position": "FWD",
           "position_detail": "Striker",
@@ -259,7 +259,7 @@
         },
         {
           "player_id": "ARS-17",
-          "name": "Christos Tzolis",
+          "name": "Aster Player 22",
           "shirt_number": 17,
           "position": "FWD",
           "position_detail": "Left Winger",
@@ -270,7 +270,7 @@
         },
         {
           "player_id": "ARS-20",
-          "name": "Noni Madueke",
+          "name": "Aster Player 23",
           "shirt_number": 20,
           "position": "FWD",
           "position_detail": "Right Winger",
@@ -281,7 +281,7 @@
         },
         {
           "player_id": "ARS-29",
-          "name": "Kai Havertz",
+          "name": "Aster Player 24",
           "shirt_number": 29,
           "position": "FWD",
           "position_detail": "Left/Centre/Right Second Striker",
@@ -292,7 +292,7 @@
         },
         {
           "player_id": "ARS-56",
-          "name": "Max Dowman",
+          "name": "Aster Player 25",
           "shirt_number": 56,
           "position": "FWD",
           "position_detail": "Right Winger",
@@ -305,9 +305,9 @@
     },
     {
       "club_id": "AVL",
-      "name": "Aston Villa",
-      "short_name": "Aston Villa",
-      "stadium": "Villa Park",
+      "name": "Beacon FC",
+      "short_name": "Beacon FC",
+      "stadium": "Beacon Park",
       "colors": {
         "primary": "#670E36",
         "secondary": "#95BFE5"
@@ -321,7 +321,7 @@
       "players": [
         {
           "player_id": "AVL-01",
-          "name": "Zion Suzuki",
+          "name": "Beacon Player 01",
           "shirt_number": 1,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -332,7 +332,7 @@
         },
         {
           "player_id": "AVL-40",
-          "name": "Marco Bizot",
+          "name": "Beacon Player 02",
           "shirt_number": 40,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -343,7 +343,7 @@
         },
         {
           "player_id": "AVL-42",
-          "name": "James Wright",
+          "name": "Beacon Player 03",
           "shirt_number": 42,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -354,7 +354,7 @@
         },
         {
           "player_id": "AVL-02",
-          "name": "Matty Cash",
+          "name": "Beacon Player 04",
           "shirt_number": 2,
           "position": "DEF",
           "position_detail": "Right Full Back",
@@ -365,7 +365,7 @@
         },
         {
           "player_id": "AVL-03",
-          "name": "Victor Lindelof",
+          "name": "Beacon Player 05",
           "shirt_number": 3,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -376,7 +376,7 @@
         },
         {
           "player_id": "AVL-04",
-          "name": "Taylor Harwood-Bellis",
+          "name": "Beacon Player 06",
           "shirt_number": 4,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -387,7 +387,7 @@
         },
         {
           "player_id": "AVL-05",
-          "name": "Tyrone Mings",
+          "name": "Beacon Player 07",
           "shirt_number": 5,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -398,7 +398,7 @@
         },
         {
           "player_id": "AVL-13",
-          "name": "Matteo Ruggeri",
+          "name": "Beacon Player 08",
           "shirt_number": 13,
           "position": "DEF",
           "position_detail": "Left Full Back",
@@ -409,7 +409,7 @@
         },
         {
           "player_id": "AVL-14",
-          "name": "Pau Torres",
+          "name": "Beacon Player 09",
           "shirt_number": 14,
           "position": "DEF",
           "position_detail": "Central Defender",
@@ -420,7 +420,7 @@
         },
         {
           "player_id": "AVL-22",
-          "name": "Ian Maatsen",
+          "name": "Beacon Player 10",
           "shirt_number": 22,
           "position": "DEF",
           "position_detail": "Left Full Back",
@@ -431,7 +431,7 @@
         },
         {
           "player_id": "AVL-29",
-          "name": "Aaron Wan-Bissaka",
+          "name": "Beacon Player 11",
           "shirt_number": 29,
           "position": "DEF",
           "position_detail": "Right Full Back",
@@ -442,7 +442,7 @@
         },
         {
           "player_id": "AVL-45",
-          "name": "Triston Rowe",
+          "name": "Beacon Player 12",
           "shirt_number": 45,
           "position": "DEF",
           "position_detail": "Defender",
@@ -453,7 +453,7 @@
         },
         {
           "player_id": "AVL-48",
-          "name": "Modou Keba Cisse",
+          "name": "Beacon Player 13",
           "shirt_number": 48,
           "position": "DEF",
           "position_detail": "Central Defender",
@@ -464,7 +464,7 @@
         },
         {
           "player_id": "AVL-06",
-          "name": "Ross Barkley",
+          "name": "Beacon Player 14",
           "shirt_number": 6,
           "position": "MID",
           "position_detail": "Centre Central Midfielder",
@@ -475,7 +475,7 @@
         },
         {
           "player_id": "AVL-07",
-          "name": "John McGinn",
+          "name": "Beacon Player 15",
           "shirt_number": 7,
           "position": "MID",
           "position_detail": "Centre Central Midfielder",
@@ -486,7 +486,7 @@
         },
         {
           "player_id": "AVL-08",
-          "name": "Boubacar Kamara",
+          "name": "Beacon Player 16",
           "shirt_number": 8,
           "position": "MID",
           "position_detail": "Centre Defensive Midfielder",
@@ -497,7 +497,7 @@
         },
         {
           "player_id": "AVL-10",
-          "name": "Emiliano Buendia",
+          "name": "Beacon Player 17",
           "shirt_number": 10,
           "position": "MID",
           "position_detail": "Attacking Midfielder",
@@ -508,7 +508,7 @@
         },
         {
           "player_id": "AVL-24",
-          "name": "Amadou Onana",
+          "name": "Beacon Player 18",
           "shirt_number": 24,
           "position": "MID",
           "position_detail": "Centre Defensive Midfielder",
@@ -519,7 +519,7 @@
         },
         {
           "player_id": "AVL-26",
-          "name": "Lamare Bogarde",
+          "name": "Beacon Player 19",
           "shirt_number": 26,
           "position": "MID",
           "position_detail": "Midfielder",
@@ -530,7 +530,7 @@
         },
         {
           "player_id": "AVL-27",
-          "name": "Leon Goretzka",
+          "name": "Beacon Player 20",
           "shirt_number": 27,
           "position": "MID",
           "position_detail": "Centre Central Midfielder",
@@ -541,7 +541,7 @@
         },
         {
           "player_id": "AVL-35",
-          "name": "Joao Gomes",
+          "name": "Beacon Player 21",
           "shirt_number": 35,
           "position": "MID",
           "position_detail": "Central Midfielder",
@@ -552,7 +552,7 @@
         },
         {
           "player_id": "AVL-44",
-          "name": "Johan Manzambi",
+          "name": "Beacon Player 22",
           "shirt_number": 44,
           "position": "MID",
           "position_detail": "Central Midfielder",
@@ -563,7 +563,7 @@
         },
         {
           "player_id": "AVL-53",
-          "name": "George Hemmings",
+          "name": "Beacon Player 23",
           "shirt_number": 53,
           "position": "MID",
           "position_detail": "Central Midfielder",
@@ -574,7 +574,7 @@
         },
         {
           "player_id": "AVL-11",
-          "name": "Nicolas Jackson",
+          "name": "Beacon Player 24",
           "shirt_number": 11,
           "position": "FWD",
           "position_detail": "Striker",
@@ -585,7 +585,7 @@
         },
         {
           "player_id": "AVL-17",
-          "name": "Alejandro Garnacho",
+          "name": "Beacon Player 25",
           "shirt_number": 17,
           "position": "FWD",
           "position_detail": "Winger",
@@ -596,7 +596,7 @@
         },
         {
           "player_id": "AVL-18",
-          "name": "Tammy Abraham",
+          "name": "Beacon Player 26",
           "shirt_number": 18,
           "position": "FWD",
           "position_detail": "Centre Striker",
@@ -607,7 +607,7 @@
         },
         {
           "player_id": "AVL-19",
-          "name": "Ibrahim Mbaye",
+          "name": "Beacon Player 27",
           "shirt_number": 19,
           "position": "FWD",
           "position_detail": "Left/Right Winger",
@@ -618,7 +618,7 @@
         },
         {
           "player_id": "AVL-39",
-          "name": "Brian Madjo",
+          "name": "Beacon Player 28",
           "shirt_number": 39,
           "position": "FWD",
           "position_detail": "Centre Striker",
@@ -629,7 +629,7 @@
         },
         {
           "player_id": "AVL-47",
-          "name": "Alysson",
+          "name": "Beacon Player 29",
           "shirt_number": 47,
           "position": "FWD",
           "position_detail": "Right Winger",
@@ -640,7 +640,7 @@
         },
         {
           "player_id": "AVL-49",
-          "name": "Bradley Burrowes",
+          "name": "Beacon Player 30",
           "shirt_number": 49,
           "position": "FWD",
           "position_detail": "Right Winger",
@@ -651,7 +651,7 @@
         },
         {
           "player_id": "AVL-74",
-          "name": "Luka Lynch",
+          "name": "Beacon Player 31",
           "shirt_number": 74,
           "position": "FWD",
           "position_detail": "Right Winger",
@@ -664,9 +664,9 @@
     },
     {
       "club_id": "BOU",
-      "name": "AFC Bournemouth",
-      "short_name": "Bournemouth",
-      "stadium": "Vitality Stadium",
+      "name": "Cedar FC",
+      "short_name": "Cedar",
+      "stadium": "Cedar Park",
       "colors": {
         "primary": "#DA291C",
         "secondary": "#000000"
@@ -680,7 +680,7 @@
       "players": [
         {
           "player_id": "BOU-01",
-          "name": "Djordje Petrovic",
+          "name": "Cedar Player 01",
           "shirt_number": 1,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -691,7 +691,7 @@
         },
         {
           "player_id": "BOU-17",
-          "name": "Fraser Forster",
+          "name": "Cedar Player 02",
           "shirt_number": 17,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -702,7 +702,7 @@
         },
         {
           "player_id": "BOU-20",
-          "name": "Michele Di Gregorio",
+          "name": "Cedar Player 03",
           "shirt_number": 20,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -713,7 +713,7 @@
         },
         {
           "player_id": "BOU-02",
-          "name": "Julian Araujo",
+          "name": "Cedar Player 04",
           "shirt_number": 2,
           "position": "DEF",
           "position_detail": "Right Full Back",
@@ -724,7 +724,7 @@
         },
         {
           "player_id": "BOU-03",
-          "name": "Adrien Truffert",
+          "name": "Cedar Player 05",
           "shirt_number": 3,
           "position": "DEF",
           "position_detail": "Left Full Back",
@@ -735,7 +735,7 @@
         },
         {
           "player_id": "BOU-05",
-          "name": "James Hill",
+          "name": "Cedar Player 06",
           "shirt_number": 5,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -746,7 +746,7 @@
         },
         {
           "player_id": "BOU-06",
-          "name": "Julio Soler",
+          "name": "Cedar Player 07",
           "shirt_number": 6,
           "position": "DEF",
           "position_detail": "Left Full Back",
@@ -757,7 +757,7 @@
         },
         {
           "player_id": "BOU-14",
-          "name": "Antonio Silva",
+          "name": "Cedar Player 08",
           "shirt_number": 14,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -768,7 +768,7 @@
         },
         {
           "player_id": "BOU-15",
-          "name": "Adam Smith",
+          "name": "Cedar Player 09",
           "shirt_number": 15,
           "position": "DEF",
           "position_detail": "Right Full Back",
@@ -779,7 +779,7 @@
         },
         {
           "player_id": "BOU-18",
-          "name": "Bafode Diakite",
+          "name": "Cedar Player 10",
           "shirt_number": 18,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -790,7 +790,7 @@
         },
         {
           "player_id": "BOU-28",
-          "name": "Max Aarons",
+          "name": "Cedar Player 11",
           "shirt_number": 28,
           "position": "DEF",
           "position_detail": "Defender",
@@ -801,7 +801,7 @@
         },
         {
           "player_id": "BOU-44",
-          "name": "Veljko Milosavljevic",
+          "name": "Cedar Player 12",
           "shirt_number": 44,
           "position": "DEF",
           "position_detail": "Defender",
@@ -812,7 +812,7 @@
         },
         {
           "player_id": "BOU-04",
-          "name": "Lewis Cook",
+          "name": "Cedar Player 13",
           "shirt_number": 4,
           "position": "MID",
           "position_detail": "Centre Central Midfielder",
@@ -823,7 +823,7 @@
         },
         {
           "player_id": "BOU-07",
-          "name": "David Brooks",
+          "name": "Cedar Player 14",
           "shirt_number": 7,
           "position": "MID",
           "position_detail": "Left/Centre/Right Attacking Midfielder",
@@ -834,7 +834,7 @@
         },
         {
           "player_id": "BOU-08",
-          "name": "Alex Scott",
+          "name": "Cedar Player 15",
           "shirt_number": 8,
           "position": "MID",
           "position_detail": "Central Midfielder",
@@ -845,7 +845,7 @@
         },
         {
           "player_id": "BOU-10",
-          "name": "Ryan Christie",
+          "name": "Cedar Player 16",
           "shirt_number": 10,
           "position": "MID",
           "position_detail": "Left/Centre/Right Attacking Midfielder",
@@ -856,7 +856,7 @@
         },
         {
           "player_id": "BOU-12",
-          "name": "Tyler Adams",
+          "name": "Cedar Player 17",
           "shirt_number": 12,
           "position": "MID",
           "position_detail": "Defensive Midfielder",
@@ -867,7 +867,7 @@
         },
         {
           "player_id": "BOU-16",
-          "name": "Marcus Tavernier",
+          "name": "Cedar Player 18",
           "shirt_number": 16,
           "position": "MID",
           "position_detail": "Midfielder",
@@ -878,7 +878,7 @@
         },
         {
           "player_id": "BOU-24",
-          "name": "Juanlu Sanchez",
+          "name": "Cedar Player 19",
           "shirt_number": 24,
           "position": "MID",
           "position_detail": "Midfielder",
@@ -889,7 +889,7 @@
         },
         {
           "player_id": "BOU-27",
-          "name": "Alex Toth",
+          "name": "Cedar Player 20",
           "shirt_number": 27,
           "position": "MID",
           "position_detail": "Central Midfielder",
@@ -900,7 +900,7 @@
         },
         {
           "player_id": "BOU-47",
-          "name": "Ben Winterburn",
+          "name": "Cedar Player 21",
           "shirt_number": 47,
           "position": "MID",
           "position_detail": "Midfielder",
@@ -911,7 +911,7 @@
         },
         {
           "player_id": "BOU-09",
-          "name": "Evanilson",
+          "name": "Cedar Player 22",
           "shirt_number": 9,
           "position": "FWD",
           "position_detail": "Centre Striker",
@@ -922,7 +922,7 @@
         },
         {
           "player_id": "BOU-11",
-          "name": "Ben Gannon-Doak",
+          "name": "Cedar Player 23",
           "shirt_number": 11,
           "position": "FWD",
           "position_detail": "Left/Right Winger",
@@ -933,7 +933,7 @@
         },
         {
           "player_id": "BOU-19",
-          "name": "Justin Kluivert",
+          "name": "Cedar Player 24",
           "shirt_number": 19,
           "position": "FWD",
           "position_detail": "Left/Right Winger",
@@ -944,7 +944,7 @@
         },
         {
           "player_id": "BOU-21",
-          "name": "Amine Adli",
+          "name": "Cedar Player 25",
           "shirt_number": 21,
           "position": "FWD",
           "position_detail": "Left Winger",
@@ -955,7 +955,7 @@
         },
         {
           "player_id": "BOU-22",
-          "name": "Junior Kroupi",
+          "name": "Cedar Player 26",
           "shirt_number": 22,
           "position": "FWD",
           "position_detail": "Striker",
@@ -966,7 +966,7 @@
         },
         {
           "player_id": "BOU-29",
-          "name": "Daniel Jebbison",
+          "name": "Cedar Player 27",
           "shirt_number": 29,
           "position": "FWD",
           "position_detail": "Centre Striker",
@@ -977,7 +977,7 @@
         },
         {
           "player_id": "BOU-30",
-          "name": "Alvaro Rodriguez",
+          "name": "Cedar Player 28",
           "shirt_number": 30,
           "position": "FWD",
           "position_detail": "Striker",
@@ -988,7 +988,7 @@
         },
         {
           "player_id": "BOU-37",
-          "name": "Rayan",
+          "name": "Cedar Player 29",
           "shirt_number": 37,
           "position": "FWD",
           "position_detail": "Left/Centre/Right Striker",
@@ -1001,9 +1001,9 @@
     },
     {
       "club_id": "BRE",
-      "name": "Brentford",
-      "short_name": "Brentford",
-      "stadium": "Gtech Community Stadium",
+      "name": "Driftwood FC",
+      "short_name": "Driftwood FC",
+      "stadium": "Driftwood Park",
       "colors": {
         "primary": "#E30613",
         "secondary": "#FFFFFF"
@@ -1017,7 +1017,7 @@
       "players": [
         {
           "player_id": "BRE-01",
-          "name": "Caoimhin Kelleher",
+          "name": "Driftwood Player 01",
           "shirt_number": 1,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -1028,7 +1028,7 @@
         },
         {
           "player_id": "BRE-12",
-          "name": "Hakon Valdimarsson",
+          "name": "Driftwood Player 02",
           "shirt_number": 12,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -1039,7 +1039,7 @@
         },
         {
           "player_id": "BRE-31",
-          "name": "Ellery Balcombe",
+          "name": "Driftwood Player 03",
           "shirt_number": 31,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -1050,7 +1050,7 @@
         },
         {
           "player_id": "BRE-02",
-          "name": "Aaron Hickey",
+          "name": "Driftwood Player 04",
           "shirt_number": 2,
           "position": "DEF",
           "position_detail": "Left Full Back",
@@ -1061,7 +1061,7 @@
         },
         {
           "player_id": "BRE-03",
-          "name": "Rico Henry",
+          "name": "Driftwood Player 05",
           "shirt_number": 3,
           "position": "DEF",
           "position_detail": "Left Full Back",
@@ -1072,7 +1072,7 @@
         },
         {
           "player_id": "BRE-04",
-          "name": "Sepp van den Berg",
+          "name": "Driftwood Player 06",
           "shirt_number": 4,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -1083,7 +1083,7 @@
         },
         {
           "player_id": "BRE-20",
-          "name": "Kristoffer Ajer",
+          "name": "Driftwood Player 07",
           "shirt_number": 20,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -1094,7 +1094,7 @@
         },
         {
           "player_id": "BRE-22",
-          "name": "Nathan Collins",
+          "name": "Driftwood Player 08",
           "shirt_number": 22,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -1105,7 +1105,7 @@
         },
         {
           "player_id": "BRE-25",
-          "name": "El Hadji Malick Diouf",
+          "name": "Driftwood Player 09",
           "shirt_number": 25,
           "position": "DEF",
           "position_detail": "Left Full Back",
@@ -1116,7 +1116,7 @@
         },
         {
           "player_id": "BRE-33",
-          "name": "Michael Kayode",
+          "name": "Driftwood Player 10",
           "shirt_number": 33,
           "position": "DEF",
           "position_detail": "Right Full Back",
@@ -1127,7 +1127,7 @@
         },
         {
           "player_id": "BRE-36",
-          "name": "Kim Ji-Soo",
+          "name": "Driftwood Player 11",
           "shirt_number": 36,
           "position": "DEF",
           "position_detail": "Central Defender",
@@ -1138,7 +1138,7 @@
         },
         {
           "player_id": "BRE-44",
-          "name": "Jannik Schuster",
+          "name": "Driftwood Player 12",
           "shirt_number": 44,
           "position": "DEF",
           "position_detail": "Defender",
@@ -1149,7 +1149,7 @@
         },
         {
           "player_id": "BRE-48",
-          "name": "Benjamin Fredrick",
+          "name": "Driftwood Player 13",
           "shirt_number": 48,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -1160,7 +1160,7 @@
         },
         {
           "player_id": "BRE-59",
-          "name": "Caelan Avenell",
+          "name": "Driftwood Player 14",
           "shirt_number": 59,
           "position": "DEF",
           "position_detail": "Defender",
@@ -1171,7 +1171,7 @@
         },
         {
           "player_id": "BRE-06",
-          "name": "Yehor Yarmoliuk",
+          "name": "Driftwood Player 15",
           "shirt_number": 6,
           "position": "MID",
           "position_detail": "Centre Attacking Midfielder",
@@ -1182,7 +1182,7 @@
         },
         {
           "player_id": "BRE-07",
-          "name": "Kevin Schade",
+          "name": "Driftwood Player 16",
           "shirt_number": 7,
           "position": "MID",
           "position_detail": "Left/Right Winger",
@@ -1193,7 +1193,7 @@
         },
         {
           "player_id": "BRE-08",
-          "name": "Mathias Jensen",
+          "name": "Driftwood Player 17",
           "shirt_number": 8,
           "position": "MID",
           "position_detail": "Centre Central Midfielder",
@@ -1204,7 +1204,7 @@
         },
         {
           "player_id": "BRE-10",
-          "name": "Josh Dasilva",
+          "name": "Driftwood Player 18",
           "shirt_number": 10,
           "position": "MID",
           "position_detail": "Centre Central Midfielder",
@@ -1215,7 +1215,7 @@
         },
         {
           "player_id": "BRE-14",
-          "name": "Fabio Carvalho",
+          "name": "Driftwood Player 19",
           "shirt_number": 14,
           "position": "MID",
           "position_detail": "Left/Centre/Right Attacking Midfielder",
@@ -1226,7 +1226,7 @@
         },
         {
           "player_id": "BRE-17",
-          "name": "Antoni Milambo",
+          "name": "Driftwood Player 20",
           "shirt_number": 17,
           "position": "MID",
           "position_detail": "Midfielder",
@@ -1237,7 +1237,7 @@
         },
         {
           "player_id": "BRE-18",
-          "name": "Mamadou Sangare",
+          "name": "Driftwood Player 21",
           "shirt_number": 18,
           "position": "MID",
           "position_detail": "Centre Central Midfielder",
@@ -1248,7 +1248,7 @@
         },
         {
           "player_id": "BRE-24",
-          "name": "Mikkel Damsgaard",
+          "name": "Driftwood Player 22",
           "shirt_number": 24,
           "position": "MID",
           "position_detail": "Left/Centre Attacking Midfielder",
@@ -1259,7 +1259,7 @@
         },
         {
           "player_id": "BRE-27",
-          "name": "Vitaly Janelt",
+          "name": "Driftwood Player 23",
           "shirt_number": 27,
           "position": "MID",
           "position_detail": "Centre Defensive Midfielder",
@@ -1270,7 +1270,7 @@
         },
         {
           "player_id": "BRE-09",
-          "name": "Igor Thiago",
+          "name": "Driftwood Player 24",
           "shirt_number": 9,
           "position": "FWD",
           "position_detail": "Striker",
@@ -1281,7 +1281,7 @@
         },
         {
           "player_id": "BRE-11",
-          "name": "Dango Ouattara",
+          "name": "Driftwood Player 25",
           "shirt_number": 11,
           "position": "FWD",
           "position_detail": "Left/Right Winger",
@@ -1292,7 +1292,7 @@
         },
         {
           "player_id": "BRE-13",
-          "name": "Callum Wilson",
+          "name": "Driftwood Player 26",
           "shirt_number": 13,
           "position": "FWD",
           "position_detail": "Centre Striker",
@@ -1303,7 +1303,7 @@
         },
         {
           "player_id": "BRE-19",
-          "name": "Jaidon Anthony",
+          "name": "Driftwood Player 27",
           "shirt_number": 19,
           "position": "FWD",
           "position_detail": "Left Winger",
@@ -1314,7 +1314,7 @@
         },
         {
           "player_id": "BRE-23",
-          "name": "Keane Lewis-Potter",
+          "name": "Driftwood Player 28",
           "shirt_number": 23,
           "position": "FWD",
           "position_detail": "Striker",
@@ -1325,7 +1325,7 @@
         },
         {
           "player_id": "BRE-39",
-          "name": "Gustavo Nunes",
+          "name": "Driftwood Player 29",
           "shirt_number": 39,
           "position": "FWD",
           "position_detail": "Left Winger",
@@ -1338,9 +1338,9 @@
     },
     {
       "club_id": "BHA",
-      "name": "Brighton & Hove Albion",
-      "short_name": "Brighton",
-      "stadium": "Amex Stadium",
+      "name": "Ember FC",
+      "short_name": "Ember",
+      "stadium": "Ember Park",
       "colors": {
         "primary": "#0057B8",
         "secondary": "#FFFFFF"
@@ -1354,7 +1354,7 @@
       "players": [
         {
           "player_id": "BHA-01",
-          "name": "Bart Verbruggen",
+          "name": "Ember Player 01",
           "shirt_number": 1,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -1365,7 +1365,7 @@
         },
         {
           "player_id": "BHA-23",
-          "name": "Jason Steele",
+          "name": "Ember Player 02",
           "shirt_number": 23,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -1376,7 +1376,7 @@
         },
         {
           "player_id": "BHA-38",
-          "name": "Tom McGill",
+          "name": "Ember Player 03",
           "shirt_number": 38,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -1387,7 +1387,7 @@
         },
         {
           "player_id": "BHA-03",
-          "name": "Jaouen Hadjam",
+          "name": "Ember Player 04",
           "shirt_number": 3,
           "position": "DEF",
           "position_detail": "Left Full Back",
@@ -1398,7 +1398,7 @@
         },
         {
           "player_id": "BHA-04",
-          "name": "Pascal Struijk",
+          "name": "Ember Player 05",
           "shirt_number": 4,
           "position": "DEF",
           "position_detail": "Central Defender",
@@ -1409,7 +1409,7 @@
         },
         {
           "player_id": "BHA-05",
-          "name": "Lewis Dunk",
+          "name": "Ember Player 06",
           "shirt_number": 5,
           "position": "DEF",
           "position_detail": "Defender",
@@ -1420,7 +1420,7 @@
         },
         {
           "player_id": "BHA-20",
-          "name": "Costinha",
+          "name": "Ember Player 07",
           "shirt_number": 20,
           "position": "DEF",
           "position_detail": "Right Full Back",
@@ -1431,7 +1431,7 @@
         },
         {
           "player_id": "BHA-21",
-          "name": "Olivier Boscagli",
+          "name": "Ember Player 08",
           "shirt_number": 21,
           "position": "DEF",
           "position_detail": "Central Defender",
@@ -1442,7 +1442,7 @@
         },
         {
           "player_id": "BHA-24",
-          "name": "Ferdi Kadioglu",
+          "name": "Ember Player 09",
           "shirt_number": 24,
           "position": "DEF",
           "position_detail": "Left Full Back",
@@ -1453,7 +1453,7 @@
         },
         {
           "player_id": "BHA-29",
-          "name": "Maxim De Cuyper",
+          "name": "Ember Player 10",
           "shirt_number": 29,
           "position": "DEF",
           "position_detail": "Left Full Back",
@@ -1464,7 +1464,7 @@
         },
         {
           "player_id": "BHA-30",
-          "name": "Michael Svoboda",
+          "name": "Ember Player 11",
           "shirt_number": 30,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -1475,7 +1475,7 @@
         },
         {
           "player_id": "BHA-44",
-          "name": "Luka Vuskovic",
+          "name": "Ember Player 12",
           "shirt_number": 44,
           "position": "DEF",
           "position_detail": "Central Defender",
@@ -1486,7 +1486,7 @@
         },
         {
           "player_id": "BHA-08",
-          "name": "Jack Hinshelwood",
+          "name": "Ember Player 13",
           "shirt_number": 8,
           "position": "MID",
           "position_detail": "Centre Defensive Midfielder",
@@ -1497,7 +1497,7 @@
         },
         {
           "player_id": "BHA-13",
-          "name": "Pascal Gross",
+          "name": "Ember Player 14",
           "shirt_number": 13,
           "position": "MID",
           "position_detail": "Centre Central Midfielder",
@@ -1508,7 +1508,7 @@
         },
         {
           "player_id": "BHA-14",
-          "name": "Chema Andres",
+          "name": "Ember Player 15",
           "shirt_number": 14,
           "position": "MID",
           "position_detail": "Centre Central Midfielder",
@@ -1519,7 +1519,7 @@
         },
         {
           "player_id": "BHA-22",
-          "name": "Amario Cozier-Duberry",
+          "name": "Ember Player 16",
           "shirt_number": 22,
           "position": "MID",
           "position_detail": "Right Winger",
@@ -1530,7 +1530,7 @@
         },
         {
           "player_id": "BHA-25",
-          "name": "Diego Gomez",
+          "name": "Ember Player 17",
           "shirt_number": 25,
           "position": "MID",
           "position_detail": "Central Midfielder",
@@ -1541,7 +1541,7 @@
         },
         {
           "player_id": "BHA-26",
-          "name": "Yasin Ayari",
+          "name": "Ember Player 18",
           "shirt_number": 26,
           "position": "MID",
           "position_detail": "Midfielder",
@@ -1552,7 +1552,7 @@
         },
         {
           "player_id": "BHA-27",
-          "name": "Mats Wieffer",
+          "name": "Ember Player 19",
           "shirt_number": 27,
           "position": "MID",
           "position_detail": "Centre Defensive Midfielder",
@@ -1563,7 +1563,7 @@
         },
         {
           "player_id": "BHA-33",
-          "name": "Matt O'Riley",
+          "name": "Ember Player 20",
           "shirt_number": 33,
           "position": "MID",
           "position_detail": "Midfielder",
@@ -1574,7 +1574,7 @@
         },
         {
           "player_id": "BHA-35",
-          "name": "Malick Yalcouye",
+          "name": "Ember Player 21",
           "shirt_number": 35,
           "position": "MID",
           "position_detail": "Midfielder",
@@ -1585,7 +1585,7 @@
         },
         {
           "player_id": "BHA-49",
-          "name": "Nehemiah Oriola",
+          "name": "Ember Player 22",
           "shirt_number": 49,
           "position": "MID",
           "position_detail": "Winger",
@@ -1596,7 +1596,7 @@
         },
         {
           "player_id": "BHA-07",
-          "name": "Kaoru Mitoma",
+          "name": "Ember Player 23",
           "shirt_number": 7,
           "position": "FWD",
           "position_detail": "Forward",
@@ -1607,7 +1607,7 @@
         },
         {
           "player_id": "BHA-09",
-          "name": "Stefanos Tzimas",
+          "name": "Ember Player 24",
           "shirt_number": 9,
           "position": "FWD",
           "position_detail": "Forward",
@@ -1618,7 +1618,7 @@
         },
         {
           "player_id": "BHA-10",
-          "name": "Georginio Rutter",
+          "name": "Ember Player 25",
           "shirt_number": 10,
           "position": "FWD",
           "position_detail": "Centre Striker",
@@ -1629,7 +1629,7 @@
         },
         {
           "player_id": "BHA-11",
-          "name": "Yankuba Minteh",
+          "name": "Ember Player 26",
           "shirt_number": 11,
           "position": "FWD",
           "position_detail": "Left/Centre/Right Winger",
@@ -1640,7 +1640,7 @@
         },
         {
           "player_id": "BHA-12",
-          "name": "Promise David",
+          "name": "Ember Player 27",
           "shirt_number": 12,
           "position": "FWD",
           "position_detail": "Striker",
@@ -1651,7 +1651,7 @@
         },
         {
           "player_id": "BHA-15",
-          "name": "Ibrahim Osman",
+          "name": "Ember Player 28",
           "shirt_number": 15,
           "position": "FWD",
           "position_detail": "Left Winger",
@@ -1662,7 +1662,7 @@
         },
         {
           "player_id": "BHA-19",
-          "name": "Charalampos Kostoulas",
+          "name": "Ember Player 29",
           "shirt_number": 19,
           "position": "FWD",
           "position_detail": "Striker",
@@ -1673,7 +1673,7 @@
         },
         {
           "player_id": "BHA-28",
-          "name": "Evan Ferguson",
+          "name": "Ember Player 30",
           "shirt_number": 28,
           "position": "FWD",
           "position_detail": "Striker",
@@ -1684,7 +1684,7 @@
         },
         {
           "player_id": "BHA-36",
-          "name": "Zadok Yohanna",
+          "name": "Ember Player 31",
           "shirt_number": 36,
           "position": "FWD",
           "position_detail": "Right Winger",
@@ -1695,7 +1695,7 @@
         },
         {
           "player_id": "BHA-39",
-          "name": "Femi Azeez",
+          "name": "Ember Player 32",
           "shirt_number": 39,
           "position": "FWD",
           "position_detail": "Left/Right Winger",
@@ -1708,9 +1708,9 @@
     },
     {
       "club_id": "CHE",
-      "name": "Chelsea",
-      "short_name": "Chelsea",
-      "stadium": "Stamford Bridge",
+      "name": "Fairhaven FC",
+      "short_name": "Fairhaven FC",
+      "stadium": "Fairhaven Park",
       "colors": {
         "primary": "#034694",
         "secondary": "#FFFFFF"
@@ -1724,7 +1724,7 @@
       "players": [
         {
           "player_id": "CHE-01",
-          "name": "Emiliano Martinez",
+          "name": "Fairhaven Player 01",
           "shirt_number": 1,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -1735,7 +1735,7 @@
         },
         {
           "player_id": "CHE-28",
-          "name": "Teddy Sharman-Lowe",
+          "name": "Fairhaven Player 02",
           "shirt_number": 28,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -1746,7 +1746,7 @@
         },
         {
           "player_id": "CHE-39",
-          "name": "Mike Penders",
+          "name": "Fairhaven Player 03",
           "shirt_number": 39,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -1757,7 +1757,7 @@
         },
         {
           "player_id": "CHE-44",
-          "name": "Gabriel Slonina",
+          "name": "Fairhaven Player 04",
           "shirt_number": 44,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -1768,7 +1768,7 @@
         },
         {
           "player_id": "CHE-02",
-          "name": "Marco Palestra",
+          "name": "Fairhaven Player 05",
           "shirt_number": 2,
           "position": "DEF",
           "position_detail": "Right Full Back",
@@ -1779,7 +1779,7 @@
         },
         {
           "player_id": "CHE-03",
-          "name": "Wesley Fofana",
+          "name": "Fairhaven Player 06",
           "shirt_number": 3,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -1790,7 +1790,7 @@
         },
         {
           "player_id": "CHE-05",
-          "name": "Maxence Lacroix",
+          "name": "Fairhaven Player 07",
           "shirt_number": 5,
           "position": "DEF",
           "position_detail": "Central Defender",
@@ -1801,7 +1801,7 @@
         },
         {
           "player_id": "CHE-06",
-          "name": "Levi Colwill",
+          "name": "Fairhaven Player 08",
           "shirt_number": 6,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -1812,7 +1812,7 @@
         },
         {
           "player_id": "CHE-21",
-          "name": "Jorrel Hato",
+          "name": "Fairhaven Player 09",
           "shirt_number": 21,
           "position": "DEF",
           "position_detail": "Left Full Back",
@@ -1823,7 +1823,7 @@
         },
         {
           "player_id": "CHE-24",
-          "name": "Reece James",
+          "name": "Fairhaven Player 10",
           "shirt_number": 24,
           "position": "DEF",
           "position_detail": "Right Full Back",
@@ -1834,7 +1834,7 @@
         },
         {
           "player_id": "CHE-27",
-          "name": "Malo Gusto",
+          "name": "Fairhaven Player 11",
           "shirt_number": 27,
           "position": "DEF",
           "position_detail": "Right Full Back",
@@ -1845,7 +1845,7 @@
         },
         {
           "player_id": "CHE-29",
-          "name": "Pep Chavarria",
+          "name": "Fairhaven Player 12",
           "shirt_number": 29,
           "position": "DEF",
           "position_detail": "Left Full Back",
@@ -1856,7 +1856,7 @@
         },
         {
           "player_id": "CHE-30",
-          "name": "Aaron Anselmino",
+          "name": "Fairhaven Player 13",
           "shirt_number": 30,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -1867,7 +1867,7 @@
         },
         {
           "player_id": "CHE-34",
-          "name": "Josh Acheampong",
+          "name": "Fairhaven Player 14",
           "shirt_number": 34,
           "position": "DEF",
           "position_detail": "Right Full Back",
@@ -1878,7 +1878,7 @@
         },
         {
           "player_id": "CHE-37",
-          "name": "Olutayo Subuloye",
+          "name": "Fairhaven Player 15",
           "shirt_number": 37,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -1889,7 +1889,7 @@
         },
         {
           "player_id": "CHE-04",
-          "name": "Valentin Barco",
+          "name": "Fairhaven Player 16",
           "shirt_number": 4,
           "position": "MID",
           "position_detail": "Left/Centre Central Midfielder",
@@ -1900,7 +1900,7 @@
         },
         {
           "player_id": "CHE-10",
-          "name": "Cole Palmer",
+          "name": "Fairhaven Player 17",
           "shirt_number": 10,
           "position": "MID",
           "position_detail": "Attacking Midfielder",
@@ -1911,7 +1911,7 @@
         },
         {
           "player_id": "CHE-14",
-          "name": "Jordan Henderson",
+          "name": "Fairhaven Player 18",
           "shirt_number": 14,
           "position": "MID",
           "position_detail": "Centre Central Midfielder",
@@ -1922,7 +1922,7 @@
         },
         {
           "player_id": "CHE-17",
-          "name": "Morgan Rogers",
+          "name": "Fairhaven Player 19",
           "shirt_number": 17,
           "position": "MID",
           "position_detail": "Attacking Midfielder",
@@ -1933,7 +1933,7 @@
         },
         {
           "player_id": "CHE-23",
-          "name": "Geovany Quenda",
+          "name": "Fairhaven Player 20",
           "shirt_number": 23,
           "position": "MID",
           "position_detail": "Right Winger",
@@ -1944,7 +1944,7 @@
         },
         {
           "player_id": "CHE-25",
-          "name": "Moises Caicedo",
+          "name": "Fairhaven Player 21",
           "shirt_number": 25,
           "position": "MID",
           "position_detail": "Centre Defensive Midfielder",
@@ -1955,7 +1955,7 @@
         },
         {
           "player_id": "CHE-32",
-          "name": "Mahdi Nicoll-Jazuli",
+          "name": "Fairhaven Player 22",
           "shirt_number": 32,
           "position": "MID",
           "position_detail": "Central Midfielder",
@@ -1966,7 +1966,7 @@
         },
         {
           "player_id": "CHE-45",
-          "name": "Romeo Lavia",
+          "name": "Fairhaven Player 23",
           "shirt_number": 45,
           "position": "MID",
           "position_detail": "Centre Defensive Midfielder",
@@ -1977,7 +1977,7 @@
         },
         {
           "player_id": "CHE-07",
-          "name": "Pedro Neto",
+          "name": "Fairhaven Player 24",
           "shirt_number": 7,
           "position": "FWD",
           "position_detail": "Left/Right Winger",
@@ -1988,7 +1988,7 @@
         },
         {
           "player_id": "CHE-09",
-          "name": "Joao Pedro",
+          "name": "Fairhaven Player 25",
           "shirt_number": 9,
           "position": "FWD",
           "position_detail": "Centre Striker",
@@ -1999,7 +1999,7 @@
         },
         {
           "player_id": "CHE-11",
-          "name": "Jamie Gittens",
+          "name": "Fairhaven Player 26",
           "shirt_number": 11,
           "position": "FWD",
           "position_detail": "Left Winger",
@@ -2010,7 +2010,7 @@
         },
         {
           "player_id": "CHE-18",
-          "name": "Danny Welbeck",
+          "name": "Fairhaven Player 27",
           "shirt_number": 18,
           "position": "FWD",
           "position_detail": "Centre Striker",
@@ -2021,7 +2021,7 @@
         },
         {
           "player_id": "CHE-22",
-          "name": "Emmanuel Emegha",
+          "name": "Fairhaven Player 28",
           "shirt_number": 22,
           "position": "FWD",
           "position_detail": "Striker",
@@ -2032,7 +2032,7 @@
         },
         {
           "player_id": "CHE-41",
-          "name": "Estevao",
+          "name": "Fairhaven Player 29",
           "shirt_number": 41,
           "position": "FWD",
           "position_detail": "Right Winger",
@@ -2045,9 +2045,9 @@
     },
     {
       "club_id": "COV",
-      "name": "Coventry City",
-      "short_name": "Coventry",
-      "stadium": "CBS Arena",
+      "name": "Glenvale FC",
+      "short_name": "Glenvale",
+      "stadium": "Glenvale Park",
       "colors": {
         "primary": "#6CB4E4",
         "secondary": "#FFFFFF"
@@ -2061,7 +2061,7 @@
       "players": [
         {
           "player_id": "COV-13",
-          "name": "Ben Wilson",
+          "name": "Glenvale Player 01",
           "shirt_number": 13,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -2072,7 +2072,7 @@
         },
         {
           "player_id": "COV-19",
-          "name": "Carl Rushworth",
+          "name": "Glenvale Player 02",
           "shirt_number": 19,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -2083,7 +2083,7 @@
         },
         {
           "player_id": "COV-25",
-          "name": "Dan Bentley",
+          "name": "Glenvale Player 03",
           "shirt_number": 25,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -2094,7 +2094,7 @@
         },
         {
           "player_id": "COV-02",
-          "name": "Ethan Pinnock",
+          "name": "Glenvale Player 04",
           "shirt_number": 2,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -2105,7 +2105,7 @@
         },
         {
           "player_id": "COV-04",
-          "name": "Bobby Thomas",
+          "name": "Glenvale Player 05",
           "shirt_number": 4,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -2116,7 +2116,7 @@
         },
         {
           "player_id": "COV-12",
-          "name": "Stephen Mfuni",
+          "name": "Glenvale Player 06",
           "shirt_number": 12,
           "position": "DEF",
           "position_detail": "Central Defender",
@@ -2127,7 +2127,7 @@
         },
         {
           "player_id": "COV-20",
-          "name": "Kaine Kesler-Hayden",
+          "name": "Glenvale Player 07",
           "shirt_number": 20,
           "position": "DEF",
           "position_detail": "Right Full Back",
@@ -2138,7 +2138,7 @@
         },
         {
           "player_id": "COV-21",
-          "name": "Jake Bidwell",
+          "name": "Glenvale Player 08",
           "shirt_number": 21,
           "position": "DEF",
           "position_detail": "Left Full Back",
@@ -2149,7 +2149,7 @@
         },
         {
           "player_id": "COV-22",
-          "name": "Joel Latibeaudiere",
+          "name": "Glenvale Player 09",
           "shirt_number": 22,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -2160,7 +2160,7 @@
         },
         {
           "player_id": "COV-24",
-          "name": "Aurele Amenda",
+          "name": "Glenvale Player 10",
           "shirt_number": 24,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -2171,7 +2171,7 @@
         },
         {
           "player_id": "COV-26",
-          "name": "Luke Woolfenden",
+          "name": "Glenvale Player 11",
           "shirt_number": 26,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -2182,7 +2182,7 @@
         },
         {
           "player_id": "COV-27",
-          "name": "Milan van Ewijk",
+          "name": "Glenvale Player 12",
           "shirt_number": 27,
           "position": "DEF",
           "position_detail": "Right Full Back",
@@ -2193,7 +2193,7 @@
         },
         {
           "player_id": "COV-03",
-          "name": "Jay Dasilva",
+          "name": "Glenvale Player 13",
           "shirt_number": 3,
           "position": "MID",
           "position_detail": "Centre Central Midfielder",
@@ -2204,7 +2204,7 @@
         },
         {
           "player_id": "COV-05",
-          "name": "Jack Rudoni",
+          "name": "Glenvale Player 14",
           "shirt_number": 5,
           "position": "MID",
           "position_detail": "Centre Central Midfielder",
@@ -2215,7 +2215,7 @@
         },
         {
           "player_id": "COV-06",
-          "name": "Matt Grimes",
+          "name": "Glenvale Player 15",
           "shirt_number": 6,
           "position": "MID",
           "position_detail": "Defensive Midfielder",
@@ -2226,7 +2226,7 @@
         },
         {
           "player_id": "COV-07",
-          "name": "Tatsuhiro Sakamoto",
+          "name": "Glenvale Player 16",
           "shirt_number": 7,
           "position": "MID",
           "position_detail": "Left/Centre/Right Attacking Midfielder",
@@ -2237,7 +2237,7 @@
         },
         {
           "player_id": "COV-08",
-          "name": "Caleb Yirenkyi",
+          "name": "Glenvale Player 17",
           "shirt_number": 8,
           "position": "MID",
           "position_detail": "Centre Central Midfielder",
@@ -2248,7 +2248,7 @@
         },
         {
           "player_id": "COV-16",
-          "name": "Frank Onyeka",
+          "name": "Glenvale Player 18",
           "shirt_number": 16,
           "position": "MID",
           "position_detail": "Central Midfielder",
@@ -2259,7 +2259,7 @@
         },
         {
           "player_id": "COV-28",
-          "name": "Josh Eccles",
+          "name": "Glenvale Player 19",
           "shirt_number": 28,
           "position": "MID",
           "position_detail": "Centre Central Midfielder",
@@ -2270,7 +2270,7 @@
         },
         {
           "player_id": "COV-29",
-          "name": "Victor Torp",
+          "name": "Glenvale Player 20",
           "shirt_number": 29,
           "position": "MID",
           "position_detail": "Central Midfielder",
@@ -2281,7 +2281,7 @@
         },
         {
           "player_id": "COV-38",
-          "name": "Gustavo Hamer",
+          "name": "Glenvale Player 21",
           "shirt_number": 38,
           "position": "MID",
           "position_detail": "Central Midfielder",
@@ -2292,7 +2292,7 @@
         },
         {
           "player_id": "COV-09",
-          "name": "Ellis Simms",
+          "name": "Glenvale Player 22",
           "shirt_number": 9,
           "position": "FWD",
           "position_detail": "Centre Striker",
@@ -2303,7 +2303,7 @@
         },
         {
           "player_id": "COV-10",
-          "name": "Ephron Mason-Clark",
+          "name": "Glenvale Player 23",
           "shirt_number": 10,
           "position": "FWD",
           "position_detail": "Left/Centre/Right Striker",
@@ -2314,7 +2314,7 @@
         },
         {
           "player_id": "COV-11",
-          "name": "Haji Wright",
+          "name": "Glenvale Player 24",
           "shirt_number": 11,
           "position": "FWD",
           "position_detail": "Centre Striker",
@@ -2325,7 +2325,7 @@
         },
         {
           "player_id": "COV-14",
-          "name": "Taiwo Awoniyi",
+          "name": "Glenvale Player 25",
           "shirt_number": 14,
           "position": "FWD",
           "position_detail": "Centre Striker",
@@ -2336,7 +2336,7 @@
         },
         {
           "player_id": "COV-18",
-          "name": "Loum Tchaouna",
+          "name": "Glenvale Player 26",
           "shirt_number": 18,
           "position": "FWD",
           "position_detail": "Right Winger",
@@ -2347,7 +2347,7 @@
         },
         {
           "player_id": "COV-23",
-          "name": "Brandon Thomas-Asante",
+          "name": "Glenvale Player 27",
           "shirt_number": 23,
           "position": "FWD",
           "position_detail": "Centre Striker",
@@ -2358,7 +2358,7 @@
         },
         {
           "player_id": "COV-34",
-          "name": "Yann Gboho",
+          "name": "Glenvale Player 28",
           "shirt_number": 34,
           "position": "FWD",
           "position_detail": "Left/Right Winger",
@@ -2369,7 +2369,7 @@
         },
         {
           "player_id": "COV-49",
-          "name": "Sidiki Cherif",
+          "name": "Glenvale Player 29",
           "shirt_number": 49,
           "position": "FWD",
           "position_detail": "Centre Striker",
@@ -2382,9 +2382,9 @@
     },
     {
       "club_id": "CRY",
-      "name": "Crystal Palace",
-      "short_name": "Crystal Palace",
-      "stadium": "Selhurst Park",
+      "name": "Highridge FC",
+      "short_name": "Highridge FC",
+      "stadium": "Highridge Park",
       "colors": {
         "primary": "#1B458F",
         "secondary": "#C4122E"
@@ -2398,7 +2398,7 @@
       "players": [
         {
           "player_id": "CRY-01",
-          "name": "Dean Henderson",
+          "name": "Highridge Player 01",
           "shirt_number": 1,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -2409,7 +2409,7 @@
         },
         {
           "player_id": "CRY-31",
-          "name": "Remi Matthews",
+          "name": "Highridge Player 02",
           "shirt_number": 31,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -2420,7 +2420,7 @@
         },
         {
           "player_id": "CRY-44",
-          "name": "Walter Benitez",
+          "name": "Highridge Player 03",
           "shirt_number": 44,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -2431,7 +2431,7 @@
         },
         {
           "player_id": "CRY-03",
-          "name": "Tyrick Mitchell",
+          "name": "Highridge Player 04",
           "shirt_number": 3,
           "position": "DEF",
           "position_detail": "Left Full Back",
@@ -2442,7 +2442,7 @@
         },
         {
           "player_id": "CRY-04",
-          "name": "Chadi Riad",
+          "name": "Highridge Player 05",
           "shirt_number": 4,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -2453,7 +2453,7 @@
         },
         {
           "player_id": "CRY-05",
-          "name": "Axel Disasi",
+          "name": "Highridge Player 06",
           "shirt_number": 5,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -2464,7 +2464,7 @@
         },
         {
           "player_id": "CRY-06",
-          "name": "Jaydee Canvot",
+          "name": "Highridge Player 07",
           "shirt_number": 6,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -2475,7 +2475,7 @@
         },
         {
           "player_id": "CRY-17",
-          "name": "Takehiro Tomiyasu",
+          "name": "Highridge Player 08",
           "shirt_number": 17,
           "position": "DEF",
           "position_detail": "Central Defender",
@@ -2486,7 +2486,7 @@
         },
         {
           "player_id": "CRY-21",
-          "name": "Honest Ahanor",
+          "name": "Highridge Player 09",
           "shirt_number": 21,
           "position": "DEF",
           "position_detail": "Central Defender",
@@ -2497,7 +2497,7 @@
         },
         {
           "player_id": "CRY-25",
-          "name": "Anan Khalaili",
+          "name": "Highridge Player 10",
           "shirt_number": 25,
           "position": "DEF",
           "position_detail": "Right Full Back",
@@ -2508,7 +2508,7 @@
         },
         {
           "player_id": "CRY-26",
-          "name": "Chris Richards",
+          "name": "Highridge Player 11",
           "shirt_number": 26,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -2519,7 +2519,7 @@
         },
         {
           "player_id": "CRY-30",
-          "name": "Oscar Mingueza",
+          "name": "Highridge Player 12",
           "shirt_number": 30,
           "position": "DEF",
           "position_detail": "Central Defender",
@@ -2530,7 +2530,7 @@
         },
         {
           "player_id": "CRY-33",
-          "name": "Ben Chilwell",
+          "name": "Highridge Player 13",
           "shirt_number": 33,
           "position": "DEF",
           "position_detail": "Left Full Back",
@@ -2541,7 +2541,7 @@
         },
         {
           "player_id": "CRY-08",
-          "name": "Jefferson Lerma",
+          "name": "Highridge Player 14",
           "shirt_number": 8,
           "position": "MID",
           "position_detail": "Centre Central Midfielder",
@@ -2552,7 +2552,7 @@
         },
         {
           "player_id": "CRY-10",
-          "name": "Yeremy Pino",
+          "name": "Highridge Player 15",
           "shirt_number": 10,
           "position": "MID",
           "position_detail": "Right Winger",
@@ -2563,7 +2563,7 @@
         },
         {
           "player_id": "CRY-18",
-          "name": "Daichi Kamada",
+          "name": "Highridge Player 16",
           "shirt_number": 18,
           "position": "MID",
           "position_detail": "Centre Attacking Midfielder",
@@ -2574,7 +2574,7 @@
         },
         {
           "player_id": "CRY-19",
-          "name": "Will Hughes",
+          "name": "Highridge Player 17",
           "shirt_number": 19,
           "position": "MID",
           "position_detail": "Centre Central Midfielder",
@@ -2585,7 +2585,7 @@
         },
         {
           "player_id": "CRY-20",
-          "name": "Adam Wharton",
+          "name": "Highridge Player 18",
           "shirt_number": 20,
           "position": "MID",
           "position_detail": "Central Midfielder",
@@ -2596,7 +2596,7 @@
         },
         {
           "player_id": "CRY-23",
-          "name": "Quinten Timber",
+          "name": "Highridge Player 19",
           "shirt_number": 23,
           "position": "MID",
           "position_detail": "Central Midfielder",
@@ -2607,7 +2607,7 @@
         },
         {
           "player_id": "CRY-24",
-          "name": "Dario Osorio",
+          "name": "Highridge Player 20",
           "shirt_number": 24,
           "position": "MID",
           "position_detail": "Right Winger",
@@ -2618,7 +2618,7 @@
         },
         {
           "player_id": "CRY-28",
-          "name": "Cheick Doucoure",
+          "name": "Highridge Player 21",
           "shirt_number": 28,
           "position": "MID",
           "position_detail": "Centre Defensive Midfielder",
@@ -2629,7 +2629,7 @@
         },
         {
           "player_id": "CRY-07",
-          "name": "Ismaila Sarr",
+          "name": "Highridge Player 22",
           "shirt_number": 7,
           "position": "FWD",
           "position_detail": "Right Winger",
@@ -2640,7 +2640,7 @@
         },
         {
           "player_id": "CRY-09",
-          "name": "Eddie Nketiah",
+          "name": "Highridge Player 23",
           "shirt_number": 9,
           "position": "FWD",
           "position_detail": "Centre Striker",
@@ -2651,7 +2651,7 @@
         },
         {
           "player_id": "CRY-11",
-          "name": "Dwight McNeil",
+          "name": "Highridge Player 24",
           "shirt_number": 11,
           "position": "FWD",
           "position_detail": "Left Winger",
@@ -2662,7 +2662,7 @@
         },
         {
           "player_id": "CRY-12",
-          "name": "Zavier Gozo",
+          "name": "Highridge Player 25",
           "shirt_number": 12,
           "position": "FWD",
           "position_detail": "Right Winger",
@@ -2673,7 +2673,7 @@
         },
         {
           "player_id": "CRY-14",
-          "name": "Jean-Philippe Mateta",
+          "name": "Highridge Player 26",
           "shirt_number": 14,
           "position": "FWD",
           "position_detail": "Centre Striker",
@@ -2684,7 +2684,7 @@
         },
         {
           "player_id": "CRY-22",
-          "name": "Jorgen Strand Larsen",
+          "name": "Highridge Player 27",
           "shirt_number": 22,
           "position": "FWD",
           "position_detail": "Striker",
@@ -2695,7 +2695,7 @@
         },
         {
           "player_id": "CRY-27",
-          "name": "Matheus Franca",
+          "name": "Highridge Player 28",
           "shirt_number": 27,
           "position": "FWD",
           "position_detail": "Striker",
@@ -2706,7 +2706,7 @@
         },
         {
           "player_id": "CRY-29",
-          "name": "Evann Guessand",
+          "name": "Highridge Player 29",
           "shirt_number": 29,
           "position": "FWD",
           "position_detail": "Striker",
@@ -2719,9 +2719,9 @@
     },
     {
       "club_id": "EVE",
-      "name": "Everton",
-      "short_name": "Everton",
-      "stadium": "Hill Dickinson Stadium",
+      "name": "Ivory FC",
+      "short_name": "Ivory FC",
+      "stadium": "Ivory Park",
       "colors": {
         "primary": "#003399",
         "secondary": "#FFFFFF"
@@ -2735,7 +2735,7 @@
       "players": [
         {
           "player_id": "EVE-01",
-          "name": "Jordan Pickford",
+          "name": "Ivory Player 01",
           "shirt_number": 1,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -2746,7 +2746,7 @@
         },
         {
           "player_id": "EVE-12",
-          "name": "Mark Travers",
+          "name": "Ivory Player 02",
           "shirt_number": 12,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -2757,7 +2757,7 @@
         },
         {
           "player_id": "EVE-31",
-          "name": "Tom King",
+          "name": "Ivory Player 03",
           "shirt_number": 31,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -2768,7 +2768,7 @@
         },
         {
           "player_id": "EVE-47",
-          "name": "Fraser Barnsley",
+          "name": "Ivory Player 04",
           "shirt_number": 47,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -2779,7 +2779,7 @@
         },
         {
           "player_id": "EVE-04",
-          "name": "Jarrad Branthwaite",
+          "name": "Ivory Player 05",
           "shirt_number": 4,
           "position": "DEF",
           "position_detail": "Defender",
@@ -2790,7 +2790,7 @@
         },
         {
           "player_id": "EVE-05",
-          "name": "Michael Keane",
+          "name": "Ivory Player 06",
           "shirt_number": 5,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -2801,7 +2801,7 @@
         },
         {
           "player_id": "EVE-06",
-          "name": "James Tarkowski",
+          "name": "Ivory Player 07",
           "shirt_number": 6,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -2812,7 +2812,7 @@
         },
         {
           "player_id": "EVE-15",
-          "name": "Jake O'Brien",
+          "name": "Ivory Player 08",
           "shirt_number": 15,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -2823,7 +2823,7 @@
         },
         {
           "player_id": "EVE-16",
-          "name": "Vitalii Mykolenko",
+          "name": "Ivory Player 09",
           "shirt_number": 16,
           "position": "DEF",
           "position_detail": "Left Full Back",
@@ -2834,7 +2834,7 @@
         },
         {
           "player_id": "EVE-02",
-          "name": "Ainsley Maitland-Niles",
+          "name": "Ivory Player 10",
           "shirt_number": 2,
           "position": "MID",
           "position_detail": "Centre/Right Wing Back",
@@ -2845,7 +2845,7 @@
         },
         {
           "player_id": "EVE-08",
-          "name": "Kiernan Dewsbury-Hall",
+          "name": "Ivory Player 11",
           "shirt_number": 8,
           "position": "MID",
           "position_detail": "Central Midfielder",
@@ -2856,7 +2856,7 @@
         },
         {
           "player_id": "EVE-10",
-          "name": "Jack Grealish",
+          "name": "Ivory Player 12",
           "shirt_number": 10,
           "position": "MID",
           "position_detail": "Left/Centre/Right Attacking Midfielder",
@@ -2867,7 +2867,7 @@
         },
         {
           "player_id": "EVE-23",
-          "name": "Christian Norgaard",
+          "name": "Ivory Player 13",
           "shirt_number": 23,
           "position": "MID",
           "position_detail": "Defensive Midfielder",
@@ -2878,7 +2878,7 @@
         },
         {
           "player_id": "EVE-24",
-          "name": "Charly Alcaraz",
+          "name": "Ivory Player 14",
           "shirt_number": 24,
           "position": "MID",
           "position_detail": "Central Midfielder",
@@ -2889,7 +2889,7 @@
         },
         {
           "player_id": "EVE-30",
-          "name": "Hayden Hackney",
+          "name": "Ivory Player 15",
           "shirt_number": 30,
           "position": "MID",
           "position_detail": "Centre Central Midfielder",
@@ -2900,7 +2900,7 @@
         },
         {
           "player_id": "EVE-34",
-          "name": "Merlin Rohl",
+          "name": "Ivory Player 16",
           "shirt_number": 34,
           "position": "MID",
           "position_detail": "Attacking Midfielder",
@@ -2911,7 +2911,7 @@
         },
         {
           "player_id": "EVE-37",
-          "name": "James Garner",
+          "name": "Ivory Player 17",
           "shirt_number": 37,
           "position": "MID",
           "position_detail": "Centre Central Midfielder",
@@ -2922,7 +2922,7 @@
         },
         {
           "player_id": "EVE-45",
-          "name": "Harrison Armstrong",
+          "name": "Ivory Player 18",
           "shirt_number": 45,
           "position": "MID",
           "position_detail": "Midfielder",
@@ -2933,7 +2933,7 @@
         },
         {
           "player_id": "EVE-11",
-          "name": "Thierno Barry",
+          "name": "Ivory Player 19",
           "shirt_number": 11,
           "position": "FWD",
           "position_detail": "Centre Striker",
@@ -2944,7 +2944,7 @@
         },
         {
           "player_id": "EVE-19",
-          "name": "Tyrique George",
+          "name": "Ivory Player 20",
           "shirt_number": 19,
           "position": "FWD",
           "position_detail": "Left Winger",
@@ -2955,7 +2955,7 @@
         },
         {
           "player_id": "EVE-20",
-          "name": "Tyler Dibling",
+          "name": "Ivory Player 21",
           "shirt_number": 20,
           "position": "FWD",
           "position_detail": "Right Winger",
@@ -2966,7 +2966,7 @@
         },
         {
           "player_id": "EVE-22",
-          "name": "Brennan Johnson",
+          "name": "Ivory Player 22",
           "shirt_number": 22,
           "position": "FWD",
           "position_detail": "Right Winger",
@@ -2979,9 +2979,9 @@
     },
     {
       "club_id": "FUL",
-      "name": "Fulham",
-      "short_name": "Fulham",
-      "stadium": "Craven Cottage",
+      "name": "Juniper FC",
+      "short_name": "Juniper FC",
+      "stadium": "Juniper Park",
       "colors": {
         "primary": "#FFFFFF",
         "secondary": "#000000"
@@ -2995,7 +2995,7 @@
       "players": [
         {
           "player_id": "FUL-01",
-          "name": "Bernd Leno",
+          "name": "Juniper Player 01",
           "shirt_number": 1,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -3006,7 +3006,7 @@
         },
         {
           "player_id": "FUL-23",
-          "name": "Benjamin Lecomte",
+          "name": "Juniper Player 02",
           "shirt_number": 23,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -3017,7 +3017,7 @@
         },
         {
           "player_id": "FUL-36",
-          "name": "Alex Borto",
+          "name": "Juniper Player 03",
           "shirt_number": 36,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -3028,7 +3028,7 @@
         },
         {
           "player_id": "FUL-02",
-          "name": "Kenny Tete",
+          "name": "Juniper Player 04",
           "shirt_number": 2,
           "position": "DEF",
           "position_detail": "Right Full Back",
@@ -3039,7 +3039,7 @@
         },
         {
           "player_id": "FUL-03",
-          "name": "Calvin Bassey",
+          "name": "Juniper Player 05",
           "shirt_number": 3,
           "position": "DEF",
           "position_detail": "Left Full Back",
@@ -3050,7 +3050,7 @@
         },
         {
           "player_id": "FUL-04",
-          "name": "Jorge Cuenca",
+          "name": "Juniper Player 06",
           "shirt_number": 4,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -3061,7 +3061,7 @@
         },
         {
           "player_id": "FUL-05",
-          "name": "Joachim Andersen",
+          "name": "Juniper Player 07",
           "shirt_number": 5,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -3072,7 +3072,7 @@
         },
         {
           "player_id": "FUL-21",
-          "name": "Timothy Castagne",
+          "name": "Juniper Player 08",
           "shirt_number": 21,
           "position": "DEF",
           "position_detail": "Right Full Back",
@@ -3083,7 +3083,7 @@
         },
         {
           "player_id": "FUL-22",
-          "name": "David Affengruber",
+          "name": "Juniper Player 09",
           "shirt_number": 22,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -3094,7 +3094,7 @@
         },
         {
           "player_id": "FUL-33",
-          "name": "Antonee Robinson",
+          "name": "Juniper Player 10",
           "shirt_number": 33,
           "position": "DEF",
           "position_detail": "Left Full Back",
@@ -3105,7 +3105,7 @@
         },
         {
           "player_id": "FUL-39",
-          "name": "Michael Allen",
+          "name": "Juniper Player 11",
           "shirt_number": 39,
           "position": "DEF",
           "position_detail": "Centre-Back",
@@ -3116,7 +3116,7 @@
         },
         {
           "player_id": "FUL-44",
-          "name": "Luc De Fougerolles",
+          "name": "Juniper Player 12",
           "shirt_number": 44,
           "position": "DEF",
           "position_detail": "Defender",
@@ -3127,7 +3127,7 @@
         },
         {
           "player_id": "FUL-06",
-          "name": "Harrison Reed",
+          "name": "Juniper Player 13",
           "shirt_number": 6,
           "position": "MID",
           "position_detail": "Centre Central Midfielder",
@@ -3138,7 +3138,7 @@
         },
         {
           "player_id": "FUL-08",
-          "name": "Cesar Palacios",
+          "name": "Juniper Player 14",
           "shirt_number": 8,
           "position": "MID",
           "position_detail": "Centre Attacking Midfielder",
@@ -3149,7 +3149,7 @@
         },
         {
           "player_id": "FUL-10",
-          "name": "Tom Cairney",
+          "name": "Juniper Player 15",
           "shirt_number": 10,
           "position": "MID",
           "position_detail": "Left/Centre/Right Attacking Midfielder",
@@ -3160,7 +3160,7 @@
         },
         {
           "player_id": "FUL-14",
-          "name": "Oscar Bobb",
+          "name": "Juniper Player 16",
           "shirt_number": 14,
           "position": "MID",
           "position_detail": "Left/Centre/Right Winger",
@@ -3171,7 +3171,7 @@
         },
         {
           "player_id": "FUL-15",
-          "name": "Hugo Larsson",
+          "name": "Juniper Player 17",
           "shirt_number": 15,
           "position": "MID",
           "position_detail": "Centre Central Midfielder",
@@ -3182,7 +3182,7 @@
         },
         {
           "player_id": "FUL-16",
-          "name": "Sander Berge",
+          "name": "Juniper Player 18",
           "shirt_number": 16,
           "position": "MID",
           "position_detail": "Centre Central Midfielder",
@@ -3193,7 +3193,7 @@
         },
         {
           "player_id": "FUL-19",
-          "name": "Shea Charles",
+          "name": "Juniper Player 19",
           "shirt_number": 19,
           "position": "MID",
           "position_detail": "Centre Defensive Midfielder",
@@ -3204,7 +3204,7 @@
         },
         {
           "player_id": "FUL-20",
-          "name": "Manuel Angel",
+          "name": "Juniper Player 20",
           "shirt_number": 20,
           "position": "MID",
           "position_detail": "Centre Central Midfielder",
@@ -3215,7 +3215,7 @@
         },
         {
           "player_id": "FUL-24",
-          "name": "Josh King",
+          "name": "Juniper Player 21",
           "shirt_number": 24,
           "position": "MID",
           "position_detail": "Central Midfielder",
@@ -3226,7 +3226,7 @@
         },
         {
           "player_id": "FUL-30",
-          "name": "Ryan Sessegnon",
+          "name": "Juniper Player 22",
           "shirt_number": 30,
           "position": "MID",
           "position_detail": "Left/Right Winger",
@@ -3237,7 +3237,7 @@
         },
         {
           "player_id": "FUL-32",
-          "name": "Emile Smith Rowe",
+          "name": "Juniper Player 23",
           "shirt_number": 32,
           "position": "MID",
           "position_detail": "Centre Attacking Midfielder",
@@ -3248,7 +3248,7 @@
         },
         {
           "player_id": "FUL-07",
-          "name": "Gonzalo Garcia",
+          "name": "Juniper Player 24",
           "shirt_number": 7,
           "position": "FWD",
           "position_detail": "Centre Forward",
@@ -3259,7 +3259,7 @@
         },
         {
           "player_id": "FUL-09",
-          "name": "Rodrigo Muniz",
+          "name": "Juniper Player 25",
           "shirt_number": 9,
           "position": "FWD",
           "position_detail": "Striker",
@@ -3270,7 +3270,7 @@
         },
         {
           "player_id": "FUL-11",
-          "name": "Kevin",
+          "name": "Juniper Player 26",
           "shirt_number": 11,
           "position": "FWD",
           "position_detail": "Left/Right Winger",
@@ -3281,7 +3281,7 @@
         },
         {
           "player_id": "FUL-17",
-          "name": "Alex Iwobi",
+          "name": "Juniper Player 27",
           "shirt_number": 17,
           "position": "FWD",
           "position_detail": "Left/Centre/Right Second Striker",
@@ -3292,7 +3292,7 @@
         },
         {
           "player_id": "FUL-18",
-          "name": "Jonah Kusi-Asare",
+          "name": "Juniper Player 28",
           "shirt_number": 18,
           "position": "FWD",
           "position_detail": "Striker",
@@ -3303,7 +3303,7 @@
         },
         {
           "player_id": "FUL-35",
-          "name": "Macaulay Zepa",
+          "name": "Juniper Player 29",
           "shirt_number": 35,
           "position": "FWD",
           "position_detail": "Forward",
@@ -3316,9 +3316,9 @@
     },
     {
       "club_id": "HUL",
-      "name": "Hull City",
-      "short_name": "Hull City",
-      "stadium": "MKM Stadium",
+      "name": "Kingswell FC",
+      "short_name": "Kingswell FC",
+      "stadium": "Kingswell Park",
       "colors": {
         "primary": "#F5A12D",
         "secondary": "#000000"
@@ -3332,7 +3332,7 @@
       "players": [
         {
           "player_id": "HUL-01",
-          "name": "Jack Butland",
+          "name": "Kingswell Player 01",
           "shirt_number": 1,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -3343,7 +3343,7 @@
         },
         {
           "player_id": "HUL-12",
-          "name": "Dillon Phillips",
+          "name": "Kingswell Player 02",
           "shirt_number": 12,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -3354,7 +3354,7 @@
         },
         {
           "player_id": "HUL-19",
-          "name": "Konstantinos Tzolakis",
+          "name": "Kingswell Player 03",
           "shirt_number": 19,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -3365,7 +3365,7 @@
         },
         {
           "player_id": "HUL-02",
-          "name": "Lewie Coyle",
+          "name": "Kingswell Player 04",
           "shirt_number": 2,
           "position": "DEF",
           "position_detail": "Right Full Back",
@@ -3376,7 +3376,7 @@
         },
         {
           "player_id": "HUL-03",
-          "name": "Ryan Giles",
+          "name": "Kingswell Player 05",
           "shirt_number": 3,
           "position": "DEF",
           "position_detail": "Left Winger",
@@ -3387,7 +3387,7 @@
         },
         {
           "player_id": "HUL-04",
-          "name": "Charlie Hughes",
+          "name": "Kingswell Player 06",
           "shirt_number": 4,
           "position": "DEF",
           "position_detail": "Centre-Back",
@@ -3398,7 +3398,7 @@
         },
         {
           "player_id": "HUL-06",
-          "name": "Semi Ajayi",
+          "name": "Kingswell Player 07",
           "shirt_number": 6,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -3409,7 +3409,7 @@
         },
         {
           "player_id": "HUL-15",
-          "name": "John Egan",
+          "name": "Kingswell Player 08",
           "shirt_number": 15,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -3420,7 +3420,7 @@
         },
         {
           "player_id": "HUL-17",
-          "name": "Paddy McNair",
+          "name": "Kingswell Player 09",
           "shirt_number": 17,
           "position": "DEF",
           "position_detail": "Central Defender",
@@ -3431,7 +3431,7 @@
         },
         {
           "player_id": "HUL-18",
-          "name": "Brooke Norton-Cuffy",
+          "name": "Kingswell Player 10",
           "shirt_number": 18,
           "position": "DEF",
           "position_detail": "Right Full Back",
@@ -3442,7 +3442,7 @@
         },
         {
           "player_id": "HUL-22",
-          "name": "Lucas Herrington",
+          "name": "Kingswell Player 11",
           "shirt_number": 22,
           "position": "DEF",
           "position_detail": "Central Defender",
@@ -3453,7 +3453,7 @@
         },
         {
           "player_id": "HUL-23",
-          "name": "Matt Targett",
+          "name": "Kingswell Player 12",
           "shirt_number": 23,
           "position": "DEF",
           "position_detail": "Left Full Back",
@@ -3464,7 +3464,7 @@
         },
         {
           "player_id": "HUL-32",
-          "name": "Nobel Mendy",
+          "name": "Kingswell Player 13",
           "shirt_number": 32,
           "position": "DEF",
           "position_detail": "Central Defender",
@@ -3475,7 +3475,7 @@
         },
         {
           "player_id": "HUL-05",
-          "name": "Hidemasa Morita",
+          "name": "Kingswell Player 14",
           "shirt_number": 5,
           "position": "MID",
           "position_detail": "Centre Central Midfielder",
@@ -3486,7 +3486,7 @@
         },
         {
           "player_id": "HUL-08",
-          "name": "Eliot Matazo",
+          "name": "Kingswell Player 15",
           "shirt_number": 8,
           "position": "MID",
           "position_detail": "Central Midfielder",
@@ -3497,7 +3497,7 @@
         },
         {
           "player_id": "HUL-14",
-          "name": "Jens Hjerto-Dahl",
+          "name": "Kingswell Player 16",
           "shirt_number": 14,
           "position": "MID",
           "position_detail": "Central Midfielder",
@@ -3508,7 +3508,7 @@
         },
         {
           "player_id": "HUL-21",
-          "name": "Elliot Stroud",
+          "name": "Kingswell Player 17",
           "shirt_number": 21,
           "position": "MID",
           "position_detail": "Left Winger",
@@ -3519,7 +3519,7 @@
         },
         {
           "player_id": "HUL-25",
-          "name": "Matt Crooks",
+          "name": "Kingswell Player 18",
           "shirt_number": 25,
           "position": "MID",
           "position_detail": "Centre Central Midfielder",
@@ -3530,7 +3530,7 @@
         },
         {
           "player_id": "HUL-27",
-          "name": "Regan Slater",
+          "name": "Kingswell Player 19",
           "shirt_number": 27,
           "position": "MID",
           "position_detail": "Centre Defensive Midfielder",
@@ -3541,7 +3541,7 @@
         },
         {
           "player_id": "HUL-29",
-          "name": "Lucas Gourna-Douath",
+          "name": "Kingswell Player 20",
           "shirt_number": 29,
           "position": "MID",
           "position_detail": "Centre Defensive Midfielder",
@@ -3552,7 +3552,7 @@
         },
         {
           "player_id": "HUL-33",
-          "name": "Abdulkadir Omur",
+          "name": "Kingswell Player 21",
           "shirt_number": 33,
           "position": "MID",
           "position_detail": "Centre Attacking Midfielder",
@@ -3563,7 +3563,7 @@
         },
         {
           "player_id": "HUL-42",
-          "name": "Tim Iroegbunam",
+          "name": "Kingswell Player 22",
           "shirt_number": 42,
           "position": "MID",
           "position_detail": "Centre Central Midfielder",
@@ -3574,7 +3574,7 @@
         },
         {
           "player_id": "HUL-07",
-          "name": "Sorba Thomas",
+          "name": "Kingswell Player 23",
           "shirt_number": 7,
           "position": "FWD",
           "position_detail": "Right Winger",
@@ -3585,7 +3585,7 @@
         },
         {
           "player_id": "HUL-09",
-          "name": "Oliver McBurnie",
+          "name": "Kingswell Player 24",
           "shirt_number": 9,
           "position": "FWD",
           "position_detail": "Centre Striker",
@@ -3596,7 +3596,7 @@
         },
         {
           "player_id": "HUL-10",
-          "name": "Mohamed Belloumi",
+          "name": "Kingswell Player 25",
           "shirt_number": 10,
           "position": "FWD",
           "position_detail": "Winger",
@@ -3607,7 +3607,7 @@
         },
         {
           "player_id": "HUL-11",
-          "name": "Joe Gelhardt",
+          "name": "Kingswell Player 26",
           "shirt_number": 11,
           "position": "FWD",
           "position_detail": "Centre Striker",
@@ -3618,7 +3618,7 @@
         },
         {
           "player_id": "HUL-28",
-          "name": "Ilyas Ansah",
+          "name": "Kingswell Player 27",
           "shirt_number": 28,
           "position": "FWD",
           "position_detail": "Centre Striker",
@@ -3629,7 +3629,7 @@
         },
         {
           "player_id": "HUL-50",
-          "name": "Mohamed-Ali Cho",
+          "name": "Kingswell Player 28",
           "shirt_number": 50,
           "position": "FWD",
           "position_detail": "Right Winger",
@@ -3642,9 +3642,9 @@
     },
     {
       "club_id": "IPS",
-      "name": "Ipswich Town",
-      "short_name": "Ipswich Town",
-      "stadium": "Portman Road",
+      "name": "Larkspur FC",
+      "short_name": "Larkspur FC",
+      "stadium": "Larkspur Park",
       "colors": {
         "primary": "#0044A9",
         "secondary": "#FFFFFF"
@@ -3658,7 +3658,7 @@
       "players": [
         {
           "player_id": "IPS-01",
-          "name": "Alex Palmer",
+          "name": "Larkspur Player 01",
           "shirt_number": 1,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -3669,7 +3669,7 @@
         },
         {
           "player_id": "IPS-27",
-          "name": "David Button",
+          "name": "Larkspur Player 02",
           "shirt_number": 27,
           "position": "GK",
           "position_detail": "Centre Goalkeeper",
@@ -3680,7 +3680,7 @@
         },
         {
           "player_id": "IPS-28",
-          "name": "Christian Walton",
+          "name": "Larkspur Player 03",
           "shirt_number": 28,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -3691,7 +3691,7 @@
         },
         {
           "player_id": "IPS-37",
-          "name": "Kjell Scherpen",
+          "name": "Larkspur Player 04",
           "shirt_number": 37,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -3702,7 +3702,7 @@
         },
         {
           "player_id": "IPS-02",
-          "name": "Darnell Furlong",
+          "name": "Larkspur Player 05",
           "shirt_number": 2,
           "position": "DEF",
           "position_detail": "Right-Back",
@@ -3713,7 +3713,7 @@
         },
         {
           "player_id": "IPS-03",
-          "name": "Leif Davis",
+          "name": "Larkspur Player 06",
           "shirt_number": 3,
           "position": "DEF",
           "position_detail": "Left Full Back",
@@ -3724,7 +3724,7 @@
         },
         {
           "player_id": "IPS-04",
-          "name": "Cedric Kipre",
+          "name": "Larkspur Player 07",
           "shirt_number": 4,
           "position": "DEF",
           "position_detail": "Central Defender",
@@ -3735,7 +3735,7 @@
         },
         {
           "player_id": "IPS-06",
-          "name": "Issa Diop",
+          "name": "Larkspur Player 08",
           "shirt_number": 6,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -3746,7 +3746,7 @@
         },
         {
           "player_id": "IPS-24",
-          "name": "Jacob Greaves",
+          "name": "Larkspur Player 09",
           "shirt_number": 24,
           "position": "DEF",
           "position_detail": "Central Defender",
@@ -3757,7 +3757,7 @@
         },
         {
           "player_id": "IPS-26",
-          "name": "Dara O'Shea",
+          "name": "Larkspur Player 10",
           "shirt_number": 26,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -3768,7 +3768,7 @@
         },
         {
           "player_id": "IPS-05",
-          "name": "Azor Matusiwa",
+          "name": "Larkspur Player 11",
           "shirt_number": 5,
           "position": "MID",
           "position_detail": "Centre Defensive Midfielder",
@@ -3779,7 +3779,7 @@
         },
         {
           "player_id": "IPS-10",
-          "name": "Julio Enciso",
+          "name": "Larkspur Player 12",
           "shirt_number": 10,
           "position": "MID",
           "position_detail": "Centre Attacking Midfielder",
@@ -3790,7 +3790,7 @@
         },
         {
           "player_id": "IPS-12",
-          "name": "Florentino",
+          "name": "Larkspur Player 13",
           "shirt_number": 12,
           "position": "MID",
           "position_detail": "Centre Defensive Midfielder",
@@ -3801,7 +3801,7 @@
         },
         {
           "player_id": "IPS-14",
-          "name": "Jack Taylor",
+          "name": "Larkspur Player 14",
           "shirt_number": 14,
           "position": "MID",
           "position_detail": "Centre Central Midfielder",
@@ -3812,7 +3812,7 @@
         },
         {
           "player_id": "IPS-20",
-          "name": "Kasey McAteer",
+          "name": "Larkspur Player 15",
           "shirt_number": 20,
           "position": "MID",
           "position_detail": "Right Attacking Midfielder",
@@ -3823,7 +3823,7 @@
         },
         {
           "player_id": "IPS-23",
-          "name": "Sasa Lukic",
+          "name": "Larkspur Player 16",
           "shirt_number": 23,
           "position": "MID",
           "position_detail": "Central Midfielder",
@@ -3834,7 +3834,7 @@
         },
         {
           "player_id": "IPS-25",
-          "name": "Exequiel Palacios",
+          "name": "Larkspur Player 17",
           "shirt_number": 25,
           "position": "MID",
           "position_detail": "Central Midfielder",
@@ -3845,7 +3845,7 @@
         },
         {
           "player_id": "IPS-32",
-          "name": "Marcelino Nunez",
+          "name": "Larkspur Player 18",
           "shirt_number": 32,
           "position": "MID",
           "position_detail": "Centre Central Midfielder",
@@ -3856,7 +3856,7 @@
         },
         {
           "player_id": "IPS-33",
-          "name": "Anis Mehmeti",
+          "name": "Larkspur Player 19",
           "shirt_number": 33,
           "position": "MID",
           "position_detail": "Centre Attacking Midfielder",
@@ -3867,7 +3867,7 @@
         },
         {
           "player_id": "IPS-07",
-          "name": "Abdul Fatawu",
+          "name": "Larkspur Player 20",
           "shirt_number": 7,
           "position": "FWD",
           "position_detail": "Right Winger",
@@ -3878,7 +3878,7 @@
         },
         {
           "player_id": "IPS-08",
-          "name": "Sindre Egeli",
+          "name": "Larkspur Player 21",
           "shirt_number": 8,
           "position": "FWD",
           "position_detail": "Right Winger",
@@ -3889,7 +3889,7 @@
         },
         {
           "player_id": "IPS-09",
-          "name": "Zian Flemming",
+          "name": "Larkspur Player 22",
           "shirt_number": 9,
           "position": "FWD",
           "position_detail": "Centre Striker",
@@ -3900,7 +3900,7 @@
         },
         {
           "player_id": "IPS-11",
-          "name": "Jaden Philogene",
+          "name": "Larkspur Player 23",
           "shirt_number": 11,
           "position": "FWD",
           "position_detail": "Left Winger",
@@ -3911,7 +3911,7 @@
         },
         {
           "player_id": "IPS-19",
-          "name": "Emersonn",
+          "name": "Larkspur Player 24",
           "shirt_number": 19,
           "position": "FWD",
           "position_detail": "Striker",
@@ -3922,7 +3922,7 @@
         },
         {
           "player_id": "IPS-29",
-          "name": "Chuba Akpom",
+          "name": "Larkspur Player 25",
           "shirt_number": 29,
           "position": "FWD",
           "position_detail": "Striker",
@@ -3933,7 +3933,7 @@
         },
         {
           "player_id": "IPS-38",
-          "name": "Daizen Maeda",
+          "name": "Larkspur Player 26",
           "shirt_number": 38,
           "position": "FWD",
           "position_detail": "Left Winger",
@@ -3944,7 +3944,7 @@
         },
         {
           "player_id": "IPS-42",
-          "name": "Abdoul Ouattara",
+          "name": "Larkspur Player 27",
           "shirt_number": 42,
           "position": "FWD",
           "position_detail": "Right Winger",
@@ -3955,7 +3955,7 @@
         },
         {
           "player_id": "IPS-47",
-          "name": "Jack Clarke",
+          "name": "Larkspur Player 28",
           "shirt_number": 47,
           "position": "FWD",
           "position_detail": "Left Winger",
@@ -3968,9 +3968,9 @@
     },
     {
       "club_id": "LEE",
-      "name": "Leeds United",
-      "short_name": "Leeds",
-      "stadium": "Elland Road",
+      "name": "Meadow FC",
+      "short_name": "Meadow",
+      "stadium": "Meadow Park",
       "colors": {
         "primary": "#FFFFFF",
         "secondary": "#1D428A"
@@ -3984,7 +3984,7 @@
       "players": [
         {
           "player_id": "LEE-01",
-          "name": "James Trafford",
+          "name": "Meadow Player 01",
           "shirt_number": 1,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -3995,7 +3995,7 @@
         },
         {
           "player_id": "LEE-16",
-          "name": "Michael Zetterer",
+          "name": "Meadow Player 02",
           "shirt_number": 16,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -4006,7 +4006,7 @@
         },
         {
           "player_id": "LEE-21",
-          "name": "Alex Cairns",
+          "name": "Meadow Player 03",
           "shirt_number": 21,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -4017,7 +4017,7 @@
         },
         {
           "player_id": "LEE-48",
-          "name": "Rory Mahady",
+          "name": "Meadow Player 04",
           "shirt_number": 48,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -4028,7 +4028,7 @@
         },
         {
           "player_id": "LEE-02",
-          "name": "Jayden Bogle",
+          "name": "Meadow Player 05",
           "shirt_number": 2,
           "position": "DEF",
           "position_detail": "Right Full Back",
@@ -4039,7 +4039,7 @@
         },
         {
           "player_id": "LEE-03",
-          "name": "Gabriel Gudmundsson",
+          "name": "Meadow Player 06",
           "shirt_number": 3,
           "position": "DEF",
           "position_detail": "Left Full Back",
@@ -4050,7 +4050,7 @@
         },
         {
           "player_id": "LEE-05",
-          "name": "Tarik Muharemovic",
+          "name": "Meadow Player 07",
           "shirt_number": 5,
           "position": "DEF",
           "position_detail": "Central Defender",
@@ -4061,7 +4061,7 @@
         },
         {
           "player_id": "LEE-06",
-          "name": "Joe Rodon",
+          "name": "Meadow Player 08",
           "shirt_number": 6,
           "position": "DEF",
           "position_detail": "Central Defender",
@@ -4072,7 +4072,7 @@
         },
         {
           "player_id": "LEE-15",
-          "name": "Jaka Bijol",
+          "name": "Meadow Player 09",
           "shirt_number": 15,
           "position": "DEF",
           "position_detail": "Central Defender",
@@ -4083,7 +4083,7 @@
         },
         {
           "player_id": "LEE-24",
-          "name": "James Justin",
+          "name": "Meadow Player 10",
           "shirt_number": 24,
           "position": "DEF",
           "position_detail": "Right Full Back",
@@ -4094,7 +4094,7 @@
         },
         {
           "player_id": "LEE-26",
-          "name": "Melvin Bard",
+          "name": "Meadow Player 11",
           "shirt_number": 26,
           "position": "DEF",
           "position_detail": "Left Full Back",
@@ -4105,7 +4105,7 @@
         },
         {
           "player_id": "LEE-30",
-          "name": "Nico Elvedi",
+          "name": "Meadow Player 12",
           "shirt_number": 30,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -4116,7 +4116,7 @@
         },
         {
           "player_id": "LEE-65",
-          "name": "Jayden Lienou",
+          "name": "Meadow Player 13",
           "shirt_number": 65,
           "position": "DEF",
           "position_detail": "Left Full Back",
@@ -4127,7 +4127,7 @@
         },
         {
           "player_id": "LEE-04",
-          "name": "Ethan Ampadu",
+          "name": "Meadow Player 14",
           "shirt_number": 4,
           "position": "MID",
           "position_detail": "Centre Defensive Midfielder",
@@ -4138,7 +4138,7 @@
         },
         {
           "player_id": "LEE-08",
-          "name": "Sean Longstaff",
+          "name": "Meadow Player 15",
           "shirt_number": 8,
           "position": "MID",
           "position_detail": "Central Midfielder",
@@ -4149,7 +4149,7 @@
         },
         {
           "player_id": "LEE-10",
-          "name": "Harry Wilson",
+          "name": "Meadow Player 16",
           "shirt_number": 10,
           "position": "MID",
           "position_detail": "Attacking Midfielder",
@@ -4160,7 +4160,7 @@
         },
         {
           "player_id": "LEE-11",
-          "name": "Brenden Aaronson",
+          "name": "Meadow Player 17",
           "shirt_number": 11,
           "position": "MID",
           "position_detail": "Centre Attacking Midfielder",
@@ -4171,7 +4171,7 @@
         },
         {
           "player_id": "LEE-18",
-          "name": "Anton Stach",
+          "name": "Meadow Player 18",
           "shirt_number": 18,
           "position": "MID",
           "position_detail": "Centre Defensive Midfielder",
@@ -4182,7 +4182,7 @@
         },
         {
           "player_id": "LEE-22",
-          "name": "Ao Tanaka",
+          "name": "Meadow Player 19",
           "shirt_number": 22,
           "position": "MID",
           "position_detail": "Centre Central Midfielder",
@@ -4193,7 +4193,7 @@
         },
         {
           "player_id": "LEE-44",
-          "name": "Ilia Gruev",
+          "name": "Meadow Player 20",
           "shirt_number": 44,
           "position": "MID",
           "position_detail": "Midfielder",
@@ -4204,7 +4204,7 @@
         },
         {
           "player_id": "LEE-50",
-          "name": "Alfie Cresswell",
+          "name": "Meadow Player 21",
           "shirt_number": 50,
           "position": "MID",
           "position_detail": "Centre Central Midfielder",
@@ -4215,7 +4215,7 @@
         },
         {
           "player_id": "LEE-72",
-          "name": "Callum Mills",
+          "name": "Meadow Player 22",
           "shirt_number": 72,
           "position": "MID",
           "position_detail": "Centre Central Midfielder",
@@ -4226,7 +4226,7 @@
         },
         {
           "player_id": "LEE-07",
-          "name": "Daniel James",
+          "name": "Meadow Player 23",
           "shirt_number": 7,
           "position": "FWD",
           "position_detail": "Right Winger",
@@ -4237,7 +4237,7 @@
         },
         {
           "player_id": "LEE-09",
-          "name": "Dominic Calvert-Lewin",
+          "name": "Meadow Player 24",
           "shirt_number": 9,
           "position": "FWD",
           "position_detail": "Striker",
@@ -4248,7 +4248,7 @@
         },
         {
           "player_id": "LEE-14",
-          "name": "Lukas Nmecha",
+          "name": "Meadow Player 25",
           "shirt_number": 14,
           "position": "FWD",
           "position_detail": "Striker",
@@ -4259,7 +4259,7 @@
         },
         {
           "player_id": "LEE-19",
-          "name": "Noah Okafor",
+          "name": "Meadow Player 26",
           "shirt_number": 19,
           "position": "FWD",
           "position_detail": "Winger",
@@ -4270,7 +4270,7 @@
         },
         {
           "player_id": "LEE-23",
-          "name": "Jean-Matteo Bahoya",
+          "name": "Meadow Player 27",
           "shirt_number": 23,
           "position": "FWD",
           "position_detail": "Winger",
@@ -4283,9 +4283,9 @@
     },
     {
       "club_id": "LIV",
-      "name": "Liverpool",
-      "short_name": "Liverpool",
-      "stadium": "Anfield",
+      "name": "Northstar FC",
+      "short_name": "Northstar FC",
+      "stadium": "Northstar Park",
       "colors": {
         "primary": "#C8102E",
         "secondary": "#FFFFFF"
@@ -4299,7 +4299,7 @@
       "players": [
         {
           "player_id": "LIV-01",
-          "name": "Alisson Becker",
+          "name": "Northstar Player 01",
           "shirt_number": 1,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -4310,7 +4310,7 @@
         },
         {
           "player_id": "LIV-25",
-          "name": "Giorgi Mamardashvili",
+          "name": "Northstar Player 02",
           "shirt_number": 25,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -4321,7 +4321,7 @@
         },
         {
           "player_id": "LIV-28",
-          "name": "Freddie Woodman",
+          "name": "Northstar Player 03",
           "shirt_number": 28,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -4332,7 +4332,7 @@
         },
         {
           "player_id": "LIV-56",
-          "name": "Vitezslav Jaros",
+          "name": "Northstar Player 04",
           "shirt_number": 56,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -4343,7 +4343,7 @@
         },
         {
           "player_id": "LIV-95",
-          "name": "Harvey Davies",
+          "name": "Northstar Player 05",
           "shirt_number": 95,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -4354,7 +4354,7 @@
         },
         {
           "player_id": "LIV-02",
-          "name": "Joe Gomez",
+          "name": "Northstar Player 06",
           "shirt_number": 2,
           "position": "DEF",
           "position_detail": "Centre-Back",
@@ -4365,7 +4365,7 @@
         },
         {
           "player_id": "LIV-04",
-          "name": "Virgil van Dijk",
+          "name": "Northstar Player 07",
           "shirt_number": 4,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -4376,7 +4376,7 @@
         },
         {
           "player_id": "LIV-05",
-          "name": "Jeremy Jacquet",
+          "name": "Northstar Player 08",
           "shirt_number": 5,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -4387,7 +4387,7 @@
         },
         {
           "player_id": "LIV-06",
-          "name": "Milos Kerkez",
+          "name": "Northstar Player 09",
           "shirt_number": 6,
           "position": "DEF",
           "position_detail": "Left Full Back",
@@ -4398,7 +4398,7 @@
         },
         {
           "player_id": "LIV-12",
-          "name": "Conor Bradley",
+          "name": "Northstar Player 10",
           "shirt_number": 12,
           "position": "DEF",
           "position_detail": "Right Full Back",
@@ -4409,7 +4409,7 @@
         },
         {
           "player_id": "LIV-15",
-          "name": "Giovanni Leoni",
+          "name": "Northstar Player 11",
           "shirt_number": 15,
           "position": "DEF",
           "position_detail": "Central Defender",
@@ -4420,7 +4420,7 @@
         },
         {
           "player_id": "LIV-21",
-          "name": "Kostas Tsimikas",
+          "name": "Northstar Player 12",
           "shirt_number": 21,
           "position": "DEF",
           "position_detail": "Left Full Back",
@@ -4431,7 +4431,7 @@
         },
         {
           "player_id": "LIV-30",
-          "name": "Jeremie Frimpong",
+          "name": "Northstar Player 13",
           "shirt_number": 30,
           "position": "DEF",
           "position_detail": "Right Full Back",
@@ -4442,7 +4442,7 @@
         },
         {
           "player_id": "LIV-33",
-          "name": "Ronald Araujo",
+          "name": "Northstar Player 14",
           "shirt_number": 33,
           "position": "DEF",
           "position_detail": "Centre-Back",
@@ -4453,7 +4453,7 @@
         },
         {
           "player_id": "LIV-44",
-          "name": "Luke Chambers",
+          "name": "Northstar Player 15",
           "shirt_number": 44,
           "position": "DEF",
           "position_detail": "Left-Back",
@@ -4464,7 +4464,7 @@
         },
         {
           "player_id": "LIV-52",
-          "name": "Isaac Mabaya",
+          "name": "Northstar Player 16",
           "shirt_number": 52,
           "position": "DEF",
           "position_detail": "Right-Back",
@@ -4475,7 +4475,7 @@
         },
         {
           "player_id": "LIV-03",
-          "name": "Wataru Endo",
+          "name": "Northstar Player 17",
           "shirt_number": 3,
           "position": "MID",
           "position_detail": "Centre Defensive Midfielder",
@@ -4486,7 +4486,7 @@
         },
         {
           "player_id": "LIV-07",
-          "name": "Florian Wirtz",
+          "name": "Northstar Player 18",
           "shirt_number": 7,
           "position": "MID",
           "position_detail": "Left/Centre/Right Attacking Midfielder",
@@ -4497,7 +4497,7 @@
         },
         {
           "player_id": "LIV-08",
-          "name": "Dominik Szoboszlai",
+          "name": "Northstar Player 19",
           "shirt_number": 8,
           "position": "MID",
           "position_detail": "Left/Centre/Right Attacking Midfielder",
@@ -4508,7 +4508,7 @@
         },
         {
           "player_id": "LIV-10",
-          "name": "Alexis Mac Allister",
+          "name": "Northstar Player 20",
           "shirt_number": 10,
           "position": "MID",
           "position_detail": "Left/Centre/Right Attacking Midfielder",
@@ -4519,7 +4519,7 @@
         },
         {
           "player_id": "LIV-23",
-          "name": "Victor Munoz",
+          "name": "Northstar Player 21",
           "shirt_number": 23,
           "position": "MID",
           "position_detail": "Central Midfielder",
@@ -4530,7 +4530,7 @@
         },
         {
           "player_id": "LIV-38",
-          "name": "Ryan Gravenberch",
+          "name": "Northstar Player 22",
           "shirt_number": 38,
           "position": "MID",
           "position_detail": "Centre Central Midfielder",
@@ -4541,7 +4541,7 @@
         },
         {
           "player_id": "LIV-42",
-          "name": "Trey Nyoni",
+          "name": "Northstar Player 23",
           "shirt_number": 42,
           "position": "MID",
           "position_detail": "Midfielder",
@@ -4552,7 +4552,7 @@
         },
         {
           "player_id": "LIV-53",
-          "name": "James McConnell",
+          "name": "Northstar Player 24",
           "shirt_number": 53,
           "position": "MID",
           "position_detail": "Midfielder",
@@ -4563,7 +4563,7 @@
         },
         {
           "player_id": "LIV-09",
-          "name": "Alexander Isak",
+          "name": "Northstar Player 25",
           "shirt_number": 9,
           "position": "FWD",
           "position_detail": "Centre Striker",
@@ -4574,7 +4574,7 @@
         },
         {
           "player_id": "LIV-14",
-          "name": "Federico Chiesa",
+          "name": "Northstar Player 26",
           "shirt_number": 14,
           "position": "FWD",
           "position_detail": "Left/Centre/Right Winger",
@@ -4585,7 +4585,7 @@
         },
         {
           "player_id": "LIV-18",
-          "name": "Cody Gakpo",
+          "name": "Northstar Player 27",
           "shirt_number": 18,
           "position": "FWD",
           "position_detail": "Centre Striker",
@@ -4596,7 +4596,7 @@
         },
         {
           "player_id": "LIV-22",
-          "name": "Hugo Ekitike",
+          "name": "Northstar Player 28",
           "shirt_number": 22,
           "position": "FWD",
           "position_detail": "Centre Striker",
@@ -4607,7 +4607,7 @@
         },
         {
           "player_id": "LIV-29",
-          "name": "Bradley Barcola",
+          "name": "Northstar Player 29",
           "shirt_number": 29,
           "position": "FWD",
           "position_detail": "Left/Right Winger",
@@ -4618,7 +4618,7 @@
         },
         {
           "player_id": "LIV-67",
-          "name": "Lewis Koumas",
+          "name": "Northstar Player 30",
           "shirt_number": 67,
           "position": "FWD",
           "position_detail": "Centre Striker",
@@ -4629,7 +4629,7 @@
         },
         {
           "player_id": "LIV-73",
-          "name": "Rio Ngumoha",
+          "name": "Northstar Player 31",
           "shirt_number": 73,
           "position": "FWD",
           "position_detail": "Left Winger",
@@ -4640,7 +4640,7 @@
         },
         {
           "player_id": "LIV-76",
-          "name": "Jayden Danns",
+          "name": "Northstar Player 32",
           "shirt_number": 76,
           "position": "FWD",
           "position_detail": "Forward",
@@ -4653,9 +4653,9 @@
     },
     {
       "club_id": "MCI",
-      "name": "Manchester City",
-      "short_name": "Man City",
-      "stadium": "Etihad Stadium",
+      "name": "Oakmere FC",
+      "short_name": "Oakmere",
+      "stadium": "Oakmere Park",
       "colors": {
         "primary": "#6CABDD",
         "secondary": "#1C2C5B"
@@ -4669,7 +4669,7 @@
       "players": [
         {
           "player_id": "MCI-01",
-          "name": "Gianluigi Donnarumma",
+          "name": "Oakmere Player 01",
           "shirt_number": 1,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -4680,7 +4680,7 @@
         },
         {
           "player_id": "MCI-13",
-          "name": "Marcus Bettinelli",
+          "name": "Oakmere Player 02",
           "shirt_number": 13,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -4691,7 +4691,7 @@
         },
         {
           "player_id": "MCI-28",
-          "name": "Geronimo Rulli",
+          "name": "Oakmere Player 03",
           "shirt_number": 28,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -4702,7 +4702,7 @@
         },
         {
           "player_id": "MCI-03",
-          "name": "Ruben Dias",
+          "name": "Oakmere Player 04",
           "shirt_number": 3,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -4713,7 +4713,7 @@
         },
         {
           "player_id": "MCI-06",
-          "name": "Marc Guehi",
+          "name": "Oakmere Player 05",
           "shirt_number": 6,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -4724,7 +4724,7 @@
         },
         {
           "player_id": "MCI-21",
-          "name": "Rayan Ait-Nouri",
+          "name": "Oakmere Player 06",
           "shirt_number": 21,
           "position": "DEF",
           "position_detail": "Left Full Back",
@@ -4735,7 +4735,7 @@
         },
         {
           "player_id": "MCI-22",
-          "name": "Vitor Reis",
+          "name": "Oakmere Player 07",
           "shirt_number": 22,
           "position": "DEF",
           "position_detail": "Central Defender",
@@ -4746,7 +4746,7 @@
         },
         {
           "player_id": "MCI-24",
-          "name": "Josko Gvardiol",
+          "name": "Oakmere Player 08",
           "shirt_number": 24,
           "position": "DEF",
           "position_detail": "Left/Centre Central Defender",
@@ -4757,7 +4757,7 @@
         },
         {
           "player_id": "MCI-45",
-          "name": "Abdukodir Khusanov",
+          "name": "Oakmere Player 09",
           "shirt_number": 45,
           "position": "DEF",
           "position_detail": "Central Defender",
@@ -4768,7 +4768,7 @@
         },
         {
           "player_id": "MCI-61",
-          "name": "Kaden Braithwaite",
+          "name": "Oakmere Player 10",
           "shirt_number": 61,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -4779,7 +4779,7 @@
         },
         {
           "player_id": "MCI-82",
-          "name": "Rico Lewis",
+          "name": "Oakmere Player 11",
           "shirt_number": 82,
           "position": "DEF",
           "position_detail": "Right Full Back",
@@ -4790,7 +4790,7 @@
         },
         {
           "player_id": "MCI-05",
-          "name": "Elliot Anderson",
+          "name": "Oakmere Player 12",
           "shirt_number": 5,
           "position": "MID",
           "position_detail": "Central Midfielder",
@@ -4801,7 +4801,7 @@
         },
         {
           "player_id": "MCI-08",
-          "name": "Mateo Kovacic",
+          "name": "Oakmere Player 13",
           "shirt_number": 8,
           "position": "MID",
           "position_detail": "Centre Central Midfielder",
@@ -4812,7 +4812,7 @@
         },
         {
           "player_id": "MCI-10",
-          "name": "Rayan Cherki",
+          "name": "Oakmere Player 14",
           "shirt_number": 10,
           "position": "MID",
           "position_detail": "Attacking Midfielder",
@@ -4823,7 +4823,7 @@
         },
         {
           "player_id": "MCI-17",
-          "name": "Enzo Fernandez",
+          "name": "Oakmere Player 15",
           "shirt_number": 17,
           "position": "MID",
           "position_detail": "Centre Central Midfielder",
@@ -4834,7 +4834,7 @@
         },
         {
           "player_id": "MCI-27",
-          "name": "Matheus Nunes",
+          "name": "Oakmere Player 16",
           "shirt_number": 27,
           "position": "MID",
           "position_detail": "Centre Central Midfielder",
@@ -4845,7 +4845,7 @@
         },
         {
           "player_id": "MCI-30",
-          "name": "Claudio Echeverri",
+          "name": "Oakmere Player 17",
           "shirt_number": 30,
           "position": "MID",
           "position_detail": "Attacking Midfielder",
@@ -4856,7 +4856,7 @@
         },
         {
           "player_id": "MCI-32",
-          "name": "Ayyoub Bouaddi",
+          "name": "Oakmere Player 18",
           "shirt_number": 32,
           "position": "MID",
           "position_detail": "Centre Central Midfielder",
@@ -4867,7 +4867,7 @@
         },
         {
           "player_id": "MCI-33",
-          "name": "Nico O'Reilly",
+          "name": "Oakmere Player 19",
           "shirt_number": 33,
           "position": "MID",
           "position_detail": "Midfielder",
@@ -4878,7 +4878,7 @@
         },
         {
           "player_id": "MCI-37",
-          "name": "Allan",
+          "name": "Oakmere Player 20",
           "shirt_number": 37,
           "position": "MID",
           "position_detail": "Defensive Midfielder",
@@ -4889,7 +4889,7 @@
         },
         {
           "player_id": "MCI-47",
-          "name": "Phil Foden",
+          "name": "Oakmere Player 21",
           "shirt_number": 47,
           "position": "MID",
           "position_detail": "Centre/Right Attacking Midfielder",
@@ -4900,7 +4900,7 @@
         },
         {
           "player_id": "MCI-07",
-          "name": "Iliman Ndiaye",
+          "name": "Oakmere Player 22",
           "shirt_number": 7,
           "position": "FWD",
           "position_detail": "Left/Right Winger",
@@ -4911,7 +4911,7 @@
         },
         {
           "player_id": "MCI-09",
-          "name": "Erling Haaland",
+          "name": "Oakmere Player 23",
           "shirt_number": 9,
           "position": "FWD",
           "position_detail": "Centre Striker",
@@ -4922,7 +4922,7 @@
         },
         {
           "player_id": "MCI-11",
-          "name": "Jeremy Doku",
+          "name": "Oakmere Player 24",
           "shirt_number": 11,
           "position": "FWD",
           "position_detail": "Left/Right Winger",
@@ -4933,7 +4933,7 @@
         },
         {
           "player_id": "MCI-42",
-          "name": "Antoine Semenyo",
+          "name": "Oakmere Player 25",
           "shirt_number": 42,
           "position": "FWD",
           "position_detail": "Left/Right Winger",
@@ -4944,7 +4944,7 @@
         },
         {
           "player_id": "MCI-56",
-          "name": "Ryan McAidoo",
+          "name": "Oakmere Player 26",
           "shirt_number": 56,
           "position": "FWD",
           "position_detail": "Left/Right Winger",
@@ -4957,9 +4957,9 @@
     },
     {
       "club_id": "MUN",
-      "name": "Manchester United",
-      "short_name": "Man United",
-      "stadium": "Old Trafford",
+      "name": "Pinecrest FC",
+      "short_name": "Pinecrest",
+      "stadium": "Pinecrest Park",
       "colors": {
         "primary": "#DA291C",
         "secondary": "#FBE122"
@@ -4973,7 +4973,7 @@
       "players": [
         {
           "player_id": "MUN-01",
-          "name": "Senne Lammens",
+          "name": "Pinecrest Player 01",
           "shirt_number": 1,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -4984,7 +4984,7 @@
         },
         {
           "player_id": "MUN-12",
-          "name": "Karl Darlow",
+          "name": "Pinecrest Player 02",
           "shirt_number": 12,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -4995,7 +4995,7 @@
         },
         {
           "player_id": "MUN-22",
-          "name": "Tom Heaton",
+          "name": "Pinecrest Player 03",
           "shirt_number": 22,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -5006,7 +5006,7 @@
         },
         {
           "player_id": "MUN-45",
-          "name": "Dermot Mee",
+          "name": "Pinecrest Player 04",
           "shirt_number": 45,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -5017,7 +5017,7 @@
         },
         {
           "player_id": "MUN-02",
-          "name": "Diogo Dalot",
+          "name": "Pinecrest Player 05",
           "shirt_number": 2,
           "position": "DEF",
           "position_detail": "Right Full Back",
@@ -5028,7 +5028,7 @@
         },
         {
           "player_id": "MUN-03",
-          "name": "Noussair Mazraoui",
+          "name": "Pinecrest Player 06",
           "shirt_number": 3,
           "position": "DEF",
           "position_detail": "Right Full Back",
@@ -5039,7 +5039,7 @@
         },
         {
           "player_id": "MUN-04",
-          "name": "Matthijs de Ligt",
+          "name": "Pinecrest Player 07",
           "shirt_number": 4,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -5050,7 +5050,7 @@
         },
         {
           "player_id": "MUN-05",
-          "name": "Harry Maguire",
+          "name": "Pinecrest Player 08",
           "shirt_number": 5,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -5061,7 +5061,7 @@
         },
         {
           "player_id": "MUN-06",
-          "name": "Lisandro Martinez",
+          "name": "Pinecrest Player 09",
           "shirt_number": 6,
           "position": "DEF",
           "position_detail": "Centre-Back",
@@ -5072,7 +5072,7 @@
         },
         {
           "player_id": "MUN-13",
-          "name": "Patrick Dorgu",
+          "name": "Pinecrest Player 10",
           "shirt_number": 13,
           "position": "DEF",
           "position_detail": "Left Full Back",
@@ -5083,7 +5083,7 @@
         },
         {
           "player_id": "MUN-15",
-          "name": "Leny Yoro",
+          "name": "Pinecrest Player 11",
           "shirt_number": 15,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -5094,7 +5094,7 @@
         },
         {
           "player_id": "MUN-23",
-          "name": "Luke Shaw",
+          "name": "Pinecrest Player 12",
           "shirt_number": 23,
           "position": "DEF",
           "position_detail": "Left Full Back",
@@ -5105,7 +5105,7 @@
         },
         {
           "player_id": "MUN-26",
-          "name": "Ayden Heaven",
+          "name": "Pinecrest Player 13",
           "shirt_number": 26,
           "position": "DEF",
           "position_detail": "Left Full Back",
@@ -5116,7 +5116,7 @@
         },
         {
           "player_id": "MUN-41",
-          "name": "Harry Amass",
+          "name": "Pinecrest Player 14",
           "shirt_number": 41,
           "position": "DEF",
           "position_detail": "Left Full Back",
@@ -5127,7 +5127,7 @@
         },
         {
           "player_id": "MUN-07",
-          "name": "Mason Mount",
+          "name": "Pinecrest Player 15",
           "shirt_number": 7,
           "position": "MID",
           "position_detail": "Centre Attacking Midfielder",
@@ -5138,7 +5138,7 @@
         },
         {
           "player_id": "MUN-08",
-          "name": "Bruno Fernandes",
+          "name": "Pinecrest Player 16",
           "shirt_number": 8,
           "position": "MID",
           "position_detail": "Left/Centre/Right Attacking Midfielder",
@@ -5149,7 +5149,7 @@
         },
         {
           "player_id": "MUN-17",
-          "name": "Andrey Santos",
+          "name": "Pinecrest Player 17",
           "shirt_number": 17,
           "position": "MID",
           "position_detail": "Defensive Midfielder",
@@ -5160,7 +5160,7 @@
         },
         {
           "player_id": "MUN-18",
-          "name": "Youri Tielemans",
+          "name": "Pinecrest Player 18",
           "shirt_number": 18,
           "position": "MID",
           "position_detail": "Central Midfielder",
@@ -5171,7 +5171,7 @@
         },
         {
           "player_id": "MUN-20",
-          "name": "Carlos Baleba",
+          "name": "Pinecrest Player 19",
           "shirt_number": 20,
           "position": "MID",
           "position_detail": "Centre Defensive Midfielder",
@@ -5182,7 +5182,7 @@
         },
         {
           "player_id": "MUN-25",
-          "name": "Manuel Ugarte",
+          "name": "Pinecrest Player 20",
           "shirt_number": 25,
           "position": "MID",
           "position_detail": "Centre Defensive Midfielder",
@@ -5193,7 +5193,7 @@
         },
         {
           "player_id": "MUN-37",
-          "name": "Kobbie Mainoo",
+          "name": "Pinecrest Player 21",
           "shirt_number": 37,
           "position": "MID",
           "position_detail": "Centre Central Midfielder",
@@ -5204,7 +5204,7 @@
         },
         {
           "player_id": "MUN-38",
-          "name": "Jack Fletcher",
+          "name": "Pinecrest Player 22",
           "shirt_number": 38,
           "position": "MID",
           "position_detail": "Centre/Right Attacking Midfielder",
@@ -5215,7 +5215,7 @@
         },
         {
           "player_id": "MUN-39",
-          "name": "Tyler Fletcher",
+          "name": "Pinecrest Player 23",
           "shirt_number": 39,
           "position": "MID",
           "position_detail": "Centre Central Midfielder",
@@ -5226,7 +5226,7 @@
         },
         {
           "player_id": "MUN-09",
-          "name": "Marcus Rashford",
+          "name": "Pinecrest Player 24",
           "shirt_number": 9,
           "position": "FWD",
           "position_detail": "Left Winger",
@@ -5237,7 +5237,7 @@
         },
         {
           "player_id": "MUN-10",
-          "name": "Matheus Cunha",
+          "name": "Pinecrest Player 25",
           "shirt_number": 10,
           "position": "FWD",
           "position_detail": "Left/Centre Second Striker",
@@ -5248,7 +5248,7 @@
         },
         {
           "player_id": "MUN-11",
-          "name": "Joshua Zirkzee",
+          "name": "Pinecrest Player 26",
           "shirt_number": 11,
           "position": "FWD",
           "position_detail": "Centre Striker",
@@ -5259,7 +5259,7 @@
         },
         {
           "player_id": "MUN-16",
-          "name": "Amad Diallo",
+          "name": "Pinecrest Player 27",
           "shirt_number": 16,
           "position": "FWD",
           "position_detail": "Forward",
@@ -5270,7 +5270,7 @@
         },
         {
           "player_id": "MUN-19",
-          "name": "Bryan Mbeumo",
+          "name": "Pinecrest Player 28",
           "shirt_number": 19,
           "position": "FWD",
           "position_detail": "Right Winger",
@@ -5281,7 +5281,7 @@
         },
         {
           "player_id": "MUN-30",
-          "name": "Benjamin Sesko",
+          "name": "Pinecrest Player 29",
           "shirt_number": 30,
           "position": "FWD",
           "position_detail": "Striker",
@@ -5292,7 +5292,7 @@
         },
         {
           "player_id": "MUN-31",
-          "name": "Shea Lacey",
+          "name": "Pinecrest Player 30",
           "shirt_number": 31,
           "position": "FWD",
           "position_detail": "Right Winger",
@@ -5305,9 +5305,9 @@
     },
     {
       "club_id": "NEW",
-      "name": "Newcastle United",
-      "short_name": "Newcastle",
-      "stadium": "St James' Park",
+      "name": "Quartz FC",
+      "short_name": "Quartz",
+      "stadium": "Quartz Park",
       "colors": {
         "primary": "#241F20",
         "secondary": "#FFFFFF"
@@ -5321,7 +5321,7 @@
       "players": [
         {
           "player_id": "NEW-01",
-          "name": "Nick Pope",
+          "name": "Quartz Player 01",
           "shirt_number": 1,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -5332,7 +5332,7 @@
         },
         {
           "player_id": "NEW-21",
-          "name": "Lukas Hornicek",
+          "name": "Quartz Player 02",
           "shirt_number": 21,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -5343,7 +5343,7 @@
         },
         {
           "player_id": "NEW-24",
-          "name": "Ewen Jaouen",
+          "name": "Quartz Player 03",
           "shirt_number": 24,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -5354,7 +5354,7 @@
         },
         {
           "player_id": "NEW-29",
-          "name": "Mark Gillespie",
+          "name": "Quartz Player 04",
           "shirt_number": 29,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -5365,7 +5365,7 @@
         },
         {
           "player_id": "NEW-31",
-          "name": "Aidan Harris",
+          "name": "Quartz Player 05",
           "shirt_number": 31,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -5376,7 +5376,7 @@
         },
         {
           "player_id": "NEW-02",
-          "name": "Tino Livramento",
+          "name": "Quartz Player 06",
           "shirt_number": 2,
           "position": "DEF",
           "position_detail": "Right Full Back",
@@ -5387,7 +5387,7 @@
         },
         {
           "player_id": "NEW-03",
-          "name": "Lewis Hall",
+          "name": "Quartz Player 07",
           "shirt_number": 3,
           "position": "DEF",
           "position_detail": "Left Full Back",
@@ -5398,7 +5398,7 @@
         },
         {
           "player_id": "NEW-04",
-          "name": "Sven Botman",
+          "name": "Quartz Player 08",
           "shirt_number": 4,
           "position": "DEF",
           "position_detail": "Central Defender",
@@ -5409,7 +5409,7 @@
         },
         {
           "player_id": "NEW-05",
-          "name": "Fabian Schar",
+          "name": "Quartz Player 09",
           "shirt_number": 5,
           "position": "DEF",
           "position_detail": "Defender",
@@ -5420,7 +5420,7 @@
         },
         {
           "player_id": "NEW-12",
-          "name": "Malick Thiaw",
+          "name": "Quartz Player 10",
           "shirt_number": 12,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -5431,7 +5431,7 @@
         },
         {
           "player_id": "NEW-33",
-          "name": "Dan Burn",
+          "name": "Quartz Player 11",
           "shirt_number": 33,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -5442,7 +5442,7 @@
         },
         {
           "player_id": "NEW-37",
-          "name": "Amar Dedic",
+          "name": "Quartz Player 12",
           "shirt_number": 37,
           "position": "DEF",
           "position_detail": "Right Full Back",
@@ -5453,7 +5453,7 @@
         },
         {
           "player_id": "NEW-51",
-          "name": "Leo Shahar",
+          "name": "Quartz Player 13",
           "shirt_number": 51,
           "position": "DEF",
           "position_detail": "Right Full Back",
@@ -5464,7 +5464,7 @@
         },
         {
           "player_id": "NEW-06",
-          "name": "Nico Gonzalez",
+          "name": "Quartz Player 14",
           "shirt_number": 6,
           "position": "MID",
           "position_detail": "Central Midfielder",
@@ -5475,7 +5475,7 @@
         },
         {
           "player_id": "NEW-07",
-          "name": "Joelinton",
+          "name": "Quartz Player 15",
           "shirt_number": 7,
           "position": "MID",
           "position_detail": "Left Central Midfielder",
@@ -5486,7 +5486,7 @@
         },
         {
           "player_id": "NEW-08",
-          "name": "Aladji Bamba",
+          "name": "Quartz Player 16",
           "shirt_number": 8,
           "position": "MID",
           "position_detail": "Centre Defensive Midfielder",
@@ -5497,7 +5497,7 @@
         },
         {
           "player_id": "NEW-11",
-          "name": "Harvey Barnes",
+          "name": "Quartz Player 17",
           "shirt_number": 11,
           "position": "MID",
           "position_detail": "Left/Right Winger",
@@ -5508,7 +5508,7 @@
         },
         {
           "player_id": "NEW-14",
-          "name": "Sean Steur",
+          "name": "Quartz Player 18",
           "shirt_number": 14,
           "position": "MID",
           "position_detail": "Centre Central Midfielder",
@@ -5519,7 +5519,7 @@
         },
         {
           "player_id": "NEW-28",
-          "name": "Joe Willock",
+          "name": "Quartz Player 19",
           "shirt_number": 28,
           "position": "MID",
           "position_detail": "Centre Attacking Midfielder",
@@ -5530,7 +5530,7 @@
         },
         {
           "player_id": "NEW-41",
-          "name": "Jacob Ramsey",
+          "name": "Quartz Player 20",
           "shirt_number": 41,
           "position": "MID",
           "position_detail": "Left/Centre Winger",
@@ -5541,7 +5541,7 @@
         },
         {
           "player_id": "NEW-67",
-          "name": "Lewis Miley",
+          "name": "Quartz Player 21",
           "shirt_number": 67,
           "position": "MID",
           "position_detail": "Midfielder",
@@ -5552,7 +5552,7 @@
         },
         {
           "player_id": "NEW-09",
-          "name": "Yoane Wissa",
+          "name": "Quartz Player 22",
           "shirt_number": 9,
           "position": "FWD",
           "position_detail": "Centre Striker",
@@ -5563,7 +5563,7 @@
         },
         {
           "player_id": "NEW-10",
-          "name": "William Osula",
+          "name": "Quartz Player 23",
           "shirt_number": 10,
           "position": "FWD",
           "position_detail": "Centre Striker",
@@ -5574,7 +5574,7 @@
         },
         {
           "player_id": "NEW-17",
-          "name": "Bazoumana Toure",
+          "name": "Quartz Player 24",
           "shirt_number": 17,
           "position": "FWD",
           "position_detail": "Left Winger",
@@ -5585,7 +5585,7 @@
         },
         {
           "player_id": "NEW-19",
-          "name": "Anthony Elanga",
+          "name": "Quartz Player 25",
           "shirt_number": 19,
           "position": "FWD",
           "position_detail": "Left Winger",
@@ -5596,7 +5596,7 @@
         },
         {
           "player_id": "NEW-20",
-          "name": "Matias Fernandez-Pardo",
+          "name": "Quartz Player 26",
           "shirt_number": 20,
           "position": "FWD",
           "position_detail": "Striker",
@@ -5607,7 +5607,7 @@
         },
         {
           "player_id": "NEW-23",
-          "name": "Jacob Murphy",
+          "name": "Quartz Player 27",
           "shirt_number": 23,
           "position": "FWD",
           "position_detail": "Right Winger",
@@ -5620,9 +5620,9 @@
     },
     {
       "club_id": "NFO",
-      "name": "Nottingham Forest",
-      "short_name": "Forest",
-      "stadium": "City Ground",
+      "name": "Rivermist FC",
+      "short_name": "Rivermist",
+      "stadium": "Rivermist Park",
       "colors": {
         "primary": "#DD0000",
         "secondary": "#FFFFFF"
@@ -5636,7 +5636,7 @@
       "players": [
         {
           "player_id": "NFO-12",
-          "name": "John Victor",
+          "name": "Rivermist Player 01",
           "shirt_number": 12,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -5647,7 +5647,7 @@
         },
         {
           "player_id": "NFO-26",
-          "name": "Matz Sels",
+          "name": "Rivermist Player 02",
           "shirt_number": 26,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -5658,7 +5658,7 @@
         },
         {
           "player_id": "NFO-33",
-          "name": "Steven Benda",
+          "name": "Rivermist Player 03",
           "shirt_number": 33,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -5669,7 +5669,7 @@
         },
         {
           "player_id": "NFO-63",
-          "name": "Aaron Bott",
+          "name": "Rivermist Player 04",
           "shirt_number": 63,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -5680,7 +5680,7 @@
         },
         {
           "player_id": "NFO-02",
-          "name": "Ousmane Diomande",
+          "name": "Rivermist Player 05",
           "shirt_number": 2,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -5691,7 +5691,7 @@
         },
         {
           "player_id": "NFO-03",
-          "name": "Neco Williams",
+          "name": "Rivermist Player 06",
           "shirt_number": 3,
           "position": "DEF",
           "position_detail": "Left-Back",
@@ -5702,7 +5702,7 @@
         },
         {
           "player_id": "NFO-04",
-          "name": "Morato",
+          "name": "Rivermist Player 07",
           "shirt_number": 4,
           "position": "DEF",
           "position_detail": "Central Defender",
@@ -5713,7 +5713,7 @@
         },
         {
           "player_id": "NFO-05",
-          "name": "Murillo",
+          "name": "Rivermist Player 08",
           "shirt_number": 5,
           "position": "DEF",
           "position_detail": "Left/Centre Central Defender",
@@ -5724,7 +5724,7 @@
         },
         {
           "player_id": "NFO-23",
-          "name": "Jair Cunha",
+          "name": "Rivermist Player 09",
           "shirt_number": 23,
           "position": "DEF",
           "position_detail": "Central Defender",
@@ -5735,7 +5735,7 @@
         },
         {
           "player_id": "NFO-25",
-          "name": "Luca Netz",
+          "name": "Rivermist Player 10",
           "shirt_number": 25,
           "position": "DEF",
           "position_detail": "Left Full Back",
@@ -5746,7 +5746,7 @@
         },
         {
           "player_id": "NFO-27",
-          "name": "Daniel Munoz",
+          "name": "Rivermist Player 11",
           "shirt_number": 27,
           "position": "DEF",
           "position_detail": "Right Full Back",
@@ -5757,7 +5757,7 @@
         },
         {
           "player_id": "NFO-31",
-          "name": "Nikola Milenkovic",
+          "name": "Rivermist Player 12",
           "shirt_number": 31,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -5768,7 +5768,7 @@
         },
         {
           "player_id": "NFO-34",
-          "name": "Ola Aina",
+          "name": "Rivermist Player 13",
           "shirt_number": 34,
           "position": "DEF",
           "position_detail": "Right Full Back",
@@ -5779,7 +5779,7 @@
         },
         {
           "player_id": "NFO-37",
-          "name": "Nicolo Savona",
+          "name": "Rivermist Player 14",
           "shirt_number": 37,
           "position": "DEF",
           "position_detail": "Right Full Back",
@@ -5790,7 +5790,7 @@
         },
         {
           "player_id": "NFO-44",
-          "name": "Zach Abbott",
+          "name": "Rivermist Player 15",
           "shirt_number": 44,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -5801,7 +5801,7 @@
         },
         {
           "player_id": "NFO-06",
-          "name": "Ibrahim Sangare",
+          "name": "Rivermist Player 16",
           "shirt_number": 6,
           "position": "MID",
           "position_detail": "Defensive Midfielder",
@@ -5812,7 +5812,7 @@
         },
         {
           "player_id": "NFO-08",
-          "name": "Nicolas Dominguez",
+          "name": "Rivermist Player 17",
           "shirt_number": 8,
           "position": "MID",
           "position_detail": "Centre Central Midfielder",
@@ -5823,7 +5823,7 @@
         },
         {
           "player_id": "NFO-10",
-          "name": "Morgan Gibbs-White",
+          "name": "Rivermist Player 18",
           "shirt_number": 10,
           "position": "MID",
           "position_detail": "Centre Central Midfielder",
@@ -5834,7 +5834,7 @@
         },
         {
           "player_id": "NFO-21",
-          "name": "Xaver Schlager",
+          "name": "Rivermist Player 19",
           "shirt_number": 21,
           "position": "MID",
           "position_detail": "Central Midfielder",
@@ -5845,7 +5845,7 @@
         },
         {
           "player_id": "NFO-22",
-          "name": "Ryan Yates",
+          "name": "Rivermist Player 20",
           "shirt_number": 22,
           "position": "MID",
           "position_detail": "Left/Centre/Right Attacking Midfielder",
@@ -5856,7 +5856,7 @@
         },
         {
           "player_id": "NFO-24",
-          "name": "James McAtee",
+          "name": "Rivermist Player 21",
           "shirt_number": 24,
           "position": "MID",
           "position_detail": "Centre/Right Attacking Midfielder",
@@ -5867,7 +5867,7 @@
         },
         {
           "player_id": "NFO-07",
-          "name": "Callum Hudson-Odoi",
+          "name": "Rivermist Player 22",
           "shirt_number": 7,
           "position": "FWD",
           "position_detail": "Left Winger",
@@ -5878,7 +5878,7 @@
         },
         {
           "player_id": "NFO-09",
-          "name": "Chris Wood",
+          "name": "Rivermist Player 23",
           "shirt_number": 9,
           "position": "FWD",
           "position_detail": "Forward",
@@ -5889,7 +5889,7 @@
         },
         {
           "player_id": "NFO-11",
-          "name": "Igor Jesus",
+          "name": "Rivermist Player 24",
           "shirt_number": 11,
           "position": "FWD",
           "position_detail": "Striker",
@@ -5900,7 +5900,7 @@
         },
         {
           "player_id": "NFO-14",
-          "name": "Dan Ndoye",
+          "name": "Rivermist Player 25",
           "shirt_number": 14,
           "position": "FWD",
           "position_detail": "Left/Right Winger",
@@ -5911,7 +5911,7 @@
         },
         {
           "player_id": "NFO-15",
-          "name": "Arnaud Kalimuendo",
+          "name": "Rivermist Player 26",
           "shirt_number": 15,
           "position": "FWD",
           "position_detail": "Centre Striker",
@@ -5922,7 +5922,7 @@
         },
         {
           "player_id": "NFO-19",
-          "name": "Liam Delap",
+          "name": "Rivermist Player 27",
           "shirt_number": 19,
           "position": "FWD",
           "position_detail": "Centre Striker",
@@ -5935,9 +5935,9 @@
     },
     {
       "club_id": "SUN",
-      "name": "Sunderland",
-      "short_name": "Sunderland",
-      "stadium": "Stadium of Light",
+      "name": "Silverbrook FC",
+      "short_name": "Silverbrook FC",
+      "stadium": "Silverbrook Park",
       "colors": {
         "primary": "#EB172B",
         "secondary": "#FFFFFF"
@@ -5951,7 +5951,7 @@
       "players": [
         {
           "player_id": "SUN-21",
-          "name": "Simon Moore",
+          "name": "Silverbrook Player 01",
           "shirt_number": 21,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -5962,7 +5962,7 @@
         },
         {
           "player_id": "SUN-22",
-          "name": "Robin Roefs",
+          "name": "Silverbrook Player 02",
           "shirt_number": 22,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -5973,7 +5973,7 @@
         },
         {
           "player_id": "SUN-31",
-          "name": "Melker Ellborg",
+          "name": "Silverbrook Player 03",
           "shirt_number": 31,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -5984,7 +5984,7 @@
         },
         {
           "player_id": "SUN-04",
-          "name": "Kevin Danso",
+          "name": "Silverbrook Player 04",
           "shirt_number": 4,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -5995,7 +5995,7 @@
         },
         {
           "player_id": "SUN-05",
-          "name": "Dan Ballard",
+          "name": "Silverbrook Player 05",
           "shirt_number": 5,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -6006,7 +6006,7 @@
         },
         {
           "player_id": "SUN-06",
-          "name": "Dayann Methalie",
+          "name": "Silverbrook Player 06",
           "shirt_number": 6,
           "position": "DEF",
           "position_detail": "Left Full Back",
@@ -6017,7 +6017,7 @@
         },
         {
           "player_id": "SUN-12",
-          "name": "Thomas Meunier",
+          "name": "Silverbrook Player 07",
           "shirt_number": 12,
           "position": "DEF",
           "position_detail": "Right Full Back",
@@ -6028,7 +6028,7 @@
         },
         {
           "player_id": "SUN-15",
-          "name": "Omar Alderete",
+          "name": "Silverbrook Player 08",
           "shirt_number": 15,
           "position": "DEF",
           "position_detail": "Central Defender",
@@ -6039,7 +6039,7 @@
         },
         {
           "player_id": "SUN-17",
-          "name": "Reinildo Mandava",
+          "name": "Silverbrook Player 09",
           "shirt_number": 17,
           "position": "DEF",
           "position_detail": "Left Full Back",
@@ -6050,7 +6050,7 @@
         },
         {
           "player_id": "SUN-20",
-          "name": "Nordi Mukiele",
+          "name": "Silverbrook Player 10",
           "shirt_number": 20,
           "position": "DEF",
           "position_detail": "Right Full Back",
@@ -6061,7 +6061,7 @@
         },
         {
           "player_id": "SUN-32",
-          "name": "Trai Hume",
+          "name": "Silverbrook Player 11",
           "shirt_number": 32,
           "position": "DEF",
           "position_detail": "Right Full Back",
@@ -6072,7 +6072,7 @@
         },
         {
           "player_id": "SUN-08",
-          "name": "Alan Browne",
+          "name": "Silverbrook Player 12",
           "shirt_number": 8,
           "position": "MID",
           "position_detail": "Midfielder",
@@ -6083,7 +6083,7 @@
         },
         {
           "player_id": "SUN-11",
-          "name": "Chris Rigg",
+          "name": "Silverbrook Player 13",
           "shirt_number": 11,
           "position": "MID",
           "position_detail": "Centre Attacking Midfielder",
@@ -6094,7 +6094,7 @@
         },
         {
           "player_id": "SUN-13",
-          "name": "Luke O'Nien",
+          "name": "Silverbrook Player 14",
           "shirt_number": 13,
           "position": "MID",
           "position_detail": "Centre Central Midfielder",
@@ -6105,7 +6105,7 @@
         },
         {
           "player_id": "SUN-19",
-          "name": "Habib Diarra",
+          "name": "Silverbrook Player 15",
           "shirt_number": 19,
           "position": "MID",
           "position_detail": "Centre Central Midfielder",
@@ -6116,7 +6116,7 @@
         },
         {
           "player_id": "SUN-27",
-          "name": "Noah Sadiki",
+          "name": "Silverbrook Player 16",
           "shirt_number": 27,
           "position": "MID",
           "position_detail": "Central Midfielder",
@@ -6127,7 +6127,7 @@
         },
         {
           "player_id": "SUN-28",
-          "name": "Enzo Le Fee",
+          "name": "Silverbrook Player 17",
           "shirt_number": 28,
           "position": "MID",
           "position_detail": "Centre Central Midfielder",
@@ -6138,7 +6138,7 @@
         },
         {
           "player_id": "SUN-29",
-          "name": "Jules Ahoka",
+          "name": "Silverbrook Player 18",
           "shirt_number": 29,
           "position": "MID",
           "position_detail": "Centre Defensive Midfielder",
@@ -6149,7 +6149,7 @@
         },
         {
           "player_id": "SUN-34",
-          "name": "Granit Xhaka",
+          "name": "Silverbrook Player 19",
           "shirt_number": 34,
           "position": "MID",
           "position_detail": "Defensive Midfielder",
@@ -6160,7 +6160,7 @@
         },
         {
           "player_id": "SUN-07",
-          "name": "Chemsdine Talbi",
+          "name": "Silverbrook Player 20",
           "shirt_number": 7,
           "position": "FWD",
           "position_detail": "Left/Right Winger",
@@ -6171,7 +6171,7 @@
         },
         {
           "player_id": "SUN-09",
-          "name": "Brian Brobbey",
+          "name": "Silverbrook Player 21",
           "shirt_number": 9,
           "position": "FWD",
           "position_detail": "Striker",
@@ -6182,7 +6182,7 @@
         },
         {
           "player_id": "SUN-10",
-          "name": "Nilson Angulo",
+          "name": "Silverbrook Player 22",
           "shirt_number": 10,
           "position": "FWD",
           "position_detail": "Left Winger",
@@ -6193,7 +6193,7 @@
         },
         {
           "player_id": "SUN-14",
-          "name": "Romaine Mundle",
+          "name": "Silverbrook Player 23",
           "shirt_number": 14,
           "position": "FWD",
           "position_detail": "Left/Right Winger",
@@ -6204,7 +6204,7 @@
         },
         {
           "player_id": "SUN-18",
-          "name": "Wilson Isidor",
+          "name": "Silverbrook Player 24",
           "shirt_number": 18,
           "position": "FWD",
           "position_detail": "Centre Striker",
@@ -6215,7 +6215,7 @@
         },
         {
           "player_id": "SUN-37",
-          "name": "Jocelin Ta Bi",
+          "name": "Silverbrook Player 25",
           "shirt_number": 37,
           "position": "FWD",
           "position_detail": "Forward",
@@ -6226,7 +6226,7 @@
         },
         {
           "player_id": "SUN-39",
-          "name": "Malick Fofana",
+          "name": "Silverbrook Player 26",
           "shirt_number": 39,
           "position": "FWD",
           "position_detail": "Left Winger",
@@ -6237,7 +6237,7 @@
         },
         {
           "player_id": "SUN-57",
-          "name": "Tymur Tutierov",
+          "name": "Silverbrook Player 27",
           "shirt_number": 57,
           "position": "FWD",
           "position_detail": "Left Winger",
@@ -6250,9 +6250,9 @@
     },
     {
       "club_id": "TOT",
-      "name": "Tottenham Hotspur",
-      "short_name": "Tottenham",
-      "stadium": "Tottenham Hotspur Stadium",
+      "name": "Thornvale FC",
+      "short_name": "Thornvale",
+      "stadium": "Thornvale Park",
       "colors": {
         "primary": "#FFFFFF",
         "secondary": "#132257"
@@ -6266,7 +6266,7 @@
       "players": [
         {
           "player_id": "TOT-31",
-          "name": "Antonin Kinsky",
+          "name": "Thornvale Player 01",
           "shirt_number": 31,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -6277,7 +6277,7 @@
         },
         {
           "player_id": "TOT-39",
-          "name": "Martin Dubravka",
+          "name": "Thornvale Player 02",
           "shirt_number": 39,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -6288,7 +6288,7 @@
         },
         {
           "player_id": "TOT-40",
-          "name": "Brandon Austin",
+          "name": "Thornvale Player 03",
           "shirt_number": 40,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -6299,7 +6299,7 @@
         },
         {
           "player_id": "TOT-51",
-          "name": "Jacob Knightbridge",
+          "name": "Thornvale Player 04",
           "shirt_number": 51,
           "position": "GK",
           "position_detail": "Goalkeeper",
@@ -6310,7 +6310,7 @@
         },
         {
           "player_id": "TOT-03",
-          "name": "Andy Robertson",
+          "name": "Thornvale Player 05",
           "shirt_number": 3,
           "position": "DEF",
           "position_detail": "Left-Back",
@@ -6321,7 +6321,7 @@
         },
         {
           "player_id": "TOT-04",
-          "name": "Tosin Adarabioyo",
+          "name": "Thornvale Player 06",
           "shirt_number": 4,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -6332,7 +6332,7 @@
         },
         {
           "player_id": "TOT-05",
-          "name": "Marcos Senesi",
+          "name": "Thornvale Player 07",
           "shirt_number": 5,
           "position": "DEF",
           "position_detail": "Centre Central Defender",
@@ -6343,7 +6343,7 @@
         },
         {
           "player_id": "TOT-06",
-          "name": "Jan Paul van Hecke",
+          "name": "Thornvale Player 08",
           "shirt_number": 6,
           "position": "DEF",
           "position_detail": "Central Defender",
@@ -6354,7 +6354,7 @@
         },
         {
           "player_id": "TOT-13",
-          "name": "Destiny Udogie",
+          "name": "Thornvale Player 09",
           "shirt_number": 13,
           "position": "DEF",
           "position_detail": "Right Full Back",
@@ -6365,7 +6365,7 @@
         },
         {
           "player_id": "TOT-23",
-          "name": "Pedro Porro",
+          "name": "Thornvale Player 10",
           "shirt_number": 23,
           "position": "DEF",
           "position_detail": "Right Full Back",
@@ -6376,7 +6376,7 @@
         },
         {
           "player_id": "TOT-33",
-          "name": "Ben Davies",
+          "name": "Thornvale Player 11",
           "shirt_number": 33,
           "position": "DEF",
           "position_detail": "Centre-Back",
@@ -6387,7 +6387,7 @@
         },
         {
           "player_id": "TOT-37",
-          "name": "Micky van de Ven",
+          "name": "Thornvale Player 12",
           "shirt_number": 37,
           "position": "DEF",
           "position_detail": "Central Defender",
@@ -6398,7 +6398,7 @@
         },
         {
           "player_id": "TOT-07",
-          "name": "Xavi Simons",
+          "name": "Thornvale Player 13",
           "shirt_number": 7,
           "position": "MID",
           "position_detail": "Attacking Midfielder",
@@ -6409,7 +6409,7 @@
         },
         {
           "player_id": "TOT-08",
-          "name": "Conor Gallagher",
+          "name": "Thornvale Player 14",
           "shirt_number": 8,
           "position": "MID",
           "position_detail": "Central Midfielder",
@@ -6420,7 +6420,7 @@
         },
         {
           "player_id": "TOT-10",
-          "name": "James Maddison",
+          "name": "Thornvale Player 15",
           "shirt_number": 10,
           "position": "MID",
           "position_detail": "Left/Centre/Right Attacking Midfielder",
@@ -6431,7 +6431,7 @@
         },
         {
           "player_id": "TOT-14",
-          "name": "Archie Gray",
+          "name": "Thornvale Player 16",
           "shirt_number": 14,
           "position": "MID",
           "position_detail": "Central Midfielder",
@@ -6442,7 +6442,7 @@
         },
         {
           "player_id": "TOT-15",
-          "name": "Lucas Bergvall",
+          "name": "Thornvale Player 17",
           "shirt_number": 15,
           "position": "MID",
           "position_detail": "Central Midfielder",
@@ -6453,7 +6453,7 @@
         },
         {
           "player_id": "TOT-16",
-          "name": "Sandro Tonali",
+          "name": "Thornvale Player 18",
           "shirt_number": 16,
           "position": "MID",
           "position_detail": "Centre Defensive Midfielder",
@@ -6464,7 +6464,7 @@
         },
         {
           "player_id": "TOT-18",
-          "name": "Mateus Fernandes",
+          "name": "Thornvale Player 19",
           "shirt_number": 18,
           "position": "MID",
           "position_detail": "Central Midfielder",
@@ -6475,7 +6475,7 @@
         },
         {
           "player_id": "TOT-20",
-          "name": "Mohammed Kudus",
+          "name": "Thornvale Player 20",
           "shirt_number": 20,
           "position": "MID",
           "position_detail": "Right Winger",
@@ -6486,7 +6486,7 @@
         },
         {
           "player_id": "TOT-21",
-          "name": "Dejan Kulusevski",
+          "name": "Thornvale Player 21",
           "shirt_number": 21,
           "position": "MID",
           "position_detail": "Right Winger",
@@ -6497,7 +6497,7 @@
         },
         {
           "player_id": "TOT-27",
-          "name": "Mykhailo Mudryk",
+          "name": "Thornvale Player 22",
           "shirt_number": 27,
           "position": "MID",
           "position_detail": "Left Winger",
@@ -6508,7 +6508,7 @@
         },
         {
           "player_id": "TOT-30",
-          "name": "Rodrigo Bentancur",
+          "name": "Thornvale Player 23",
           "shirt_number": 30,
           "position": "MID",
           "position_detail": "Centre Central Midfielder",
@@ -6519,7 +6519,7 @@
         },
         {
           "player_id": "TOT-68",
-          "name": "Luca Williams-Barnett",
+          "name": "Thornvale Player 24",
           "shirt_number": 68,
           "position": "MID",
           "position_detail": "Right Attacking Midfielder",
@@ -6530,7 +6530,7 @@
         },
         {
           "player_id": "TOT-11",
-          "name": "Mathys Tel",
+          "name": "Thornvale Player 25",
           "shirt_number": 11,
           "position": "FWD",
           "position_detail": "Left Winger",
@@ -6541,7 +6541,7 @@
         },
         {
           "player_id": "TOT-17",
-          "name": "Savio",
+          "name": "Thornvale Player 26",
           "shirt_number": 17,
           "position": "FWD",
           "position_detail": "Right Winger",
@@ -6552,7 +6552,7 @@
         },
         {
           "player_id": "TOT-19",
-          "name": "Dominic Solanke",
+          "name": "Thornvale Player 27",
           "shirt_number": 19,
           "position": "FWD",
           "position_detail": "Striker",
@@ -6563,7 +6563,7 @@
         },
         {
           "player_id": "TOT-22",
-          "name": "Omar Marmoush",
+          "name": "Thornvale Player 28",
           "shirt_number": 22,
           "position": "FWD",
           "position_detail": "Striker",
@@ -6574,7 +6574,7 @@
         },
         {
           "player_id": "TOT-28",
-          "name": "Wilson Odobert",
+          "name": "Thornvale Player 29",
           "shirt_number": 28,
           "position": "FWD",
           "position_detail": "Left Winger",
@@ -6585,7 +6585,7 @@
         },
         {
           "player_id": "TOT-47",
-          "name": "Mikey Moore",
+          "name": "Thornvale Player 30",
           "shirt_number": 47,
           "position": "FWD",
           "position_detail": "Left Winger",

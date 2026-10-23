@@ -86,19 +86,19 @@
   "goals": [],
   "competition": {
     "id": "PL-SYN-2026",
-    "name": "Premier League (synthetic)",
+    "name": "NextPlay League (synthetic)",
     "season": "2026/27",
     "synthetic": true,
     "matchweek": 2,
     "kickoff_local": "2026-10-31T15:00:00",
     "time_zone": "Europe/London",
-    "venue": "City Ground"
+    "venue": "Rivermist Park"
   },
   "home_club": {
     "club_id": "NFO",
-    "name": "Nottingham Forest",
-    "short_name": "Forest",
-    "stadium": "City Ground",
+    "name": "Rivermist FC",
+    "short_name": "Rivermist",
+    "stadium": "Rivermist Park",
     "colors": {
       "primary": "#DD0000",
       "secondary": "#FFFFFF"
@@ -107,9 +107,9 @@
   },
   "away_club": {
     "club_id": "TOT",
-    "name": "Tottenham Hotspur",
-    "short_name": "Tottenham",
-    "stadium": "Tottenham Hotspur Stadium",
+    "name": "Thornvale FC",
+    "short_name": "Thornvale",
+    "stadium": "Thornvale Park",
     "colors": {
       "primary": "#FFFFFF",
       "secondary": "#132257"

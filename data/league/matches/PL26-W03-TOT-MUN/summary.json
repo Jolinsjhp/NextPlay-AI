@@ -90,9 +90,9 @@
       "period_ms": 753600,
       "team_id": "AWAY",
       "club_id": "MUN",
-      "club_name": "Manchester United",
+      "club_name": "Pinecrest FC",
       "player_id": "A11",
-      "player_name": "Bryan Mbeumo",
+      "player_name": "Pinecrest Player 28",
       "shirt_number": 19,
       "score": [
         0,
@@ -105,9 +105,9 @@
       "period_ms": 1336800,
       "team_id": "HOME",
       "club_id": "TOT",
-      "club_name": "Tottenham Hotspur",
+      "club_name": "Thornvale FC",
       "player_id": "H11",
-      "player_name": "Savio",
+      "player_name": "Thornvale Player 26",
       "shirt_number": 17,
       "score": [
         1,
@@ -120,9 +120,9 @@
       "period_ms": 2991600,
       "team_id": "HOME",
       "club_id": "TOT",
-      "club_name": "Tottenham Hotspur",
+      "club_name": "Thornvale FC",
       "player_id": "H11",
-      "player_name": "Savio",
+      "player_name": "Thornvale Player 26",
       "shirt_number": 17,
       "score": [
         2,
@@ -135,9 +135,9 @@
       "period_ms": 2135000,
       "team_id": "AWAY",
       "club_id": "MUN",
-      "club_name": "Manchester United",
+      "club_name": "Pinecrest FC",
       "player_id": "A13",
-      "player_name": "Joshua Zirkzee",
+      "player_name": "Pinecrest Player 26",
       "shirt_number": 11,
       "score": [
         2,
@@ -150,9 +150,9 @@
       "period_ms": 2560600,
       "team_id": "AWAY",
       "club_id": "MUN",
-      "club_name": "Manchester United",
+      "club_name": "Pinecrest FC",
       "player_id": "A10",
-      "player_name": "Matheus Cunha",
+      "player_name": "Pinecrest Player 25",
       "shirt_number": 10,
       "score": [
         2,
@@ -165,9 +165,9 @@
       "period_ms": 2864800,
       "team_id": "HOME",
       "club_id": "TOT",
-      "club_name": "Tottenham Hotspur",
+      "club_name": "Thornvale FC",
       "player_id": "H10",
-      "player_name": "Dominic Solanke",
+      "player_name": "Thornvale Player 27",
       "shirt_number": 19,
       "score": [
         3,
@@ -180,9 +180,9 @@
       "period_ms": 2995400,
       "team_id": "HOME",
       "club_id": "TOT",
-      "club_name": "Tottenham Hotspur",
+      "club_name": "Thornvale FC",
       "player_id": "H09",
-      "player_name": "Mathys Tel",
+      "player_name": "Thornvale Player 25",
       "shirt_number": 11,
       "score": [
         4,
@@ -192,19 +192,19 @@
   ],
   "competition": {
     "id": "PL-SYN-2026",
-    "name": "Premier League (synthetic)",
+    "name": "NextPlay League (synthetic)",
     "season": "2026/27",
     "synthetic": true,
     "matchweek": 3,
     "kickoff_local": "2026-11-07T15:00:00",
     "time_zone": "Europe/London",
-    "venue": "Tottenham Hotspur Stadium"
+    "venue": "Thornvale Park"
   },
   "home_club": {
     "club_id": "TOT",
-    "name": "Tottenham Hotspur",
-    "short_name": "Tottenham",
-    "stadium": "Tottenham Hotspur Stadium",
+    "name": "Thornvale FC",
+    "short_name": "Thornvale",
+    "stadium": "Thornvale Park",
     "colors": {
       "primary": "#FFFFFF",
       "secondary": "#132257"
@@ -213,9 +213,9 @@
   },
   "away_club": {
     "club_id": "MUN",
-    "name": "Manchester United",
-    "short_name": "Man United",
-    "stadium": "Old Trafford",
+    "name": "Pinecrest FC",
+    "short_name": "Pinecrest",
+    "stadium": "Pinecrest Park",
     "colors": {
       "primary": "#DA291C",
       "secondary": "#FBE122"

@@ -90,9 +90,9 @@
       "period_ms": 2557800,
       "team_id": "HOME",
       "club_id": "CRY",
-      "club_name": "Crystal Palace",
+      "club_name": "Highridge FC",
       "player_id": "H11",
-      "player_name": "Ismaila Sarr",
+      "player_name": "Highridge Player 22",
       "shirt_number": 7,
       "score": [
         1,
@@ -105,9 +105,9 @@
       "period_ms": 2825200,
       "team_id": "AWAY",
       "club_id": "COV",
-      "club_name": "Coventry City",
+      "club_name": "Glenvale FC",
       "player_id": "A10",
-      "player_name": "Ellis Simms",
+      "player_name": "Glenvale Player 22",
       "shirt_number": 9,
       "score": [
         1,
@@ -120,9 +120,9 @@
       "period_ms": 1262600,
       "team_id": "HOME",
       "club_id": "CRY",
-      "club_name": "Crystal Palace",
+      "club_name": "Highridge FC",
       "player_id": "H11",
-      "player_name": "Ismaila Sarr",
+      "player_name": "Highridge Player 22",
       "shirt_number": 7,
       "score": [
         2,
@@ -135,9 +135,9 @@
       "period_ms": 2829800,
       "team_id": "AWAY",
       "club_id": "COV",
-      "club_name": "Coventry City",
+      "club_name": "Glenvale FC",
       "player_id": "A13",
-      "player_name": "Haji Wright",
+      "player_name": "Glenvale Player 24",
       "shirt_number": 11,
       "score": [
         2,
@@ -147,19 +147,19 @@
   ],
   "competition": {
     "id": "PL-SYN-2026",
-    "name": "Premier League (synthetic)",
+    "name": "NextPlay League (synthetic)",
     "season": "2026/27",
     "synthetic": true,
     "matchweek": 4,
     "kickoff_local": "2026-11-15T19:00:00",
     "time_zone": "Europe/London",
-    "venue": "Selhurst Park"
+    "venue": "Highridge Park"
   },
   "home_club": {
     "club_id": "CRY",
-    "name": "Crystal Palace",
-    "short_name": "Crystal Palace",
-    "stadium": "Selhurst Park",
+    "name": "Highridge FC",
+    "short_name": "Highridge FC",
+    "stadium": "Highridge Park",
     "colors": {
       "primary": "#1B458F",
       "secondary": "#C4122E"
@@ -168,9 +168,9 @@
   },
   "away_club": {
     "club_id": "COV",
-    "name": "Coventry City",
-    "short_name": "Coventry",
-    "stadium": "CBS Arena",
+    "name": "Glenvale FC",
+    "short_name": "Glenvale",
+    "stadium": "Glenvale Park",
     "colors": {
       "primary": "#6CB4E4",
       "secondary": "#FFFFFF"

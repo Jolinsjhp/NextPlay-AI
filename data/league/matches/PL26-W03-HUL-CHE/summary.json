@@ -90,9 +90,9 @@
       "period_ms": 1625000,
       "team_id": "AWAY",
       "club_id": "CHE",
-      "club_name": "Chelsea",
+      "club_name": "Fairhaven FC",
       "player_id": "A10",
-      "player_name": "Joao Pedro",
+      "player_name": "Fairhaven Player 25",
       "shirt_number": 9,
       "score": [
         0,
@@ -105,9 +105,9 @@
       "period_ms": 2121800,
       "team_id": "AWAY",
       "club_id": "CHE",
-      "club_name": "Chelsea",
+      "club_name": "Fairhaven FC",
       "player_id": "A10",
-      "player_name": "Joao Pedro",
+      "player_name": "Fairhaven Player 25",
       "shirt_number": 9,
       "score": [
         0,
@@ -120,9 +120,9 @@
       "period_ms": 542800,
       "team_id": "AWAY",
       "club_id": "CHE",
-      "club_name": "Chelsea",
+      "club_name": "Fairhaven FC",
       "player_id": "A10",
-      "player_name": "Joao Pedro",
+      "player_name": "Fairhaven Player 25",
       "shirt_number": 9,
       "score": [
         0,
@@ -135,9 +135,9 @@
       "period_ms": 799800,
       "team_id": "AWAY",
       "club_id": "CHE",
-      "club_name": "Chelsea",
+      "club_name": "Fairhaven FC",
       "player_id": "A09",
-      "player_name": "Pedro Neto",
+      "player_name": "Fairhaven Player 24",
       "shirt_number": 7,
       "score": [
         0,
@@ -147,19 +147,19 @@
   ],
   "competition": {
     "id": "PL-SYN-2026",
-    "name": "Premier League (synthetic)",
+    "name": "NextPlay League (synthetic)",
     "season": "2026/27",
     "synthetic": true,
     "matchweek": 3,
     "kickoff_local": "2026-11-08T16:30:00",
     "time_zone": "Europe/London",
-    "venue": "MKM Stadium"
+    "venue": "Kingswell Park"
   },
   "home_club": {
     "club_id": "HUL",
-    "name": "Hull City",
-    "short_name": "Hull City",
-    "stadium": "MKM Stadium",
+    "name": "Kingswell FC",
+    "short_name": "Kingswell FC",
+    "stadium": "Kingswell Park",
     "colors": {
       "primary": "#F5A12D",
       "secondary": "#000000"
@@ -168,9 +168,9 @@
   },
   "away_club": {
     "club_id": "CHE",
-    "name": "Chelsea",
-    "short_name": "Chelsea",
-    "stadium": "Stamford Bridge",
+    "name": "Fairhaven FC",
+    "short_name": "Fairhaven FC",
+    "stadium": "Fairhaven Park",
     "colors": {
       "primary": "#034694",
       "secondary": "#FFFFFF"

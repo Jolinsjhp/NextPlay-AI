@@ -90,9 +90,9 @@
       "period_ms": 542200,
       "team_id": "AWAY",
       "club_id": "SUN",
-      "club_name": "Sunderland",
+      "club_name": "Silverbrook FC",
       "player_id": "A10",
-      "player_name": "Brian Brobbey",
+      "player_name": "Silverbrook Player 21",
       "shirt_number": 9,
       "score": [
         0,
@@ -105,9 +105,9 @@
       "period_ms": 1318800,
       "team_id": "AWAY",
       "club_id": "SUN",
-      "club_name": "Sunderland",
+      "club_name": "Silverbrook FC",
       "player_id": "A13",
-      "player_name": "Nilson Angulo",
+      "player_name": "Silverbrook Player 22",
       "shirt_number": 10,
       "score": [
         0,
@@ -117,19 +117,19 @@
   ],
   "competition": {
     "id": "PL-SYN-2026",
-    "name": "Premier League (synthetic)",
+    "name": "NextPlay League (synthetic)",
     "season": "2026/27",
     "synthetic": true,
     "matchweek": 3,
     "kickoff_local": "2026-11-07T15:00:00",
     "time_zone": "Europe/London",
-    "venue": "St James' Park"
+    "venue": "Quartz Park"
   },
   "home_club": {
     "club_id": "NEW",
-    "name": "Newcastle United",
-    "short_name": "Newcastle",
-    "stadium": "St James' Park",
+    "name": "Quartz FC",
+    "short_name": "Quartz",
+    "stadium": "Quartz Park",
     "colors": {
       "primary": "#241F20",
       "secondary": "#FFFFFF"
@@ -138,9 +138,9 @@
   },
   "away_club": {
     "club_id": "SUN",
-    "name": "Sunderland",
-    "short_name": "Sunderland",
-    "stadium": "Stadium of Light",
+    "name": "Silverbrook FC",
+    "short_name": "Silverbrook FC",
+    "stadium": "Silverbrook Park",
     "colors": {
       "primary": "#EB172B",
       "secondary": "#FFFFFF"

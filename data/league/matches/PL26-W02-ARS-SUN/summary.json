@@ -90,9 +90,9 @@
       "period_ms": 1233200,
       "team_id": "HOME",
       "club_id": "ARS",
-      "club_name": "Arsenal",
+      "club_name": "Aster FC",
       "player_id": "H09",
-      "player_name": "Bukayo Saka",
+      "player_name": "Aster Player 20",
       "shirt_number": 7,
       "score": [
         1,
@@ -105,9 +105,9 @@
       "period_ms": 1479000,
       "team_id": "HOME",
       "club_id": "ARS",
-      "club_name": "Arsenal",
+      "club_name": "Aster FC",
       "player_id": "H11",
-      "player_name": "Noni Madueke",
+      "player_name": "Aster Player 23",
       "shirt_number": 20,
       "score": [
         2,
@@ -120,9 +120,9 @@
       "period_ms": 1575000,
       "team_id": "AWAY",
       "club_id": "SUN",
-      "club_name": "Sunderland",
+      "club_name": "Silverbrook FC",
       "player_id": "A10",
-      "player_name": "Brian Brobbey",
+      "player_name": "Silverbrook Player 21",
       "shirt_number": 9,
       "score": [
         2,
@@ -135,9 +135,9 @@
       "period_ms": 2005600,
       "team_id": "HOME",
       "club_id": "ARS",
-      "club_name": "Arsenal",
+      "club_name": "Aster FC",
       "player_id": "H10",
-      "player_name": "Viktor Gyokeres",
+      "player_name": "Aster Player 21",
       "shirt_number": 14,
       "score": [
         3,
@@ -150,9 +150,9 @@
       "period_ms": 645000,
       "team_id": "HOME",
       "club_id": "ARS",
-      "club_name": "Arsenal",
+      "club_name": "Aster FC",
       "player_id": "H11",
-      "player_name": "Noni Madueke",
+      "player_name": "Aster Player 23",
       "shirt_number": 20,
       "score": [
         4,
@@ -165,9 +165,9 @@
       "period_ms": 1865400,
       "team_id": "HOME",
       "club_id": "ARS",
-      "club_name": "Arsenal",
+      "club_name": "Aster FC",
       "player_id": "H11",
-      "player_name": "Noni Madueke",
+      "player_name": "Aster Player 23",
       "shirt_number": 20,
       "score": [
         5,
@@ -177,19 +177,19 @@
   ],
   "competition": {
     "id": "PL-SYN-2026",
-    "name": "Premier League (synthetic)",
+    "name": "NextPlay League (synthetic)",
     "season": "2026/27",
     "synthetic": true,
     "matchweek": 2,
     "kickoff_local": "2026-10-31T12:30:00",
     "time_zone": "Europe/London",
-    "venue": "Emirates Stadium"
+    "venue": "Aster Park"
   },
   "home_club": {
     "club_id": "ARS",
-    "name": "Arsenal",
-    "short_name": "Arsenal",
-    "stadium": "Emirates Stadium",
+    "name": "Aster FC",
+    "short_name": "Aster FC",
+    "stadium": "Aster Park",
     "colors": {
       "primary": "#EF0107",
       "secondary": "#FFFFFF"
@@ -198,9 +198,9 @@
   },
   "away_club": {
     "club_id": "SUN",
-    "name": "Sunderland",
-    "short_name": "Sunderland",
-    "stadium": "Stadium of Light",
+    "name": "Silverbrook FC",
+    "short_name": "Silverbrook FC",
+    "stadium": "Silverbrook Park",
     "colors": {
       "primary": "#EB172B",
       "secondary": "#FFFFFF"

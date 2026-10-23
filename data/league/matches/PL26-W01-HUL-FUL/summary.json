@@ -90,9 +90,9 @@
       "period_ms": 2908400,
       "team_id": "HOME",
       "club_id": "HUL",
-      "club_name": "Hull City",
+      "club_name": "Kingswell FC",
       "player_id": "H10",
-      "player_name": "Oliver McBurnie",
+      "player_name": "Kingswell Player 24",
       "shirt_number": 9,
       "score": [
         1,
@@ -102,19 +102,19 @@
   ],
   "competition": {
     "id": "PL-SYN-2026",
-    "name": "Premier League (synthetic)",
+    "name": "NextPlay League (synthetic)",
     "season": "2026/27",
     "synthetic": true,
     "matchweek": 1,
     "kickoff_local": "2026-10-25T19:00:00",
     "time_zone": "Europe/London",
-    "venue": "MKM Stadium"
+    "venue": "Kingswell Park"
   },
   "home_club": {
     "club_id": "HUL",
-    "name": "Hull City",
-    "short_name": "Hull City",
-    "stadium": "MKM Stadium",
+    "name": "Kingswell FC",
+    "short_name": "Kingswell FC",
+    "stadium": "Kingswell Park",
     "colors": {
       "primary": "#F5A12D",
       "secondary": "#000000"
@@ -123,9 +123,9 @@
   },
   "away_club": {
     "club_id": "FUL",
-    "name": "Fulham",
-    "short_name": "Fulham",
-    "stadium": "Craven Cottage",
+    "name": "Juniper FC",
+    "short_name": "Juniper FC",
+    "stadium": "Juniper Park",
     "colors": {
       "primary": "#FFFFFF",
       "secondary": "#000000"

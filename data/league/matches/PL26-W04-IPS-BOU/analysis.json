@@ -4,7 +4,7 @@
   "status": "complete",
   "language": "en",
   "source": {
-    "fingerprint": "4d39031aaef37ef820d1c0fc78fde3a96ea0a074344a3c242e742d415614c535",
+    "fingerprint": "33d6c835f7cba3fde15f23b9a7dcdff576def9fa7c2f200e97a938c216aaa763",
     "event_count": 3577,
     "match_end_event_id": "e003577",
     "completed_at_ms": 6000000,
@@ -18,12 +18,12 @@
     "mode": "local",
     "model": null
   },
-  "headline": "Ipswich Town 1–2 AFC Bournemouth",
-  "summary": "AFC Bournemouth won 2–1. There were 21 shots across the match. Evanilson earns Player of the Match on the published impact scoring.",
+  "headline": "Larkspur FC 1–2 Cedar FC",
+  "summary": "Cedar FC won 2–1. There were 21 shots across the match. Cedar Player 22 earns Player of the Match on the published impact scoring.",
   "periods": [
     {
       "title": "First half",
-      "text": "Ipswich Town had 6 shots and AFC Bournemouth had 6. 27:11 — Jaden Philogene opened the scoring for Ipswich Town (1–0). The period ended at 1–0.",
+      "text": "Larkspur FC had 6 shots and Cedar FC had 6. 27:11 — Larkspur Player 23 opened the scoring for Larkspur FC (1–0). The period ended at 1–0.",
       "shots": [
         6,
         6
@@ -49,7 +49,7 @@
     },
     {
       "title": "Second half",
-      "text": "Ipswich Town had 4 shots and AFC Bournemouth had 5. 63:57 — Evanilson equalised for AFC Bournemouth (1–1). 81:02 — AFC Bournemouth lost Julian Araujo to a red card. 90+0:58 — Amine Adli took the lead for AFC Bournemouth (1–2). The period ended at 1–2.",
+      "text": "Larkspur FC had 4 shots and Cedar FC had 5. 63:57 — Cedar Player 22 equalised for Cedar FC (1–1). 81:02 — Cedar FC lost Cedar Player 04 to a red card. 90+0:58 — Cedar Player 25 took the lead for Cedar FC (1–2). The period ended at 1–2.",
       "shots": [
         4,
         5
@@ -73,8 +73,8 @@
     }
   ],
   "insights": [
-    "Ipswich Town: 10 shots, 6 on target, 377 of 424 passes completed, 53.5% possession.",
-    "AFC Bournemouth: 11 shots, 5 on target, 310 of 354 passes completed, 46.5% possession."
+    "Larkspur FC: 10 shots, 6 on target, 377 of 424 passes completed, 53.5% possession.",
+    "Cedar FC: 11 shots, 5 on target, 310 of 354 passes completed, 46.5% possession."
   ],
   "key_moments": [
     {
@@ -82,63 +82,63 @@
       "period": 1,
       "time": "27:11",
       "type": "shot",
-      "text": "Jaden Philogene opened the scoring for Ipswich Town (1–0)."
+      "text": "Larkspur Player 23 opened the scoring for Larkspur FC (1–0)."
     },
     {
       "event_id": "e002286",
       "period": 2,
       "time": "58:40",
       "type": "substitution",
-      "text": "Jack Taylor replaced Julio Enciso for Ipswich Town."
+      "text": "Larkspur Player 14 replaced Larkspur Player 12 for Larkspur FC."
     },
     {
       "event_id": "e002435",
       "period": 2,
       "time": "62:40",
       "type": "substitution",
-      "text": "Amine Adli replaced Justin Kluivert for AFC Bournemouth."
+      "text": "Cedar Player 25 replaced Cedar Player 24 for Cedar FC."
     },
     {
       "event_id": "e002483",
       "period": 2,
       "time": "63:57",
       "type": "shot",
-      "text": "Evanilson equalised for AFC Bournemouth (1–1)."
+      "text": "Cedar Player 22 equalised for Cedar FC (1–1)."
     },
     {
       "event_id": "e002720",
       "period": 2,
       "time": "70:43",
       "type": "substitution",
-      "text": "Jacob Greaves replaced Leif Davis for Ipswich Town."
+      "text": "Larkspur Player 09 replaced Larkspur Player 06 for Larkspur FC."
     },
     {
       "event_id": "e002867",
       "period": 2,
       "time": "75:01",
       "type": "substitution",
-      "text": "Alex Scott replaced Lewis Cook for AFC Bournemouth."
+      "text": "Cedar Player 15 replaced Cedar Player 13 for Cedar FC."
     },
     {
       "event_id": "e003077",
       "period": 2,
       "time": "81:02",
       "type": "red_card",
-      "text": "AFC Bournemouth lost Julian Araujo to a red card."
+      "text": "Cedar FC lost Cedar Player 04 to a red card."
     },
     {
       "event_id": "e003440",
       "period": 2,
       "time": "90+0:58",
       "type": "shot",
-      "text": "Amine Adli took the lead for AFC Bournemouth (1–2)."
+      "text": "Cedar Player 25 took the lead for Cedar FC (1–2)."
     }
   ],
   "player_of_the_match": {
     "player_id": "A10",
     "team_id": "AWAY",
     "jersey_number": 9,
-    "name": "Evanilson",
+    "name": "Cedar Player 22",
     "position": "ST",
     "position_detail": "Centre Striker",
     "nationality": "Brazil",
@@ -238,7 +238,7 @@
     ],
     "impact_points": 6.92,
     "reasons": [
-      "Evanilson recorded 1 goal, 4 shots on target, 0 saves and 5 interceptions.",
+      "Cedar Player 22 recorded 1 goal, 4 shots on target, 0 saves and 5 interceptions.",
       "Completed 62 of 67 passes in 100 minutes; received 0 yellow cards and 0 red cards.",
       "Top impact score: 6.92 points."
     ]
@@ -248,7 +248,7 @@
       "player_id": "A10",
       "team_id": "AWAY",
       "jersey_number": 9,
-      "name": "Evanilson",
+      "name": "Cedar Player 22",
       "position": "ST",
       "position_detail": "Centre Striker",
       "nationality": "Brazil",
@@ -352,7 +352,7 @@
       "player_id": "H09",
       "team_id": "HOME",
       "jersey_number": 11,
-      "name": "Jaden Philogene",
+      "name": "Larkspur Player 23",
       "position": "LW",
       "position_detail": "Left Winger",
       "nationality": "England",
@@ -451,7 +451,7 @@
       "player_id": "A13",
       "team_id": "AWAY",
       "jersey_number": 21,
-      "name": "Amine Adli",
+      "name": "Cedar Player 25",
       "position": "RW",
       "position_detail": "Left Winger",
       "nationality": "Morocco",
@@ -500,7 +500,7 @@
       "player_id": "A01",
       "team_id": "AWAY",
       "jersey_number": 1,
-      "name": "Djordje Petrovic",
+      "name": "Cedar Player 01",
       "position": "GK",
       "position_detail": "Goalkeeper",
       "nationality": "Serbia",
@@ -537,7 +537,7 @@
       "player_id": "H07",
       "team_id": "HOME",
       "jersey_number": 5,
-      "name": "Azor Matusiwa",
+      "name": "Larkspur Player 11",
       "position": "DM",
       "position_detail": "Centre Defensive Midfielder",
       "nationality": "Netherlands",
@@ -635,7 +635,7 @@
       "player_id": "H10",
       "team_id": "HOME",
       "jersey_number": 9,
-      "name": "Zian Flemming",
+      "name": "Larkspur Player 22",
       "position": "ST",
       "position_detail": "Centre Striker",
       "nationality": "Netherlands",
@@ -759,7 +759,7 @@
       "player_id": "A07",
       "team_id": "AWAY",
       "jersey_number": 12,
-      "name": "Tyler Adams",
+      "name": "Cedar Player 17",
       "position": "DM",
       "position_detail": "Defensive Midfielder",
       "nationality": "United States",
@@ -853,7 +853,7 @@
       "player_id": "H01",
       "team_id": "HOME",
       "jersey_number": 1,
-      "name": "Alex Palmer",
+      "name": "Larkspur Player 01",
       "position": "GK",
       "position_detail": "Goalkeeper",
       "nationality": null,
@@ -888,7 +888,7 @@
       "player_id": "H08",
       "team_id": "HOME",
       "jersey_number": 12,
-      "name": "Florentino",
+      "name": "Larkspur Player 13",
       "position": "RCM",
       "position_detail": "Centre Defensive Midfielder",
       "nationality": "Portugal",
@@ -960,7 +960,7 @@
       "player_id": "A11",
       "team_id": "AWAY",
       "jersey_number": 19,
-      "name": "Justin Kluivert",
+      "name": "Cedar Player 24",
       "position": "RW",
       "position_detail": "Left/Right Winger",
       "nationality": "Netherlands",
@@ -1025,7 +1025,7 @@
       "player_id": "A09",
       "team_id": "AWAY",
       "jersey_number": 11,
-      "name": "Ben Gannon-Doak",
+      "name": "Cedar Player 23",
       "position": "LW",
       "position_detail": "Left/Right Winger",
       "nationality": "Scotland",
@@ -1101,7 +1101,7 @@
       "player_id": "A08",
       "team_id": "AWAY",
       "jersey_number": 7,
-      "name": "David Brooks",
+      "name": "Cedar Player 14",
       "position": "RCM",
       "position_detail": "Left/Centre/Right Attacking Midfielder",
       "nationality": "Wales",
@@ -1161,7 +1161,7 @@
       "player_id": "H11",
       "team_id": "HOME",
       "jersey_number": 7,
-      "name": "Abdul Fatawu",
+      "name": "Larkspur Player 20",
       "position": "RW",
       "position_detail": "Right Winger",
       "nationality": "Ghana",
@@ -1237,7 +1237,7 @@
       "player_id": "A06",
       "team_id": "AWAY",
       "jersey_number": 4,
-      "name": "Lewis Cook",
+      "name": "Cedar Player 13",
       "position": "LCM",
       "position_detail": "Centre Central Midfielder",
       "nationality": "England",
@@ -1281,7 +1281,7 @@
       "player_id": "H06",
       "team_id": "HOME",
       "jersey_number": 10,
-      "name": "Julio Enciso",
+      "name": "Larkspur Player 12",
       "position": "LCM",
       "position_detail": "Centre Attacking Midfielder",
       "nationality": "Paraguay",
@@ -1333,7 +1333,7 @@
       "player_id": "H12",
       "team_id": "HOME",
       "jersey_number": 14,
-      "name": "Jack Taylor",
+      "name": "Larkspur Player 14",
       "position": "LCM",
       "position_detail": "Centre Central Midfielder",
       "nationality": "Ireland",
@@ -1371,7 +1371,7 @@
       "player_id": "A12",
       "team_id": "AWAY",
       "jersey_number": 8,
-      "name": "Alex Scott",
+      "name": "Cedar Player 15",
       "position": "LCM",
       "position_detail": "Central Midfielder",
       "nationality": "England",
@@ -1403,7 +1403,7 @@
       "player_id": "H03",
       "team_id": "HOME",
       "jersey_number": 4,
-      "name": "Cedric Kipre",
+      "name": "Larkspur Player 07",
       "position": "LCB",
       "position_detail": "Central Defender",
       "nationality": "Cote D’Ivoire",
@@ -1447,7 +1447,7 @@
       "player_id": "H05",
       "team_id": "HOME",
       "jersey_number": 2,
-      "name": "Darnell Furlong",
+      "name": "Larkspur Player 05",
       "position": "RB",
       "position_detail": "Right-Back",
       "nationality": null,
@@ -1481,7 +1481,7 @@
       "player_id": "A02",
       "team_id": "AWAY",
       "jersey_number": 3,
-      "name": "Adrien Truffert",
+      "name": "Cedar Player 05",
       "position": "LB",
       "position_detail": "Left Full Back",
       "nationality": "France",
@@ -1515,7 +1515,7 @@
       "player_id": "H02",
       "team_id": "HOME",
       "jersey_number": 3,
-      "name": "Leif Davis",
+      "name": "Larkspur Player 06",
       "position": "LB",
       "position_detail": "Left Full Back",
       "nationality": "England",
@@ -1547,7 +1547,7 @@
       "player_id": "A04",
       "team_id": "AWAY",
       "jersey_number": 6,
-      "name": "Julio Soler",
+      "name": "Cedar Player 07",
       "position": "RCB",
       "position_detail": "Left Full Back",
       "nationality": "Argentina",
@@ -1594,7 +1594,7 @@
       "player_id": "A03",
       "team_id": "AWAY",
       "jersey_number": 5,
-      "name": "James Hill",
+      "name": "Cedar Player 06",
       "position": "LCB",
       "position_detail": "Centre Central Defender",
       "nationality": "England",
@@ -1632,7 +1632,7 @@
       "player_id": "H14",
       "team_id": "HOME",
       "jersey_number": 24,
-      "name": "Jacob Greaves",
+      "name": "Larkspur Player 09",
       "position": "LB",
       "position_detail": "Central Defender",
       "nationality": "England",
@@ -1658,7 +1658,7 @@
       "player_id": "H04",
       "team_id": "HOME",
       "jersey_number": 6,
-      "name": "Issa Diop",
+      "name": "Larkspur Player 08",
       "position": "RCB",
       "position_detail": "Centre Central Defender",
       "nationality": "Morocco",
@@ -1709,7 +1709,7 @@
       "player_id": "A05",
       "team_id": "AWAY",
       "jersey_number": 2,
-      "name": "Julian Araujo",
+      "name": "Cedar Player 04",
       "position": "RB",
       "position_detail": "Right Full Back",
       "nationality": "Mexico",

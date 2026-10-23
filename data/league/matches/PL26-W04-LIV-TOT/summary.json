@@ -90,9 +90,9 @@
       "period_ms": 1511600,
       "team_id": "AWAY",
       "club_id": "TOT",
-      "club_name": "Tottenham Hotspur",
+      "club_name": "Thornvale FC",
       "player_id": "A10",
-      "player_name": "Dominic Solanke",
+      "player_name": "Thornvale Player 27",
       "shirt_number": 19,
       "score": [
         0,
@@ -102,19 +102,19 @@
   ],
   "competition": {
     "id": "PL-SYN-2026",
-    "name": "Premier League (synthetic)",
+    "name": "NextPlay League (synthetic)",
     "season": "2026/27",
     "synthetic": true,
     "matchweek": 4,
     "kickoff_local": "2026-11-14T17:30:00",
     "time_zone": "Europe/London",
-    "venue": "Anfield"
+    "venue": "Northstar Park"
   },
   "home_club": {
     "club_id": "LIV",
-    "name": "Liverpool",
-    "short_name": "Liverpool",
-    "stadium": "Anfield",
+    "name": "Northstar FC",
+    "short_name": "Northstar FC",
+    "stadium": "Northstar Park",
     "colors": {
       "primary": "#C8102E",
       "secondary": "#FFFFFF"
@@ -123,9 +123,9 @@
   },
   "away_club": {
     "club_id": "TOT",
-    "name": "Tottenham Hotspur",
-    "short_name": "Tottenham",
-    "stadium": "Tottenham Hotspur Stadium",
+    "name": "Thornvale FC",
+    "short_name": "Thornvale",
+    "stadium": "Thornvale Park",
     "colors": {
       "primary": "#FFFFFF",
       "secondary": "#132257"

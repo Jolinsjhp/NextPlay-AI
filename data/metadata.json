@@ -284,7 +284,7 @@
   },
   "limitations": [
     "Simplified procedural motion, not a professional football or physics simulator.",
-    "Club names, squad numbers and player names follow the public 2026/27 Premier League squad lists; match events and tracking are synthetic.",
+    "Club, player and venue names are fictional aliases; roster attributes are preserved from the source dataset. Match events and tracking are synthetic.",
     "No offsides, physical collisions or realistic fatigue. Cards and tactical substitutions follow a synthetic schedule.",
     "Incoming substitutes inherit the outgoing formation slot and position; no touchline entrance animation is modeled.",
     "Pressure is a proximity heuristic; ball transport during restart_setup is non-playing animation.",

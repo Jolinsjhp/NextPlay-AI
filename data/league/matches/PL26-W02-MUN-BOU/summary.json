@@ -90,9 +90,9 @@
       "period_ms": 333600,
       "team_id": "AWAY",
       "club_id": "BOU",
-      "club_name": "AFC Bournemouth",
+      "club_name": "Cedar FC",
       "player_id": "A10",
-      "player_name": "Evanilson",
+      "player_name": "Cedar Player 22",
       "shirt_number": 9,
       "score": [
         0,
@@ -102,19 +102,19 @@
   ],
   "competition": {
     "id": "PL-SYN-2026",
-    "name": "Premier League (synthetic)",
+    "name": "NextPlay League (synthetic)",
     "season": "2026/27",
     "synthetic": true,
     "matchweek": 2,
     "kickoff_local": "2026-10-31T17:30:00",
     "time_zone": "Europe/London",
-    "venue": "Old Trafford"
+    "venue": "Pinecrest Park"
   },
   "home_club": {
     "club_id": "MUN",
-    "name": "Manchester United",
-    "short_name": "Man United",
-    "stadium": "Old Trafford",
+    "name": "Pinecrest FC",
+    "short_name": "Pinecrest",
+    "stadium": "Pinecrest Park",
     "colors": {
       "primary": "#DA291C",
       "secondary": "#FBE122"
@@ -123,9 +123,9 @@
   },
   "away_club": {
     "club_id": "BOU",
-    "name": "AFC Bournemouth",
-    "short_name": "Bournemouth",
-    "stadium": "Vitality Stadium",
+    "name": "Cedar FC",
+    "short_name": "Cedar",
+    "stadium": "Cedar Park",
     "colors": {
       "primary": "#DA291C",
       "secondary": "#000000"

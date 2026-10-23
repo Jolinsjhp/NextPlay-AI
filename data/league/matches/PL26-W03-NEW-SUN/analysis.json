@@ -4,7 +4,7 @@
   "status": "complete",
   "language": "en",
   "source": {
-    "fingerprint": "5107106cb252b49e4f0e5f6f9b6a8e8ebab03e1cdff2b34f26da4334d2493fb2",
+    "fingerprint": "40effdbf5ed340928f25788c1ff352ca011ab4500de76248ff1e1718a410a905",
     "event_count": 3660,
     "match_end_event_id": "e003660",
     "completed_at_ms": 6000000,
@@ -18,12 +18,12 @@
     "mode": "local",
     "model": null
   },
-  "headline": "Newcastle United 0–2 Sunderland",
-  "summary": "Sunderland won 2–0. There were 21 shots across the match. Brian Brobbey earns Player of the Match on the published impact scoring.",
+  "headline": "Quartz FC 0–2 Silverbrook FC",
+  "summary": "Silverbrook FC won 2–0. There were 21 shots across the match. Silverbrook Player 21 earns Player of the Match on the published impact scoring.",
   "periods": [
     {
       "title": "First half",
-      "text": "Newcastle United had 6 shots and Sunderland had 3. Neither side scored and there were no red cards. The period ended at 0–0.",
+      "text": "Quartz FC had 6 shots and Silverbrook FC had 3. Neither side scored and there were no red cards. The period ended at 0–0.",
       "shots": [
         6,
         3
@@ -46,7 +46,7 @@
     },
     {
       "title": "Second half",
-      "text": "Newcastle United had 7 shots and Sunderland had 5. 54:02 — Brian Brobbey opened the scoring for Sunderland (0–1). 66:58 — Nilson Angulo extended the lead for Sunderland (0–2). 80:24 — Sunderland lost Thomas Meunier to a red card. The period ended at 0–2.",
+      "text": "Quartz FC had 7 shots and Silverbrook FC had 5. 54:02 — Silverbrook Player 21 opened the scoring for Silverbrook FC (0–1). 66:58 — Silverbrook Player 22 extended the lead for Silverbrook FC (0–2). 80:24 — Silverbrook FC lost Silverbrook Player 07 to a red card. The period ended at 0–2.",
       "shots": [
         7,
         5
@@ -73,8 +73,8 @@
     }
   ],
   "insights": [
-    "Newcastle United: 13 shots, 8 on target, 354 of 404 passes completed, 52.1% possession.",
-    "Sunderland: 8 shots, 5 on target, 328 of 383 passes completed, 47.9% possession."
+    "Quartz FC: 13 shots, 8 on target, 354 of 404 passes completed, 52.1% possession.",
+    "Silverbrook FC: 8 shots, 5 on target, 328 of 383 passes completed, 47.9% possession."
   ],
   "key_moments": [
     {
@@ -82,56 +82,56 @@
       "period": 2,
       "time": "54:02",
       "type": "shot",
-      "text": "Brian Brobbey opened the scoring for Sunderland (0–1)."
+      "text": "Silverbrook Player 21 opened the scoring for Silverbrook FC (0–1)."
     },
     {
       "event_id": "e002327",
       "period": 2,
       "time": "59:19",
       "type": "substitution",
-      "text": "Harvey Barnes replaced Nico Gonzalez for Newcastle United."
+      "text": "Quartz Player 17 replaced Quartz Player 14 for Quartz FC."
     },
     {
       "event_id": "e002375",
       "period": 2,
       "time": "60:35",
       "type": "substitution",
-      "text": "Nilson Angulo replaced Romaine Mundle for Sunderland."
+      "text": "Silverbrook Player 22 replaced Silverbrook Player 23 for Silverbrook FC."
     },
     {
       "event_id": "e002619",
       "period": 2,
       "time": "66:58",
       "type": "shot",
-      "text": "Nilson Angulo extended the lead for Sunderland (0–2)."
+      "text": "Silverbrook Player 22 extended the lead for Silverbrook FC (0–2)."
     },
     {
       "event_id": "e002671",
       "period": 2,
       "time": "68:51",
       "type": "substitution",
-      "text": "Malick Thiaw replaced Lewis Hall for Newcastle United."
+      "text": "Quartz Player 10 replaced Quartz Player 07 for Quartz FC."
     },
     {
       "event_id": "e002897",
       "period": 2,
       "time": "74:42",
       "type": "substitution",
-      "text": "Luke O'Nien replaced Alan Browne for Sunderland."
+      "text": "Silverbrook Player 14 replaced Silverbrook Player 12 for Silverbrook FC."
     },
     {
       "event_id": "e003122",
       "period": 2,
       "time": "80:24",
       "type": "red_card",
-      "text": "Sunderland lost Thomas Meunier to a red card."
+      "text": "Silverbrook FC lost Silverbrook Player 07 to a red card."
     }
   ],
   "player_of_the_match": {
     "player_id": "A10",
     "team_id": "AWAY",
     "jersey_number": 9,
-    "name": "Brian Brobbey",
+    "name": "Silverbrook Player 21",
     "position": "ST",
     "position_detail": "Striker",
     "nationality": "Netherlands",
@@ -243,7 +243,7 @@
     ],
     "impact_points": 6.43,
     "reasons": [
-      "Brian Brobbey recorded 1 goal, 2 shots on target, 0 saves and 10 interceptions.",
+      "Silverbrook Player 21 recorded 1 goal, 2 shots on target, 0 saves and 10 interceptions.",
       "Completed 75 of 81 passes in 100 minutes; received 0 yellow cards and 0 red cards.",
       "Top impact score: 6.43 points."
     ]
@@ -253,7 +253,7 @@
       "player_id": "A10",
       "team_id": "AWAY",
       "jersey_number": 9,
-      "name": "Brian Brobbey",
+      "name": "Silverbrook Player 21",
       "position": "ST",
       "position_detail": "Striker",
       "nationality": "Netherlands",
@@ -369,7 +369,7 @@
       "player_id": "A01",
       "team_id": "AWAY",
       "jersey_number": 21,
-      "name": "Simon Moore",
+      "name": "Silverbrook Player 01",
       "position": "GK",
       "position_detail": "Goalkeeper",
       "nationality": "England",
@@ -413,7 +413,7 @@
       "player_id": "H10",
       "team_id": "HOME",
       "jersey_number": 9,
-      "name": "Yoane Wissa",
+      "name": "Quartz Player 22",
       "position": "ST",
       "position_detail": "Centre Striker",
       "nationality": "DR Congo",
@@ -551,7 +551,7 @@
       "player_id": "A13",
       "team_id": "AWAY",
       "jersey_number": 10,
-      "name": "Nilson Angulo",
+      "name": "Silverbrook Player 22",
       "position": "RW",
       "position_detail": "Left Winger",
       "nationality": "Ecuador",
@@ -592,7 +592,7 @@
       "player_id": "A07",
       "team_id": "AWAY",
       "jersey_number": 29,
-      "name": "Jules Ahoka",
+      "name": "Silverbrook Player 18",
       "position": "DM",
       "position_detail": "Centre Defensive Midfielder",
       "nationality": "DR Congo",
@@ -692,7 +692,7 @@
       "player_id": "H07",
       "team_id": "HOME",
       "jersey_number": 8,
-      "name": "Aladji Bamba",
+      "name": "Quartz Player 16",
       "position": "DM",
       "position_detail": "Centre Defensive Midfielder",
       "nationality": "France",
@@ -800,7 +800,7 @@
       "player_id": "H01",
       "team_id": "HOME",
       "jersey_number": 1,
-      "name": "Nick Pope",
+      "name": "Quartz Player 01",
       "position": "GK",
       "position_detail": "Goalkeeper",
       "nationality": "England",
@@ -832,7 +832,7 @@
       "player_id": "H09",
       "team_id": "HOME",
       "jersey_number": 17,
-      "name": "Bazoumana Toure",
+      "name": "Quartz Player 24",
       "position": "LW",
       "position_detail": "Left Winger",
       "nationality": "Cote D’Ivoire",
@@ -918,7 +918,7 @@
       "player_id": "H08",
       "team_id": "HOME",
       "jersey_number": 7,
-      "name": "Joelinton",
+      "name": "Quartz Player 15",
       "position": "RCM",
       "position_detail": "Left Central Midfielder",
       "nationality": "Brazil",
@@ -980,7 +980,7 @@
       "player_id": "H11",
       "team_id": "HOME",
       "jersey_number": 23,
-      "name": "Jacob Murphy",
+      "name": "Quartz Player 27",
       "position": "RW",
       "position_detail": "Right Winger",
       "nationality": null,
@@ -1064,7 +1064,7 @@
       "player_id": "A06",
       "team_id": "AWAY",
       "jersey_number": 8,
-      "name": "Alan Browne",
+      "name": "Silverbrook Player 12",
       "position": "LCM",
       "position_detail": "Midfielder",
       "nationality": "Ireland",
@@ -1130,7 +1130,7 @@
       "player_id": "A09",
       "team_id": "AWAY",
       "jersey_number": 7,
-      "name": "Chemsdine Talbi",
+      "name": "Silverbrook Player 20",
       "position": "LW",
       "position_detail": "Left/Right Winger",
       "nationality": "Morocco",
@@ -1212,7 +1212,7 @@
       "player_id": "A08",
       "team_id": "AWAY",
       "jersey_number": 11,
-      "name": "Chris Rigg",
+      "name": "Silverbrook Player 13",
       "position": "RCM",
       "position_detail": "Centre Attacking Midfielder",
       "nationality": "England",
@@ -1273,7 +1273,7 @@
       "player_id": "H06",
       "team_id": "HOME",
       "jersey_number": 6,
-      "name": "Nico Gonzalez",
+      "name": "Quartz Player 14",
       "position": "LCM",
       "position_detail": "Central Midfielder",
       "nationality": "Spain",
@@ -1319,7 +1319,7 @@
       "player_id": "A12",
       "team_id": "AWAY",
       "jersey_number": 13,
-      "name": "Luke O'Nien",
+      "name": "Silverbrook Player 14",
       "position": "LCM",
       "position_detail": "Centre Central Midfielder",
       "nationality": "England",
@@ -1353,7 +1353,7 @@
       "player_id": "H03",
       "team_id": "HOME",
       "jersey_number": 4,
-      "name": "Sven Botman",
+      "name": "Quartz Player 08",
       "position": "LCB",
       "position_detail": "Central Defender",
       "nationality": "Netherlands",
@@ -1396,7 +1396,7 @@
       "player_id": "A04",
       "team_id": "AWAY",
       "jersey_number": 5,
-      "name": "Dan Ballard",
+      "name": "Silverbrook Player 05",
       "position": "RCB",
       "position_detail": "Centre Central Defender",
       "nationality": "Northern Ireland",
@@ -1441,7 +1441,7 @@
       "player_id": "A11",
       "team_id": "AWAY",
       "jersey_number": 14,
-      "name": "Romaine Mundle",
+      "name": "Silverbrook Player 23",
       "position": "RW",
       "position_detail": "Left/Right Winger",
       "nationality": "England",
@@ -1497,7 +1497,7 @@
       "player_id": "A03",
       "team_id": "AWAY",
       "jersey_number": 4,
-      "name": "Kevin Danso",
+      "name": "Silverbrook Player 04",
       "position": "LCB",
       "position_detail": "Centre Central Defender",
       "nationality": "Austria",
@@ -1536,7 +1536,7 @@
       "player_id": "H02",
       "team_id": "HOME",
       "jersey_number": 3,
-      "name": "Lewis Hall",
+      "name": "Quartz Player 07",
       "position": "LB",
       "position_detail": "Left Full Back",
       "nationality": "England",
@@ -1569,7 +1569,7 @@
       "player_id": "H14",
       "team_id": "HOME",
       "jersey_number": 12,
-      "name": "Malick Thiaw",
+      "name": "Quartz Player 10",
       "position": "LB",
       "position_detail": "Centre Central Defender",
       "nationality": "Germany",
@@ -1596,7 +1596,7 @@
       "player_id": "A02",
       "team_id": "AWAY",
       "jersey_number": 6,
-      "name": "Dayann Methalie",
+      "name": "Silverbrook Player 06",
       "position": "LB",
       "position_detail": "Left Full Back",
       "nationality": "France",
@@ -1625,7 +1625,7 @@
       "player_id": "H05",
       "team_id": "HOME",
       "jersey_number": 2,
-      "name": "Tino Livramento",
+      "name": "Quartz Player 06",
       "position": "RB",
       "position_detail": "Right Full Back",
       "nationality": "England",
@@ -1656,7 +1656,7 @@
       "player_id": "H12",
       "team_id": "HOME",
       "jersey_number": 11,
-      "name": "Harvey Barnes",
+      "name": "Quartz Player 17",
       "position": "LCM",
       "position_detail": "Left/Right Winger",
       "nationality": "England",
@@ -1690,7 +1690,7 @@
       "player_id": "H04",
       "team_id": "HOME",
       "jersey_number": 5,
-      "name": "Fabian Schar",
+      "name": "Quartz Player 09",
       "position": "RCB",
       "position_detail": "Defender",
       "nationality": "Switzerland",
@@ -1741,7 +1741,7 @@
       "player_id": "A05",
       "team_id": "AWAY",
       "jersey_number": 12,
-      "name": "Thomas Meunier",
+      "name": "Silverbrook Player 07",
       "position": "RB",
       "position_detail": "Right Full Back",
       "nationality": "Belgium",

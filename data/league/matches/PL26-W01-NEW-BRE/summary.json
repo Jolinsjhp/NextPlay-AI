@@ -90,9 +90,9 @@
       "period_ms": 775600,
       "team_id": "HOME",
       "club_id": "NEW",
-      "club_name": "Newcastle United",
+      "club_name": "Quartz FC",
       "player_id": "H11",
-      "player_name": "Jacob Murphy",
+      "player_name": "Quartz Player 27",
       "shirt_number": 23,
       "score": [
         1,
@@ -105,9 +105,9 @@
       "period_ms": 1860400,
       "team_id": "HOME",
       "club_id": "NEW",
-      "club_name": "Newcastle United",
+      "club_name": "Quartz FC",
       "player_id": "H10",
-      "player_name": "Yoane Wissa",
+      "player_name": "Quartz Player 22",
       "shirt_number": 9,
       "score": [
         2,
@@ -120,9 +120,9 @@
       "period_ms": 2589600,
       "team_id": "AWAY",
       "club_id": "BRE",
-      "club_name": "Brentford",
+      "club_name": "Driftwood FC",
       "player_id": "A13",
-      "player_name": "Jaidon Anthony",
+      "player_name": "Driftwood Player 27",
       "shirt_number": 19,
       "score": [
         2,
@@ -132,19 +132,19 @@
   ],
   "competition": {
     "id": "PL-SYN-2026",
-    "name": "Premier League (synthetic)",
+    "name": "NextPlay League (synthetic)",
     "season": "2026/27",
     "synthetic": true,
     "matchweek": 1,
     "kickoff_local": "2026-10-24T17:30:00",
     "time_zone": "Europe/London",
-    "venue": "St James' Park"
+    "venue": "Quartz Park"
   },
   "home_club": {
     "club_id": "NEW",
-    "name": "Newcastle United",
-    "short_name": "Newcastle",
-    "stadium": "St James' Park",
+    "name": "Quartz FC",
+    "short_name": "Quartz",
+    "stadium": "Quartz Park",
     "colors": {
       "primary": "#241F20",
       "secondary": "#FFFFFF"
@@ -153,9 +153,9 @@
   },
   "away_club": {
     "club_id": "BRE",
-    "name": "Brentford",
-    "short_name": "Brentford",
-    "stadium": "Gtech Community Stadium",
+    "name": "Driftwood FC",
+    "short_name": "Driftwood FC",
+    "stadium": "Driftwood Park",
     "colors": {
       "primary": "#E30613",
       "secondary": "#FFFFFF"

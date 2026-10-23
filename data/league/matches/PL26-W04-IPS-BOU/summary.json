@@ -90,9 +90,9 @@
       "period_ms": 1631000,
       "team_id": "HOME",
       "club_id": "IPS",
-      "club_name": "Ipswich Town",
+      "club_name": "Larkspur FC",
       "player_id": "H09",
-      "player_name": "Jaden Philogene",
+      "player_name": "Larkspur Player 23",
       "shirt_number": 11,
       "score": [
         1,
@@ -105,9 +105,9 @@
       "period_ms": 1137800,
       "team_id": "AWAY",
       "club_id": "BOU",
-      "club_name": "AFC Bournemouth",
+      "club_name": "Cedar FC",
       "player_id": "A10",
-      "player_name": "Evanilson",
+      "player_name": "Cedar Player 22",
       "shirt_number": 9,
       "score": [
         1,
@@ -120,9 +120,9 @@
       "period_ms": 2758600,
       "team_id": "AWAY",
       "club_id": "BOU",
-      "club_name": "AFC Bournemouth",
+      "club_name": "Cedar FC",
       "player_id": "A13",
-      "player_name": "Amine Adli",
+      "player_name": "Cedar Player 25",
       "shirt_number": 21,
       "score": [
         1,
@@ -132,19 +132,19 @@
   ],
   "competition": {
     "id": "PL-SYN-2026",
-    "name": "Premier League (synthetic)",
+    "name": "NextPlay League (synthetic)",
     "season": "2026/27",
     "synthetic": true,
     "matchweek": 4,
     "kickoff_local": "2026-11-15T14:00:00",
     "time_zone": "Europe/London",
-    "venue": "Portman Road"
+    "venue": "Larkspur Park"
   },
   "home_club": {
     "club_id": "IPS",
-    "name": "Ipswich Town",
-    "short_name": "Ipswich Town",
-    "stadium": "Portman Road",
+    "name": "Larkspur FC",
+    "short_name": "Larkspur FC",
+    "stadium": "Larkspur Park",
     "colors": {
       "primary": "#0044A9",
       "secondary": "#FFFFFF"
@@ -153,9 +153,9 @@
   },
   "away_club": {
     "club_id": "BOU",
-    "name": "AFC Bournemouth",
-    "short_name": "Bournemouth",
-    "stadium": "Vitality Stadium",
+    "name": "Cedar FC",
+    "short_name": "Cedar",
+    "stadium": "Cedar Park",
     "colors": {
       "primary": "#DA291C",
       "secondary": "#000000"

@@ -4,7 +4,7 @@
   "status": "complete",
   "language": "en",
   "source": {
-    "fingerprint": "4be65ee42968f3e3aaae9584bdc976d836d0bf1d462761f00896071f3485f6ab",
+    "fingerprint": "65d0e58e1fbea0be90545b7cad6310b06df637e0c1f81e6bf60ac88c80a03fc6",
     "event_count": 3609,
     "match_end_event_id": "e003609",
     "completed_at_ms": 6000000,
@@ -18,12 +18,12 @@
     "mode": "local",
     "model": null
   },
-  "headline": "Brentford 1–2 Hull City",
-  "summary": "Hull City won 2–1. There were 24 shots across the match. Callum Wilson earns Player of the Match on the published impact scoring.",
+  "headline": "Driftwood FC 1–2 Kingswell FC",
+  "summary": "Kingswell FC won 2–1. There were 24 shots across the match. Driftwood Player 26 earns Player of the Match on the published impact scoring.",
   "periods": [
     {
       "title": "First half",
-      "text": "Brentford had 8 shots and Hull City had 7. 28:31 — Mohamed-Ali Cho opened the scoring for Hull City (0–1). 40:39 — Sorba Thomas extended the lead for Hull City (0–2). The period ended at 0–2.",
+      "text": "Driftwood FC had 8 shots and Kingswell FC had 7. 28:31 — Kingswell Player 28 opened the scoring for Kingswell FC (0–1). 40:39 — Kingswell Player 23 extended the lead for Kingswell FC (0–2). The period ended at 0–2.",
       "shots": [
         8,
         7
@@ -52,7 +52,7 @@
     },
     {
       "title": "Second half",
-      "text": "Brentford had 7 shots and Hull City had 2. 51:33 — Callum Wilson reduced the deficit for Brentford (1–2). 80:00 — Hull City lost Lewie Coyle to a red card. The period ended at 1–2.",
+      "text": "Driftwood FC had 7 shots and Kingswell FC had 2. 51:33 — Driftwood Player 26 reduced the deficit for Driftwood FC (1–2). 80:00 — Kingswell FC lost Kingswell Player 04 to a red card. The period ended at 1–2.",
       "shots": [
         7,
         2
@@ -76,8 +76,8 @@
     }
   ],
   "insights": [
-    "Brentford: 15 shots, 7 on target, 379 of 421 passes completed, 54.1% possession.",
-    "Hull City: 9 shots, 6 on target, 333 of 381 passes completed, 45.9% possession."
+    "Driftwood FC: 15 shots, 7 on target, 379 of 421 passes completed, 54.1% possession.",
+    "Kingswell FC: 9 shots, 6 on target, 333 of 381 passes completed, 45.9% possession."
   ],
   "key_moments": [
     {
@@ -85,63 +85,63 @@
       "period": 1,
       "time": "28:31",
       "type": "shot",
-      "text": "Mohamed-Ali Cho opened the scoring for Hull City (0–1)."
+      "text": "Kingswell Player 28 opened the scoring for Kingswell FC (0–1)."
     },
     {
       "event_id": "e001462",
       "period": 1,
       "time": "40:39",
       "type": "shot",
-      "text": "Sorba Thomas extended the lead for Hull City (0–2)."
+      "text": "Kingswell Player 23 extended the lead for Kingswell FC (0–2)."
     },
     {
       "event_id": "e002015",
       "period": 2,
       "time": "51:33",
       "type": "shot",
-      "text": "Callum Wilson reduced the deficit for Brentford (1–2)."
+      "text": "Driftwood Player 26 reduced the deficit for Driftwood FC (1–2)."
     },
     {
       "event_id": "e002208",
       "period": 2,
       "time": "56:51",
       "type": "substitution",
-      "text": "Mathias Jensen replaced Yehor Yarmoliuk for Brentford."
+      "text": "Driftwood Player 17 replaced Driftwood Player 15 for Driftwood FC."
     },
     {
       "event_id": "e002408",
       "period": 2,
       "time": "62:23",
       "type": "substitution",
-      "text": "Mohamed Belloumi replaced Mohamed-Ali Cho for Hull City."
+      "text": "Kingswell Player 25 replaced Kingswell Player 28 for Kingswell FC."
     },
     {
       "event_id": "e002692",
       "period": 2,
       "time": "69:58",
       "type": "substitution",
-      "text": "Kristoffer Ajer replaced Aaron Hickey for Brentford."
+      "text": "Driftwood Player 07 replaced Driftwood Player 04 for Driftwood FC."
     },
     {
       "event_id": "e002899",
       "period": 2,
       "time": "75:20",
       "type": "substitution",
-      "text": "Jens Hjerto-Dahl replaced Hidemasa Morita for Hull City."
+      "text": "Kingswell Player 16 replaced Kingswell Player 14 for Kingswell FC."
     },
     {
       "event_id": "e003063",
       "period": 2,
       "time": "80:00",
       "type": "red_card",
-      "text": "Hull City lost Lewie Coyle to a red card."
+      "text": "Kingswell FC lost Kingswell Player 04 to a red card."
     }
   ],
   "player_of_the_match": {
     "player_id": "H10",
     "team_id": "HOME",
     "jersey_number": 13,
-    "name": "Callum Wilson",
+    "name": "Driftwood Player 26",
     "position": "ST",
     "position_detail": "Centre Striker",
     "nationality": "England",
@@ -272,7 +272,7 @@
     ],
     "impact_points": 6.69,
     "reasons": [
-      "Callum Wilson recorded 1 goal, 3 shots on target, 0 saves and 6 interceptions.",
+      "Driftwood Player 26 recorded 1 goal, 3 shots on target, 0 saves and 6 interceptions.",
       "Completed 91 of 98 passes in 100 minutes; received 0 yellow cards and 0 red cards.",
       "Top impact score: 6.69 points."
     ]
@@ -282,7 +282,7 @@
       "player_id": "H10",
       "team_id": "HOME",
       "jersey_number": 13,
-      "name": "Callum Wilson",
+      "name": "Driftwood Player 26",
       "position": "ST",
       "position_detail": "Centre Striker",
       "nationality": "England",
@@ -417,7 +417,7 @@
       "player_id": "A09",
       "team_id": "AWAY",
       "jersey_number": 7,
-      "name": "Sorba Thomas",
+      "name": "Kingswell Player 23",
       "position": "LW",
       "position_detail": "Right Winger",
       "nationality": null,
@@ -502,7 +502,7 @@
       "player_id": "A11",
       "team_id": "AWAY",
       "jersey_number": 50,
-      "name": "Mohamed-Ali Cho",
+      "name": "Kingswell Player 28",
       "position": "RW",
       "position_detail": "Right Winger",
       "nationality": "France",
@@ -571,7 +571,7 @@
       "player_id": "A01",
       "team_id": "AWAY",
       "jersey_number": 1,
-      "name": "Jack Butland",
+      "name": "Kingswell Player 01",
       "position": "GK",
       "position_detail": "Goalkeeper",
       "nationality": "England",
@@ -614,7 +614,7 @@
       "player_id": "H07",
       "team_id": "HOME",
       "jersey_number": 27,
-      "name": "Vitaly Janelt",
+      "name": "Driftwood Player 23",
       "position": "DM",
       "position_detail": "Centre Defensive Midfielder",
       "nationality": "Germany",
@@ -714,7 +714,7 @@
       "player_id": "H01",
       "team_id": "HOME",
       "jersey_number": 1,
-      "name": "Caoimhin Kelleher",
+      "name": "Driftwood Player 01",
       "position": "GK",
       "position_detail": "Goalkeeper",
       "nationality": "Ireland",
@@ -748,7 +748,7 @@
       "player_id": "A10",
       "team_id": "AWAY",
       "jersey_number": 9,
-      "name": "Oliver McBurnie",
+      "name": "Kingswell Player 24",
       "position": "ST",
       "position_detail": "Centre Striker",
       "nationality": "Scotland",
@@ -857,7 +857,7 @@
       "player_id": "A07",
       "team_id": "AWAY",
       "jersey_number": 27,
-      "name": "Regan Slater",
+      "name": "Kingswell Player 19",
       "position": "DM",
       "position_detail": "Centre Defensive Midfielder",
       "nationality": "England",
@@ -948,7 +948,7 @@
       "player_id": "H09",
       "team_id": "HOME",
       "jersey_number": 11,
-      "name": "Dango Ouattara",
+      "name": "Driftwood Player 25",
       "position": "LW",
       "position_detail": "Left/Right Winger",
       "nationality": "Burkina Faso",
@@ -1031,7 +1031,7 @@
       "player_id": "H08",
       "team_id": "HOME",
       "jersey_number": 7,
-      "name": "Kevin Schade",
+      "name": "Driftwood Player 16",
       "position": "RCM",
       "position_detail": "Left/Right Winger",
       "nationality": "Germany",
@@ -1111,7 +1111,7 @@
       "player_id": "A06",
       "team_id": "AWAY",
       "jersey_number": 5,
-      "name": "Hidemasa Morita",
+      "name": "Kingswell Player 14",
       "position": "LCM",
       "position_detail": "Centre Central Midfielder",
       "nationality": "Japan",
@@ -1166,7 +1166,7 @@
       "player_id": "A08",
       "team_id": "AWAY",
       "jersey_number": 8,
-      "name": "Eliot Matazo",
+      "name": "Kingswell Player 15",
       "position": "RCM",
       "position_detail": "Central Midfielder",
       "nationality": "Belgium",
@@ -1234,7 +1234,7 @@
       "player_id": "H11",
       "team_id": "HOME",
       "jersey_number": 9,
-      "name": "Igor Thiago",
+      "name": "Driftwood Player 24",
       "position": "RW",
       "position_detail": "Striker",
       "nationality": "Brazil",
@@ -1332,7 +1332,7 @@
       "player_id": "H06",
       "team_id": "HOME",
       "jersey_number": 6,
-      "name": "Yehor Yarmoliuk",
+      "name": "Driftwood Player 15",
       "position": "LCM",
       "position_detail": "Centre Attacking Midfielder",
       "nationality": "Ukraine",
@@ -1377,7 +1377,7 @@
       "player_id": "A03",
       "team_id": "AWAY",
       "jersey_number": 4,
-      "name": "Charlie Hughes",
+      "name": "Kingswell Player 06",
       "position": "LCB",
       "position_detail": "Centre-Back",
       "nationality": null,
@@ -1419,7 +1419,7 @@
       "player_id": "A12",
       "team_id": "AWAY",
       "jersey_number": 14,
-      "name": "Jens Hjerto-Dahl",
+      "name": "Kingswell Player 16",
       "position": "LCM",
       "position_detail": "Central Midfielder",
       "nationality": "Norway",
@@ -1449,7 +1449,7 @@
       "player_id": "A04",
       "team_id": "AWAY",
       "jersey_number": 6,
-      "name": "Semi Ajayi",
+      "name": "Kingswell Player 07",
       "position": "RCB",
       "position_detail": "Centre Central Defender",
       "nationality": "Nigeria",
@@ -1492,7 +1492,7 @@
       "player_id": "H05",
       "team_id": "HOME",
       "jersey_number": 33,
-      "name": "Michael Kayode",
+      "name": "Driftwood Player 10",
       "position": "RB",
       "position_detail": "Right Full Back",
       "nationality": "Italy",
@@ -1529,7 +1529,7 @@
       "player_id": "A13",
       "team_id": "AWAY",
       "jersey_number": 10,
-      "name": "Mohamed Belloumi",
+      "name": "Kingswell Player 25",
       "position": "RW",
       "position_detail": "Winger",
       "nationality": "Algeria",
@@ -1569,7 +1569,7 @@
       "player_id": "H12",
       "team_id": "HOME",
       "jersey_number": 8,
-      "name": "Mathias Jensen",
+      "name": "Driftwood Player 17",
       "position": "LCM",
       "position_detail": "Centre Central Midfielder",
       "nationality": "Denmark",
@@ -1609,7 +1609,7 @@
       "player_id": "A02",
       "team_id": "AWAY",
       "jersey_number": 3,
-      "name": "Ryan Giles",
+      "name": "Kingswell Player 05",
       "position": "LB",
       "position_detail": "Left Winger",
       "nationality": "England",
@@ -1641,7 +1641,7 @@
       "player_id": "H03",
       "team_id": "HOME",
       "jersey_number": 3,
-      "name": "Rico Henry",
+      "name": "Driftwood Player 05",
       "position": "LCB",
       "position_detail": "Left Full Back",
       "nationality": "Jamaica",
@@ -1673,7 +1673,7 @@
       "player_id": "H02",
       "team_id": "HOME",
       "jersey_number": 2,
-      "name": "Aaron Hickey",
+      "name": "Driftwood Player 04",
       "position": "LB",
       "position_detail": "Left Full Back",
       "nationality": "Scotland",
@@ -1705,7 +1705,7 @@
       "player_id": "H14",
       "team_id": "HOME",
       "jersey_number": 20,
-      "name": "Kristoffer Ajer",
+      "name": "Driftwood Player 07",
       "position": "LB",
       "position_detail": "Centre Central Defender",
       "nationality": "Norway",
@@ -1730,7 +1730,7 @@
       "player_id": "H04",
       "team_id": "HOME",
       "jersey_number": 4,
-      "name": "Sepp van den Berg",
+      "name": "Driftwood Player 06",
       "position": "RCB",
       "position_detail": "Centre Central Defender",
       "nationality": "Netherlands",
@@ -1777,7 +1777,7 @@
       "player_id": "A05",
       "team_id": "AWAY",
       "jersey_number": 2,
-      "name": "Lewie Coyle",
+      "name": "Kingswell Player 04",
       "position": "RB",
       "position_detail": "Right Full Back",
       "nationality": "England",

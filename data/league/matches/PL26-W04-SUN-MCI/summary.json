@@ -90,9 +90,9 @@
       "period_ms": 1123600,
       "team_id": "AWAY",
       "club_id": "MCI",
-      "club_name": "Manchester City",
+      "club_name": "Oakmere FC",
       "player_id": "A10",
-      "player_name": "Erling Haaland",
+      "player_name": "Oakmere Player 23",
       "shirt_number": 9,
       "score": [
         0,
@@ -105,9 +105,9 @@
       "period_ms": 1831400,
       "team_id": "AWAY",
       "club_id": "MCI",
-      "club_name": "Manchester City",
+      "club_name": "Oakmere FC",
       "player_id": "A06",
-      "player_name": "Elliot Anderson",
+      "player_name": "Oakmere Player 12",
       "shirt_number": 5,
       "score": [
         0,
@@ -120,9 +120,9 @@
       "period_ms": 1251000,
       "team_id": "AWAY",
       "club_id": "MCI",
-      "club_name": "Manchester City",
+      "club_name": "Oakmere FC",
       "player_id": "A10",
-      "player_name": "Erling Haaland",
+      "player_name": "Oakmere Player 23",
       "shirt_number": 9,
       "score": [
         0,
@@ -132,19 +132,19 @@
   ],
   "competition": {
     "id": "PL-SYN-2026",
-    "name": "Premier League (synthetic)",
+    "name": "NextPlay League (synthetic)",
     "season": "2026/27",
     "synthetic": true,
     "matchweek": 4,
     "kickoff_local": "2026-11-14T15:00:00",
     "time_zone": "Europe/London",
-    "venue": "Stadium of Light"
+    "venue": "Silverbrook Park"
   },
   "home_club": {
     "club_id": "SUN",
-    "name": "Sunderland",
-    "short_name": "Sunderland",
-    "stadium": "Stadium of Light",
+    "name": "Silverbrook FC",
+    "short_name": "Silverbrook FC",
+    "stadium": "Silverbrook Park",
     "colors": {
       "primary": "#EB172B",
       "secondary": "#FFFFFF"
@@ -153,9 +153,9 @@
   },
   "away_club": {
     "club_id": "MCI",
-    "name": "Manchester City",
-    "short_name": "Man City",
-    "stadium": "Etihad Stadium",
+    "name": "Oakmere FC",
+    "short_name": "Oakmere",
+    "stadium": "Oakmere Park",
     "colors": {
       "primary": "#6CABDD",
       "secondary": "#1C2C5B"
