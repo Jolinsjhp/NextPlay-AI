@@ -23,6 +23,7 @@ class FictionalDataTests(unittest.TestCase):
                 team.pop(field)
             for player in team['players']:
                 player.pop('name')
+                player.pop('sofascore', None)  # Newly collected fields; original fields must stay intact.
         digest = hashlib.sha256(json.dumps(attributes, sort_keys=True, separators=(',', ':')).encode()).hexdigest()
         # Captured before fictionalization: includes every non-name roster field,
         # order, ID, shirt number, rating, colour, nationality, birth date and age.

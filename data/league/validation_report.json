@@ -4,7 +4,7 @@
   "teams": 20,
   "matchweeks": 4,
   "matches": 40,
-  "goals": 103,
+  "goals": 82,
   "matches_with_full_tracking": 4,
   "checks": [
     "20 unique clubs and 10 fixtures per matchweek",

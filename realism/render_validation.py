@@ -26,6 +26,15 @@ def main():
         page=page.replace('<section>',notice+'<section>',1)
     from .render_system import section
     page=page.replace('<section>',section(ROOT)+'<section>',1)
+    refresh_path=ROOT/'artifacts/realism/data-refresh.json'
+    if refresh_path.exists():
+        refresh=json.loads(refresh_path.read_text())
+        rows=''.join(f'<tr><th>{label}</th><td>{refresh["action_mix"]["shares"][kind]*100:.2f}%</td><td>{refresh["real_test_shares"][kind]*100:.2f}%</td></tr>'
+                     for kind,label in (('pass','传球'),('carry','带球'),('shot','射门')))
+        notice=f'''<section><h2>当前数据：球员属性策略已应用</h2><p>{html.escape(refresh['generator'])} · {refresh['matches']} 场比赛 · {refresh['players']} 名球员。保留赛程和随机种子，重新计算结果、积分榜、热力图、决策和赛后分析。以下是当前完整联赛的动作占比，排除了重启后的强制带球。</p><table><thead><tr><th>动作</th><th>当前联赛</th><th>真实测试参考</th></tr></thead><tbody>{rows}</tbody></table><p>参考为世界杯数据中的地面传球、带球和脚下射门，分母仅包含这三类动作。匹配占比不代表全部动作、每分钟数量或个人风格已获验证。</p><p><a href="artifacts/realism/data-refresh.json">本次数据更新记录</a> · <a href="artifacts/realism/player-action-validation.json">独立种子校准验证</a></p></section>'''
+        page=page.replace('<section>',notice+'<section>',1)
+        page=page.replace('生成器 v2.2.0 · 合成比赛','生成器 v2.3.0 · 合成比赛')
+        page=page.replace('三场同种子比赛：修改前后对比','历史 v2.2 校准记录：三场同种子比赛对比')
     (ROOT/'realism-validation.html').write_text(page)
 
 if __name__=='__main__': main()

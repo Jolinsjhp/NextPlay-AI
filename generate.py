@@ -20,6 +20,7 @@ Examples
     python3 generate.py --mode single --output data
 """
 import argparse
+import copy
 import datetime as dt
 import json
 import math
@@ -33,7 +34,7 @@ HZ = 5
 DURATION = 6000
 HALF = 3000
 DEFAULT_MATCH = 'SYN-20261019-001'
-VERSION = '2.2.0'
+VERSION = '2.3.0'
 ROOT = Path(__file__).resolve().parent
 BASE = [(6, 34), (24, 9), (27, 25), (27, 43), (24, 59),
         (43, 18), (40, 34), (43, 50), (62, 10), (65, 34), (62, 58)]
@@ -222,7 +223,18 @@ class Match:
     """One complete 100-minute match between a HOME and an AWAY side."""
 
     def __init__(self, seed, match_id=DEFAULT_MATCH, home=None, away=None,
-                 ratings=None, competition=None, lineups=None):
+                 ratings=None, competition=None, lineups=None, attribute_actions=True,
+                 action_multipliers=None, attribute_strength=1.0):
+        from realism.player_actions import CALIBRATION, REVISION, KINDS
+        self.attribute_actions = attribute_actions
+        self.attribute_strength = attribute_strength
+        self.action_multipliers = dict(action_multipliers if action_multipliers is not None else
+                                       CALIBRATION.get('multipliers', {k: 1.0 for k in KINDS}))
+        if (set(self.action_multipliers) != set(KINDS) or
+                any(not math.isfinite(v) or v <= 0 for v in self.action_multipliers.values()) or
+                not math.isfinite(attribute_strength) or not 0 <= attribute_strength <= 1):
+            raise ValueError('Invalid action calibration or attribute strength')
+        self.action_policy_revision = REVISION if attribute_actions else 'legacy-forced-carry'
         self.rng = random.Random(seed)
         self.seed = seed
         self.match_id = match_id
@@ -250,6 +262,7 @@ class Match:
                     'shirt_number': real.get('shirt_number') if real else number,
                     'nationality': real.get('nationality') if real else None,
                     'real_player_id': real.get('player_id') if real else None,
+                    'sofascore': copy.deepcopy(real.get('sofascore')) if real else None,
                 })
         self.player_by_id = {p['id']: p.copy() for p in self.players}
         if not self.legacy:
@@ -266,6 +279,7 @@ class Match:
                         'shirt_number': real.get('shirt_number') if real else number,
                         'nationality': real.get('nationality') if real else None,
                         'real_player_id': real.get('player_id') if real else None,
+                        'sofascore': copy.deepcopy(real.get('sofascore')) if real else None,
                     }
         self.distances = {pid: 0. for pid in self.player_by_id}
         # A separate RNG leaves the football decisions independent of scheduling.
@@ -450,12 +464,12 @@ class Match:
         p = self.players[owner]
         return [p['x']+.35*self.direction(p['team']), p['y'], 0.]
 
-    def start_carry(self):
+    def start_carry(self, origin='policy'):
         p = self.players[self.owner]
         d = self.direction(p['team'])
         duration = self.rng.uniform(1.6, 4.8)
         advance = self.rng.uniform(3, 12)
-        self.new_action('carry', duration, actor=self.owner, team=p['team'],
+        self.new_action('carry', duration, actor=self.owner, team=p['team'], origin=origin,
                         target=[clamp(p['x']+d*advance, 3, 102),
                                 clamp(p['y']+self.rng.uniform(-7, 7), 3, 65)])
 
@@ -469,11 +483,13 @@ class Match:
                               'match_id': self.match_id, 't_ms': round(self.t*1000),
                               'player_id': p['id'], 'period': self.period,
                               'calibration_revision': MODEL.profile.get('provenance', {}).get('commit'),
+                              'action_policy_revision': self.action_policy_revision,
                               'score': self.score[:], 'snapshot': self.tracking(round(self.t*HZ)),
                               'candidates': [{**o, 'recipient_id': self.players[o['recipient']]['id']}
                                              if 'recipient' in o else o.copy() for o in options],
                               'selected': chosen.copy(), 'action_id': f'a{self.action_seq+1:06}',
-                              'score_kind': 'empirical outcome rates plus heuristic selection weights; not optimal-action labels'})
+                              'score_kind': ('empirical outcome rates; train-fitted action mix with bounded player-style hypotheses; not optimal-action labels'
+                                             if self.attribute_actions else 'empirical outcome rates plus heuristic selection weights; not optimal-action labels')})
         if chosen['kind'] == 'shot':
             self.start_shot()
             return
@@ -552,9 +568,10 @@ class Match:
             self.set_possession(a['team'], a['reason'])
             self.emit('restart', start=a['start'], player_id=self.players[self.owner]['id'],
                       restart_type=a['reason'], **common)
-            self.start_carry()
+            self.start_carry(origin='restart')
         elif a['kind'] == 'carry':
-            self.emit('carry', start=a['start'], player_id=self.players[a['actor']]['id'], **common)
+            self.emit('carry', start=a['start'], player_id=self.players[a['actor']]['id'],
+                      selection_origin=a.get('origin', 'policy'), **common)
             self.choose_action()
         elif a['kind'] == 'pass':
             self.stats[a['team']]['passes'] += 1
@@ -572,7 +589,10 @@ class Match:
                           player_id=self.players[self.owner]['id'],
                           location=[round(v, 3) for v in self.ball[:2]], related_event_ids=[eid])
                 self.set_possession(other, 'interception', eid)
-            self.start_carry()
+            if self.attribute_actions:
+                self.choose_action()
+            else:
+                self.start_carry(origin='after_pass')
         elif a['kind'] == 'shot':
             team = a['team']
             self.stats[team]['shots'] += 1
@@ -620,6 +640,7 @@ class Match:
                               position=incoming_player.get('position', player['position']),
                               position_detail=incoming_player.get('position_detail'),
                               nationality=incoming_player.get('nationality'),
+                              sofascore=copy.deepcopy(incoming_player.get('sofascore')),
                               real_player_id=incoming_player.get('real_player_id'))
             else:
                 self.emit(kind, reason='serious_foul_play', dismissal='straight_red', **common)
@@ -703,7 +724,8 @@ def build_metadata(sim):
                 'position': p['position'],
                 'position_detail': p.get('position_detail', p['position']),
                 'nationality': p.get('nationality'),
-                'starter': p['starter']}
+                'starter': p['starter'],
+                **({'sofascore': copy.deepcopy(p['sofascore'])} if p.get('sofascore') else {})}
                for p in sim.player_by_id.values()]
     metadata = {
         'schema_version': '1.0.0',
@@ -711,6 +733,10 @@ def build_metadata(sim):
         'synthetic': True,
         'seed': sim.seed,
         'generator': f'generate.py v{VERSION}',
+        'action_policy': {'revision': sim.action_policy_revision,
+                          'multipliers': sim.action_multipliers,
+                          'attribute_strength': sim.attribute_strength,
+                          'scope': 'pass/carry/foot-shot selection; radar effects are bounded hypotheses, not fitted player outcomes'},
         'duration_ms': DURATION*1000,
         'tracking_hz': HZ,
         'pitch': {'length_m': 105, 'width_m': 68, 'origin': 'top_left',

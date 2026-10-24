@@ -20,7 +20,155 @@ python3 server.py
 训练后的聚合模型、源码、测试、验证摘要及精简演示数据都包含在本仓库。
 StatsBomb 原始缓存及本地 API 密钥不上传。
 
-A dependency-free football data demo for match replay, event consumption, live statistics and squad browsing. Club, player and venue names are fictional aliases. Squad sizes, shirt numbers and all other roster attributes are retained; every match result, event and tracking frame is procedurally generated.
+A football data demo with a dependency-free Python runtime for match replay, event consumption, live statistics and squad browsing. Club, player and venue names are fictional aliases. Squad sizes, shirt numbers and all other roster attributes are retained; every match result, event and tracking frame is procedurally generated.
+
+## 数据契约 Schema
+
+完整约定、字段入口与联调说明见 [contracts/README.md](contracts/README.md)。
+`schema.json` 覆盖现有比赛、球员、来源属性、事件与轨迹；`contracts/schema.json`
+定义带数据版本/种子的快照、模拟画像和分析请求/响应。三个固定案例位于
+`tests/fixtures/contracts/`，契约测试已接入 `npm test`。
+
+```sh
+npm ci
+npm run test:contract
+npm run validate:schema
+```
+
+这些是供后续接口接线使用的契约和样本，现有 HTTP API 尚未切换到新响应格式。
+
+## Sofascore player attributes
+
+Each of the 566 players in `data/league/squads.json` now has a `sofascore`
+profile collected from the official rendered player pages on 23 October 2026.
+The snapshot contains 472 complete radars: 435 outfield and 37 goalkeeper radars.
+Height is available for 561 players and preferred foot for 563. The other 94
+players have no visible radar values. None of the inspected pages supplies weight;
+`weight_kg` is reserved and remains `null`. No missing values are estimated.
+See `artifacts/sofascore-coverage.json` for per-player gaps and source conflicts.
+
+| Field | Meaning |
+| --- | --- |
+| `attributes` (outfield) | ATT attacking, DEF defending, CRE creativity, TEC technical, TAC tactical; observed scores from 0 to 100 |
+| `attributes` (goalkeeper) | SAV saves, ANT anticipation, TAC tactical, BAL ball distribution, AER aerial; kept separate from outfield scores |
+| `height_cm`, `weight_kg` | Observed measurements with explicit units, or `null` |
+| `preferred_foot` | `left`, `right`, `both`, or `null` |
+| `source_position`, `source_nationality`, `source_shirt_number`, `source_date_of_birth` | Source observations, without overwriting the original roster fields |
+| `status`, `missing_fields` | `complete` requires five applicable radar values, height and preferred foot; weight is optional. `partial` preserves all available values. Failed identity checks use `needs_review`; no candidate uses `unmatched`. |
+| `identity_match`, `source_conflicts` | How the player was matched and any differences from the original roster |
+| `source`, `collected_at_utc`, `attribute_period`, `evidence_sha256` | Source label, observation time, default visible radar period and digest of the local capture |
+
+The official [attribute overview explanation](https://www.sofascore.com/news/sofascores-attribute-overview-the-ultimate-tool-for-player-analysis)
+describes the two radar types. These scores are descriptive indices, not action
+success probabilities. The snapshot is current to collection time, so it must not
+be treated as historical pre-match evidence when evaluating older matches.
+
+Identity matching uses original names with dates of birth, or club and shirt
+number, plus explicit reviews for aliases and conflicting records. The old
+`api_player_id` is **not** a Sofascore ID. Six birth dates disagree with the original
+roster; both dates are preserved and the conflicts are recorded. One local
+defender is a goalkeeper on the source page; consumers must check `attribute_kind`
+and `source_conflicts.position` before using that profile.
+
+To keep fictional names in shared data, real names, Sofascore IDs, page URLs,
+rendered page excerpts and identity-review evidence remain in the ignored
+`.local/sofascore/` directory. A fresh clone includes the imported profiles and
+coverage report, but not these local identity records. The evidence digest links
+each profile to its capture without publishing the name-to-source mapping.
+Existing retained IDs and demographic attributes still make this pseudonymized
+data, not irreversible anonymization.
+
+Reimport the captured pages locally with:
+
+```sh
+python3 import_sofascore.py
+python3 -m unittest discover -s tests -p 'test_sofascore.py'
+```
+
+The importer accepts `--capture`, `--identities`, `--squads` and `--report` paths.
+The capture is a JSON object with a `players` array; each entry provides
+`local_player_id`, official `url`, `title`, UTC `fetched_at`, rendered `general`
+and `radar` text, and the observed roster club/shirt or explicit review evidence.
+It checks page IDs, identity, units and radar ranges before adding the profile.
+An incomplete refresh never erases previously collected fields. The import is
+idempotent and preserves every existing roster field.
+
+`generate.py` carries the profile into starters, substitutes and new match
+metadata, including after substitutions. Generator v2.3 uses the five applicable
+radar attributes to adjust the probability of choosing a legal action.
+
+### Player-dependent action probabilities
+
+The policy first builds legal pass, carry and foot-shot candidates using pitch
+position, pressure, passing lanes and offside restrictions. It then multiplies
+their existing weights by a fitted action-class intercept and a bounded player
+style factor, and normalizes to probabilities. Each decision record includes
+these probabilities; metadata records the policy revision, multipliers and style
+strength. The RNG seed still determines a reproducible sequence.
+
+- Higher ATT favors shots; higher CRE and TAC favor passing; higher TEC favors
+  carrying. DEF adds a conservative passing tendency. These are explicit style
+  hypotheses with coefficients in `realism/player_actions.py`, not measured
+  causal effects of Sofascore ratings.
+- Every style multiplier stays between `exp(-0.6)` and `exp(0.6)`. Missing or
+  incompatible radar values contribute a neutral factor. A goalkeeper uses only
+  the relevant BAL/TAC/ANT tendencies and cannot acquire a shooting candidate.
+- Preferred foot, height and weight remain available as data. This ground-pass,
+  foot-shot policy has no calibrated weak-foot or aerial model, so it does not
+  invent effects from those fields. Pass-completion and shot-conversion models
+  remain separately calibrated and unchanged.
+- Receiving a pass now leads to another action decision. The former unconditional
+  carry after every pass biased the event mix toward carries. Mandatory restart
+  carries are explicitly tagged and excluded from action-choice validation.
+
+`realism/player-action-profile.json` stores global intercepts fitted to the 16
+existing real training matches and 10 complete synthetic matches covering all 20
+clubs. The reference is StatsBomb's pinned 2022 World Cup sample. Eight real test
+matches and 20 different simulator seeds evaluate the frozen model; neither
+selects its parameters. The report also runs the same seeds with the old policy
+and with neutral player attributes. Runtime selection uses probabilities, without
+event quotas or feedback from future events.
+
+Reproduce fitting and validation (downloads only missing **pinned** files):
+
+```sh
+python3 -m realism.calibrate_player_actions --download --workers 4
+python3 -m unittest discover -s tests -p 'test_player_actions.py'
+```
+
+See `artifacts/realism/player-action-validation.json` for the action shares,
+training iterations, per-match results, source checksums and disjoint seed lists.
+The 20 validation matches contain 45,506 eligible actions:
+
+| Action | Former policy | Player-attribute policy | Real test matches |
+| --- | ---: | ---: | ---: |
+| Pass | 35.50% | 45.92% | 46.08% |
+| Carry | 62.68% | 53.07% | 52.93% |
+| Shot | 1.82% | 1.01% | 0.99% |
+
+The largest absolute gap is 0.154 percentage points. Neutralizing player style
+with the same fitted intercepts gives 48.54% passes, 50.67% carries and 0.78%
+shots, confirming that the profiles affect selection. This ablation does not
+validate the correctness of any individual player's style. A separate complete
+match passes 30,001-frame motion and event-consistency checks; see
+`artifacts/realism/player-action-stream-validation.json`.
+
+Acceptance limits are absolute differences of 1.5 percentage points for passing
+and carrying and 0.35 points for shooting, set before validation. The denominator
+contains only modeled ground passes, carries and foot shots; this does not
+establish realistic shares for crosses, tackles, fouls or other unsupported
+actions, nor realistic action counts per minute. It is a World Cup reference,
+not Premier League validation.
+
+New matches use the fitted policy by default. On 24 October 2026 the local
+40-match league, single-match sample and browser demonstration were regenerated
+with this policy. Fixtures, seeds and the 566-player roster were retained;
+results, standings, tracking, heatmaps and analysis were recomputed. The hosted
+website is a separate deployment. For controlled
+comparisons, `Match(..., attribute_actions=False)` selects the former policy;
+`attribute_strength=0.0` keeps the new flow and fitted intercepts but neutralizes
+player-style effects. Changing the radar coefficients or roster composition
+requires refitting and rerunning validation.
 
 ## Frontend
 
@@ -300,7 +448,7 @@ Shot goal frequencies are fitted by distance; other motion and ball-outcome beha
 
 Open `/coach.html?realism=1` for the newly generated sample and
 `/realism-validation.html` for before/after measurements, regressions and sources.
-The existing league archive is retained; it predates this generator change.
+The local league archive now uses generator v2.3 and the player-attribute policy.
 Every newly written match also gets `decisions.jsonl`: pre-decision snapshot,
 candidates, selection weights and selected action linked to the next action ID.
 These are simulator records, **not expert optimal-action training labels**.
@@ -328,9 +476,9 @@ The coach's existing feasibility/utility scores remain separate uncalibrated mod
 
 ### Full new-data system audit
 
-The separate `data/league-validated/` dataset contains a newly generated 40-match
-league. Open `/coach.html?dataset=validated` to analyze those matches. It does not
-replace the older archive or change the meaning of its results.
+The `data/league-validated/` dataset mirrors the refreshed 40-match main league.
+Open `/coach.html?dataset=validated` to analyze the same matches with the full
+decision records. `public-demo/data.json` contains curated moments from this run.
 
 ```sh
 python3 generate.py --weeks 4 --tracking featured --output data/league-validated

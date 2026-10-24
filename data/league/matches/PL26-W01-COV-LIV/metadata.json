@@ -3,7 +3,17 @@
   "match_id": "PL26-W01-COV-LIV",
   "synthetic": true,
   "seed": 20262025,
-  "generator": "generate.py v2.1.0",
+  "generator": "generate.py v2.3.0",
+  "action_policy": {
+    "revision": "player-actions-1",
+    "multipliers": {
+      "pass": 1.2676785250291727,
+      "carry": 1.4731620286964047,
+      "shot": 0.5354764191523225
+    },
+    "attribute_strength": 1.0,
+    "scope": "pass/carry/foot-shot selection; radar effects are bounded hypotheses, not fitted player outcomes"
+  },
   "duration_ms": 6000000,
   "tracking_hz": 5,
   "pitch": {
@@ -66,7 +76,40 @@
       "position": "GK",
       "position_detail": "Goalkeeper",
       "nationality": null,
-      "starter": true
+      "starter": true,
+      "sofascore": {
+        "schema_version": "sofascore-profile-1",
+        "status": "partial",
+        "collected_at_utc": "2026-10-23T22:38:57.790Z",
+        "source_date_of_birth": "1992-08-09",
+        "source_position": "G",
+        "source_nationality": "ENG",
+        "source_shirt_number": 13,
+        "height_cm": 186,
+        "weight_kg": null,
+        "preferred_foot": "right",
+        "attribute_kind": "goalkeeper",
+        "attributes": {
+          "SAV": null,
+          "ANT": null,
+          "TAC": null,
+          "BAL": null,
+          "AER": null
+        },
+        "attribute_period": "latest_visible_on_source_page",
+        "missing_fields": [
+          "SAV",
+          "ANT",
+          "TAC",
+          "BAL",
+          "AER",
+          "weight_kg"
+        ],
+        "evidence_sha256": "40ca5af4d036c7e84008368a9fb736c73f3de0f6a5bf7227de1b4ba253029adf",
+        "identity_match": "name_club_and_shirt_number",
+        "source": "Sofascore",
+        "source_conflicts": {}
+      }
     },
     {
       "player_id": "H02",
@@ -76,7 +119,45 @@
       "position": "LB",
       "position_detail": "Left Full Back",
       "nationality": "England",
-      "starter": true
+      "starter": true,
+      "sofascore": {
+        "schema_version": "sofascore-profile-1",
+        "status": "partial",
+        "collected_at_utc": "2026-10-23T22:38:58.277Z",
+        "source_date_of_birth": "1993-03-21",
+        "source_position": "D",
+        "source_nationality": "ENG",
+        "source_shirt_number": 40,
+        "height_cm": 183,
+        "weight_kg": null,
+        "preferred_foot": "left",
+        "attribute_kind": "outfield",
+        "attributes": {
+          "ATT": null,
+          "DEF": null,
+          "CRE": null,
+          "TEC": null,
+          "TAC": null
+        },
+        "attribute_period": "latest_visible_on_source_page",
+        "missing_fields": [
+          "ATT",
+          "DEF",
+          "CRE",
+          "TEC",
+          "TAC",
+          "weight_kg"
+        ],
+        "evidence_sha256": "d7e496104964626e64753dc332733d0b51b28578492bf8d7fd2aa2b60c32853c",
+        "identity_match": "name_and_birth_date",
+        "source": "Sofascore",
+        "source_conflicts": {
+          "shirt_number": {
+            "roster": 21,
+            "source": 40
+          }
+        }
+      }
     },
     {
       "player_id": "H03",
@@ -86,7 +167,35 @@
       "position": "LCB",
       "position_detail": "Centre Central Defender",
       "nationality": "Jamaica",
-      "starter": true
+      "starter": true,
+      "sofascore": {
+        "schema_version": "sofascore-profile-1",
+        "status": "complete",
+        "collected_at_utc": "2026-10-23T14:39:22.978Z",
+        "source_date_of_birth": "1993-05-29",
+        "source_position": "D",
+        "source_nationality": "JAM",
+        "source_shirt_number": 2,
+        "height_cm": 194,
+        "weight_kg": null,
+        "preferred_foot": "left",
+        "attribute_kind": "outfield",
+        "attributes": {
+          "ATT": 37,
+          "DEF": 78,
+          "CRE": 43,
+          "TEC": 45,
+          "TAC": 69
+        },
+        "attribute_period": "latest_visible_on_source_page",
+        "missing_fields": [
+          "weight_kg"
+        ],
+        "evidence_sha256": "3a9c96c664ca443cd4a8da04bc75ae8195719fb9ced5e54da9ee6d34e5b8055d",
+        "identity_match": "name_and_birth_date",
+        "source": "Sofascore",
+        "source_conflicts": {}
+      }
     },
     {
       "player_id": "H04",
@@ -96,7 +205,35 @@
       "position": "RCB",
       "position_detail": "Centre Central Defender",
       "nationality": "England",
-      "starter": true
+      "starter": true,
+      "sofascore": {
+        "schema_version": "sofascore-profile-1",
+        "status": "complete",
+        "collected_at_utc": "2026-10-23T14:39:23.435Z",
+        "source_date_of_birth": "2001-01-30",
+        "source_position": "D",
+        "source_nationality": "ENG",
+        "source_shirt_number": 4,
+        "height_cm": 186,
+        "weight_kg": null,
+        "preferred_foot": "right",
+        "attribute_kind": "outfield",
+        "attributes": {
+          "ATT": 40,
+          "DEF": 73,
+          "CRE": 41,
+          "TEC": 42,
+          "TAC": 60
+        },
+        "attribute_period": "latest_visible_on_source_page",
+        "missing_fields": [
+          "weight_kg"
+        ],
+        "evidence_sha256": "a4f7af12934b6535de298d6df183dc0d3754362b94e941f9b1af33c22fcddcf2",
+        "identity_match": "name_and_birth_date",
+        "source": "Sofascore",
+        "source_conflicts": {}
+      }
     },
     {
       "player_id": "H05",
@@ -106,7 +243,35 @@
       "position": "RB",
       "position_detail": "Right Full Back",
       "nationality": "England",
-      "starter": true
+      "starter": true,
+      "sofascore": {
+        "schema_version": "sofascore-profile-1",
+        "status": "complete",
+        "collected_at_utc": "2026-10-23T14:39:24.393Z",
+        "source_date_of_birth": "2002-10-23",
+        "source_position": "D",
+        "source_nationality": "ENG",
+        "source_shirt_number": 20,
+        "height_cm": 175,
+        "weight_kg": null,
+        "preferred_foot": "right",
+        "attribute_kind": "outfield",
+        "attributes": {
+          "ATT": 43,
+          "DEF": 56,
+          "CRE": 45,
+          "TEC": 46,
+          "TAC": 46
+        },
+        "attribute_period": "latest_visible_on_source_page",
+        "missing_fields": [
+          "weight_kg"
+        ],
+        "evidence_sha256": "db30d92517f3e7bcf9f6b188e3677b22b303506dd3536c61b33a9b1bff2280bb",
+        "identity_match": "name_and_birth_date",
+        "source": "Sofascore",
+        "source_conflicts": {}
+      }
     },
     {
       "player_id": "H06",
@@ -116,7 +281,40 @@
       "position": "LCM",
       "position_detail": "Centre Central Midfielder",
       "nationality": "England",
-      "starter": true
+      "starter": true,
+      "sofascore": {
+        "schema_version": "sofascore-profile-1",
+        "status": "complete",
+        "collected_at_utc": "2026-10-23T22:38:32.401Z",
+        "source_date_of_birth": "1998-04-22",
+        "source_position": "D",
+        "source_nationality": "WAL",
+        "source_shirt_number": 3,
+        "height_cm": 170,
+        "weight_kg": null,
+        "preferred_foot": "left",
+        "attribute_kind": "outfield",
+        "attributes": {
+          "ATT": 42,
+          "DEF": 64,
+          "CRE": 49,
+          "TEC": 51,
+          "TAC": 49
+        },
+        "attribute_period": "latest_visible_on_source_page",
+        "missing_fields": [
+          "weight_kg"
+        ],
+        "evidence_sha256": "6f634bf179904ad209988d67e569a98591cb0c56ad4f3cdc34064f81f8851eca",
+        "identity_match": "reviewed_name_and_club_history",
+        "source": "Sofascore",
+        "source_conflicts": {
+          "date_of_birth": {
+            "roster": "1998-10-23",
+            "source": "1998-04-22"
+          }
+        }
+      }
     },
     {
       "player_id": "H07",
@@ -126,7 +324,35 @@
       "position": "DM",
       "position_detail": "Defensive Midfielder",
       "nationality": "England",
-      "starter": true
+      "starter": true,
+      "sofascore": {
+        "schema_version": "sofascore-profile-1",
+        "status": "complete",
+        "collected_at_utc": "2026-10-23T14:39:28.879Z",
+        "source_date_of_birth": "1995-07-15",
+        "source_position": "M",
+        "source_nationality": "ENG",
+        "source_shirt_number": 6,
+        "height_cm": 178,
+        "weight_kg": null,
+        "preferred_foot": "left",
+        "attribute_kind": "outfield",
+        "attributes": {
+          "ATT": 54,
+          "DEF": 56,
+          "CRE": 59,
+          "TEC": 59,
+          "TAC": 55
+        },
+        "attribute_period": "latest_visible_on_source_page",
+        "missing_fields": [
+          "weight_kg"
+        ],
+        "evidence_sha256": "4ed0a8567ba6b47615e5b06d92b9535840d3891d07ec224339a703904a566c78",
+        "identity_match": "name_and_birth_date",
+        "source": "Sofascore",
+        "source_conflicts": {}
+      }
     },
     {
       "player_id": "H08",
@@ -136,7 +362,35 @@
       "position": "RCM",
       "position_detail": "Centre Central Midfielder",
       "nationality": "England",
-      "starter": true
+      "starter": true,
+      "sofascore": {
+        "schema_version": "sofascore-profile-1",
+        "status": "complete",
+        "collected_at_utc": "2026-10-23T14:39:28.243Z",
+        "source_date_of_birth": "2001-06-14",
+        "source_position": "M",
+        "source_nationality": "ENG",
+        "source_shirt_number": 5,
+        "height_cm": 185,
+        "weight_kg": null,
+        "preferred_foot": "left",
+        "attribute_kind": "outfield",
+        "attributes": {
+          "ATT": 61,
+          "DEF": 36,
+          "CRE": 63,
+          "TEC": 51,
+          "TAC": 43
+        },
+        "attribute_period": "latest_visible_on_source_page",
+        "missing_fields": [
+          "weight_kg"
+        ],
+        "evidence_sha256": "982dee1bae2630e775ac81130832c3d2552cd7463fa9a56495a0cbd55a66efbc",
+        "identity_match": "name_and_birth_date",
+        "source": "Sofascore",
+        "source_conflicts": {}
+      }
     },
     {
       "player_id": "H09",
@@ -146,7 +400,35 @@
       "position": "LW",
       "position_detail": "Left/Centre/Right Striker",
       "nationality": "Jamaica",
-      "starter": true
+      "starter": true,
+      "sofascore": {
+        "schema_version": "sofascore-profile-1",
+        "status": "complete",
+        "collected_at_utc": "2026-10-23T14:39:33.975Z",
+        "source_date_of_birth": "1999-08-25",
+        "source_position": "M",
+        "source_nationality": "JAM",
+        "source_shirt_number": 10,
+        "height_cm": 178,
+        "weight_kg": null,
+        "preferred_foot": "right",
+        "attribute_kind": "outfield",
+        "attributes": {
+          "ATT": 59,
+          "DEF": 32,
+          "CRE": 56,
+          "TEC": 51,
+          "TAC": 27
+        },
+        "attribute_period": "latest_visible_on_source_page",
+        "missing_fields": [
+          "weight_kg"
+        ],
+        "evidence_sha256": "3e2c9f91f51e0ce5cda135cebd6d7212efa4e01af35dfc2d252cd06eb98f34c1",
+        "identity_match": "name_and_birth_date",
+        "source": "Sofascore",
+        "source_conflicts": {}
+      }
     },
     {
       "player_id": "H10",
@@ -156,7 +438,35 @@
       "position": "ST",
       "position_detail": "Centre Striker",
       "nationality": "England",
-      "starter": true
+      "starter": true,
+      "sofascore": {
+        "schema_version": "sofascore-profile-1",
+        "status": "complete",
+        "collected_at_utc": "2026-10-23T14:39:33.296Z",
+        "source_date_of_birth": "2001-01-05",
+        "source_position": "F",
+        "source_nationality": "ENG",
+        "source_shirt_number": 9,
+        "height_cm": 190,
+        "weight_kg": null,
+        "preferred_foot": "right",
+        "attribute_kind": "outfield",
+        "attributes": {
+          "ATT": 64,
+          "DEF": 31,
+          "CRE": 44,
+          "TEC": 50,
+          "TAC": 55
+        },
+        "attribute_period": "latest_visible_on_source_page",
+        "missing_fields": [
+          "weight_kg"
+        ],
+        "evidence_sha256": "6e6a3e08a72a7167d877fd075860957d21e94f85770693f0192136cd2dac610f",
+        "identity_match": "name_and_birth_date",
+        "source": "Sofascore",
+        "source_conflicts": {}
+      }
     },
     {
       "player_id": "H11",
@@ -166,7 +476,35 @@
       "position": "RW",
       "position_detail": "Right Winger",
       "nationality": "France",
-      "starter": true
+      "starter": true,
+      "sofascore": {
+        "schema_version": "sofascore-profile-1",
+        "status": "complete",
+        "collected_at_utc": "2026-10-23T14:39:35.870Z",
+        "source_date_of_birth": "2003-09-08",
+        "source_position": "M",
+        "source_nationality": "FRA",
+        "source_shirt_number": 18,
+        "height_cm": 180,
+        "weight_kg": null,
+        "preferred_foot": "left",
+        "attribute_kind": "outfield",
+        "attributes": {
+          "ATT": 58,
+          "DEF": 26,
+          "CRE": 55,
+          "TEC": 44,
+          "TAC": 28
+        },
+        "attribute_period": "latest_visible_on_source_page",
+        "missing_fields": [
+          "weight_kg"
+        ],
+        "evidence_sha256": "1af6c0c820fa34b45db8eb6099b1e4f4769583dab0cf2cf6407bb2243c4ebb5f",
+        "identity_match": "name_and_birth_date",
+        "source": "Sofascore",
+        "source_conflicts": {}
+      }
     },
     {
       "player_id": "A01",
@@ -176,7 +514,35 @@
       "position": "GK",
       "position_detail": "Goalkeeper",
       "nationality": "Brazil",
-      "starter": true
+      "starter": true,
+      "sofascore": {
+        "schema_version": "sofascore-profile-1",
+        "status": "complete",
+        "collected_at_utc": "2026-10-23T22:34:38.642Z",
+        "source_date_of_birth": "1992-10-02",
+        "source_position": "G",
+        "source_nationality": "BRA",
+        "source_shirt_number": 1,
+        "height_cm": 193,
+        "weight_kg": null,
+        "preferred_foot": "right",
+        "attribute_kind": "goalkeeper",
+        "attributes": {
+          "SAV": 74,
+          "ANT": 72,
+          "TAC": 82,
+          "BAL": 82,
+          "AER": 77
+        },
+        "attribute_period": "latest_visible_on_source_page",
+        "missing_fields": [
+          "weight_kg"
+        ],
+        "evidence_sha256": "5b15ede2b92cc9df38cf1017a070a5cf00f11ebdeca764fe3edb8c379d7c4da5",
+        "identity_match": "reviewed_alias_birth_date_club_and_shirt_number",
+        "source": "Sofascore",
+        "source_conflicts": {}
+      }
     },
     {
       "player_id": "A02",
@@ -186,7 +552,35 @@
       "position": "LB",
       "position_detail": "Left Full Back",
       "nationality": "Hungary",
-      "starter": true
+      "starter": true,
+      "sofascore": {
+        "schema_version": "sofascore-profile-1",
+        "status": "complete",
+        "collected_at_utc": "2026-10-23T14:43:20.594Z",
+        "source_date_of_birth": "2003-11-07",
+        "source_position": "D",
+        "source_nationality": "HUN",
+        "source_shirt_number": 6,
+        "height_cm": 180,
+        "weight_kg": null,
+        "preferred_foot": "left",
+        "attribute_kind": "outfield",
+        "attributes": {
+          "ATT": 45,
+          "DEF": 66,
+          "CRE": 56,
+          "TEC": 47,
+          "TAC": 55
+        },
+        "attribute_period": "latest_visible_on_source_page",
+        "missing_fields": [
+          "weight_kg"
+        ],
+        "evidence_sha256": "19eed7e40aaaa376c1cd283a818fb7c4237876cdb2e13b0c4880528c52f272bd",
+        "identity_match": "name_and_birth_date",
+        "source": "Sofascore",
+        "source_conflicts": {}
+      }
     },
     {
       "player_id": "A03",
@@ -196,7 +590,35 @@
       "position": "LCB",
       "position_detail": "Centre-Back",
       "nationality": null,
-      "starter": true
+      "starter": true,
+      "sofascore": {
+        "schema_version": "sofascore-profile-1",
+        "status": "complete",
+        "collected_at_utc": "2026-10-23T14:43:19.073Z",
+        "source_date_of_birth": "1997-05-23",
+        "source_position": "D",
+        "source_nationality": "ENG",
+        "source_shirt_number": 2,
+        "height_cm": 188,
+        "weight_kg": null,
+        "preferred_foot": "right",
+        "attribute_kind": "outfield",
+        "attributes": {
+          "ATT": 37,
+          "DEF": 50,
+          "CRE": 45,
+          "TEC": 37,
+          "TAC": 46
+        },
+        "attribute_period": "latest_visible_on_source_page",
+        "missing_fields": [
+          "weight_kg"
+        ],
+        "evidence_sha256": "f9375ba4db3fde2be4638cd1e987e6c00193e45493016f95834ca066b0f3c8c3",
+        "identity_match": "name_club_and_shirt_number",
+        "source": "Sofascore",
+        "source_conflicts": {}
+      }
     },
     {
       "player_id": "A04",
@@ -206,7 +628,35 @@
       "position": "RCB",
       "position_detail": "Centre Central Defender",
       "nationality": "Netherlands",
-      "starter": true
+      "starter": true,
+      "sofascore": {
+        "schema_version": "sofascore-profile-1",
+        "status": "complete",
+        "collected_at_utc": "2026-10-23T14:43:19.547Z",
+        "source_date_of_birth": "1991-07-08",
+        "source_position": "D",
+        "source_nationality": "NED",
+        "source_shirt_number": 4,
+        "height_cm": 195,
+        "weight_kg": null,
+        "preferred_foot": "right",
+        "attribute_kind": "outfield",
+        "attributes": {
+          "ATT": 42,
+          "DEF": 74,
+          "CRE": 47,
+          "TEC": 51,
+          "TAC": 78
+        },
+        "attribute_period": "latest_visible_on_source_page",
+        "missing_fields": [
+          "weight_kg"
+        ],
+        "evidence_sha256": "d05f097292b3fceb2fe9e2216d2067a6bc67c10e94d53521b7e6cdebfcba5c07",
+        "identity_match": "name_and_birth_date",
+        "source": "Sofascore",
+        "source_conflicts": {}
+      }
     },
     {
       "player_id": "A05",
@@ -216,7 +666,35 @@
       "position": "RB",
       "position_detail": "Right Full Back",
       "nationality": "Northern Ireland",
-      "starter": true
+      "starter": true,
+      "sofascore": {
+        "schema_version": "sofascore-profile-1",
+        "status": "complete",
+        "collected_at_utc": "2026-10-23T14:43:21.117Z",
+        "source_date_of_birth": "2003-07-09",
+        "source_position": "D",
+        "source_nationality": "NIR",
+        "source_shirt_number": 12,
+        "height_cm": 181,
+        "weight_kg": null,
+        "preferred_foot": "right",
+        "attribute_kind": "outfield",
+        "attributes": {
+          "ATT": 44,
+          "DEF": 62,
+          "CRE": 50,
+          "TEC": 44,
+          "TAC": 50
+        },
+        "attribute_period": "latest_visible_on_source_page",
+        "missing_fields": [
+          "weight_kg"
+        ],
+        "evidence_sha256": "6a9b033e341ab76577c6e342a2f24d5a21a1a6dc9cd92174fb61ec61ad3e53e9",
+        "identity_match": "name_and_birth_date",
+        "source": "Sofascore",
+        "source_conflicts": {}
+      }
     },
     {
       "player_id": "A06",
@@ -226,7 +704,35 @@
       "position": "LCM",
       "position_detail": "Left/Centre/Right Attacking Midfielder",
       "nationality": "Germany",
-      "starter": true
+      "starter": true,
+      "sofascore": {
+        "schema_version": "sofascore-profile-1",
+        "status": "complete",
+        "collected_at_utc": "2026-10-23T14:43:24.834Z",
+        "source_date_of_birth": "2003-05-03",
+        "source_position": "M",
+        "source_nationality": "GER",
+        "source_shirt_number": 7,
+        "height_cm": 175,
+        "weight_kg": null,
+        "preferred_foot": "right",
+        "attribute_kind": "outfield",
+        "attributes": {
+          "ATT": 71,
+          "DEF": 34,
+          "CRE": 83,
+          "TEC": 76,
+          "TAC": 57
+        },
+        "attribute_period": "latest_visible_on_source_page",
+        "missing_fields": [
+          "weight_kg"
+        ],
+        "evidence_sha256": "222ed55b5d03f1e47b097c0ad320fe0ac0ac4f02a5581cf95b9c7140fef508b7",
+        "identity_match": "name_and_birth_date",
+        "source": "Sofascore",
+        "source_conflicts": {}
+      }
     },
     {
       "player_id": "A07",
@@ -236,7 +742,40 @@
       "position": "DM",
       "position_detail": "Centre Defensive Midfielder",
       "nationality": "Japan",
-      "starter": true
+      "starter": true,
+      "sofascore": {
+        "schema_version": "sofascore-profile-1",
+        "status": "partial",
+        "collected_at_utc": "2026-10-23T22:39:07.345Z",
+        "source_date_of_birth": "1993-02-09",
+        "source_position": "M",
+        "source_nationality": "JPN",
+        "source_shirt_number": 3,
+        "height_cm": 178,
+        "weight_kg": null,
+        "preferred_foot": "right",
+        "attribute_kind": "outfield",
+        "attributes": {
+          "ATT": null,
+          "DEF": null,
+          "CRE": null,
+          "TEC": null,
+          "TAC": null
+        },
+        "attribute_period": "latest_visible_on_source_page",
+        "missing_fields": [
+          "ATT",
+          "DEF",
+          "CRE",
+          "TEC",
+          "TAC",
+          "weight_kg"
+        ],
+        "evidence_sha256": "5ce7714500ed9ab882c45307f41a91d0297c2b6ba98aab3b9a6eaafbe1535556",
+        "identity_match": "name_and_birth_date",
+        "source": "Sofascore",
+        "source_conflicts": {}
+      }
     },
     {
       "player_id": "A08",
@@ -246,7 +785,35 @@
       "position": "RCM",
       "position_detail": "Left/Centre/Right Attacking Midfielder",
       "nationality": "Hungary",
-      "starter": true
+      "starter": true,
+      "sofascore": {
+        "schema_version": "sofascore-profile-1",
+        "status": "complete",
+        "collected_at_utc": "2026-10-23T14:43:25.315Z",
+        "source_date_of_birth": "2000-10-25",
+        "source_position": "M",
+        "source_nationality": "HUN",
+        "source_shirt_number": 8,
+        "height_cm": 187,
+        "weight_kg": null,
+        "preferred_foot": "right",
+        "attribute_kind": "outfield",
+        "attributes": {
+          "ATT": 73,
+          "DEF": 45,
+          "CRE": 85,
+          "TEC": 74,
+          "TAC": 60
+        },
+        "attribute_period": "latest_visible_on_source_page",
+        "missing_fields": [
+          "weight_kg"
+        ],
+        "evidence_sha256": "0e7e458deb4797e3d205acc8ea23cec12ec3adbe290763855180851e226a4668",
+        "identity_match": "name_and_birth_date",
+        "source": "Sofascore",
+        "source_conflicts": {}
+      }
     },
     {
       "player_id": "A09",
@@ -256,7 +823,40 @@
       "position": "LW",
       "position_detail": "Left/Centre/Right Winger",
       "nationality": "Italy",
-      "starter": true
+      "starter": true,
+      "sofascore": {
+        "schema_version": "sofascore-profile-1",
+        "status": "partial",
+        "collected_at_utc": "2026-10-23T22:39:08.753Z",
+        "source_date_of_birth": "1997-10-25",
+        "source_position": "F",
+        "source_nationality": "ITA",
+        "source_shirt_number": 14,
+        "height_cm": 175,
+        "weight_kg": null,
+        "preferred_foot": "right",
+        "attribute_kind": "outfield",
+        "attributes": {
+          "ATT": null,
+          "DEF": null,
+          "CRE": null,
+          "TEC": null,
+          "TAC": null
+        },
+        "attribute_period": "latest_visible_on_source_page",
+        "missing_fields": [
+          "ATT",
+          "DEF",
+          "CRE",
+          "TEC",
+          "TAC",
+          "weight_kg"
+        ],
+        "evidence_sha256": "59d099d857be95f3e29f2769c8f42720160143f5d92b9191bef8bcd3332b82c4",
+        "identity_match": "name_and_birth_date",
+        "source": "Sofascore",
+        "source_conflicts": {}
+      }
     },
     {
       "player_id": "A10",
@@ -266,7 +866,35 @@
       "position": "ST",
       "position_detail": "Centre Striker",
       "nationality": "Sweden",
-      "starter": true
+      "starter": true,
+      "sofascore": {
+        "schema_version": "sofascore-profile-1",
+        "status": "complete",
+        "collected_at_utc": "2026-10-23T14:43:28.301Z",
+        "source_date_of_birth": "1999-09-21",
+        "source_position": "F",
+        "source_nationality": "SWE",
+        "source_shirt_number": 9,
+        "height_cm": 193,
+        "weight_kg": null,
+        "preferred_foot": "right",
+        "attribute_kind": "outfield",
+        "attributes": {
+          "ATT": 77,
+          "DEF": 22,
+          "CRE": 57,
+          "TEC": 58,
+          "TAC": 51
+        },
+        "attribute_period": "latest_visible_on_source_page",
+        "missing_fields": [
+          "weight_kg"
+        ],
+        "evidence_sha256": "49a91e83a6c65cc6719d58146e72ed43b3234c28f3c99c0d183207ca7a474d07",
+        "identity_match": "name_and_birth_date",
+        "source": "Sofascore",
+        "source_conflicts": {}
+      }
     },
     {
       "player_id": "A11",
@@ -276,7 +904,35 @@
       "position": "RW",
       "position_detail": "Left/Right Winger",
       "nationality": "France",
-      "starter": true
+      "starter": true,
+      "sofascore": {
+        "schema_version": "sofascore-profile-1",
+        "status": "complete",
+        "collected_at_utc": "2026-10-23T14:43:30.236Z",
+        "source_date_of_birth": "2002-09-02",
+        "source_position": "F",
+        "source_nationality": "FRA",
+        "source_shirt_number": 29,
+        "height_cm": 182,
+        "weight_kg": null,
+        "preferred_foot": "right",
+        "attribute_kind": "outfield",
+        "attributes": {
+          "ATT": 70,
+          "DEF": 37,
+          "CRE": 67,
+          "TEC": 61,
+          "TAC": 61
+        },
+        "attribute_period": "latest_visible_on_source_page",
+        "missing_fields": [
+          "weight_kg"
+        ],
+        "evidence_sha256": "d81f215e4710b392846e73cc54978871dfe6655da6d30b4dd1c57d5c0dd3e66d",
+        "identity_match": "name_and_birth_date",
+        "source": "Sofascore",
+        "source_conflicts": {}
+      }
     },
     {
       "player_id": "H12",
@@ -286,7 +942,35 @@
       "position": "LCM",
       "position_detail": "Left/Centre/Right Attacking Midfielder",
       "nationality": "Japan",
-      "starter": false
+      "starter": false,
+      "sofascore": {
+        "schema_version": "sofascore-profile-1",
+        "status": "complete",
+        "collected_at_utc": "2026-10-23T14:39:29.365Z",
+        "source_date_of_birth": "1996-10-22",
+        "source_position": "M",
+        "source_nationality": "JPN",
+        "source_shirt_number": 7,
+        "height_cm": 170,
+        "weight_kg": null,
+        "preferred_foot": "left",
+        "attribute_kind": "outfield",
+        "attributes": {
+          "ATT": 55,
+          "DEF": 46,
+          "CRE": 54,
+          "TEC": 52,
+          "TAC": 46
+        },
+        "attribute_period": "latest_visible_on_source_page",
+        "missing_fields": [
+          "weight_kg"
+        ],
+        "evidence_sha256": "b03f0cedfcad4666a1fcdf94ea5ea7d1fcff18a4d2c27f43a08bf3aeaed786cf",
+        "identity_match": "name_and_birth_date",
+        "source": "Sofascore",
+        "source_conflicts": {}
+      }
     },
     {
       "player_id": "H13",
@@ -296,7 +980,35 @@
       "position": "RW",
       "position_detail": "Centre Striker",
       "nationality": null,
-      "starter": false
+      "starter": false,
+      "sofascore": {
+        "schema_version": "sofascore-profile-1",
+        "status": "complete",
+        "collected_at_utc": "2026-10-23T14:39:34.728Z",
+        "source_date_of_birth": "1998-03-27",
+        "source_position": "F",
+        "source_nationality": "USA",
+        "source_shirt_number": 11,
+        "height_cm": 193,
+        "weight_kg": null,
+        "preferred_foot": "right",
+        "attribute_kind": "outfield",
+        "attributes": {
+          "ATT": 63,
+          "DEF": 32,
+          "CRE": 42,
+          "TEC": 46,
+          "TAC": 47
+        },
+        "attribute_period": "latest_visible_on_source_page",
+        "missing_fields": [
+          "weight_kg"
+        ],
+        "evidence_sha256": "37323afd7135b6150b6df51f222911e11350eb657229d0283aae5c330328edd7",
+        "identity_match": "name_club_and_shirt_number",
+        "source": "Sofascore",
+        "source_conflicts": {}
+      }
     },
     {
       "player_id": "H14",
@@ -306,7 +1018,35 @@
       "position": "LB",
       "position_detail": "Central Defender",
       "nationality": "England",
-      "starter": false
+      "starter": false,
+      "sofascore": {
+        "schema_version": "sofascore-profile-1",
+        "status": "complete",
+        "collected_at_utc": "2026-10-23T14:39:23.907Z",
+        "source_date_of_birth": "2008-02-12",
+        "source_position": "D",
+        "source_nationality": "ENG",
+        "source_shirt_number": 12,
+        "height_cm": 193,
+        "weight_kg": null,
+        "preferred_foot": "left",
+        "attribute_kind": "outfield",
+        "attributes": {
+          "ATT": 35,
+          "DEF": 65,
+          "CRE": 42,
+          "TEC": 48,
+          "TAC": 47
+        },
+        "attribute_period": "latest_visible_on_source_page",
+        "missing_fields": [
+          "weight_kg"
+        ],
+        "evidence_sha256": "89dac6a4149a09ad80ebf5ffe4813192d45c9058779cdbdc565a8517fb0b6de9",
+        "identity_match": "name_and_birth_date",
+        "source": "Sofascore",
+        "source_conflicts": {}
+      }
     },
     {
       "player_id": "A12",
@@ -316,7 +1056,35 @@
       "position": "LCM",
       "position_detail": "Left/Centre/Right Attacking Midfielder",
       "nationality": "Argentina",
-      "starter": false
+      "starter": false,
+      "sofascore": {
+        "schema_version": "sofascore-profile-1",
+        "status": "complete",
+        "collected_at_utc": "2026-10-23T14:43:25.882Z",
+        "source_date_of_birth": "1998-12-24",
+        "source_position": "M",
+        "source_nationality": "ARG",
+        "source_shirt_number": 10,
+        "height_cm": 176,
+        "weight_kg": null,
+        "preferred_foot": "right",
+        "attribute_kind": "outfield",
+        "attributes": {
+          "ATT": 60,
+          "DEF": 51,
+          "CRE": 64,
+          "TEC": 58,
+          "TAC": 57
+        },
+        "attribute_period": "latest_visible_on_source_page",
+        "missing_fields": [
+          "weight_kg"
+        ],
+        "evidence_sha256": "013535c46992ca264e1a7ec2c0a3f3ab00b629668a48767f27006b5a00046305",
+        "identity_match": "name_and_birth_date",
+        "source": "Sofascore",
+        "source_conflicts": {}
+      }
     },
     {
       "player_id": "A13",
@@ -326,7 +1094,35 @@
       "position": "RW",
       "position_detail": "Centre Striker",
       "nationality": "Netherlands",
-      "starter": false
+      "starter": false,
+      "sofascore": {
+        "schema_version": "sofascore-profile-1",
+        "status": "complete",
+        "collected_at_utc": "2026-10-23T14:43:29.313Z",
+        "source_date_of_birth": "1999-05-07",
+        "source_position": "M",
+        "source_nationality": "NED",
+        "source_shirt_number": 18,
+        "height_cm": 193,
+        "weight_kg": null,
+        "preferred_foot": "right",
+        "attribute_kind": "outfield",
+        "attributes": {
+          "ATT": 74,
+          "DEF": 34,
+          "CRE": 74,
+          "TEC": 64,
+          "TAC": 46
+        },
+        "attribute_period": "latest_visible_on_source_page",
+        "missing_fields": [
+          "weight_kg"
+        ],
+        "evidence_sha256": "832af48048526ba9ab95aa4edb25b701d07d81b11238bc962bd92ac2ae0be7fd",
+        "identity_match": "name_and_birth_date",
+        "source": "Sofascore",
+        "source_conflicts": {}
+      }
     },
     {
       "player_id": "A14",
@@ -336,7 +1132,35 @@
       "position": "LB",
       "position_detail": "Centre Central Defender",
       "nationality": "France",
-      "starter": false
+      "starter": false,
+      "sofascore": {
+        "schema_version": "sofascore-profile-1",
+        "status": "complete",
+        "collected_at_utc": "2026-10-23T14:43:20.051Z",
+        "source_date_of_birth": "2005-07-13",
+        "source_position": "D",
+        "source_nationality": "FRA",
+        "source_shirt_number": 5,
+        "height_cm": 191,
+        "weight_kg": null,
+        "preferred_foot": "right",
+        "attribute_kind": "outfield",
+        "attributes": {
+          "ATT": 38,
+          "DEF": 77,
+          "CRE": 47,
+          "TEC": 48,
+          "TAC": 68
+        },
+        "attribute_period": "latest_visible_on_source_page",
+        "missing_fields": [
+          "weight_kg"
+        ],
+        "evidence_sha256": "a581696a715d47f05ff6804adfe2128d9ebe5f6fa2bcbe5c3f18c6aeffcb56e9",
+        "identity_match": "name_and_birth_date",
+        "source": "Sofascore",
+        "source_conflicts": {}
+      }
     }
   ],
   "columns": {
