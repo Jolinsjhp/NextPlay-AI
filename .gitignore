@@ -223,7 +223,8 @@ __marimo__/
 # Private model service credentials
 .local/
 
-# Reproducible local simulation artifacts (compact public-demo is tracked)
-data/league-validated/
-data/realism-sample/
-artifacts/realism/system-analysis.jsonl
+# Decision integration fitting intermediates
+node_modules/
+data/decision-analysis/.training/
+# Build outputs contain no uploads or secrets, but are too large for source control.
+artifacts/deployment/*.zip

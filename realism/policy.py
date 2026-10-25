@@ -62,4 +62,7 @@ def candidates(sim):
         options.append({'kind':'carry','weight':weights['carry']*(.5 if pressured else 1.),'pressured':pressured})
     if not options:
         options=[{'kind':'carry','weight':1.,'pressured':pressured}]
+    if sim.attribute_actions:
+        from .player_actions import adjust_options
+        return adjust_options(options, p, sim.action_multipliers, sim.attribute_strength)
     return options

@@ -1,0 +1,18 @@
+{
+  "files": 575,
+  "uncompressed_bytes": 409315675,
+  "zip_bytes": 125653137,
+  "sha256": "49790e484602bbb2e7b5cf3c0eb1b95fb2eefd797ae6bb0684ed73befaac29be",
+  "excludes": [
+    ".local",
+    ".env",
+    "private video uploads",
+    "labels",
+    "credentials",
+    "Git",
+    "node_modules",
+    "duplicate league-validated",
+    "raw decisions.jsonl"
+  ],
+  "source": "local integrated branch; not deployed or provider-tested"
+}
