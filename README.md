@@ -1,4 +1,32 @@
-# Touchline — Premier League 2026/27 replay and squad explorer
+# NextPlay AI — 足球决策与视频证据分析
+
+## 当前整合版（2026-10-25）
+
+本仓库整合队友的 A 数据生成、B 决策评分与反事实推演，以及新增的 C Agent 服务、D 分析交互。
+
+- **视频证据流程**：上传短视频 → 人工标注球场、球员与球 → 确认事实 → 生成 2D 快照 → 评分与假设推演 → Agent 解读与审核。
+- **事实与审核**：保留视频时间戳、数据版本、事实引用与人工反馈；四个模型 Agent 共享同一份计算证据。
+- **队友联调入口**：[分工、接口和视频流程](docs/video-integration.md)、[C/D 接线](docs/cd-integration.md)、[原数据审查](docs/source-data-review.md)。
+- **微软部署**：[Azure 注册与部署说明](docs/azure-deployment.md)。部署配置已准备，尚未实际部署或验证真实 Foundry 调用。
+
+```sh
+python3 server.py
+# 比赛回放与决策分析：http://127.0.0.1:5173/
+# 视频人工标注实验室：http://127.0.0.1:5173/video-review.html
+```
+
+视频识别目前需要人工标注，尚无自动 CV 提取。局部画面可保存，但评分要求完整 22 人及持球信息。
+评分沿用现有模型，迁移到视频场景的准确性尚未验证；输出权重不能当真实进球概率。
+未配置模型时，计算评分仍可运行；四个模型 Agent 需要服务端配置 API。
+密钥、上传视频、本地标注和大型部署 ZIP 均不随仓库发布。
+
+已完成本地验证：143 项 Python 测试、32 项 JavaScript 测试及视频契约验证。
+
+下面保留原有模块文档；2026-10-23 在线演示属于历史版本，不包含本次视频证据流程。
+
+---
+
+# Touchline — NextPlay League 2026/27 replay and squad explorer
 
 ## 分享与快速体验（2026-10-23 升级）
 
@@ -20,7 +48,155 @@ python3 server.py
 训练后的聚合模型、源码、测试、验证摘要及精简演示数据都包含在本仓库。
 StatsBomb 原始缓存及本地 API 密钥不上传。
 
-A dependency-free football data demo for match replay, event consumption, live statistics and squad browsing. Club names, 2026/27 squad numbers and player details are real; every match result, event and tracking frame is procedurally generated.
+A football data demo with a dependency-free Python runtime for match replay, event consumption, live statistics and squad browsing. Club, player and venue names are fictional aliases. Squad sizes, shirt numbers and all other roster attributes are retained; every match result, event and tracking frame is procedurally generated.
+
+## 数据契约 Schema
+
+完整约定、字段入口与联调说明见 [contracts/README.md](contracts/README.md)。
+`schema.json` 覆盖现有比赛、球员、来源属性、事件与轨迹；`contracts/schema.json`
+定义带数据版本/种子的快照、模拟画像和分析请求/响应。三个固定案例位于
+`tests/fixtures/contracts/`，契约测试已接入 `npm test`。
+
+```sh
+npm ci
+npm run test:contract
+npm run validate:schema
+```
+
+这些是供后续接口接线使用的契约和样本，现有 HTTP API 尚未切换到新响应格式。
+
+## Sofascore player attributes
+
+Each of the 566 players in `data/league/squads.json` now has a `sofascore`
+profile collected from the official rendered player pages on 23 October 2026.
+The snapshot contains 472 complete radars: 435 outfield and 37 goalkeeper radars.
+Height is available for 561 players and preferred foot for 563. The other 94
+players have no visible radar values. None of the inspected pages supplies weight;
+`weight_kg` is reserved and remains `null`. No missing values are estimated.
+See `artifacts/sofascore-coverage.json` for per-player gaps and source conflicts.
+
+| Field | Meaning |
+| --- | --- |
+| `attributes` (outfield) | ATT attacking, DEF defending, CRE creativity, TEC technical, TAC tactical; observed scores from 0 to 100 |
+| `attributes` (goalkeeper) | SAV saves, ANT anticipation, TAC tactical, BAL ball distribution, AER aerial; kept separate from outfield scores |
+| `height_cm`, `weight_kg` | Observed measurements with explicit units, or `null` |
+| `preferred_foot` | `left`, `right`, `both`, or `null` |
+| `source_position`, `source_nationality`, `source_shirt_number`, `source_date_of_birth` | Source observations, without overwriting the original roster fields |
+| `status`, `missing_fields` | `complete` requires five applicable radar values, height and preferred foot; weight is optional. `partial` preserves all available values. Failed identity checks use `needs_review`; no candidate uses `unmatched`. |
+| `identity_match`, `source_conflicts` | How the player was matched and any differences from the original roster |
+| `source`, `collected_at_utc`, `attribute_period`, `evidence_sha256` | Source label, observation time, default visible radar period and digest of the local capture |
+
+The official [attribute overview explanation](https://www.sofascore.com/news/sofascores-attribute-overview-the-ultimate-tool-for-player-analysis)
+describes the two radar types. These scores are descriptive indices, not action
+success probabilities. The snapshot is current to collection time, so it must not
+be treated as historical pre-match evidence when evaluating older matches.
+
+Identity matching uses original names with dates of birth, or club and shirt
+number, plus explicit reviews for aliases and conflicting records. The old
+`api_player_id` is **not** a Sofascore ID. Six birth dates disagree with the original
+roster; both dates are preserved and the conflicts are recorded. One local
+defender is a goalkeeper on the source page; consumers must check `attribute_kind`
+and `source_conflicts.position` before using that profile.
+
+To keep fictional names in shared data, real names, Sofascore IDs, page URLs,
+rendered page excerpts and identity-review evidence remain in the ignored
+`.local/sofascore/` directory. A fresh clone includes the imported profiles and
+coverage report, but not these local identity records. The evidence digest links
+each profile to its capture without publishing the name-to-source mapping.
+Existing retained IDs and demographic attributes still make this pseudonymized
+data, not irreversible anonymization.
+
+Reimport the captured pages locally with:
+
+```sh
+python3 import_sofascore.py
+python3 -m unittest discover -s tests -p 'test_sofascore.py'
+```
+
+The importer accepts `--capture`, `--identities`, `--squads` and `--report` paths.
+The capture is a JSON object with a `players` array; each entry provides
+`local_player_id`, official `url`, `title`, UTC `fetched_at`, rendered `general`
+and `radar` text, and the observed roster club/shirt or explicit review evidence.
+It checks page IDs, identity, units and radar ranges before adding the profile.
+An incomplete refresh never erases previously collected fields. The import is
+idempotent and preserves every existing roster field.
+
+`generate.py` carries the profile into starters, substitutes and new match
+metadata, including after substitutions. Generator v2.3 uses the five applicable
+radar attributes to adjust the probability of choosing a legal action.
+
+### Player-dependent action probabilities
+
+The policy first builds legal pass, carry and foot-shot candidates using pitch
+position, pressure, passing lanes and offside restrictions. It then multiplies
+their existing weights by a fitted action-class intercept and a bounded player
+style factor, and normalizes to probabilities. Each decision record includes
+these probabilities; metadata records the policy revision, multipliers and style
+strength. The RNG seed still determines a reproducible sequence.
+
+- Higher ATT favors shots; higher CRE and TAC favor passing; higher TEC favors
+  carrying. DEF adds a conservative passing tendency. These are explicit style
+  hypotheses with coefficients in `realism/player_actions.py`, not measured
+  causal effects of Sofascore ratings.
+- Every style multiplier stays between `exp(-0.6)` and `exp(0.6)`. Missing or
+  incompatible radar values contribute a neutral factor. A goalkeeper uses only
+  the relevant BAL/TAC/ANT tendencies and cannot acquire a shooting candidate.
+- Preferred foot, height and weight remain available as data. This ground-pass,
+  foot-shot policy has no calibrated weak-foot or aerial model, so it does not
+  invent effects from those fields. Pass-completion and shot-conversion models
+  remain separately calibrated and unchanged.
+- Receiving a pass now leads to another action decision. The former unconditional
+  carry after every pass biased the event mix toward carries. Mandatory restart
+  carries are explicitly tagged and excluded from action-choice validation.
+
+`realism/player-action-profile.json` stores global intercepts fitted to the 16
+existing real training matches and 10 complete synthetic matches covering all 20
+clubs. The reference is StatsBomb's pinned 2022 World Cup sample. Eight real test
+matches and 20 different simulator seeds evaluate the frozen model; neither
+selects its parameters. The report also runs the same seeds with the old policy
+and with neutral player attributes. Runtime selection uses probabilities, without
+event quotas or feedback from future events.
+
+Reproduce fitting and validation (downloads only missing **pinned** files):
+
+```sh
+python3 -m realism.calibrate_player_actions --download --workers 4
+python3 -m unittest discover -s tests -p 'test_player_actions.py'
+```
+
+See `artifacts/realism/player-action-validation.json` for the action shares,
+training iterations, per-match results, source checksums and disjoint seed lists.
+The 20 validation matches contain 45,506 eligible actions:
+
+| Action | Former policy | Player-attribute policy | Real test matches |
+| --- | ---: | ---: | ---: |
+| Pass | 35.50% | 45.92% | 46.08% |
+| Carry | 62.68% | 53.07% | 52.93% |
+| Shot | 1.82% | 1.01% | 0.99% |
+
+The largest absolute gap is 0.154 percentage points. Neutralizing player style
+with the same fitted intercepts gives 48.54% passes, 50.67% carries and 0.78%
+shots, confirming that the profiles affect selection. This ablation does not
+validate the correctness of any individual player's style. A separate complete
+match passes 30,001-frame motion and event-consistency checks; see
+`artifacts/realism/player-action-stream-validation.json`.
+
+Acceptance limits are absolute differences of 1.5 percentage points for passing
+and carrying and 0.35 points for shooting, set before validation. The denominator
+contains only modeled ground passes, carries and foot shots; this does not
+establish realistic shares for crosses, tackles, fouls or other unsupported
+actions, nor realistic action counts per minute. It is a World Cup reference,
+not Premier League validation.
+
+New matches use the fitted policy by default. On 24 October 2026 the local
+40-match league, single-match sample and browser demonstration were regenerated
+with this policy. Fixtures, seeds and the 566-player roster were retained;
+results, standings, tracking, heatmaps and analysis were recomputed. The hosted
+website is a separate deployment. For controlled
+comparisons, `Match(..., attribute_actions=False)` selects the former policy;
+`attribute_strength=0.0` keeps the new flow and fitted intercepts but neutralizes
+player-style effects. Changing the radar coefficients or roster composition
+requires refitting and rerunning validation.
 
 ## Frontend
 
@@ -130,14 +306,16 @@ credentials, network, packages or background service.
 
 ### Squad data
 
-`data/league/squads.json` contains 20 clubs and 566 registered players, including shirt number, position, detailed position, nationality, date of birth and age at 2026-10-19.
+`data/league/squads.json` contains 20 fictional clubs and 566 pseudonymous players, including shirt number, position, detailed position, nationality, date of birth and age at 2026-10-19.
 
 Sources:
 
 - [Premier League 2026/27 squad lists](https://www.premierleague.com/en/news/4706139/see-all-the-202627-premier-league-squad-lists) (3 September 2026)
 - [Premier League 2026/27 squad numbers](https://www.premierleague.com/en/news/4725682/all-20-premier-league-clubs-squad-numbers-for-202627-season) (22 September 2026)
 
-Positions, nationalities and dates of birth were cross-checked against the Premier League player directory. Match lineups are selected from each club's real squad by position, then supplemented with substitutes. The match simulation still determines results, events, cards and tracking.
+The links above document the original roster attributes, not the fictional names. Names use stable aliases such as Aster FC and Aster Player 01. Positions, nationalities, dates of birth, ages, shirt numbers, ratings and colours are preserved exactly, as are roster order and internal IDs (including legacy API IDs). This is display-identity pseudonymization, not irreversible anonymization. The checked-in roster and generator both use the fictional names; existing match reports and the compact public demo use the same aliases. Match results, events and tracking were not regenerated. No original-name mapping is shipped.
+
+`tests/test_fictional_data.py` checks the pre-migration digest of every non-name roster attribute, generator/roster consistency, and names and report fingerprints across the archive and public demo. Attribute changes made intentionally in the future require reviewing that baseline.
 
 ## Repository layout
 
@@ -146,7 +324,7 @@ data/league/
 ├── league.json              # clubs, fixtures, results, table, scorers, summary
 ├── fixtures.jsonl           # one JSON fixture per line
 ├── standings.json           # league table
-├── squads.json              # 20 real 2026/27 squads
+├── squads.json              # 20 fictional 2026/27 squads
 ├── validation_report.json   # league consistency report
 └── matches/
     └── PL26-W01-MCI-CHE/
@@ -210,7 +388,7 @@ Each match keeps the existing `HOME / AWAY` stream format:
 - 22 players + 1 ball in tracking frames while nobody is sent off.
 - 5 Hz sampling: 30,001 frames from `0` to `6,000,000` ms (100 simulated minutes).
 - 6,001 one-second state snapshots.
-- `metadata.json` maps `HOME`/`AWAY` to real clubs and includes player names, shirt numbers, positions and squad status.
+- `metadata.json` maps `HOME`/`AWAY` to fictional clubs and includes player names, shirt numbers, positions and squad status.
 - `summary.json` includes final score, statistics, goals and per-player distance.
 - `events.jsonl` includes passes, carries, pressure, interceptions, shots, saves, restarts, cards, substitutions and match phases.
 - `tracking.jsonl` is written only when full replay is requested.
@@ -240,13 +418,13 @@ python3 validate_league.py
 python3 validate.py data/league/matches/PL26-W01-MCI-CHE
 ```
 
-`validate.py` checks a single match: 5 Hz continuity, identities, pitch bounds, velocity/acceleration limits, ball attachment, event causality, goals, statistics and state snapshots. `validate_league.py` checks the 20-club schedule, every match's summary/events/states/preview, the table, scorer totals and that match lineups come from the real squad file.
+`validate.py` checks a single match: 5 Hz continuity, identities, pitch bounds, velocity/acceleration limits, ball attachment, event causality, goals, statistics and state snapshots. `validate_league.py` checks the 20-club schedule, every match's summary/events/states/preview, the table, scorer totals and that match lineups come from the fictional squad file.
 
 ## Limitations
 
 This is a demo, not a professional football model. It does not model offsides, a complete foul/referee system, physical collisions, fatigue or full ball physics. Cards and substitutions follow a deterministic demo script; substitutes inherit the outgoing formation slot; pressure is a proximity heuristic. Match outcomes are heuristic and are not calibrated to real football distributions. Use the label **simulated match data** whenever presenting scores, distances or tactical explanations.
 
-Real 2026/27 squad data is sourced from the Premier League and is included for identification and demonstration. Match events, tracking and results are generated and are not official Premier League data.
+The original 2026/27 roster attributes are sourced from the Premier League; club, player and venue names are fictional. Match events, tracking and results are generated and are not official competition data.
 
 ### Daily calendar
 
@@ -298,7 +476,7 @@ Shot goal frequencies are fitted by distance; other motion and ball-outcome beha
 
 Open `/coach.html?realism=1` for the newly generated sample and
 `/realism-validation.html` for before/after measurements, regressions and sources.
-The existing league archive is retained; it predates this generator change.
+The local league archive now uses generator v2.3 and the player-attribute policy.
 Every newly written match also gets `decisions.jsonl`: pre-decision snapshot,
 candidates, selection weights and selected action linked to the next action ID.
 These are simulator records, **not expert optimal-action training labels**.
@@ -326,9 +504,9 @@ The coach's existing feasibility/utility scores remain separate uncalibrated mod
 
 ### Full new-data system audit
 
-The separate `data/league-validated/` dataset contains a newly generated 40-match
-league. Open `/coach.html?dataset=validated` to analyze those matches. It does not
-replace the older archive or change the meaning of its results.
+The `data/league-validated/` dataset mirrors the refreshed 40-match main league.
+Open `/coach.html?dataset=validated` to analyze the same matches with the full
+decision records. `public-demo/data.json` contains curated moments from this run.
 
 ```sh
 python3 generate.py --weeks 4 --tracking featured --output data/league-validated
@@ -355,3 +533,53 @@ See `decision/README.md` for which components are learned and which are assumpti
 The original pass-only coach and generator are retained. Restart the local server
 after Python API edits. `TOUCHLINE_PORT=5174 python3 server.py` runs a separate
 upgrade preview when the original 5173 server is already running.
+
+## Integrated current-generator Decision analysis
+
+Open the main dashboard, select a match, then **Analysis → Decision analysis**.
+The report/player-performance view remains available in **Match report**.
+A direct link is `/?match=PL26-W01-MCI-CHE&view=stats&analysis=decisions`.
+
+This module ports Hackthon `84251bb` onto this repository's `96d13a` generator
+source. All match/replay/report data comes from the current `data/league`;
+there is no legacy B match dataset switch. Source hashes are checked before
+reusing the same-source fitted xT/baselines, and all decisions were re-scored
+with the new version binding. No match simulator was re-run.
+
+The model is B's two-step Q2 with tactical probability assumptions and a fitted
+12×8 xT tail, not FQI or a learned individual-skill policy. The main table shows
+rank, reason and risk. The explicit diagnostics contract exposes all 30 features,
+branch probabilities, Q1/Q2 decomposition and Softmax preference shares for future
+Agent integration; these are research estimates, not real-football probabilities.
+Observed radar attributes and simulated foot settings stay separate and do not
+become unvalidated personal execution multipliers.
+
+Representative decisions rotate players, teams, pitch zones and possession
+sequences. All decisions and largest losses are separate scopes. Unsupported
+states have no fabricated score. Missing historical carry intent stays unknown.
+
+A separate **Counterfactual lab** supports every ranked pass, carry and shot.
+Passes reuse A's existing four-scenario loop; carries/shots add explicitly
+simplified bounded movement/contact hypotheses. Scenario frequencies are not
+probabilities, playback is not observed future, and playback never changes ranking
+or source files. It stops at the current period boundary. Replay and both new views
+share one pitch renderer and the original team palette.
+
+Existing `/api/decision`, `/api/rollout`, report and Agent APIs retain their
+meaning. New endpoints use `/api/decision-analysis/`; the original canonical
+rank/text-only schema remains unchanged. The new versioned metrics/counterfactual
+extension, tool catalog and real JSON examples are documented in
+[the dedicated integration contract](contracts/decision-analysis/README.md).
+No live language-model agent is configured by this integration.
+
+See [implementation notes](docs/decision-analysis-integration.md) and
+[validation results](docs/decision-analysis-validation.md). Runtime only needs
+Python 3.9+. Restart the Python server after upgrading code.
+
+## C / D: evidence-bound replay coach
+
+Open **Analysis → Decision analysis** for the integrated question, four-role explanation, training selection and B counterfactual flow. See [C/D integration and Foundry setup](docs/cd-integration.md) for architecture, private server configuration, test commands and deployment handoff. Without model credentials, computed comparisons still work and the service reports `model_unavailable`.
+
+## Human-confirmed video evidence
+
+Open **Video evidence lab** at `/video-review.html` to upload an authorized MP4/WebM clip, annotate pitch landmarks and all visible players, confirm a moment, and reuse Q2 comparison, hypothetical rollout and evidence-audited model explanations. The included walkthrough generates synthetic video; no automatic video recognition is claimed. See [video workflow and A/B/C/D handoffs](docs/video-integration.md), [the video annotation contract](contracts/video-review.schema.json), and [Azure trial deployment](docs/azure-deployment.md). Missing observations block scoring; uploaded videos and human labels stay outside public assets and deployment packages.

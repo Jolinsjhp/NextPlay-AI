@@ -9,6 +9,10 @@ from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import urlsplit
 
+from decision_analysis.service import handle_get as decision_get, handle_post as decision_post
+from decision_analysis.agents import run as run_bound_agents, configuration
+from decision_analysis.service import repository
+from video_review.service import handle_upload as video_upload, handle_get as video_get, handle_post as video_post
 from decision.outcome import review_record
 from decision.agents import run_team
 from decision.rollout import simulate
@@ -17,7 +21,7 @@ from analysis_agent import build_report
 from model_service import narrate, validate_base_url
 
 ROOT = Path(__file__).resolve().parent
-CONFIG = ROOT / '.local' / 'model-service.json'
+CONFIG = Path(os.environ.get('NEXTPLAY_STATE_DIR', str(ROOT / '.local'))) / 'model-service.json'
 LOCK = threading.Lock()
 AGENT_SLOT = threading.BoundedSemaphore(1)
 DEFAULTS = {'base_url': 'https://api.openai.com/v1', 'model': '', 'api_key': ''}
@@ -61,6 +65,11 @@ class Handler(SimpleHTTPRequestHandler):
 
     def trusted(self):
         host = self.headers.get('Host', '')
+        public_origin = os.environ.get('NEXTPLAY_PUBLIC_ORIGIN', '').rstrip('/')
+        if public_origin:
+            origin = urlsplit(public_origin)
+            return (origin.scheme == 'https' and host == origin.netloc
+                    and self.headers.get('Origin', public_origin) == public_origin)
         allowed = {f'127.0.0.1:{self.server.server_port}', f'localhost:{self.server.server_port}'}
         return host in allowed and self.headers.get('Origin', f'http://{host}') == f'http://{host}'
 
@@ -88,8 +97,21 @@ class Handler(SimpleHTTPRequestHandler):
         return super().send_head()
 
     def do_GET(self):
-        if urlsplit(self.path).path == '/api/model-settings':
+        if urlsplit(self.path).path == '/healthz':
+            self.reply(200, {'status': 'ready', 'service': 'nextplay'})
+            return
+        if video_get(self):return
+        if urlsplit(self.path).path == '/api/decision-analysis/agent-status':
             if not self.trusted():
+                self.reply(403, {'error': 'Same-origin requests only.'})
+                return
+            config = configuration(read_config())
+            self.reply(200, {'configured': all(config.get(k) for k in ('base_url', 'model', 'api_key')),
+                             'daily_call_limit': int(os.environ.get('NEXTPLAY_DAILY_MODEL_CALLS', '100'))})
+            return
+        if decision_get(self):return
+        if urlsplit(self.path).path == '/api/model-settings':
+            if not self.trusted() or os.environ.get('NEXTPLAY_PUBLIC_ORIGIN'):
                 self.reply(403, {'error': 'Only same-origin local requests are accepted.'})
                 return
             self.reply(200, public_config(read_config()))
@@ -97,17 +119,47 @@ class Handler(SimpleHTTPRequestHandler):
             super().do_GET()
 
     def do_POST(self):
+        if video_upload(self):return
         if not self.trusted() or self.headers.get('Content-Type') != 'application/json':
             self.reply(403, {'error': 'Only same-origin JSON requests are accepted.'})
             return
         try:
+            route = urlsplit(self.path).path
             size = int(self.headers.get('Content-Length', '0'))
-            if not 0 < size <= 16384:
+            if not 0 < size <= (524288 if route.startswith('/api/video-review/') else 16384):
                 raise ValueError('Invalid request size.')
             data = json.loads(self.rfile.read(size))
             if not isinstance(data, dict):
                 raise ValueError('Expected a JSON object.')
-            route = urlsplit(self.path).path
+            if os.environ.get('NEXTPLAY_PUBLIC_ORIGIN') and not route.startswith(('/api/decision-analysis/', '/api/video-review/')):
+                self.reply(403, {'error': 'Legacy model routes and settings are disabled in public demo mode.'})
+                return
+            if route.startswith('/api/video-review/'):
+                is_agent = route.endswith('/agents')
+                if is_agent and not AGENT_SLOT.acquire(blocking=False):
+                    self.reply(429, {'error': 'An agent review is already running.'})
+                    return
+                try:
+                    with LOCK:
+                        config = configuration(read_config())
+                    video_post(self, route, data, repository(), config)
+                finally:
+                    if is_agent:AGENT_SLOT.release()
+                return
+            if route == '/api/decision-analysis/agents':
+                if set(data) != {'request', 'candidate_set_id'}:
+                    raise ValueError('Invalid bound request')
+                if not AGENT_SLOT.acquire(blocking=False):
+                    self.reply(429, {'error': 'An agent review is already running.'})
+                    return
+                try:
+                    with LOCK:
+                        config = configuration(read_config())
+                    self.reply(200, run_bound_agents(data['request'], data['candidate_set_id'], config, repository()))
+                finally:
+                    AGENT_SLOT.release()
+                return
+            if decision_post(self, route, data):return
             if route == '/api/agent-review':
                 if not AGENT_SLOT.acquire(blocking=False):
                     self.reply(429, {'error': 'An agent review is already running. Try again when it finishes.'})
@@ -174,4 +226,4 @@ class Handler(SimpleHTTPRequestHandler):
 if __name__ == '__main__':
     port=int(os.environ.get('TOUCHLINE_PORT','5173'))
     print(f'Touchline: http://127.0.0.1:{port}', flush=True)
-    ThreadingHTTPServer(('127.0.0.1', port), Handler).serve_forever()
+    ThreadingHTTPServer((os.environ.get('TOUCHLINE_HOST', '127.0.0.1'), port), Handler).serve_forever()

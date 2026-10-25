@@ -1,0 +1,67 @@
+{
+  "source_commit": "96d13a377e98602c9998e3ebb82186843762febf",
+  "counts": {
+    "duplicate_decisions": 0,
+    "decision_snapshot_mismatches": 0,
+    "matches": 40,
+    "events": 150466,
+    "full_tracking_matches": 4,
+    "decisions": 91031
+  },
+  "duplicate_event_matches": [],
+  "event_identity_mismatches": [],
+  "recomputed_synthetic_summary": {
+    "actions": 92001,
+    "passes": 41760,
+    "shots": 970,
+    "pass_distance_m": 20.84024871322165,
+    "pass_completion": 0.9352729885057471,
+    "backward_pass_share": 0.5930795019157088,
+    "shot_distance_m": 16.291682193920792,
+    "shot_conversion": 0.08453608247422681
+  },
+  "front_quarter": {
+    "actions": 39010,
+    "passes": 16128,
+    "shots": 966,
+    "pass_distance_m": 23.129823383531512,
+    "pass_completion": 0.9329737103174603,
+    "backward_pass_share": 0.8852926587301587,
+    "shot_distance_m": 16.240022190268377,
+    "shot_conversion": 0.08488612836438923
+  },
+  "stored_reference_summary": {
+    "actions": 5035,
+    "passes": 2320,
+    "shots": 50,
+    "pass_distance_m": 15.01045937972718,
+    "pass_completion": 0.9288793103448276,
+    "backward_pass_share": 0.38620689655172413,
+    "shot_distance_m": 15.710708369705607,
+    "shot_conversion": 0.1
+  },
+  "stored_front_quarter_reference": {
+    "actions": 613,
+    "passes": 254,
+    "shots": 49,
+    "pass_distance_m": 11.458650425951289,
+    "pass_completion": 0.7913385826771654,
+    "backward_pass_share": 0.5,
+    "shot_distance_m": 15.443510652738226,
+    "shot_conversion": 0.10204081632653061
+  },
+  "players": 566,
+  "profile_status": {
+    "complete": 471,
+    "partial": 95
+  },
+  "preferred_foot": {
+    "right": 392,
+    "left": 150,
+    "both": 21,
+    "unknown": 3
+  },
+  "same_geometry_changed_score_and_clock_policy_unchanged": true,
+  "reference_scope": "Stored 8-match World Cup held-out aggregate, not independently re-downloaded in this audit.",
+  "note": "Event/snapshot integrity does not establish realistic decision-making or causal player effects."
+}
