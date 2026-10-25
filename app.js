@@ -1,8 +1,11 @@
+import {renderPitch,pitchGeometry} from './pitch-renderer.js?v=integrated-da-1';
+import {createDecisionView} from './decision-analysis-view.js?v=integrated-da-1';
 import { playerStats, heatmapSVG } from './player-analysis.js';
 import { januarySchedule, calendarDays } from './calendar.js';
 import { CURRENT_MATCHWEEK, HOME_CLUB_KEY, clubDashboard } from './club-home.js';
 import { formatClock, sampleFrames, samplePacked, lastAtOrBefore, releasedEvents, rosterStatus } from './core.js?v=2.2.0';
 
+const initialQuery = new URLSearchParams(location.search);
 const $ = selector => document.querySelector(selector);
 const icon = name => `<svg aria-hidden="true"><use href="#i-${name}"/></svg>`;
 const escape = value => String(value ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
@@ -10,6 +13,17 @@ const state = { metadata: null, summary: null, preview: null, packed: null, even
 const canvas = $('#pitch');
 const ctx = canvas.getContext('2d');
 const LEAGUE_ROOT = './data/league/';
+let analysisTab=new URLSearchParams(location.search).get('analysis')||'report';
+const decisionView=createDecisionView($('#decision-analysis'),time=>{changeView('replay');seek(time);});
+function setAnalysisTab(tab){
+  analysisTab=tab==='decisions'?'decisions':'report';
+  $('#match-report-panel').hidden=analysisTab==='decisions';$('#decision-analysis').hidden=analysisTab!=='decisions';
+  document.querySelectorAll('[data-analysis-tab]').forEach(b=>{b.classList.toggle('active',b.dataset.analysisTab===analysisTab);b.setAttribute('aria-selected',String(b.dataset.analysisTab===analysisTab));});
+  decisionView.show(state.view==='stats'&&analysisTab==='decisions');
+  if(state.view==='stats'){const url=new URL(location.href);url.searchParams.set('analysis',analysisTab);history.replaceState(null,'',url);}
+}
+document.querySelectorAll('[data-analysis-tab]').forEach(b=>b.onclick=()=>setAnalysisTab(b.dataset.analysisTab));
+
 let worker = null, allFixtures = [], lastTick = 0, lastUI = 0, eventKey = '', statsKey = '', canvasWidth = 0, canvasHeight = 0;
 const teamMeta = id => state.metadata?.teams.find(t => t.team_id === id);
 const teamName = id => teamMeta(id)?.short_name || teamMeta(id)?.name || 'Match';
@@ -183,6 +197,7 @@ function startTracking(fixture, token) {
       $('#load-status').textContent = `${data.data.count.toLocaleString('en-GB')} frames ready · scrub the full match`;
       eventKey = '';
       buildAnalysis();
+      decisionView.refreshReplayAvailability();
       refresh(true);
       worker?.terminate(); worker = null;
     }
@@ -199,6 +214,7 @@ async function loadMatch(matchId, { updateUrl = true } = {}) {
   const fixture = allFixtures.find(item => item.match_id === matchId);
   if (!fixture) return;
   const token = ++state.loadToken;
+  decisionView.clear();
   if (worker) { worker.terminate(); worker = null; }
   state.packed = null;
   state.report = null;
@@ -224,6 +240,7 @@ async function loadMatch(matchId, { updateUrl = true } = {}) {
     syncPicker(fixture);
     buildPlayerSelect();
     buildAnalysis();
+    decisionView.setMatch({metadata,fixture,preview,fullReady:()=>!!state.packed,clock:(t,p)=>formatClock(t,metadata,p)});
     buildRosters();
     $('#timeline').min = preview.start_ms;
     $('#timeline').max = preview.end_ms;
@@ -399,11 +416,11 @@ async function init() {
     setupHome();
     $('#dataset-title').textContent = 'NextPlay League 2026/27';
     $('#dataset-version').textContent = 'v2.2';
-    const requested = new URLSearchParams(location.search).get('match');
+    const requested = initialQuery.get('match');
     const linked = allFixtures.find(fixture => fixture.match_id === requested);
     const current = allFixtures.filter(fixture => fixture.matchweek === CURRENT_MATCHWEEK);
     const initial = linked || current.find(fixture => [fixture.home_club_id, fixture.away_club_id].includes(state.homeClub)) || current.find(fixture => fixture.featured) || current[0] || allFixtures[0];
-    changeView(linked ? 'overview' : 'home');
+    changeView(['overview','replay','stats','lineup'].includes(initialQuery.get('view')) ? initialQuery.get('view') : linked ? 'overview' : 'home');
     await loadMatch(initial.match_id, { updateUrl: Boolean(linked) });
   } catch (error) {
     $('#load-status').textContent = 'Data not ready';
@@ -434,6 +451,7 @@ function setPlaying(playing) {
 function changeView(view) {
   state.view = view;
   document.body.dataset.view = view;
+  const viewUrl=new URL(location.href);viewUrl.searchParams.set('view',view);history.replaceState(null,'',viewUrl);
   const titles = {
     home: ['Home', 'Your club. The week ahead.', 'Results, form and the next challenge — all in one place.'],
     overview: ['Overview', 'Every moment, on the pitch.', 'Explore every pass, run and goal.'],
@@ -467,6 +485,7 @@ function changeView(view) {
     renderHome();
     const url = new URL(location.href); url.searchParams.delete('match'); history.replaceState(null, '', url);
   } else if (matchView && state.fixture) updateUrlForMatch(state.fixture.match_id);
+  setAnalysisTab(analysisTab);
   if (view === 'settings') loadModelSettings();
   if (view !== 'overview' && view !== 'replay') setPlaying(false);
   if (view === 'home') $('#eyebrow-code').textContent = `/ WEEK ${CURRENT_MATCHWEEK} · ${state.league?.weeks.find(week => week.week === CURRENT_MATCHWEEK)?.date || ''}`;
@@ -711,45 +730,10 @@ function buildRosters() {
   $('#rosters').innerHTML = state.metadata.teams.map(team => `<section class="card"><div class="card-heading"><div class="roster-title">${$(`.${team.team_id === 'HOME' ? 'home' : 'away'}-crest`).outerHTML}<div><strong>${escape(team.name)}</strong><small>${escape(team.short_name || team.name)}</small></div></div><span class="subtle-badge">${escape(team.formation)}</span></div><div class="roster-header"><span>No.</span><span>Player</span><span>Position</span><span>Distance / km</span></div>${state.metadata.players.filter(p => p.team_id === team.team_id).map(p => `<button class="roster-row" data-player="${escape(p.player_id)}"><span class="jersey-pill ${team.team_id === 'AWAY' ? 'away' : ''}">${p.jersey_number}</span><span>${escape(p.name)}<small class="roster-status ${rosterStatus(p, state.events, state.metadata.duration_ms).status === 'Sent off' ? 'dismissed' : ''}">${p.starter === false ? 'Bench' : 'Starter'} · ${escape(rosterStatus(p, state.events, state.metadata.duration_ms).status)}${rosterStatus(p, state.events, state.metadata.duration_ms).yellow ? ' · Yellow' : ''}</small></span><span>${escape(p.position)}</span><span>${(state.summary.distance_m[p.player_id] / 1000).toFixed(2)}</span></button>`).join('')}</section>`).join('');
 }
 
-function pitchLayout() {
-  const w = canvasWidth, h = canvasHeight;
-  const scale = Math.min((w - 42) / 105, (h - 69) / 68);
-  return { x: (w - 105 * scale) / 2, y: (h - 68 * scale) / 2 + 3, scale, w, h };
-}
-
-function drawPitch(frame) {
-  if ($('#live-view').hidden || !frame || !canvasWidth) return;
-  const { x, y, scale: s, w, h } = pitchLayout();
-  const X = v => x + v * s, Y = v => y + v * s;
-  ctx.clearRect(0, 0, w, h);
-  ctx.fillStyle = '#426e57'; ctx.fillRect(0, 0, w, h);
-  for (let i = 0; i < 10; i++) { ctx.fillStyle = i % 2 ? '#47745c' : '#426e57'; ctx.fillRect(X(i * 10.5), y, 10.5 * s, 68 * s); }
-  ctx.strokeStyle = '#b9d1bd80'; ctx.lineWidth = 1;
-  const rect = (a, b, c, d) => ctx.strokeRect(X(a), Y(b), c * s, d * s);
-  const circle = (a, b, r, start = 0, end = Math.PI * 2) => { ctx.beginPath(); ctx.arc(X(a), Y(b), r * s, start, end); ctx.stroke(); };
-  rect(0, 0, 105, 68); rect(0, 13.84, 16.5, 40.32); rect(88.5, 13.84, 16.5, 40.32);
-  rect(0, 24.84, 5.5, 18.32); rect(99.5, 24.84, 5.5, 18.32);
-  rect(-2.2, 30.34, 2.2, 7.32); rect(105, 30.34, 2.2, 7.32);
-  ctx.beginPath(); ctx.moveTo(X(52.5), Y(0)); ctx.lineTo(X(52.5), Y(68)); ctx.stroke();
-  circle(52.5, 34, 9.15); circle(11, 34, 9.15, -.924, .924); circle(94, 34, 9.15, Math.PI - .924, Math.PI + .924);
-  circle(0, 0, 1, 0, Math.PI / 2); circle(105, 0, 1, Math.PI / 2, Math.PI); circle(0, 68, 1, -Math.PI / 2, 0); circle(105, 68, 1, Math.PI, Math.PI * 1.5);
-  ctx.fillStyle = '#c2d8c4a0';
-  for (const px of [11, 52.5, 94]) { ctx.beginPath(); ctx.arc(X(px), Y(34), 1.6, 0, Math.PI * 2); ctx.fill(); }
-  const radius = Math.max(6, Math.min(10, s * 1.65));
-  for (const p of frame.players) {
-    const home = p[0][0] === 'H', selected = p[0] === state.selected, owner = p[0] === frame.ball_owner_id;
-    const px = X(p[1]), py = Y(p[2]);
-    if (selected || owner) { ctx.beginPath(); ctx.arc(px, py, radius + (selected ? 4 : 2.5), 0, Math.PI * 2); ctx.strokeStyle = selected ? '#ffffffbc' : '#f9dc9c'; ctx.lineWidth = selected ? 1.4 : 1; ctx.stroke(); }
-    ctx.shadowColor = '#183b3a65'; ctx.shadowBlur = 4; ctx.shadowOffsetY = 2;
-    ctx.beginPath(); ctx.arc(px, py, radius, 0, Math.PI * 2); ctx.fillStyle = home ? '#ee8b5a' : '#83a3e0'; ctx.fill();
-    ctx.shadowBlur = 0; ctx.shadowOffsetY = 0;
-    ctx.strokeStyle = home ? '#ffc9a391' : '#c5d7fbb0'; ctx.lineWidth = 1; ctx.stroke();
-    ctx.fillStyle = home ? '#fff7ed' : '#fff'; ctx.font = `600 ${Math.max(7, radius * .9)}px -apple-system, sans-serif`; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText(numberOf(p[0]), px, py + .4);
-  }
-  const bx = X(frame.ball[0]), by = Y(frame.ball[1]), lift = Math.min(frame.ball[2] * s, 15);
-  ctx.fillStyle = '#193d3760'; ctx.beginPath(); ctx.ellipse(bx + 1, by + 2, 3.5, 2, 0, 0, Math.PI * 2); ctx.fill();
-  ctx.beginPath(); ctx.arc(bx, by - lift, 3.6, 0, Math.PI * 2); ctx.fillStyle = '#fffdf4'; ctx.fill(); ctx.strokeStyle = '#e1d9bf'; ctx.lineWidth = .8; ctx.stroke();
-  ctx.beginPath(); ctx.arc(bx, by - lift, 1.3, 0, Math.PI * 2); ctx.fillStyle = '#707c6d'; ctx.fill();
+function pitchLayout(){return pitchGeometry(canvasWidth,canvasHeight);}
+function drawPitch(frame){
+  if ($('#live-view').hidden) return;
+  renderPitch(canvas,frame,{metadata:state.metadata,selected:state.selected,width:canvasWidth,height:canvasHeight});
 }
 
 new ResizeObserver(() => {
@@ -842,7 +826,7 @@ $('#generate-model-summary').onclick = async () => {
 
 document.querySelectorAll('[data-view]').forEach(button => button.addEventListener('click', () => changeView(button.dataset.view)));
 document.querySelectorAll('[role=tab]').forEach(tab => tab.addEventListener('keydown', e => {
-  const tabs = [...document.querySelectorAll('[role=tab]')];
+  const tabs = [...tab.closest('[role=tablist]').querySelectorAll('[role=tab]')];
   if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(e.key)) return;
   e.preventDefault();
   const next = e.key === 'Home' ? 0 : e.key === 'End' ? tabs.length - 1 : (tabs.indexOf(tab) + (e.key === 'ArrowRight' ? 1 : -1) + tabs.length) % tabs.length;
@@ -894,6 +878,6 @@ document.addEventListener('keydown', e => {
   if (e.code === 'ArrowRight') { e.preventDefault(); seek(state.time + 10000); }
 });
 document.addEventListener('visibilitychange', () => { if (document.hidden) setPlaying(false); });
-changeView('home');
+if(!initialQuery.has('match'))changeView('home');
 init();
 requestAnimationFrame(tick);

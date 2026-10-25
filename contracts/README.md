@@ -134,3 +134,7 @@ python3 -m contracts.export_fixtures
 赛后报告、榜单、压缩演示打包等衍生展示文件不属于这份核心 Schema；
 它们的聚合与轨迹/事件一致性继续由既有 `validate.py`、`validate_league.py` 和各模块测试负责。
 固定快照不依赖被 gitignore 的大文件，fresh clone 可执行契约测试。
+
+## Current-generator decision-analysis extension
+
+The integrated dashboard now calls `/api/decision-analysis/*`. The original contract above remains rank/text-only with pass-only rollout semantics. Full numerical diagnostics and pass/carry/shot counterfactuals use a separately versioned extension, not extra fields on the original response. See [the dedicated contract](decision-analysis/README.md), its Schema, tool catalog and real examples. Existing legacy HTTP endpoints keep their behavior.

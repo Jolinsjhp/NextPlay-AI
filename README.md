@@ -505,3 +505,45 @@ See `decision/README.md` for which components are learned and which are assumpti
 The original pass-only coach and generator are retained. Restart the local server
 after Python API edits. `TOUCHLINE_PORT=5174 python3 server.py` runs a separate
 upgrade preview when the original 5173 server is already running.
+
+## Integrated current-generator Decision analysis
+
+Open the main dashboard, select a match, then **Analysis → Decision analysis**.
+The report/player-performance view remains available in **Match report**.
+A direct link is `/?match=PL26-W01-MCI-CHE&view=stats&analysis=decisions`.
+
+This module ports Hackthon `84251bb` onto this repository's `96d13a` generator
+source. All match/replay/report data comes from the current `data/league`;
+there is no legacy B match dataset switch. Source hashes are checked before
+reusing the same-source fitted xT/baselines, and all decisions were re-scored
+with the new version binding. No match simulator was re-run.
+
+The model is B's two-step Q2 with tactical probability assumptions and a fitted
+12×8 xT tail, not FQI or a learned individual-skill policy. The main table shows
+rank, reason and risk. The explicit diagnostics contract exposes all 30 features,
+branch probabilities, Q1/Q2 decomposition and Softmax preference shares for future
+Agent integration; these are research estimates, not real-football probabilities.
+Observed radar attributes and simulated foot settings stay separate and do not
+become unvalidated personal execution multipliers.
+
+Representative decisions rotate players, teams, pitch zones and possession
+sequences. All decisions and largest losses are separate scopes. Unsupported
+states have no fabricated score. Missing historical carry intent stays unknown.
+
+A separate **Counterfactual lab** supports every ranked pass, carry and shot.
+Passes reuse A's existing four-scenario loop; carries/shots add explicitly
+simplified bounded movement/contact hypotheses. Scenario frequencies are not
+probabilities, playback is not observed future, and playback never changes ranking
+or source files. It stops at the current period boundary. Replay and both new views
+share one pitch renderer and the original team palette.
+
+Existing `/api/decision`, `/api/rollout`, report and Agent APIs retain their
+meaning. New endpoints use `/api/decision-analysis/`; the original canonical
+rank/text-only schema remains unchanged. The new versioned metrics/counterfactual
+extension, tool catalog and real JSON examples are documented in
+[the dedicated integration contract](contracts/decision-analysis/README.md).
+No live language-model agent is configured by this integration.
+
+See [implementation notes](docs/decision-analysis-integration.md) and
+[validation results](docs/decision-analysis-validation.md). Runtime only needs
+Python 3.9+. Restart the Python server after upgrading code.

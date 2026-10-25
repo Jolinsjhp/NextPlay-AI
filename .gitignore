@@ -222,3 +222,7 @@ __marimo__/
 .DS_Store
 # Private model service credentials
 .local/
+
+# Decision integration fitting intermediates
+node_modules/
+data/decision-analysis/.training/

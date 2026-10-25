@@ -9,6 +9,7 @@ from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import urlsplit
 
+from decision_analysis.service import handle_get as decision_get, handle_post as decision_post
 from decision.outcome import review_record
 from decision.agents import run_team
 from decision.rollout import simulate
@@ -88,6 +89,7 @@ class Handler(SimpleHTTPRequestHandler):
         return super().send_head()
 
     def do_GET(self):
+        if decision_get(self):return
         if urlsplit(self.path).path == '/api/model-settings':
             if not self.trusted():
                 self.reply(403, {'error': 'Only same-origin local requests are accepted.'})
@@ -108,6 +110,7 @@ class Handler(SimpleHTTPRequestHandler):
             if not isinstance(data, dict):
                 raise ValueError('Expected a JSON object.')
             route = urlsplit(self.path).path
+            if decision_post(self, route, data):return
             if route == '/api/agent-review':
                 if not AGENT_SLOT.acquire(blocking=False):
                     self.reply(429, {'error': 'An agent review is already running. Try again when it finishes.'})
